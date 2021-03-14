@@ -16,7 +16,7 @@
 		{% if upload %}<p>{{ upload }}</p>{% endif %}
 		{{ content }}
 	</main>
-	<aside>
+	<aside aria-label="Hosts">
 		{% for host in hosts %}{% include profile.html, profile: profiles[host] %}{% endfor %}
 	</aside>
 </body>

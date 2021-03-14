@@ -1,5 +1,5 @@
-<section>
-	<h2>{{ profile.name }}</h2>
+<section aria-labelledby="host-{{ profile.name | removeSpecialCharacters | slug }}">
+	<h2 id="host-{{ profile.name | removeSpecialCharacters | slug }}">{{ profile.name }}</h2>
 	<dl>
 		<div>
 			<dt>Pronouns</dt>

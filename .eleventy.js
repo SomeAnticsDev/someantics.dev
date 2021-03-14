@@ -16,6 +16,7 @@ module.exports = (eleventyConfig) => {
 
 	// Filters
 	eleventyConfig.addFilter('normalizeUrl', url => normalizeUrl(url, {stripProtocol: true}));
+	eleventyConfig.addFilter('removeSpecialCharacters', string => string.replace(/[^\w\s]/g, ''))
 
 	return {
 		dir: {
