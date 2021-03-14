@@ -1,6 +1,5 @@
 ---
 title: Building Accessible SVG Icons in React with Chantastic
-layout: stream.html
 upload: https://www.youtube.com/watch?v=t0vU8n1AQXU
 ---
 
