@@ -13,6 +13,7 @@
 	</header>
 	<main id="main-content">
 		<h1>{{ title }}</h1>
+		{% if upload %}<p>{{ upload }}</p>{% endif %}
 		{{ content }}
 	</main>
 </body>
