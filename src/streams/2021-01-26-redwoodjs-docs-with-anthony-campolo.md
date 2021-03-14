@@ -1,6 +1,9 @@
 ---
 title: Putting RedwoodJS Docs to the Test with Anthony Campolo
 upload: https://www.youtube.com/watch?v=ois3P63Yiwc
+hosts:
+  - Ben Myers
+  - Anthony Campolo
 ---
 
 Accessibility best practices should be baked into our education, documentation, and developer advocacy work. Join Ben and his guest [Anthony Campolo](https://twitter.com/ajcwebdev) for the inaugural stream of <i>Some Antics</i>, as we go through the [RedwoodJS tutorial](https://redwoodjs.com/tutorial/welcome-to-redwood) and pick apart ways it could encourage accessibility from the get-go.

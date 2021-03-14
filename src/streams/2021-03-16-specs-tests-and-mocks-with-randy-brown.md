@@ -1,5 +1,8 @@
 ---
 title: Specs, Tests, and Mocks with Randy Brown
+hosts:
+  - Ben Myers
+  - Randy Brown
 ---
 
 How can backend tooling such as API specs and mock data improve our frontend developer ergonomics? Join Ben and Randy as we explore the world of specs, tests, and mocks together.

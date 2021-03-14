@@ -1,5 +1,8 @@
 ---
 title: Test-Driven Development with Adrianne Mallett
+hosts:
+  - Ben Myers
+  - Adrianne Mallett
 ---
 
 There are few things more frustrating than bugs… particularly when they sneak in and break something which was already working or something that's already been fixed before. The test-driven development philosophy and process can help us prevent those bugs.

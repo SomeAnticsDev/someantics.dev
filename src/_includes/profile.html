@@ -1,0 +1,25 @@
+<section>
+	<h2>{{ profile.name }}</h2>
+	<dl>
+		<div>
+			<dt>Pronouns</dt>
+			<dd>{{ profile.pronouns }}</dd>
+		</div>
+		{% if profile.twitter %}
+		<div>
+			<dt>Twitter</dt>
+			<dd>
+				<a href="https://twitter.com/{{ profile.twitter }}">@{{ profile.twitter }}</a>
+			</dd>
+		</div>
+		{% endif %}
+		{% if profile.website %}
+		<div>
+			<dt>Website</dt>
+			<dd>
+				<a href="{{ profile.website }}">{{ profile.website | normalizeUrl }}</a>
+			</dd>
+		</div>
+		{% endif %}
+	</dl>
+</section>

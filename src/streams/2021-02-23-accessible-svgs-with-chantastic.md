@@ -2,6 +2,9 @@
 title: Building Accessible SVG Icons in React with Chantastic
 upload: https://www.youtube.com/watch?v=t0vU8n1AQXU
 sourceCode: https://github.com/SomeAnticsDev/accessible-svgs-in-react/blob/main/src/App.js
+hosts:
+  - Ben Myers
+  - Chantastic
 ---
 
 You know what they say… an icon is worth a thousand words. However, scaling icons up to reusable icon libraries can pose some interesting logistical challenges. Join us on <i>Some Antics</i> as [Chantastic](https://twitter.com/chantastic) walks us through his journey towards building accessible SVG icons in React.

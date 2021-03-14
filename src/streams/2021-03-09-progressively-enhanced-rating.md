@@ -1,6 +1,9 @@
 ---
 title: Can We Build a Progressively Enhanced Rating Widget?
 sourceCode: https://codepen.io/bendmyers-the-typescripter/pen/qBqQqZO
+hosts:
+  - Ben Myers
+  - Tuna
 ---
 
 Progressive enhancement is an approach to web development where we use the most broadly supported tools to ensure a minimum viable experience for everyone, and then provide optional visual and interactive enhancements on top of that for supported experiences. Progressive enhancement places a strong emphasis on semantic markup and accessibility.

@@ -1,6 +1,9 @@
 ---
 title: Diving Into the Web Content Accessibility Guidelines with Todd Libby
 upload: https://www.youtube.com/watch?v=aChBL4fsr2E
+hosts:
+  - Ben Myers
+  - Todd Libby
 ---
 
 The W3C's [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21/) are the industry standard requirements for making digital content — websites, mobile apps, documents, and more — accessible to disabled users. Understanding how to read the Web Content Accessibility Guidelines can help a developer make better, more accessible sites.

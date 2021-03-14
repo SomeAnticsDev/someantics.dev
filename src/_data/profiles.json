@@ -1,0 +1,66 @@
+{
+	"Ben Myers": {
+		"name": "Ben Myers",
+		"avatar": "",
+		"pronouns": "he/they",
+		"twitter": "SomeAnticsDev",
+		"website": "https://benmyers.dev"
+	},
+	"Adrianne Mallett": {
+		"name": "Adrianne Mallett",
+		"avatar": "",
+		"pronouns": "she/her",
+		"twitter": "mennairda"
+	},
+	"Anthony Campolo": {
+		"name": "Anthony Campolo",
+		"avatar": "",
+		"pronouns": "he/him",
+		"twitter": "ajcwebdev",
+		"website": "https://dev.to/ajcwebdev"
+	},
+	"Chantastic": {
+		"name": "Michael \"Chantastic\" Chan",
+		"avatar": "",
+		"pronouns": "he/him",
+		"twitter": "chantastic",
+		"website": "https://chan.dev"
+	},
+	"Chris Burns": {
+		"name": "Chris Burns",
+		"avatar": "",
+		"pronouns": "he/him",
+		"twitter": "BurnedChris"
+	},
+	"Dom Saadi": {
+		"name": "Dom Saadi",
+		"avatar": "",
+		"pronouns": "he/him",
+		"twitter": "desaadi307"
+	},
+	"Randy Brown": {
+		"name": "Randy Brown",
+		"avatar": "",
+		"pronouns": "he/him",
+		"twitter": "thatrandybrown"
+	},
+	"Stephanie Eckles": {
+		"name": "Stephanie Eckles",
+		"avatar": "",
+		"pronouns": "she/her",
+		"twitter": "5t3ph",
+		"website": "https://5t3ph.dev"
+	},
+	"Todd Libby": {
+		"name": "Todd Libby",
+		"avatar": "",
+		"pronouns": "he/him",
+		"twitter": "toddlibby",
+		"website": "https://toddl.dev"
+	},
+	"Tuna": {
+		"name": "Tuna the Cat",
+		"avatar": "",
+		"pronouns": "he/him"
+	}
+}

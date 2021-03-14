@@ -1,4 +1,5 @@
 const embedYouTube = require('eleventy-plugin-youtube-embed');
+const normalizeUrl = require('normalize-url');
 
 module.exports = (eleventyConfig) => {
 	// Collections
@@ -12,6 +13,9 @@ module.exports = (eleventyConfig) => {
 
 	// Plugins
 	eleventyConfig.addPlugin(embedYouTube, {lite: true});
+
+	// Filters
+	eleventyConfig.addFilter('normalizeUrl', url => normalizeUrl(url, {stripProtocol: true}));
 
 	return {
 		dir: {
