@@ -1,4 +1,5 @@
 const embedYouTube = require('eleventy-plugin-youtube-embed');
+const moment = require('moment');
 const normalizeUrl = require('normalize-url');
 
 module.exports = (eleventyConfig) => {
@@ -15,8 +16,10 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(embedYouTube, {lite: true});
 
 	// Filters
+	eleventyConfig.addFilter('date', (date, format) => moment(date).utc().format(format));
 	eleventyConfig.addFilter('normalizeUrl', url => normalizeUrl(url, {stripProtocol: true}));
-	eleventyConfig.addFilter('removeSpecialCharacters', string => string.replace(/[^\w\s]/g, ''))
+	eleventyConfig.addFilter('isUpcoming', streamDate => moment().isBefore(streamDate));
+	eleventyConfig.addFilter('removeSpecialCharacters', string => string.replace(/[^\w\s]/g, ''));
 
 	return {
 		dir: {

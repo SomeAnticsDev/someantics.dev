@@ -1,0 +1,28 @@
+body {
+	background-color: #280241;
+}
+
+main {
+	background-color: azure;
+	line-height: 1.7;
+	margin: 0 auto;
+	max-width: 80ch;
+	padding: 1rem;
+}
+
+main > * + * {
+	margin-top: 1.5em;
+}
+
+main a, main a i {
+	font-family: Nexa, sans-serif;
+	font-weight: 800;
+}
+
+main a code {
+	font-weight: 700;
+}
+
+main code {
+	font-family: 'Fira Mono', monospace;
+}

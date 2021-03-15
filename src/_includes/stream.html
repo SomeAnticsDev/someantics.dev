@@ -4,20 +4,49 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/layout.css" />
+	{% include fonts.html %}
 	<title>{{ title }} | Some Antics</title>
 </head>
 <body>
 	<a href="#main-content">Skip to content</a>
+
 	<header>
 		Some Antics
 	</header>
-	<main id="main-content">
+
+	<main id="main-content" style="max-width: 80ch;">
 		<h1>{{ title }}</h1>
+		<time datetime="{{ date | date: 'YYYY-MM-DD' }}">{{ date | date: "MMM D, YYYY" }}</time>
 		{% if upload %}<p>{{ upload }}</p>{% endif %}
 		{{ content }}
 	</main>
+
+	{% if isUpcoming == 'true' %}
+	<footer aria-labelledby="upcoming-cta">
+		<h2 id="upcoming-cta">Join us live!</h2>
+		<a href="https://twitch.tv/SomeAnticsDev">Follow on Twitch</a>
+		<a href="#">Add to Calendar</a>
+	</footer>
+	{% endif %}
+
 	<aside aria-label="Hosts">
 		{% for host in hosts %}{% include profile.html, profile: profiles[host] %}{% endfor %}
 	</aside>
+
+	<style>
+		* {
+			font-family: Inter, sans-serif;
+		}
+		h1, h2, h3 {
+			font-family: Nexa, sans-serif;
+			font-weight: 900;
+		}
+
+		main a {
+			color: black;
+			text-decoration-color: yellow;
+		}
+	</style>
 </body>
 </html>
