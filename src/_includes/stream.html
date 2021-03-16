@@ -15,24 +15,27 @@
 		Some Antics
 	</header>
 
-	<main id="main-content" style="max-width: 80ch;">
-		<h1>{{ title }}</h1>
-		<time datetime="{{ date | date: 'YYYY-MM-DD' }}">{{ date | date: "MMM D, YYYY" }}</time>
-		{% if upload %}<p>{{ upload }}</p>{% endif %}
-		{{ content }}
-	</main>
+	<div class="body">
+		<div class="left">
+			<main id="main-content" style="max-width: 80ch;">
+				<h1>{{ title }}</h1>
+				<time datetime="{{ date | date: 'YYYY-MM-DD' }}">{{ date | date: "MMM D, YYYY" }}</time>
+				{% if upload %}<p>{{ upload }}</p>{% endif %}
+				{{ content }}
+			</main>
 
-	{% if isUpcoming == 'true' %}
-	<footer aria-labelledby="upcoming-cta">
-		<h2 id="upcoming-cta">Join us live!</h2>
-		<a href="https://twitch.tv/SomeAnticsDev">Follow on Twitch</a>
-		<a href="#">Add to Calendar</a>
-	</footer>
-	{% endif %}
+			{% if isUpcoming == 'true' %}
+			<footer aria-labelledby="upcoming-cta">
+				<h2 id="upcoming-cta">Join us live!</h2>
+				<a href="https://twitch.tv/SomeAnticsDev">Follow on Twitch</a>
+				<a href="#">Add to Calendar</a>
+			</footer>
+			{% endif %}
+		</div>
 
-	<aside aria-label="Hosts">
-		{% for host in hosts %}{% include profile.html, profile: profiles[host] %}{% endfor %}
-	</aside>
+		<aside id="hosts" aria-label="Hosts">
+			{% for host in hosts %}{% include profile.html, profile: profiles[host] %}{% endfor %}
+		</aside>
 
 	<style>
 		* {
@@ -43,10 +46,7 @@
 			font-weight: 900;
 		}
 
-		main a {
-			color: black;
-			text-decoration-color: yellow;
-		}
+		
 	</style>
 </body>
 </html>

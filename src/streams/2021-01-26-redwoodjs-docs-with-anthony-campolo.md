@@ -27,7 +27,7 @@ Anthony Campolo is a developer advocate at StepZen and a RedwoodJS Core Team mem
 
 ## Transcript
 
-[00:00:00] **Ben:** Alright, let's go ahead and do this.
+**Ben:** Alright, let's go ahead and do this.
 
 Howdy, howdy, y'all. Welcome to the inaugural stream of Some Antics! My name is Ben Myers. I am a frontend developer with a passion for web accessibility. Some Antics is a weekly stream focused on web accessibility, semantic markup, progressive enhancement, and the like. I'm really, really excited for this experiment.
 
@@ -288,23 +288,23 @@ And the reason why I want to do this, 'cause I see this kind of like more at the
 
 **Anthony:** Yup. Let me just figure it out. You just go down to the… Let's see… There we go! Yeah. So "Link and named route functions," I think is what you're gonna want.
 
-Yeah. So this is one of the things… You know, this framework was built long before I came along, so there's a lot of stuff in terms of, like, how the router was created, how it's working, that I'm still learning, kind of picking up as we go. So [00:37:00] I don't know exactly what the Link component is doing. It's always just worked for me so I've never had to worry about what the Link component… As far as thinking about these frameworks and having all the magic is when the magic works, you never really have to figure out what the magic does. And then once the magic breaks is when you have to figure out what it's doing.
+Yeah. So this is one of the things… You know, this framework was built long before I came along, so there's a lot of stuff in terms of, like, how the router was created, how it's working, that I'm still learning, kind of picking up as we go. So [00:37:00] I don't know exactly what the `Link` component is doing. It's always just worked for me so I've never had to worry about what the `Link` component… As far as thinking about these frameworks and having all the magic is when the magic works, you never really have to figure out what the magic does. And then once the magic breaks is when you have to figure out what it's doing.
 
-**Ben:** So, if I had to take a guess, it's probably working, and it may even under the hood be leveraging React Router's Link or something, but because this is a single-page… 
+**Ben:** So, if I had to take a guess, it's probably working, and it may even under the hood be leveraging React Router's `Link` or something, but because this is a single-page… 
 
 **Anthony:** It's not. I can say for sure that it was a new router built from scratch. It's not importing any other router. So I can say that for sure.
 
-**Ben:** Super cool. So, yeah. Single-page  applications, if you use just a pure anchor tag without overriding any of their default behavior or anything like that, then you're going to get a hard page load, which is difficult in a single-page application because the thing that makes single-page apps super cool, and I guess the [00:38:00] optimization that they provide is the bundle's already there, so you shouldn't have to do a hard page load. You shouldn't  have to go fetch the new page. You've already got that there on the browser. So it's, I guess, to prevent the hard refresh, hard new page load. It looks like we've got some code in the chat for the Link component, which is super cool.
+**Ben:** Super cool. So, yeah. Single-page  applications, if you use just a pure anchor tag without overriding any of their default behavior or anything like that, then you're going to get a hard page load, which is difficult in a single-page application because the thing that makes single-page apps super cool, and I guess the [00:38:00] optimization that they provide is the bundle's already there, so you shouldn't have to do a hard page load. You shouldn't  have to go fetch the new page. You've already got that there on the browser. So it's, I guess, to prevent the hard refresh, hard new page load. It looks like we've got some code in the chat for the `Link` component, which is super cool.
 
 Cool. So, maybe I can deviate a little off-script and we can—oh, I believe you're on mute, my friend. 
 
 **Anthony:** Sorry, I wasn't saying anything.
 
-**Ben:** Ah, you're good. So if I were interested in creating a skiplink… let me, I guess, try to do what I can and then you can let me know if maybe I'm using Links wrong here. But what I would first do— 
+**Ben:** Ah, you're good. So if I were interested in creating a skiplink… let me, I guess, try to do what I can and then you can let me know if maybe I'm using `Link`s wrong here. But what I would first do— 
 
 **Anthony:** First, actually, let's first get the blog layout into our page before we start doing any of that, just so we can also [00:39:00] see what we're doing there. So let's go back to the tutorial. So that's all good. And then it's going to, yeah, so right there, that's going to be your homepage.
 
-And so what you do is…  The layout is a component and you bring in the component and you wrap the content. So as you see here, we're taking that blog layout and we're just wrapping the little home, right. And you're not going to need to import Link and Route anymore because they are in our layout now. 
+And so what you do is… The layout is a component and you bring in the component and you wrap the content. So as you see here, we're taking that blog layout and we're just wrapping the little home, right. And you're not going to need to import `Link` and `Route` anymore because they are in our layout now. 
 
 **Ben:** Dig it. There are a few things more satisfying than removing an import. On layout, I guess you've already got an h1, don't you? So I'll just do "Home," like the tutorial says. 
 
@@ -351,6 +351,7 @@ So currently, we have two pages that are using the blog layout that we've create
 **Anthony:** Yeah. Yeah, this is what I was saying, how there's there's stuff in the internals of the router that, like I said, are still being worked on and it's a little bit above my head right now, but yeah. 
 
 **Ben:** Okay. That's super cool. And yeah, as I'm hearing, like, "Oh, the layout might not rerender," my first thought is, like, "Oh, god, the focus management on that is going to be rough."  Because when you're on a static site where every page is just l its own static HTML page, when you go from one page to another, that's a hard page load. Right? And so a screenreader, in that case, will usually announce something like the document title. 
+
 Which actually is an interesting point!  We haven't done anything with document titles in here. Maybe that's something I should follow up on next. But yeah, so, the [00:46:00] screenreader announces the document title and that's usually how the screenreader user knows that they're now on a new page. But in a single-page application, you're not actually ever leaving the HTML page that you're on. Things are just kind of changing around you. And that means that you don't get the document title announcement, you don't get any of the new page stuff, and even your focus might not change if the component, the link that you clicked on doesn't rerender at all. So this is why routers for single-page applications are incredibly difficult, just because you have to figure out what are the sensible defaults for announcing to assistive technology users, or managing focus, announcing to them that their page has changed.
 
 **Anthony:** Yeah, there's so much that goes into the router, and I felt like it's like such a black box to most people. 

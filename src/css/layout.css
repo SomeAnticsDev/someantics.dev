@@ -2,8 +2,22 @@ body {
 	background-color: #280241;
 }
 
+.body {
+	display: flex;
+	justify-content: center;
+}
+
+.body .left {
+	margin-right: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Nexa, sans-serif;
+	margin-top: 0;
+}
+
 main {
-	background-color: azure;
+	background-color: whitesmoke;
 	line-height: 1.7;
 	margin: 0 auto;
 	max-width: 80ch;
@@ -15,6 +29,7 @@ main > * + * {
 }
 
 main a, main a i {
+	color: black;
 	font-family: Nexa, sans-serif;
 	font-weight: 800;
 }
@@ -25,4 +40,22 @@ main a code {
 
 main code {
 	font-family: 'Fira Mono', monospace;
+}
+
+#hosts section {
+	background-color: whitesmoke;
+	margin: 0rem 1rem 1rem 1rem;
+	max-width: 20ch;
+	padding: 1rem;
+}
+
+#hosts section a {
+	color: black;
+	font-family: Nexa, sans-serif;
+	font-weight: 800;
+}
+
+#hosts section h2 {
+	font-size: 1.5rem;
+	text-align: center;
 }

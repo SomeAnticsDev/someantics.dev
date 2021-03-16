@@ -10,16 +10,18 @@
 </head>
 <body>
 	{% include header.html %}
-	<h1>Welcome to Some Antics!</h1>
-	<p>Anything is possible at SomeAnticscom</p>
+	<main>
+		<h1>Welcome to Some Antics!</h1>
+		<p>Anything is possible at SomeAnticscom</p>
 
-	<ul>
-	{% for stream in collections.streams %}
-	<li>
-		<a href="{{ stream.url }}">{{ stream.data.title }}</a>
-	</li>
-	{% endfor %}
-	</ul>
+		<ul>
+		{% for stream in collections.streams %}
+		<li>
+			<a href="{{ stream.url }}">{{ stream.data.title }}</a>
+		</li>
+		{% endfor %}
+		</ul>
+	</main>
 
 	<style>
 		* {
