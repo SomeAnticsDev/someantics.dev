@@ -19,6 +19,11 @@
 		"twitter": "ajcwebdev",
 		"website": "https://dev.to/ajcwebdev"
 	},
+	"Ashlae Nelms": {
+		"name": "Ashlae Nelms",
+		"avatar": "",
+		"pronouns": "she/her"
+	},
 	"Chantastic": {
 		"name": "Michael \"Chantastic\" Chan",
 		"avatar": "",
@@ -36,7 +41,14 @@
 		"name": "Dom Saadi",
 		"avatar": "",
 		"pronouns": "he/him",
-		"twitter": "desaadi307"
+		"website": "https://github.com/jtoar"
+	},
+	"Joe Lamyman": {
+		"name": "Joe Lamyman",
+		"avatar": "",
+		"pronouns": "he/him",
+		"twitter": "JoeLamyman",
+		"website": "https://joelamyman.co.uk/"
 	},
 	"Randy Brown": {
 		"name": "Randy Brown",
