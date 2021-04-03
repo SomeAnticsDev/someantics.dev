@@ -33,6 +33,11 @@ body {
 	transform: translate(-50%);
 }
 
+.body .left > * + * {
+	margin-top: 5em;
+	box-shadow: 10px 10px #1c0929;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: Nexa, sans-serif;
 	margin-top: 0;
@@ -122,4 +127,18 @@ main code {
 	font-size: 1.2rem;
 	text-align: center;
 	margin-bottom: 1rem;
+}
+
+.left > footer,
+.left > header noscript {
+	background-color: whitesmoke;
+	line-height: 1.7;
+	max-width: 60ch;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+}
+
+.left > * {
+	box-shadow: 10px 10px #1c0929;
 }
