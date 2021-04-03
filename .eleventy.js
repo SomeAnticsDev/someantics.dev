@@ -13,7 +13,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addWatchTarget('./src/css/');
 
 	// Plugins
-	eleventyConfig.addPlugin(embedYouTube, {lite: true});
+	eleventyConfig.addPlugin(embedYouTube);
 
 	// Filters
 	eleventyConfig.addFilter('date', (date, format) => moment(date).utc().format(format));
