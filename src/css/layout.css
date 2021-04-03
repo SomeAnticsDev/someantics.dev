@@ -59,3 +59,17 @@ main code {
 	font-size: 1.5rem;
 	text-align: center;
 }
+
+i.timecode {
+	font-style: normal;
+	font-weight: 550;
+	color: #743c9b;
+}
+
+#display-timecodes:not(:checked) ~ * i.timecode {
+	display: none;
+}
+
+i.brackets {
+	font-weight: 550;
+}
