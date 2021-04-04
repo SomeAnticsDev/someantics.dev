@@ -1,85 +1,72 @@
 {
 	"Ben Myers": {
 		"name": "Ben Myers",
-		"avatar": "",
 		"pronouns": "he/they",
 		"twitter": "SomeAnticsDev",
 		"website": "https://benmyers.dev"
 	},
 	"Adrianne Mallett": {
 		"name": "Adrianne Mallett",
-		"avatar": "",
 		"pronouns": "she/her",
 		"twitter": "mennairda"
 	},
 	"Andy Bell": {
 		"name": "Andy Bell",
-		"avatar": "",
 		"pronouns": "he/him",
 		"twitter": "piccalilli_",
 		"website": "https://piccalil.li/"
 	},
 	"Anthony Campolo": {
 		"name": "Anthony Campolo",
-		"avatar": "",
 		"pronouns": "he/him",
 		"twitter": "ajcwebdev",
 		"website": "https://dev.to/ajcwebdev"
 	},
 	"Ashlae Nelms": {
 		"name": "Ashlae Nelms",
-		"avatar": "",
 		"pronouns": "she/her"
 	},
 	"Chantastic": {
 		"name": "Michael Chan",
-		"avatar": "",
 		"pronouns": "he/him",
 		"twitter": "chantastic",
 		"website": "https://chan.dev"
 	},
 	"Chris Burns": {
 		"name": "Chris Burns",
-		"avatar": "",
 		"pronouns": "he/him",
 		"twitter": "BurnedChris"
 	},
 	"Dom Saadi": {
 		"name": "Dom Saadi",
-		"avatar": "",
 		"pronouns": "he/him",
 		"website": "https://github.com/jtoar"
 	},
 	"Joe Lamyman": {
 		"name": "Joe Lamyman",
-		"avatar": "",
 		"pronouns": "he/him",
 		"twitter": "JoeLamyman",
 		"website": "https://joelamyman.co.uk/"
 	},
 	"Randy Brown": {
 		"name": "Randy Brown",
-		"avatar": "",
 		"pronouns": "he/him",
 		"twitter": "thatrandybrown"
 	},
 	"Stephanie Eckles": {
 		"name": "Stephanie Eckles",
-		"avatar": "",
 		"pronouns": "she/her",
 		"twitter": "5t3ph",
 		"website": "https://5t3ph.dev"
 	},
 	"Todd Libby": {
 		"name": "Todd Libby",
-		"avatar": "",
 		"pronouns": "he/him",
 		"twitter": "toddlibby",
 		"website": "https://toddl.dev"
 	},
 	"Tuna": {
 		"name": "Tuna the Cat",
-		"avatar": "",
 		"pronouns": "he/him"
 	}
 }
