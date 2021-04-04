@@ -1,12 +1,14 @@
 <section aria-labelledby="host-{{ profile.name | removeSpecialCharacters | slug }}">
 	<div class="profile-avatar" style="background-image: url({{ profile.name | avatar }});"></div>
-	
+
 	<h2 id="host-{{ profile.name | removeSpecialCharacters | slug }}">{{ profile.name }}</h2>
 	<dl>
+		{% if profile.pronouns %}
 		<div>
-			<dt>{% include icons/twitter.svg %}<span class="visually-hidden">Twitter</span></dt>
+			<dt>{% include icons/speech-bubble.svg %}<span class="visually-hidden">Pronouns</span></dt>
 			<dd>{{ profile.pronouns }}</dd>
 		</div>
+		{% endif %}
 		{% if profile.twitter %}
 		<div>
 			<dt>{% include icons/twitter.svg %}<span class="visually-hidden">Twitter</span></dt>
