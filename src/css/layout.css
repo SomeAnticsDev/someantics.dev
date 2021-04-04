@@ -84,8 +84,19 @@ main code {
 
 #hosts section {
 	background-color: whitesmoke;
-	margin: 0rem 1rem 1rem 1rem;
+	box-shadow: 10px 10px #1c0929;
+	margin: 60px 1rem 0rem 1rem;
 	padding: 0.8rem;
+}
+
+#hosts div.profile-avatar {
+	background-color: #1c0929;
+	margin: -60px auto 10px auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-size: contain;
+	box-shadow: 0 0 0 5px #1c0929;
 }
 
 #hosts dl {
