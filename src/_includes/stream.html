@@ -9,7 +9,7 @@
 	<title>{{ title }} | Some Antics</title>
 </head>
 <body>
-	<a href="#main-content">Skip to content</a>
+	<a href="#main-content" class="cta skip-link">Skip to content</a>
 
 	<header>
 		Some Antics
@@ -17,26 +17,23 @@
 
 	<div class="body">
 		<div class="left">
-			{% if upload %}
-			<header>
-				<p>{{ upload }}</p>
-				<noscript><a href="{{ upload }}">Watch stream on YouTube</a></noscript>
-			</header>
-			{% endif %}
-
 			<main id="main-content" style="max-width: 80ch;">
 				<h1>{{ title }}</h1>
 				<time datetime="{{ date | date: 'YYYY-MM-DD' }}">{{ date | date: "MMM D, YYYY" }}</time>
-				{{ content }}
-			</main>
 
-			{% if isUpcoming == 'true' %}
-			<footer aria-labelledby="upcoming-cta">
-				<h2 id="upcoming-cta">Join us live!</h2>
-				<a href="https://twitch.tv/SomeAnticsDev">Follow on Twitch</a>
-				<a href="#">Add to Calendar</a>
-			</footer>
-			{% endif %}
+				{% if upload %}
+				<p>{{ upload }}</p>
+				<noscript><a href="{{ upload }}">Watch stream on YouTube</a></noscript>
+				{% endif %}
+
+				{{ content }}
+
+				{% if isUpcoming == 'true' %}
+				<div class="calendar-link">
+					<a class="cta" href="#">Add to Calendar</a>
+				</div>
+				{% endif %}
+			</main>
 		</div>
 
 		<aside id="hosts" aria-label="Hosts">

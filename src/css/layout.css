@@ -1,4 +1,5 @@
-.visually-hidden {
+.visually-hidden,
+.skip-link:not(:focus) {
 	clip: rect(0 0 0 0); 
 	clip-path: inset(50%);
 	height: 1px;
@@ -8,8 +9,13 @@
 	width: 1px;
 }
 
+.skip-link {
+	position: fixed;
+	outline: 3px solid transparent;
+}
+
 body {
-	background-color: #280241;
+	background-color: whitesmoke;
 }
 
 .body {
@@ -22,20 +28,8 @@ body {
 	position: relative;
 }
 
-.body .left::after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	bottom: 0;
-	left: 50%;
-	border-left: 8px dotted #743c9b;
-	transform: translate(-50%);
-}
-
 .body .left > * + * {
 	margin-top: 5em;
-	box-shadow: 10px 10px #1c0929;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,7 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-	background-color: whitesmoke;
 	line-height: 1.7;
 	margin: 0 auto;
 	max-width: 80ch;
@@ -55,7 +48,7 @@ main > * + * {
 	margin-top: 1.5em;
 }
 
-main a, main a i, #hosts a {
+a:not([class]) {
 	color: black;
 	font-family: Nexa, sans-serif;
 	font-weight: 800;
@@ -69,9 +62,29 @@ main a, main a i, #hosts a {
 	transition: background-size 0.2s ease-in, color 0.25s ease-in;
 }
 
-main a:hover, main a:focus, #hosts a:hover, #hosts a:focus {
+a:not([class]):hover, a:not([class]):focus {
 	outline: 3px solid transparent;
 	background-size: 100% 100%;
+}
+
+a.cta {
+	display: inline-block;
+    background-image: none;
+    background-color: #ee4433;
+    border: 5px solid #ee4433;
+    box-shadow: 5px 5px #280241;
+    color: #fff;
+	font-family: Nexa, sans-serif;
+    font-weight: 900;
+	padding: .5%;
+	text-decoration: none;
+    transition: none;
+	user-select: none;
+}
+
+a.cta:hover, a.cta:focus {
+	background-color: #4C1074;
+	outline: 3px solid transparent;
 }
 
 main a code {
@@ -83,13 +96,11 @@ main code {
 }
 
 #hosts section {
-	background-color: whitesmoke;
-	box-shadow: 10px 10px #1c0929;
-	margin: 60px 1rem 0rem 1rem;
+	margin: 60px 1rem 5rem 1rem;
 	padding: 0.8rem;
 }
 
-#hosts div.profile-avatar {
+#hosts .profile-avatar {
 	background-color: #1c0929;
 	margin: -60px auto 10px auto;
 	width: 100px;
@@ -121,17 +132,11 @@ main code {
 #hosts dt svg {
 	color: #743c9b;
 	width: 1.5em;
-	margin-right: 0.3em;
+	margin-right: 0.4em;
 }
 
 #hosts dd {
 	margin-bottom: 0.3em;
-}
-
-#hosts section a {
-	color: black;
-	font-family: Nexa, sans-serif;
-	font-weight: 800;
 }
 
 #hosts section h2 {
@@ -140,16 +145,13 @@ main code {
 	margin-bottom: 1rem;
 }
 
-.left > footer,
-.left > header noscript {
-	background-color: whitesmoke;
-	line-height: 1.7;
-	max-width: 60ch;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1rem;
+.calendar-link {
+	display: flex;
+	padding: 3em;
 }
 
-.left > * {
-	box-shadow: 10px 10px #1c0929;
+.calendar-link a {
+	margin: 0 auto;
+	font-size: 125%;
+	padding: 1% 1.5%;
 }

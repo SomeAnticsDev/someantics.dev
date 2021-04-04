@@ -12,3 +12,6 @@ Joe is a web developer and designer currently working for SkillsForge in beautif
 ## More From Joe
 
 - [Follow Joe on Twitter](https://twitter.com/JoeLamyman)
+- [Read Joe's blog](https://joelamyman.co.uk/blog/)
+- [Digital Accessibility for the Individual](https://joelamyman.co.uk/blog/digital-accessibility-for-the-individual/)
+- [Bog Roll Business Builder](https://bog-roll-business-builder.netlify.app/)
