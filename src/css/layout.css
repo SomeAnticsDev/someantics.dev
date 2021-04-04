@@ -9,9 +9,12 @@
 	width: 1px;
 }
 
-.skip-link {
-	position: fixed;
+a.cta.skip-link:focus {
+	background-color: #280241;
+	border-color: #ee4433;
+	color: white;
 	outline: 3px solid transparent;
+	position: fixed;
 }
 
 body {
@@ -68,12 +71,13 @@ a:not([class]):hover, a:not([class]):focus {
 }
 
 a.cta {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
     background-image: none;
-    background-color: #ee4433;
-    border: 5px solid #ee4433;
+	background-color: #ffe56a;
+	border: 5px solid #ffe56a;
     box-shadow: 5px 5px #280241;
-    color: #fff;
+	color: black;
 	font-family: Nexa, sans-serif;
     font-weight: 900;
 	padding: .5%;
@@ -83,8 +87,13 @@ a.cta {
 }
 
 a.cta:hover, a.cta:focus {
-	background-color: #4C1074;
+	background-color: transparent;
 	outline: 3px solid transparent;
+}
+
+a.cta svg {
+	height: 1.2em;
+	margin-right: 0.5em;
 }
 
 main a code {
