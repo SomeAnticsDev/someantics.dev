@@ -1,3 +1,8 @@
 {
-	"layout": "stream.html"
+	"layout": "stream.html",
+	"permalink": "/{{ page.fileSlug }}/",
+	"eleventyComputed": {
+		"date": "{{ page.date }}",
+		"isUpcoming": "{{ page.date | isUpcoming }}"
+	}
 }

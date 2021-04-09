@@ -6,28 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/layout.css" />
 	{% include fonts.html %}
-	<title>Some Antics</title>
+	<title>{{ title }} | Some Antics</title>
 </head>
 <body>
-	{% include header.html, title: 'Some Antics!' %}
-	<main>
-		<h1>Welcome to Some Antics!</h1>
-		<p>Anything is possible at SomeAnticscom</p>
-
-		<ul>
-		{% for stream in collections.streams %}
-		<li>
-			<a href="{{ stream.url }}">{{ stream.data.title }}</a>
-		</li>
-		{% endfor %}
-		</ul>
+	{% include header.html %}
+	<h1>{{ title }}</h1>
+	<main style="max-width: 80ch;">
+		{{ content }}
 	</main>
-
 	<style>
 		* {
 			font-family: Inter, sans-serif;
 		}
-		h1 {
+		h1, h2, h3 {
 			font-family: Nexa;
 			font-weight: 900;
 		}

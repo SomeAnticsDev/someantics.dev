@@ -1,0 +1,78 @@
+{
+	"Ben Myers": {
+		"name": "Ben Myers",
+		"pronouns": "he/they",
+		"twitter": "SomeAnticsDev",
+		"website": "https://benmyers.dev"
+	},
+	"Adrianne Mallett": {
+		"name": "Adrianne Mallett",
+		"pronouns": "she/her",
+		"twitter": "mennairda"
+	},
+	"Andy Bell": {
+		"name": "Andy Bell",
+		"pronouns": "he/him",
+		"twitter": "piccalilli_",
+		"website": "https://piccalil.li/"
+	},
+	"Anthony Campolo": {
+		"name": "Anthony Campolo",
+		"pronouns": "he/him",
+		"twitter": "ajcwebdev",
+		"website": "https://dev.to/ajcwebdev"
+	},
+	"Ashlae Nelms": {
+		"name": "Ashlae Nelms",
+		"pronouns": "she/her"
+	},
+	"Chantastic": {
+		"name": "Michael Chan",
+		"pronouns": "he/him",
+		"twitter": "chantastic",
+		"website": "https://chan.dev"
+	},
+	"Chris Burns": {
+		"name": "Chris Burns",
+		"pronouns": "he/him",
+		"twitter": "BurnedChris"
+	},
+	"Dom Saadi": {
+		"name": "Dom Saadi",
+		"pronouns": "he/him",
+		"website": "https://github.com/jtoar"
+	},
+	"Joe Lamyman": {
+		"name": "Joe Lamyman",
+		"pronouns": "he/him",
+		"twitter": "JoeLamyman",
+		"website": "https://joelamyman.co.uk/"
+	},
+	"Lucia Cerchie": {
+		"name": "Lucia Cerchie",
+		"pronouns": "she/her",
+		"twitter": "CerchieLucia",
+		"website": "https://luciacerchie.dev/"
+	},
+	"Randy Brown": {
+		"name": "Randy Brown",
+		"pronouns": "he/him",
+		"twitter": "thatrandybrown"
+	},
+	"Stephanie Eckles": {
+		"name": "Stephanie Eckles",
+		"pronouns": "she/her",
+		"twitter": "5t3ph",
+		"website": "https://5t3ph.dev"
+	},
+	"Todd Libby": {
+		"name": "Todd Libby",
+		"pronouns": "he/him",
+		"twitter": "toddlibby",
+		"website": "https://toddl.dev"
+	},
+	"Tuna": {
+		"name": "Tuna the Cat",
+		"pronouns": "he/him"
+	}
+}
