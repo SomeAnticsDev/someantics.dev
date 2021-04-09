@@ -9,16 +9,11 @@
 	<title>{{ title }} | Some Antics</title>
 </head>
 <body>
-	<a href="#main-content" class="cta skip-link">Skip to content</a>
-
-	<header>
-		Some Antics
-	</header>
+	{% include header.html, title: title %}
 
 	<div class="body">
 		<div class="left">
 			<main id="main-content" style="max-width: 80ch;">
-				<h1>{{ title }}</h1>
 				<time datetime="{{ date | date: 'YYYY-MM-DD' }}">{{ date | date: "MMM D, YYYY" }}</time>
 
 				{% if upload %}
