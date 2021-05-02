@@ -1,5 +1,5 @@
 ---
-title: Specs, Tests, and Mocks with Randy Brown
+title: Specs, Tests, and Mocks
 upload: https://www.youtube.com/watch?v=h1f8tUbpbbA
 sourceCode: https://www.github.com/SomeAnticsDev/specs-tests-and-mocks
 hosts:

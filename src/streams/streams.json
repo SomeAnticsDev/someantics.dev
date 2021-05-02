@@ -1,5 +1,6 @@
 {
-	"layout": "stream.html",
+	"__layout": "stream.html",
+	"layout": "thumbnail.html",
 	"permalink": "/{{ page.fileSlug }}/",
 	"eleventyComputed": {
 		"date": "{{ page.date }}",

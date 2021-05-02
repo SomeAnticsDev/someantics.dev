@@ -1,0 +1,22 @@
+---
+permalink: "./pages.json"
+permalinkBypassOutputDir: true
+eleventyExcludeFromCollections: true
+---
+[
+{%- for pages in collections.streams %}
+{% set streamTitle %}{{ pages.data.title }}{% endset %}
+{% if pages.data.thumbnailTitle %}{% set streamTitle %}{{ pages.data.thumbnailTitle }}{% endset %}{% endif %}
+  {
+	  {% if pages.data.hosts %}
+	  "hosts": "{{ pages.data.hosts | formatHosts | safe }}",
+	  "featuredHosts": {{ pages.data.hosts | getAvatarsForThumbnails | safe }},
+	  {% endif %}
+	  {% if pages.date %}
+	  "streamDate": "{{ pages.date | date("dddd, MMMM D, YYYY") }}",
+	  {% endif %}
+      "title": "{{ streamTitle | addNbsp | safe }}",
+      "imgName": "{{ pages.fileSlug }}"
+  }{% if loop.last == false %},{% endif -%}
+{% endfor %}
+]

@@ -1,5 +1,6 @@
 ---
 title: Writing Tests First with Adrianne Mallett
+thumbnailTitle: Writing Tests First
 sourceCode: https://github.com/SomeAnticsDev/tdd-fizzbuzz
 hosts:
   - Ben Myers
