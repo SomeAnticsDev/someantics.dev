@@ -1,6 +1,7 @@
 ---
 title: "Let's Make Dang Spicy Web Components with Andy Bell!"
 thumbnailTitle: "Let's Make Dang Spicy Web Components!"
+timeOfDay: "1:30pm"
 sourceCode: https://github.com/SomeAnticsDev/dang-spicy-web-components
 hosts:
   - Ben Myers

@@ -67,7 +67,7 @@ const dataPath = fs.realpathSync('pages.json');
 			title.innerHTML = post.title;
 
 			const footer = document.querySelector('footer');
-			footer.innerHTML = post.streamDate;
+			footer.innerHTML = `${post.streamDate} at ${post.timeOfDay} Central`;
 
 			if (post.hosts) {
 				const hostP = document.getElementById('hosts');

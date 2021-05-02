@@ -16,7 +16,8 @@ eleventyExcludeFromCollections: true
 	  "streamDate": "{{ pages.date | date("dddd, MMMM D, YYYY") }}",
 	  {% endif %}
       "title": "{{ streamTitle | addNbsp | safe }}",
-      "imgName": "{{ pages.fileSlug }}"
+      "imgName": "{{ pages.fileSlug }}",
+	  "timeOfDay": "{{ pages.data.timeOfDay }}"
   }{% if loop.last == false %},{% endif -%}
 {% endfor %}
 ]
