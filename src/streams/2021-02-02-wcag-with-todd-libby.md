@@ -1,5 +1,6 @@
 ---
 title: Diving Into the Web Content Accessibility Guidelines with Todd Libby
+thumbnailTitle: Diving into WCAG
 upload: https://www.youtube.com/watch?v=aChBL4fsr2E
 hosts:
   - Ben Myers

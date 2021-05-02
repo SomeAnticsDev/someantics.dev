@@ -1,5 +1,6 @@
 ---
 title: Let's Build a Style Stage Theme with Stephanie Eckles!
+thumbnailTitle: Let's Build a Style Stage Theme!
 upload: https://www.youtube.com/watch?v=w173MUXyBrc
 sourceCode: https://codepen.io/5t3ph/pen/xxVpYjo
 hosts:

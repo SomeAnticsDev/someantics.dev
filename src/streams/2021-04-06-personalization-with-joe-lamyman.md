@@ -1,5 +1,6 @@
 ---
 title: Personalizing User Interfaces for Accessibility with Joe Lamyman
+thumbnailTitle: Personalizing UIs for Accessibility
 hosts:
   - Ben Myers
   - Joe Lamyman

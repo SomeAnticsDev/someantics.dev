@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="/css/layout.css" />
 	{% include fonts.html %}
 	<title>{{ title }} | Some Antics</title>
+	<meta property="og:image" content="/previews/{{ title | slug }}.png" />
+	<meta name="twitter:image" content="/previews/{{ title | slug }}.png" />
 </head>
 <body>
 	{% include header.html, title: title %}
