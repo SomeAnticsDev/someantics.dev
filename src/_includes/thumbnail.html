@@ -66,31 +66,50 @@
 			position: relative;
 		}
 
-		main img {
+		main img, main .ring {
 			border-radius: 50%;
 			position: absolute;
 		}
 
 		main img[src=""],
-		main img:not([src]) {
+		main img:not([src]),
+		main img[src=""] + .ring,
+		main img:not([src]) + .ring {
 			display: none;
 		}
 
 		main img:first-of-type {
 			top: 241.2px;
 			right: 160px;
-			width: 290px;
-			height: 290px;
-			z-index: 2;
-			border: 12px solid #ee4433;
+			width: 310px;
+			height: 310px;
+			z-index: 4;
+		}
+
+		main img:first-of-type + .ring {
+			top: 231.2px;
+			right: 150px;
+			width: 330px;
+			height: 330px;
+			z-index: 3;
+			background-image: linear-gradient(to right, #ee4433, #eed043);
 		}
 		
-		main img:nth-child(2) {
+		main img:nth-of-type(2) {
 			top: 97px;
 			right: 32px;
-			width: 240px;
-			height: 240px;
-			border: 9px solid #743c9b;
+			width: 260px;
+			height: 260px;
+			z-index: 2;
+		}
+
+		main img:nth-of-type(2) + .ring {
+			top: 87px;
+			right: 22px;
+			width: 280px;
+			height: 280px;
+			z-index: 1;
+			background-image: linear-gradient(to left, #4C1074, #743c9b);
 		}
 	</style>
 </head>
@@ -103,7 +122,9 @@
 		</header>
 		<main>
 			<img id="avatar-1" src="{{ 'Andy Bell' | avatar }}" alt="" />
+			<div class="ring"></div>
 			<img id="avatar-2" src="{{ 'Ben Myers' | avatar }}" alt="" />
+			<div class="ring"></div>
 		</main>
 	</div>
 </body>
