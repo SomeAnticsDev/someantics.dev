@@ -47,7 +47,7 @@ const dataPath = fs.realpathSync('pages.json');
 	await page.setViewport({
 		width: 1280,
 		height: 720,
-		deviceScaleFactor: 1,
+		deviceScaleFactor: 2,
 	});
 
 	// Go over all the posts
