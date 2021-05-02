@@ -1,26 +1,17 @@
 #!/usr/bin/env node
-const chromium = require("chrome-aws-lambda");
-const fs = require("fs");
-const path = require("path");
-const { comparators } = require('generate-comparators');
 
-const byPoliteness = comparators(host => {
-	switch (host) {
-		case 'Ben Myers':
-			return 1;
-		case 'Tuna':
-			return 2;
-		default:
-			return 0;
-	}
-});
+/*** CODE HAS BEEN CANNIBALIZED FROM https://github.com/5t3ph/eleventy-plugin-social-images ***/
+
+const chromium = require('chrome-aws-lambda');
+const fs = require('fs');
+const path = require('path');
 
 const outputDir = '_site';
 const templateSrc = fs.realpathSync('src/_includes/thumbnail.html');
 const dataPath = fs.realpathSync('pages.json');
 
 (async () => {
-	console.log("Starting social images...");
+	console.log('Starting social images...');
 
 	const browser = await chromium.puppeteer.launch({
 		args: chromium.args,
@@ -38,7 +29,7 @@ const dataPath = fs.realpathSync('pages.json');
 	// Get generated data json
 	let data = path.resolve(__dirname, dataPath);
 	if (!fs.existsSync(data)) {
-		console.log("Invalid dataFile location or file name provided");
+		console.log('Invalid dataFile location or file name provided');
 		process.exit(1);
 	}
 	console.log(fs.readFileSync(data, 'utf-8'));
@@ -46,7 +37,7 @@ const dataPath = fs.realpathSync('pages.json');
 
 	// Render html, wait for 0 network connections to ensure webfonts downloaded
 	await page.setContent(html, {
-		waitUntil: ["networkidle0"],
+		waitUntil: ['networkidle0'],
 	});
 
 	// Wait until the document is fully rendered
@@ -99,5 +90,5 @@ const dataPath = fs.realpathSync('pages.json');
 	await Promise.all(browserPages.map(page => page.close()));
 
 	await browser.close();
-	console.log("Social images complete!");
+	console.log('Social images complete!');
 })();
