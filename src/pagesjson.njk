@@ -9,7 +9,7 @@ eleventyExcludeFromCollections: true
 {% if pages.data.thumbnailTitle %}{% set streamTitle %}{{ pages.data.thumbnailTitle }}{% endset %}{% endif %}
   {
 	  {% if pages.data.hosts %}
-	  "hosts": "{{ pages.data.hosts | formatHosts | safe }}",
+	  "hosts": "{{ pages.data.hosts | formatHosts(true) | safe }}",
 	  "featuredHosts": {{ pages.data.hosts | getAvatarsForThumbnails | safe }},
 	  {% endif %}
 	  {% if pages.date %}

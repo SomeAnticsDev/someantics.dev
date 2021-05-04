@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy ; npm run thumbnails",
+    "build": "ELEVENTY_ENV=production eleventy ; npm run thumbnails",
     "start": "eleventy --serve",
     "thumbnails": "node src/bin/thumbnails.js"
   },

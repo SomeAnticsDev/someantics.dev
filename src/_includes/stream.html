@@ -7,8 +7,15 @@
 	<link rel="stylesheet" href="/css/layout.css" />
 	{% include fonts.html %}
 	<title>{{ title }} | Some Antics</title>
-	<meta property="og:image" content="/previews/{{ title | slug }}.png" />
-	<meta name="twitter:image" content="/previews/{{ title | slug }}.png" />
+	<meta property="og:image" content="{{ site }}{{ page.url }}thumbnail.png" />
+	{% assign thumbTile = title %}
+	{% if thumbnailTitle %}
+	{% assign thumbTitle = thumbnailTitle %}
+	{% endif %}
+	<meta property="og:image:alt" content="{{ thumbTitle }} with {{ hosts | formatHosts }}. {{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central." />
+	<meta name="twitter:image" content="{{ site }}{{ page.url }}thumbnail.png" />
+	<meta property="twitter:image:alt" content="{{ thumbTitle }} with {{ hosts | formatHosts }}. {{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central." />
+	{% include meta.html %}
 </head>
 <body>
 	{% include header.html, title: title %}
@@ -36,17 +43,6 @@
 		<aside id="hosts" aria-label="Hosts">
 			{% for host in hosts %}{% include profile.html, profile: profiles[host] %}{% endfor %}
 		</aside>
-
-	<style>
-		* {
-			font-family: Inter, sans-serif;
-		}
-		h1, h2, h3 {
-			font-family: Nexa, sans-serif;
-			font-weight: 900;
-		}
-
-		
-	</style>
+	</div>
 </body>
 </html>

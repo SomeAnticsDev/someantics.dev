@@ -1,6 +1,6 @@
 const {comparators} = require('generate-comparators');
 const profiles = require('../_data/profiles.json');
-const { avatar } = require('./cloudinary');
+const {avatar} = require('./cloudinary');
 
 const byPoliteness = comparators(host => {
 	switch (host) {
@@ -14,15 +14,17 @@ const byPoliteness = comparators(host => {
 });
 
 /**
- * 
- * @param {[String]} hostList
- * @param {boolean} asHtml
- * @returns {string}
+ * Formats hosts as a single string, ideal for thumbnails
+ * @param {[String]} hostList array of stream hosts
+ * @param {boolean} asHtml `true` if host names should be wrapped in `<b>` tags, `false` otherwise
+ * @returns {string} list of all hosts, organized by politeness factor
  */
-function formatHosts(hostList) {
+function formatHosts(hostList, asHtml) {
 	let hosts = [...hostList].sort(byPoliteness.asc);
 
-	hosts = hosts.map(host => `<b>${host}</b>`);
+	if (asHtml) {
+		hosts = hosts.map(host => `<b>${host}</b>`);
+	}
 
 	if (hosts.length === 1) {
 		return hosts[0];
