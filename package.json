@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "ELEVENTY_ENV=production eleventy ; npm run thumbnails",
+    "build": "AWS_LAMBDA_FUNCTION_NAME=trickpuppeteer ELEVENTY_ENV=production eleventy ; npm run thumbnails",
     "start": "eleventy --serve",
     "thumbnails": "node src/bin/thumbnails.js"
   },
