@@ -1,5 +1,5 @@
 ---
-title: Twitch Plays the Dinosaur Game!
+title: Let's Build the Jumping Dinosaur Game… Powered By Twitch!
 hosts:
   - Ben Myers
 ---
