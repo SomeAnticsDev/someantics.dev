@@ -40,7 +40,14 @@ function formatHosts(hostList, asHtml) {
 function getAvatarsForThumbnails(hostList) {
 	let hosts = [...hostList].sort(byPoliteness.asc);
 	let featuredHosts = hosts.slice(0, 2);
-	return JSON.stringify(featuredHosts.map(host => avatar(profiles[host].name)));
+
+	return JSON.stringify(featuredHosts.map(host => {
+		const {name, customAvatarUrl} = profiles[host];
+		if (customAvatarUrl) {
+			return customAvatarUrl;
+		} 
+		return avatar(name);
+	}));
 }
 
 module.exports = {formatHosts, getAvatarsForThumbnails};
