@@ -233,7 +233,7 @@ So that's all good. So again, if you refresh the browser, still nothing happenin
 
 **Andy:** <i class="timecode">[00:19:00]</i> Yeah, and that's why I call it that, because it's consistent with, like, other implementations and these sorts of things. But this is something I would like to see in web components, is like a global, like, `render()` method that does a similar job to like these other frameworks, because I think it's very useful.
 
-And just to point it all out, we're going to say `this` a lot in this component as well, and in the context of `this`, it's always going to be FYIUnit is `this` at any point. If we need to dig deeper, then I tend to, say, do something like this. I'd probably say something like `const self = this`. And then it's always protected. It always means `FYIUnit` as well. But we don't need to do that today.
+And just to point it all out, we're going to say `this` a lot in this component as well, and in the context of `this`, it's always going to be `FYIUnit` is `this` at any point. If we need to dig deeper, then I tend to, say, do something like this. I'd probably say something like `const self = this`. And then it's always protected. It always means `FYIUnit` as well. But we don't need to do that today.
 
 So there you go. So the `render()` is going to do exactly what you think it's going to do. And what I was saying here, is I was going to say `this` — because `this` is the custom element now, the context of the `FYIUnit` class is in the context of this custom element we defined. And I'm going to set `this.innerHTML`, which is just like you do with any vanilla JS in the DOM. Get some backticks in there! And then what I'll do is I've just gonna do a `<div>`, and cause we're working in JS, and we don't do semantics in JS, do we?
 
@@ -249,7 +249,7 @@ And then what I'll do is I'll leverage one of the lifecycle methods that you get
 
 **Ben:** <i class="timecode">[00:21:57]</i> Oh, okay! I got ya.
 
-**Andy:** <i class="timecode">[00:22:00]</i> Yay, there we go. So there you go. So now it's got "FYI," but it's deleted all the content, which is not ideal. So how do I get ahold of that content? So, what we can do is, back in my little `render()` method, what I'll do is I'm going to grab the innerHTML first. I'm gonna say `originalContent =  this.innerHTML`. So you got `this.state.title`, and then what I'll do is I'll render underneath the title, I'll say `originalContent` like so. And then when it reloads, there's the content that I passed in.
+**Andy:** <i class="timecode">[00:22:00]</i> Yay, there we go. So there you go. So now it's got "FYI," but it's deleted all the content, which is not ideal. So how do I get ahold of that content? So, what we can do is, back in my little `render()` method, what I'll do is I'm going to grab the `innerHTML` first. I'm gonna say `originalContent =  this.innerHTML`. So you got `this.state.title`, and then what I'll do is I'll render underneath the title, I'll say `originalContent` like so. And then when it reloads, there's the content that I passed in.
 
 **Ben:** <i class="timecode">[00:22:45]</i> Excellent.
 
@@ -277,7 +277,7 @@ And then what you can, like, also do as well is you can define properties on the
 
 **Andy:** <i class="timecode">[00:25:24]</i> It's just how I work. And then I don't remember anything. I just know what to google. Alright, okay, and then, so then what I can do is define… So you can set as many properties on here as you like. You know, I could set up a hundred different properties. But one smart thing that web components do is that they don't just watch every property and react to changes like some other options would do, which that can result, unless you specifically handle reactivity — like in React you can use, like, the `useEffect` hook to do that sort of thing — unless you specifically do that, what you can unintentionally do is cause a lot of rerenders with the reactivity of them. So a lot of data's changing. a lot of props are changing, every single time it's completely rerendering itself. So you can end up with some really badly performing frontend without even trying, you know. So this is a cool function, cool thing about web components I find.
 
-So I'll what I'll do in here is define a new property in the JavaScript. And I'll say `static get`. I'm not really sure what `static` means to be honest in this context. But I'm gonna say `observedAttributes()` like that. And then what you're going to say there is you can return <i class="brackets">['message']</i> like that and then, in theory…
+So I'll what I'll do in here is define a new property in the JavaScript. And I'll say `static get`. I'm not really sure what `static` means to be honest in this context. But I'm gonna say `observedAttributes()` like that. And then what you're going to say there is you can return `['message']` like that and then, in theory…
 
 **Ben:** <i class="timecode">[00:27:05]</i> Ohh…
 
