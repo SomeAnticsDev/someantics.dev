@@ -11,6 +11,12 @@ const templateSrc = fs.realpathSync('src/_includes/thumbnail.html');
 const dataPath = fs.realpathSync('pages.json');
 
 (async () => {
+	const slugs = process.argv.slice(2);
+	if (slugs.length < 1) {
+		console.error('Please provide a stream slug to thumbnailify!');
+		process.exit(1);
+	}
+
 	console.log('Starting social images...');
 
 	const browser = await chromium.puppeteer.launch({
@@ -52,6 +58,10 @@ const dataPath = fs.realpathSync('pages.json');
 
 	// Go over all the posts
 	for (const post of pages) {
+		if (!slugs.includes(post.imgName)) {
+			continue;
+		}
+		
 		// Update the H1 element with the post title
 		await page.evaluate((post) => {
 			const title = document.querySelector('h1');
@@ -91,4 +101,5 @@ const dataPath = fs.realpathSync('pages.json');
 
 	await browser.close();
 	console.log('Social images complete!');
+
 })();
