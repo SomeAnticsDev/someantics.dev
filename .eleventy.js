@@ -14,6 +14,7 @@ module.exports = (eleventyConfig) => {
 	// Passthroughs
 	eleventyConfig.addPassthroughCopy('./src/css/');
 	eleventyConfig.addWatchTarget('./src/css/');
+	eleventyConfig.addPassthroughCopy('./src/thumbnails/');
 
 	// Plugins
 	eleventyConfig.addPlugin(embedYouTube);

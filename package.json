@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "ELEVENTY_ENV=production eleventy ; npm run thumbnails",
+    "build": "ELEVENTY_ENV=production eleventy",
     "start": "eleventy --serve",
-    "thumbnails": "node src/bin/thumbnails.js"
+    "thumbnails": "npm run build ; node src/bin/thumbnails.js"
   },
   "author": "",
   "license": "ISC",

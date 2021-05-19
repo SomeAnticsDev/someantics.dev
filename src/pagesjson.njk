@@ -7,6 +7,9 @@ eleventyExcludeFromCollections: true
 {%- for pages in collections.streams %}
 {% set streamTitle %}{{ pages.data.title }}{% endset %}
 {% if pages.data.thumbnailTitle %}{% set streamTitle %}{{ pages.data.thumbnailTitle }}{% endset %}{% endif %}
+{% if pages.data.addNbsp %}
+{% set streamTitle %}{{ streamTitle | addNbsp | safe }}{% endset %}
+{% endif %}
   {
 	  {% if pages.data.hosts %}
 	  "hosts": "{{ pages.data.hosts | formatHosts(true) | safe }}",
@@ -15,7 +18,7 @@ eleventyExcludeFromCollections: true
 	  {% if pages.date %}
 	  "streamDate": "{{ pages.date | date("dddd, MMMM D, YYYY") }}",
 	  {% endif %}
-      "title": "{{ streamTitle | addNbsp | safe }}",
+      "title": "{{ streamTitle | safe }}",
       "imgName": "{{ pages.fileSlug }}",
 	  "timeOfDay": "{{ pages.data.timeOfDay }}"
   }{% if loop.last == false %},{% endif -%}

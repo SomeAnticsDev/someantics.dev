@@ -6,7 +6,7 @@ const chromium = require('chrome-aws-lambda');
 const fs = require('fs');
 const path = require('path');
 
-const outputDir = '_site';
+const outputDir = 'src/thumbnails';
 const templateSrc = fs.realpathSync('src/_includes/thumbnail.html');
 const dataPath = fs.realpathSync('pages.json');
 
@@ -54,7 +54,7 @@ const dataPath = fs.realpathSync('pages.json');
 	for (const post of pages) {
 		// Update the H1 element with the post title
 		await page.evaluate((post) => {
-			const title = document.querySelector("h1");
+			const title = document.querySelector('h1');
 			title.innerHTML = post.title;
 
 			const footer = document.querySelector('footer');
@@ -72,7 +72,7 @@ const dataPath = fs.realpathSync('pages.json');
 			}
 		}, post);
 
-		const imagePath = `${fs.realpathSync(outputDir)}/${post.imgName}/thumbnail.png`
+		const imagePath = `${fs.realpathSync(outputDir)}/${post.imgName}.png`
 		console.log(`Image: ${imagePath}`);
 
 		await page.evaluate(() => window.scrollBy(0, window.innerHeight));

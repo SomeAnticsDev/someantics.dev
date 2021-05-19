@@ -2,6 +2,7 @@
 	"layout": "stream.html",
 	"permalink": "/{{ page.fileSlug }}/",
 	"timeOfDay": "12pm",
+	"addNbsp": true,
 	"eleventyComputed": {
 		"date": "{{ page.date }}",
 		"isUpcoming": "{{ page.date | isUpcoming }}"
