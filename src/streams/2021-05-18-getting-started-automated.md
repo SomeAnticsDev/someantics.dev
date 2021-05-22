@@ -760,4 +760,4 @@ So, y'all, thank you so much for joining. Dave and Travis, thank you so much for
 
 **Ben:** <i class="timecode">[01:03:03]</i> Y'all, have a great Global Accessibility Awareness Day, and I'll see you soon. Bye, y'all!
 
-Bye!
+**Lucia:** <i class="timecode">[01:03:10]</i> Bye!
