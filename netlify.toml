@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/youtube"
+  to = "https://www.youtube.com/playlist?list=PLZluKlEc91YzYor_ItAax4d2iXTXbFAFF"
+  status = 301
+  force = true
