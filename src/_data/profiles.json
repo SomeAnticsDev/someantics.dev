@@ -31,7 +31,8 @@
 		"name": "Anna E. Cook",
 		"pronouns": "she/they",
 		"twitter": "annaecook",
-		"website": "https://annaecook.com"
+		"website": "https://annaecook.com",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1620394752/Some%20Antics%20Avatars/Anna%20E.%20Cook.jpg"
 	},
 	"Anne-Mieke Bovelett": {
 		"name": "Anne-Mieke Bovelett",
