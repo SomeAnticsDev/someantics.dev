@@ -141,5 +141,11 @@
 	"Tuna": {
 		"name": "Tuna the Cat",
 		"pronouns": "he/him"
+	},
+	"Zach Leatherman": {
+		"name": "Zach Leatherman",
+		"pronouns": "he/him",
+		"twitter": "zachleat",
+		"website": "https://zachleat.com"
 	}
 }
