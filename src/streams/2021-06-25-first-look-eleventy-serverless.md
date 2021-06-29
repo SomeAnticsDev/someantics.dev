@@ -7,6 +7,7 @@ hosts:
   - Zach Leatherman
 sourceCode: https://github.com/SomeAnticsDev/eleventy-serverless-color-contrast/tree/5299e276cad0de22e9b81d8a78a1a971fb4096fb
 demo: https://60d66250ae41f800074591de--eleventy-serverless-color-contrast.netlify.app/4C1074/ee4433/
+upload: https://youtu.be/wneO9XKkGTA
 ---
 
 [Eleventy Serverless](https://www.11ty.dev/docs/plugins/serverless/) introduces a new way to build Eleventy sites — by generating pages upon request, rather than all at once. Currently, it's only available in canary builds leading up to Eleventy's v1.0 release, but recently, [the first draft of the Eleventy Serverless docs went live](https://twitter.com/zachleat/status/1408073561198280706).
