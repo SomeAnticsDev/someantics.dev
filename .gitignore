@@ -4,6 +4,6 @@ package-lock.json
 yarn.lock
 .DS_Store
 pages.json
-src/thumbnail.html
+# src/thumbnail.html
 # Local Netlify folder
 .netlify
