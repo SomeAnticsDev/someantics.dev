@@ -15,6 +15,14 @@
 		"pronouns": "he/him",
 		"twitter": "ralex1993"
 	},
+	"Alex Trost": {
+		"name": "Alex Trost",
+		"pronouns": "he/him",
+		"twitter": "trostcodes",
+		"twitch": "TrostCodes",
+		"website": "https://frontend.horse",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1620394752/Some%20Antics%20Avatars/Alex%20Trost.jpg"
+	},
 	"Alexandra Ayaub": {
 		"name": "Alexandra Ayaub",
 		"pronouns": "she/her",
@@ -56,6 +64,7 @@
 		"name": "Ashlee Boyer",
 		"pronouns": "she/her",
 		"twitter": "AshleeMBoyer",
+		"twitch": "AshleeMBoyer",
 		"website": "https://ashleemboyer.com"
 	},
 	"Chance Strickland": {
@@ -102,6 +111,7 @@
 		"name": "Martin Bavio",
 		"pronouns": "he/him",
 		"twitter": "_marbiano",
+		"twitch": "marbiano",
 		"website": "https://marbiano.com"
 	},
 	"Rachel Leggett": {
@@ -130,12 +140,14 @@
 		"name": "Stephanie Eckles",
 		"pronouns": "she/her",
 		"twitter": "5t3ph",
+		"twitch": "5t3phDev",
 		"website": "https://5t3ph.dev"
 	},
 	"Todd Libby": {
 		"name": "Todd Libby",
 		"pronouns": "he/him",
 		"twitter": "toddlibby",
+		"twitch": "toddlibby",
 		"website": "https://toddl.dev"
 	},
 	"Tuna": {

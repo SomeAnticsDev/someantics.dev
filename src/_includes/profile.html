@@ -29,6 +29,14 @@
 			</dd>
 		</div>
 		{% endif %}
+		{% if profile.twitch %}
+		<div>
+			<dt>{% include icons/twitch.svg %}<span class="visually-hidden">Twitch</span></dt>
+			<dd>
+				<a href="https://twitch.tv/{{ profile.twitch }}">{{ profile.twitch }}</a>
+			</dd>
+		</div>
+		{% endif %}
 		{% if profile.website %}
 		<div>
 			<dt>{% include icons/link.svg %}<span class="visually-hidden">Website</span></dt>

@@ -165,7 +165,8 @@ main code {
 	margin: 0;
 }
 
-#hosts dt svg path {
+#hosts dt svg path,
+#hosts dt svg rect {
 	fill: currentColor;
 }
 
