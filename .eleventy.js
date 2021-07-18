@@ -11,6 +11,12 @@ module.exports = (eleventyConfig) => {
 		return collectionApi.getFilteredByGlob('./src/streams/*.md');
 	});
 
+	eleventyConfig.addCollection('upcomingStreams', (collectionApi) => {
+		return collectionApi
+			.getFilteredByGlob('./src/streams/*.md')
+			.filter(stream => stream.data.isUpcoming);
+	});
+
 	// Passthroughs
 	eleventyConfig.addPassthroughCopy('./src/css/');
 	eleventyConfig.addWatchTarget('./src/css/');
