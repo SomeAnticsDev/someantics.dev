@@ -1,0 +1,25 @@
+---
+permalink: /api/upcomingStreams.json
+---
+{
+	"events": [
+		{%- for stream in collections.upcomingStreams %}
+		{% set title = stream.data.title -%}
+		{%- if stream.data.thumbnailTitle -%}
+		{% set title = stream.data.thumbnailTitle -%}
+		{%- endif -%}
+		{
+			"title": "{{ title | safe }}",
+			"fullTitle": "{{ stream.data.title | safe }}",
+			"date": "{{ stream.data.dateIso }}",
+			"hosts": [
+				{%- for host in stream.data.hosts %}
+				{{ profiles[host] | structureHostForApi | dump | safe }}{%if not loop.last %},{% endif %}
+				{%- endfor %}
+			],
+			"slug": "{{ stream.fileSlug }}",
+			"url": "{{ site }}{{ stream.url }}"
+		}{%if not loop.last %},{% endif %}
+		{%- endfor %}
+	]
+}

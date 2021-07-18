@@ -4,11 +4,18 @@ const moment = require('moment');
 const normalizeUrl = require('normalize-url');
 const {avatar} = require('./src/utils/cloudinary');
 const {formatHosts, getAvatarsForThumbnails} = require('./src/utils/format-hosts');
+const {structureHostForApi} = require('./src/utils/structure-host-for-api');
 
 module.exports = (eleventyConfig) => {
 	// Collections
 	eleventyConfig.addCollection('streams', (collectionApi) => {
 		return collectionApi.getFilteredByGlob('./src/streams/*.md');
+	});
+
+	eleventyConfig.addCollection('upcomingStreams', (collectionApi) => {
+		return collectionApi
+			.getFilteredByGlob('./src/streams/*.md')
+			.filter(stream => stream.data.isUpcoming);
 	});
 
 	// Passthroughs
@@ -28,6 +35,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('avatar', avatar);
 	eleventyConfig.addFilter('formatHosts', formatHosts);
 	eleventyConfig.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
+	eleventyConfig.addFilter('structureHostForApi', structureHostForApi);
 
 	return {
 		dir: {
