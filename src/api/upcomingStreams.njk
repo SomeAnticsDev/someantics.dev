@@ -12,7 +12,11 @@ permalink: /api/upcomingStreams.json
 			"title": "{{ title | safe }}",
 			"fullTitle": "{{ stream.data.title | safe }}",
 			"date": "{{ stream.data.dateIso }}",
-			"hosts": {{ stream.data.hosts | dump | safe }},
+			"hosts": [
+				{%- for host in stream.data.hosts %}
+				{{ profiles[host] | structureHostForApi | dump | safe }}{%if not loop.last %},{% endif %}
+				{%- endfor %}
+			],
 			"slug": "{{ stream.fileSlug }}",
 			"url": "{{ site }}{{ stream.url }}"
 		}{%if not loop.last %},{% endif %}
