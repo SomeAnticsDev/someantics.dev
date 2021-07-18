@@ -2,7 +2,7 @@
 permalink: /api/upcomingStreams.json
 ---
 {
-	"streams": [
+	"events": [
 		{%- for stream in collections.upcomingStreams %}
 		{% set title = stream.data.title -%}
 		{%- if stream.data.thumbnailTitle -%}
