@@ -23,6 +23,12 @@
 		"website": "https://frontend.horse",
 		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1620394752/Some%20Antics%20Avatars/Alex%20Trost.jpg"
 	},
+	"Alexa Heinrich": {
+		"name": "Alexa Heinrich",
+		"pronouns": "she/her",
+		"twitter": "HashtagHeyAlexa",
+		"website": "https://therealalexa.com"
+	},
 	"Alexandra Ayaub": {
 		"name": "Alexandra Ayaub",
 		"pronouns": "she/her",
@@ -53,7 +59,7 @@
 		"name": "Anthony Campolo",
 		"pronouns": "he/him",
 		"twitter": "ajcwebdev",
-		"website": "https://dev.to/ajcwebdev"
+		"website": "https://ajcweb.dev"
 	},
 	"Ashlae Nelms": {
 		"name": "Ashlae Nelms",
