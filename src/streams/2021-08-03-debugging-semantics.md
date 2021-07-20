@@ -1,6 +1,6 @@
 ---
-title: From Semantics to Screenreaders, with Ashlee Boyer
-thumbnailTitle: From Semantics to Screenreaders
+title: Debugging Semantic HTML Elements for Accessibility, with Ashlee Boyer
+thumbnailTitle: Debugging Semantic HTML Elements for Accessibility
 hosts:
   - Ben Myers
   - Ashlee Boyer
