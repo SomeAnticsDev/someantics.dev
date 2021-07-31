@@ -5,6 +5,7 @@ const normalizeUrl = require('normalize-url');
 const {avatar} = require('./src/utils/cloudinary');
 const {formatHosts, getAvatarsForThumbnails} = require('./src/utils/format-hosts');
 const {structureHostForApi} = require('./src/utils/structure-host-for-api');
+const {getHostedStreams} = require('./src/utils/get-hosted-streams');
 
 module.exports = (eleventyConfig) => {
 	// Collections
@@ -36,6 +37,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('formatHosts', formatHosts);
 	eleventyConfig.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
 	eleventyConfig.addFilter('structureHostForApi', structureHostForApi);
+	eleventyConfig.addFilter('getHostedStreams', getHostedStreams);
 
 	return {
 		dir: {

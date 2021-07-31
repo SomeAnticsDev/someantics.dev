@@ -1,5 +1,16 @@
+{{ person.name | log }}
+{%- set hostedStreams = collections.streams | getHostedStreams(person.name) -%}
+
 <pre>
 	{{ person | dump | safe}}
 </pre>
 
-{{ person.name }}
+<ul>
+	{% for stream in hostedStreams | reverse -%}
+	<li>
+		<a href="{{ stream.url }}">
+			{{ stream.data.title }}
+		</a>
+	</li>
+	{% endfor %}
+</ul>
