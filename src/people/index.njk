@@ -1,0 +1,18 @@
+---
+title: People
+layout: page.html
+---
+<ul>
+	{%- for name, person in profiles -%}
+	{%- if name != "Ben Myers" and name != "Tuna the Cat" -%}
+	<li>
+		<a href="/people/{{ person.name | slug}}/">
+			<article>
+				<img src="{{ name | avatar }}" alt="" />
+				{{ person.name }}
+			</article>
+		</a>
+	</li>
+	{%- endif -%}
+	{%- endfor -%}
+</ul>
