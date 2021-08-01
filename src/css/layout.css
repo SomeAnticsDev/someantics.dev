@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-	line-height: 1.7;
+	line-height: 1.9;
 	margin: 0 auto;
 	max-width: 80ch;
 	padding: 1rem;
@@ -195,4 +195,13 @@ main code {
 	margin: 0 auto;
 	font-size: 125%;
 	padding: 1% 1.5%;
+}
+
+main strong {
+	font-family: Nexa, Inter, sans-serif;
+	font-weight: 800;
+}
+
+.timecode {
+	color: #4C1074;
 }
