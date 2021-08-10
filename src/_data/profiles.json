@@ -79,6 +79,13 @@
 		"twitter": "BHolmesDev",
 		"website": "https://bholmes.dev"
 	},
+	"Carie Fisher": {
+		"name": "Carie Fisher",
+		"pronouns": "she/her",
+		"twitter": "cariefisher",
+		"website": "https://cariefisher.com",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1620394752/Some%20Antics%20Avatars/Carie%20Fisher.jpg"
+	},
 	"Chance Strickland": {
 		"name": "Chance Strickland",
 		"pronouns": "he/him",
@@ -165,7 +172,7 @@
 		"pronouns": "she/her",
 		"twitter": "5t3ph",
 		"twitch": "5t3phDev",
-		"website": "https://5t3ph.dev"
+		"website": "https://thinkdobecreate.com"
 	},
 	"Todd Libby": {
 		"name": "Todd Libby",
