@@ -1,3 +1,5 @@
+{% assign nextStream = collections.upcomingStreams | first %}
+{% assign futureStreams = collections.upcomingStreams | slice: 1, 5 %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,25 +13,23 @@
 <body>
 	{% include header.html, title: 'Some Antics!' %}
 	<main>
-		<h1>Welcome to Some Antics!</h1>
-		<p>Anything is possible at SomeAnticscom</p>
-
-		<ul>
-		{% for stream in collections.streams %}
-		<li>
-			<a href="{{ stream.url }}">{{ stream.data.title }}</a>
-		</li>
-		{% endfor %}
-		</ul>
+		<section aria-labelledby="h-upcoming">
+			<h2 id="h-upcoming">Upcoming Streams</h2>
+			<article aria-labelledby="h-next">
+				<div>
+				</div>
+				<h3 id="h-next">{{ nextStream.data.thumbnailTitle }}</h3>
+				<p><small>with {{ nextStream.data.hosts | formatHosts: true }}</small></p>
+			</article>
+		</section>
 	</main>
-
 	<style>
-		* {
-			font-family: Inter, sans-serif;
+		body {
+			background-color: #280241;
 		}
-		h1 {
-			font-family: Nexa;
-			font-weight: 900;
+
+		article {
+			background-color: #1c0929;
 		}
 	</style>
 </body>
