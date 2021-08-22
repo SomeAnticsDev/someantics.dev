@@ -52,7 +52,7 @@ The HTML we write can have a profound impact on the accessibility of our website
 
 <i class="timecode">[00:02:39]</i> **Ben:** Gotcha! Gotcha.
 
-Well, right now we are not looking at any screens, but I think I'm gonna go ahead and just start showing screens, just so that, first of all, we can show off Ashlee's Twitter. Go follow Ashlee on Twitter if you aren't already. Consistently great accessibly advice.
+Well, right now we are not looking at any screens, but I think I'm gonna go ahead and just start showing screens, just so that, first of all, we can show off Ashlee's Twitter. Go follow Ashlee on Twitter if you aren't already. Consistently great accessibility advice.
 
 <i class="timecode">[00:02:56]</i> **Ashlee:** Thank you!
 
@@ -458,7 +458,7 @@ Let's talk about disabling buttons, because that is such a fascinating topic tha
 
 <i class="timecode">[00:32:40]</i> **Ashlee:** Because if I close my eyes, I cannot understand anything at all unless I have headphones on. So that's why I have headphones on.
 
-But that is a much better and usable practice for people, especially people who use assistive technologies to navigate pages or to, like, listen to a screenreader to have it presented to them. And that's the approach that I was using with that. So if you hit the Save — I don't know why it doesn't go away. The message. It should be in an aria-live `<span>`. 
+But that is a much better and usable practice for people, especially people who use assistive technologies to navigate pages or to, like, listen to a screenreader to have it presented to them. And that's the approach that I was using with that. So if you hit the Save — I don't know why it doesn't go away. The message. It should be in an `aria-live` `<span>`. 
 
 <i class="timecode">[00:33:16]</i> **Ben:** Let's do this over here on our other tabs. So it's "disabled," is what it's called.
 
@@ -520,7 +520,7 @@ Streaming while demoing VoiceOver is always an adventure.
 
 <i class="timecode">[00:37:11]</i> **Ashlee:** Okay, I'll try to remember that!
 
-<i class="timecode">[00:37:13]</i> **Ben:** I was on Learn With Jason a couple of months ago, and that was this constant thing of like, I remembered it so it was like every time VoiceOver happened, like, I remembered to shut up, and then Jason's like, "Oh no, sorry, don't let me interrupt!" And it's like, "No, no, I just, I know that this is just a part of streaming accessibility."
+<i class="timecode">[00:37:13]</i> **Ben:** I was on <i>Learn With Jason</i> a couple of months ago, and that was this constant thing of like, I remembered it so it was like every time VoiceOver happened, like, I remembered to shut up, and then Jason's like, "Oh no, sorry, don't let me interrupt!" And it's like, "No, no, I just, I know that this is just a part of streaming accessibility."
 
 <i class="brackets">[Ashlee laughs]</i>
 
@@ -574,7 +574,7 @@ And now you're conditionally rendering this ARIA live region. I think one of the
 
 <i class="timecode">[00:40:08]</i> **Ashlee:** Wait, what? Can you repeat that? 
 
-<i class="timecode">[00:40:10]</i> **Ben:** Could you explain why we need a class like .sr-only or .visually-hidden or some sort of utility like this? 
+<i class="timecode">[00:40:10]</i> **Ben:** Could you explain why we need a class like `.sr-only` or `.visually-hidden` or some sort of utility like this? 
 
 <i class="timecode">[00:40:17]</i> **Ashlee:** Um, yeah! So an ARIA live region, like, it depends on what you're using it for. So in this kind of example that we've been talking about with a form where, when you submit the form, you show error messages, that is beneficial for both people who can visually see the page and people who are using assistive technology to consume the page. So we don't really need that here.
 
@@ -636,21 +636,21 @@ So that's where I got this from. And I think I have this in separate notes in a 
 
 <i class="timecode">[00:44:45]</i> **Ashlee:** I really don't know what to make it say. "We're testing aria-live stuff!" Oh, wait, I need to add a timeout on there.
 
-What we should see is the behavior that we saw before, so "Cannot save. Input is not valid." And then two seconds later, we should be read "We're testing aria-live stuff!" That's what we're hoping for.
+What we should see is the behavior that we saw before, so "Cannot save. Input is not valid." And then two seconds later, we should be read "We're testing `aria-live` stuff!" That's what we're hoping for.
 
 <i class="timecode">[00:45:12]</i> **Ben:** Alright!
 
 <i class="timecode">[00:45:13]</i> **Ashlee:** We're trying to prove some hypothesis. A hypothesis. 
 
-<i class="timecode">[00:45:17]</i> **Ben:** There we go. And I think you probably saved… Yeah, it looks like you've saved. So this should work now. Turning on VoiceOver again,
+<i class="timecode">[00:45:17]</i> **Ben:** There we go. And I think you probably saved… Yeah, it looks like you've saved. So this should work now. Turning on VoiceOver again.
 
-<i class="timecode">[00:45:30]</i> **VoiceOver:** VoiceOver on Chrome. Entering web content. Link, live regions, main. Save Changes, dimmed button. You are currently on a button. This item is dimmed. Cannot save. Input is not valid. We're testing aria-live stuff! 
+<i class="timecode">[00:45:30]</i> **VoiceOver:** VoiceOver on Chrome. Entering web content. Link, live regions, main. Save Changes, dimmed button. You are currently on a button. This item is dimmed. Cannot save. Input is not valid. We're testing `aria-live` stuff! 
 
 <i class="timecode">[00:45:43]</i> **Ben:** Nice!
 
 <i class="timecode">[00:45:44]</i> **Ashlee:** It works! I love it! Also, the screenreader sounded so excited. 
 
-<i class="timecode">[00:45:47]</i> **Ben:** "We're testing aria-live stuff! Woo! Go aria-live!" 
+<i class="timecode">[00:45:47]</i> **Ben:** "We're testing `aria-live` stuff! Woo! Go `aria-live`!" 
 
 <i class="timecode">[00:45:52]</i> **Ashlee:** <i class="brackets">[laughs] I love it.
 
