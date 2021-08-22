@@ -168,11 +168,11 @@ So that's where I started. And then from there, you can click on the different t
 
 <i class="timecode">[00:13:22]</i> **Ben:** "Accessibility is the property of being accessible." Like, "Okay, thank you."
 
-<i class="brackets">[Ashlee laughs]
+<i class="brackets">[Ashlee laughs]</i>
 
 "Like, I know…? I know. I figured as much."
 
-[Ashlee laughs]</i>
+<i class="brackets">[Ashlee laughs]</i>
 
 <i class="timecode">[00:13:32]</i> **Ashlee:** Yeah, exactly!
 
