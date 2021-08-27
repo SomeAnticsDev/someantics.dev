@@ -36,6 +36,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('formatHosts', formatHosts);
 	eleventyConfig.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
 	eleventyConfig.addFilter('structureHostForApi', structureHostForApi);
+	eleventyConfig.addFilter('slice_array', (arr, ...args) => arr.slice(...args));
 
 	return {
 		dir: {

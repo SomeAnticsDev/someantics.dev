@@ -1,0 +1,40 @@
+{%- from 'macros/streamcard.njk' import streamcard -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Some Antics</title>
+</head>
+<body>
+	<header>
+		{{ streamcard({ text: "Banana" }) }}
+	</header>
+	<main>
+		<section aria-labelledby="h-upcoming">
+			<h2 id="h-upcoming">Up next…</h2>
+			Give them the old razzle dazzle
+			<ul>
+				<li>
+					<article aria-labelledby="h-next">
+						{% for host in nextStream.data.hosts %}
+						{% if host != 'Ben Myers' %}
+						<img src="{{ host | avatar }}" alt="{{ host }}" />
+						{% endif %}
+						{% endfor %}
+						<h3>
+							{{ nextStream.data.thumbnailTitle }}
+						</h3>
+					</article>
+				</li>
+				{% for stream in horizon %}
+				<li>
+					{{ streamcard(stream) }}
+				</li>
+				{% endfor %}
+			</ul>
+		</section>
+	</main>
+</body>
+</html>

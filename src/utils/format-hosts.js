@@ -50,4 +50,4 @@ function getAvatarsForThumbnails(hostList) {
 	}));
 }
 
-module.exports = {formatHosts, getAvatarsForThumbnails};
+module.exports = {byPoliteness, formatHosts, getAvatarsForThumbnails};

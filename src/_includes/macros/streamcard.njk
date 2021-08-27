@@ -1,0 +1,19 @@
+{%- macro streamcard(stream) -%}
+<article class="stream-card" aria-labelledby="h-{{ stream.fileSlug }}">
+	{% for host in stream.data.hosts %}
+	{% if host != 'Ben Myers' %}
+	<img src="{{ host | avatar }}" alt="{{ host }}" width="100" />
+	{% endif %}
+	{% endfor %}
+	<h3 id="h-{{ stream.fileSlug }}">
+		<a href="{{ stream.url }}">
+			{{ stream.data.thumbnailTitle }}
+		</a>
+	</h3>
+	<small>
+		<time datetime="{{ stream.data.dateIso }}">
+			{{ stream.data.date | date('ddd MMM D, YYYY') }} at {{ stream.data.timeOfDay }} CT
+		</time>
+	</small>
+</article>
+{%- endmacro -%}
