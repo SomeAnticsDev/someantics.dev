@@ -7,7 +7,7 @@ hosts:
 ---
 
 We might be solid on testing our sites' accessibility in our desktop browsers — but how often do we test for mobile accessibility? Join us on Some Antics as [Crystal Preston-Watson](https://twitter.com/ScopicEngineer) introduces us to mobile accessibility testing!
-
+---
 ## More From Crystal
 
 - [Follow Crystal on Twitter!](https://twitter.com/ScopicEngineer)

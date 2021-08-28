@@ -38,6 +38,9 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('structureHostForApi', structureHostForApi);
 	eleventyConfig.addFilter('slice_array', (arr, ...args) => arr.slice(...args));
 
+	// Configure frontmatter parsing
+	eleventyConfig.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});
+
 	return {
 		dir: {
 			input: 'src'
