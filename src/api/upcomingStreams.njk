@@ -8,9 +8,14 @@ permalink: /api/upcomingStreams.json
 		{%- if stream.data.thumbnailTitle -%}
 		{% set title = stream.data.thumbnailTitle -%}
 		{%- endif -%}
+		{% set description = '' -%}
+		{%- if stream.data.excerpt -%}
+		{% set description = stream.data.excerpt -%}
+		{%- endif -%}
 		{
 			"title": "{{ title | safe }}",
 			"fullTitle": "{{ stream.data.title | safe }}",
+			"description": "{{ description | removeMarkdown | trim | safe }}",
 			"date": "{{ stream.data.dateIso }}",
 			"hosts": [
 				{%- for host in stream.data.hosts %}

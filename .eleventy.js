@@ -2,6 +2,7 @@ const embedYouTube = require('eleventy-plugin-youtube-embed');
 const socialImages = require('@11tyrocks/eleventy-plugin-social-images');
 const moment = require('moment');
 const normalizeUrl = require('normalize-url');
+const removeMarkdown = require('remove-markdown');
 const {avatar} = require('./src/utils/cloudinary');
 const {formatHosts, getAvatarsForThumbnails} = require('./src/utils/format-hosts');
 const {structureHostForApi} = require('./src/utils/structure-host-for-api');
@@ -36,6 +37,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('formatHosts', formatHosts);
 	eleventyConfig.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
 	eleventyConfig.addFilter('structureHostForApi', structureHostForApi);
+	eleventyConfig.addFilter('removeMarkdown', removeMarkdown);
 
 	// Configure frontmatter parsing
 	eleventyConfig.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});
