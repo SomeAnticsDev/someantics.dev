@@ -37,6 +37,9 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
 	eleventyConfig.addFilter('structureHostForApi', structureHostForApi);
 
+	// Configure frontmatter parsing
+	eleventyConfig.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});
+
 	return {
 		dir: {
 			input: 'src'

@@ -1,4 +1,6 @@
+const {google} = require('calendar-link');
 const moment = require('moment');
+const removeMarkdown = require('remove-markdown');
 
 /**
  * @param {string} prettyTimeOfDay time of day formatted like "12pm"
@@ -48,6 +50,15 @@ module.exports = {
 	eleventyComputed: {
 		date: '{{ page.date }}',
 		dateIso: data => formatIsoDate(data.date, data.timeOfDay),
-		isUpcoming: data => isUpcoming(data.date, data.timeOfDay)
+		isUpcoming: data => isUpcoming(data.date, data.timeOfDay),
+		googleCalendarLink: data => google({
+			title: `Some Antics: ${data.title}`,
+			start: data.dateIso,
+			duration: [1, 'hour'],
+			location: 'https://twitch.tv/SomeAnticsDev',
+			description: data.excerpt ?
+				`${removeMarkdown(data.excerpt.trim())}\n\nhttps://twitch.tv/SomeAnticsDev` :
+				'https://twitch.tv/SomeAnticsDev'
+		})
 	}
 };
