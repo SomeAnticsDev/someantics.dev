@@ -37,6 +37,22 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
 	eleventyConfig.addFilter('structureHostForApi', structureHostForApi);
 
+	// Configure frontmatter parsing
+	eleventyConfig.setFrontMatterParsingOptions({
+		// excerpt: function(file, options) {
+		// 	if (file.content.startsWith('<!DOCTYPE html>')) return 'boop';
+
+		// 	/** @type {string[]} */
+		// 	const lines = file.content.split('\n');
+		// 	const firstH2 = lines.findIndex(line => line.startsWith('##'));
+		// 	const excerpt = lines.slice(0, firstH2).join('\n').trim('\n');
+		// 	console.log(excerpt)
+		// 	return excerpt;
+		// },
+		excerpt: true,
+		excerpt_alias: 'excerpt'
+	});
+
 	return {
 		dir: {
 			input: 'src'
