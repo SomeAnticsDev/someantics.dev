@@ -1,6 +1,6 @@
 ---
-title: Social Media Accessibility, with Alexa Heinrich
-thumbnailTitle: Social Media Accessibility
+title: Making Accessible Social Content with Alexa Heinrich
+thumbnailTitle: Making Accessible Social Content
 hosts:
   - Ben Myers
   - Alexa Heinrich
@@ -13,3 +13,4 @@ What goes into making social media content accessible for everyone? Join us as B
 - [Follow Alexa on Twitter](https://twitter.com/HashtagHeyAlexa)
 - [Alexa's tips for social media accessibility](https://therealalexa.com/accessible-social)
 - [Read Alexa's posts on Medium](https://alexaheinrich.medium.com/)
+- [Social Media Tea](https://socialmediatea.com/home)
