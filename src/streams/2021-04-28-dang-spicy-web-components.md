@@ -26,7 +26,7 @@ Join us on Some Antics as Andy Bell shows us how we can use web components and c
 - [Léonie Watson's web components talk for JSConf.Asia](https://www.youtube.com/watch?v=ZMZMMuXRFcE)
 - [Lit](https://lit.dev/)
 - [Stencil](https://stenciljs.com/docs/introduction)
-- [Web Components Club](https://webcomponents.club/)
+- [Web Components Club (archive)](http://web.archive.org/web/20210226215900/https://webcomponents.club/)
 - [Custom Elements Everywhere](https://custom-elements-everywhere.com/)
 
 ## Transcript
