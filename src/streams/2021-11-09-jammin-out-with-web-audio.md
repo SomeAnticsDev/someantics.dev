@@ -6,7 +6,7 @@ hosts:
   - Austin Crim
 ---
 
-Websites that can be influenced by playing musical instruments? Join us as Ben and [Austin Crim](https://twitter.com/austin_crim) jam out with the Web Audio API!
+Websites that can be influenced by playing musical instruments? Join us as Ben and [Austin Crim](https://twitter.com/crim_codes) jam out with the Web Audio API!
 
 ---
 ## More From Austin
