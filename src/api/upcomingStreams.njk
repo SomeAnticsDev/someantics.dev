@@ -23,7 +23,10 @@ permalink: /api/upcomingStreams.json
 				{%- endfor %}
 			],
 			"slug": "{{ stream.fileSlug }}",
-			"url": "{{ site }}{{ stream.url }}"
+			"url": "{{ site }}{{ stream.url }}",
+			"calendarLinks": {
+				"google": "{{ stream.data.googleCalendarLink }}"
+			}
 		}{%if not loop.last %},{% endif %}
 		{%- endfor %}
 	]
