@@ -1,6 +1,6 @@
 ---
-title: "Jammin' Out with the Web Audio API, with Austin Crim"
-thumbnailTitle: "Jammin' Out with the Web Audio API"
+title: "Jammin’ Out with the Web Audio API, with Austin Crim"
+thumbnailTitle: "Jammin’ Out with the Web Audio API"
 hosts:
   - Ben Myers
   - Austin Crim
