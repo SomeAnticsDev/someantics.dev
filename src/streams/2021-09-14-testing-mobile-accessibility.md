@@ -404,13 +404,13 @@ I think one of the things that's been striking me about this conversation, and p
 
 <i class="timecode">[00:47:57]</i> **Ben:** I work in banking, right? And it's like, yeah, if you don't have access to banking, like, that is a critical issue. 
 
-<i class="timecode">[00:48:05]</i> **Crystal:** Yes. Yeah, and there's… and I know I've gone to, um, like before my bank really had a good mobile, like, a good native application, going to their mobile site, trying to log in, you know, with a screenreader, and I was like, "Oh, I'm going to have go… in person… to a teller!" I'm like, "How do I do that? "You know? And, you know, and it was one of those things of like, you know… and they came out very, you know, soon after with a native application, but that doesn't help people from, you know, where it's like… "I don't have reliable internet for my desktop. You don't have a native, you know, application that, you know, solves some of these issues, you know. I'm going onto your mobile website, but your mobile website is just your desktop site on a mobile screen and it is all over the place."
+<i class="timecode">[00:48:05]</i> **Crystal:** Yes. Yeah, and there's… and I know I've gone to, um, like before my bank really had a good mobile, like, a good native application, going to their mobile site, trying to log in, you know, with a screenreader, and I was like, "Oh, I'm going to have go… in person… to a teller!" I'm like, "How do I do that?" You know? And, you know, and it was one of those things of like, you know… and they came out very, you know, soon after with a native application, but that doesn't help people from, you know, where it's like… "I don't have reliable internet for my desktop. You don't have a native, you know, application that, you know, solves some of these issues, you know. I'm going onto your mobile website, but your mobile website is just your desktop site on a mobile screen and it is all over the place."
 
 <i class="timecode">[00:49:15]</i> **Ben:** Mhmm.
 
 <i class="brackets">[Crystal laughs]</i>
 
-Joe is talking about kind of, like, the commentshat we, you especially, were making about, like, you know, most folks that are on their mobile devices, like, that's their primary way of accessing the web. Joe says, "I think this is spot on and really important, as I feel like devs can be really guilty of forgetting about just how many mobile users there are because they're sat in front of a desktop or a laptop all day."
+Joe is talking about kind of, like, the comments that we, you especially, were making about, like, you know, most folks that are on their mobile devices, like, that's their primary way of accessing the web. Joe says, "I think this is spot on and really important, as I feel like devs can be really guilty of forgetting about just how many mobile users there are because they're sat in front of a desktop or a laptop all day."
 
 <i class="timecode">[00:49:38]</i> **Crystal:** Yeah. Yeah, it's one of those things that can be very… it's very easy. And it's also because mobile usage for people — for everyone — but also for disabled people really has grown SO exponentially over the last very short years! And so it's one of those things of, you know, going from, you know, just like, say… beginning of like, I don't know, like 2005, where, yeah, was, there were was, you know, mobile, like there were phones, but they weren't really smart. And then after the iPhone, you know, they're just kind of just there. And then you start getting Android and you know, all these different, you know, and it just really the amount of people — and people realized that it's cheaper to get, you know, a lot of times it's cheaper to get data on your phone for a lot of people than, you know, actually getting internet service in their home.
 
@@ -430,13 +430,13 @@ Joe is talking about kind of, like, the commentshat we, you especially, were mak
 
 <i class="timecode">[00:52:11]</i> **Crystal:** Yes! But you know, it's important to… and so I know it's really hard to get your hands on devices. I was definitely that person when I was doing mobile accessibility asking people, like, "What device is that? Can I borrow it?"
 
-<i class="brackets">[both chuckle]
+<i class="brackets">[both chuckle]</i>
 
 "Can I borrow your phone to test to test something on?" Or asking people to like, you know… But it's important because not everyone, you know, has the newest and greatest thing.
 
 So using a simulator like this is really good. It's not a replacement for the real thing, but, you know, but it definitely can help you get, you know, to get in there and, you know, find some issues. You know, especially if you only have, you know, if you only have one actual device, that has to be it. And then with this, you do find some of those bigger issues that the simulators can find.
 
-Definitely utilize accessibility, like, automation tools, but don't rely on them for everything because, you know, as we talked about, like, you know, the physicality of mobile devices is very important and, you know, these automated tools can only do so much versus actually, you know, like, yeah, propping, you know, like, attaching, you know, a mobile device to, you know, a wheelchair. That's something that actually, you know, you should go to a user and, you know, and ask them to, you know, to do that and see what their experiences are. Again, pay. [laughs]</i> But, you know, nothing's going to — you know, an automated tool can't replicate that.
+Definitely utilize accessibility, like, automation tools, but don't rely on them for everything because, you know, as we talked about, like, you know, the physicality of mobile devices is very important and, you know, these automated tools can only do so much versus actually, you know, like, yeah, propping, you know, like, attaching, you know, a mobile device to, you know, a wheelchair. That's something that actually, you know, you should go to a user and, you know, and ask them to, you know, to do that and see what their experiences are. Again, pay. <i>[laughs]</i> But, you know, nothing's going to — you know, an automated tool can't replicate that.
 
 <i class="timecode">[00:54:12]</i> **Ben:** Mhmm.
 
