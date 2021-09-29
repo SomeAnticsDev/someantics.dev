@@ -1,6 +1,6 @@
 ---
-title: Generative Art with George Francis
-thumbnailTitle: Generative Art
+title: "Let's Make Generative Art with George Francis"
+thumbnailTitle: "Let's Make Generative Art!"
 hosts:
   - Ben Myers
   - George Francis
