@@ -15,7 +15,7 @@ permalink: /api/upcomingStreams.json
 		{
 			"title": "{{ title | safe }}",
 			"fullTitle": "{{ stream.data.title | safe }}",
-			"description": "{{ description | removeMarkdown | trim | safe }}",
+			"description": "{{ description | removeMarkdown | trim | removeNewlines | safe }}",
 			"date": "{{ stream.data.dateIso }}",
 			"hosts": [
 				{%- for host in stream.data.hosts %}

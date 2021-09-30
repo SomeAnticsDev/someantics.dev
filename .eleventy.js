@@ -38,6 +38,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
 	eleventyConfig.addFilter('structureHostForApi', structureHostForApi);
 	eleventyConfig.addFilter('removeMarkdown', removeMarkdown);
+	eleventyConfig.addFilter('removeNewlines', str => str.replace(/\n+/g, ' '));
 
 	// Configure frontmatter parsing
 	eleventyConfig.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});
