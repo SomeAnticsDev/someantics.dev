@@ -1,12 +1,12 @@
 ---
-title: "Let's Make Generative Art with George Francis"
-thumbnailTitle: "Let's Make Generative Art!"
+title: Generative Avatars with CSS Houdini, with George Francis
+thumbnailTitle: Generative Avatars with CSS Houdini
 hosts:
   - Ben Myers
   - George Francis
 ---
 
-Listen, I don't know what kind of art we're making yet, but it's gonna be good!
+Join us as we go on a journey through generative art, CSS's new [Houdini APIs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Houdini), and more with generative artist [George Francis](https://twitter.com/georgedoescode)! We'll use these techniques to build out unique generative user avatars! It's going to be one heck of a time.
 
 George Francis is a developer, writer, and generative artist with a passion for teaching the web about creative coding and a love for googly eyes.
 ---
