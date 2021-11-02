@@ -26,7 +26,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy('./src/thumbnails/');
 
 	// Plugins
-	eleventyConfig.addPlugin(sass);
+	eleventyConfig.addPlugin(sass, {outputDir: '_site/css', remap: true});
 	eleventyConfig.addPlugin(embedYouTube);
 	eleventyConfig.addPlugin(socialImages);
 
