@@ -4,6 +4,9 @@ thumbnailTitle: Building APIs with Deno and Oak
 hosts:
   - Ben Myers
   - Anthony Campolo
+demo: https://deno-oak-apis.deno.dev
+sourceCode: https://github.com/SomeAnticsDev/deno-oak-apis
+upload: https://youtu.be/ssosKWNIcwM
 ---
 
 [Anthony Campolo](https://twitter.com/ajcwebdev) returns to the stream to demonstrate 🦕 [Deno](https://deno.land/), an alternative to Node. We're going to take a crack at building a simple REST API with Deno and [oak](https://oakserver.github.io/oak/), and explore how new tools like these can improve our workflow.
