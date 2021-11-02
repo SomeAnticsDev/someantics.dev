@@ -30,6 +30,17 @@
 				<noscript><a href="{{ upload }}">Watch stream on YouTube</a></noscript>
 				{% endif %}
 
+				{% if demo or sourceCode %}
+				<div class="cta-list">
+					{% if demo %}
+					<a href="{{ demo }}" class="cta">Demo</a>
+					{% endif %}
+					{% if sourceCode %}
+					<a href="{{ sourceCode }}" class="cta">Source Code</a>
+					{% endif %}
+				</div>
+				{% endif %}
+
 				{{ content }}
 
 				{% if isUpcoming %}
