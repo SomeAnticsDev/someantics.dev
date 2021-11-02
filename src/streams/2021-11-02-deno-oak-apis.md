@@ -22,3 +22,13 @@ Anthony Campolo is a developer advocate at [StepZen](https://stepzen.com) and a 
 - [Watch Anthony and Ben review Redwood docs!](/redwoodjs-docs/)
 - [Watch Anthony, Dom, and Ben go over accessible routing in Redwood!](/accessible-routing-in-redwoodjs/)
 - [Watch Anthony introduce Ben to Vite!](/vite/)
+
+## Mentioned Links
+
+- [Anthony's First Look at Oak](https://dev.to/ajcwebdev/a-first-look-at-oak-2gob)
+- [Deno installation steps](https://deno.land/#installation)
+- [Deno Deploy](https://deno.com/deploy/)
+- [Anthony's First Look at Deno Deploy](https://dev.to/ajcwebdev/a-first-look-at-deno-deploy-3hmc)
+- [Deno Deploy app for GitHub repos](https://github.com/apps/deno-deploy)
+- [esm.sh](https://esm.sh/)
+- [Ryan Dahl's "10 Things I Regret About Node.js"](https://www.youtube.com/watch?v=M3BM9TB-8yA)
