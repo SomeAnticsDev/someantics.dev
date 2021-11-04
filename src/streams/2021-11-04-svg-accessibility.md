@@ -28,3 +28,4 @@ Carie Fisher is an author, speaker, and developer with over 15 years of tech exp
 - [Cassie Evans](https://www.cassie.codes/)
 - [Eric Bailey on reduced motion](https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/)
 - [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21/)
+- [Good, Better, Best: Untangling The Complex World Of Accessible Patterns](https://www.smashingmagazine.com/2021/03/good-better-best-untangling-complex-world-accessible-patterns/)
