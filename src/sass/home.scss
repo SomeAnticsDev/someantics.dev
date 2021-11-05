@@ -1,0 +1,16 @@
+main {
+	max-width: 60ch;
+	margin: 0 auto;
+}
+
+article {
+	background-color: #EBE1F3;
+	margin: 2em 3em;
+	padding: 1em 2em;
+}
+
+ul {
+	li + li {
+		margin-top: 1.25em;
+	}
+}

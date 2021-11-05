@@ -1,3 +1,4 @@
+const sass = require('eleventy-plugin-sass');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
 const socialImages = require('@11tyrocks/eleventy-plugin-social-images');
 const moment = require('moment');
@@ -25,6 +26,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy('./src/thumbnails/');
 
 	// Plugins
+	eleventyConfig.addPlugin(sass, {outputDir: '_site/css', remap: true});
 	eleventyConfig.addPlugin(embedYouTube);
 	eleventyConfig.addPlugin(socialImages);
 
