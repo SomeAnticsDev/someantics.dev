@@ -9,10 +9,15 @@
 	<title>Some Antics</title>
 </head>
 <body>
-	{% include header.html, title: 'Some Antics!' %}
 	<main>
-		<h1>Welcome to Some Antics!</h1>
-		<p>Anything is possible at SomeAnticscom</p>
+		<h1>Some Antics</h1>
+		<p><a href="https://twitch.tv/SomeAnticsDev">Some Antics</a> is a weekly show about <strong>accessibility</strong> and <strong>core web technologies</strong> by <a href="https://benmyers.dev">Ben Myers</a>. Each week, I invite an expert on who can teach me something about building great online user experiences in a hands-on way.</p>
+
+		<article>
+			<p>
+				<strong>This site is redesigning out in the open!</strong> It's not pretty by any stretch, but I'm working on making it better.
+			</p>
+		</article>
 
 		<ul>
 		{% for stream in collections.streams %}
