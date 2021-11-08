@@ -23,8 +23,10 @@ function formatIsoDate(date, time) {
 	
 	const truncatedDate = date.substring(0, date.indexOf(' 00:00:00'));
 	const formattedTime = formatTimeOfDay(time);
+	const isDaylightSavings = moment(date).isDST();
+	const timezone = isDaylightSavings ? 'CDT' : 'CST';
 
-	return new Date(`${truncatedDate} ${formattedTime} CDT`).toISOString();
+	return new Date(`${truncatedDate} ${formattedTime} ${timezone}`).toISOString();
 }
 
 /**
