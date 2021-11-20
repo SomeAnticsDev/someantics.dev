@@ -1,6 +1,7 @@
 ---
 title: Making Accessible Design Systems with Ashlae Nelms
 thumbnailTitle: Making Accessible Design Systems
+timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=c9tzyDTB5lk
 sourceCode: https://github.com/SomeAnticsDev/style-dictionary-design-system
 hosts:

@@ -1,6 +1,7 @@
 ---
 title: Writing Tests First with Adrianne Mallett
 thumbnailTitle: Writing Tests First
+timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=XP8vY9BhkOg
 sourceCode: https://github.com/SomeAnticsDev/tdd-fizzbuzz
 hosts:

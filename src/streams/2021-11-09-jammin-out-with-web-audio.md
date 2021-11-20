@@ -1,6 +1,7 @@
 ---
 title: "Jammin’ Out with the Web Audio API, with Austin Crim"
 thumbnailTitle: "Jammin’ Out with the Web Audio API"
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Austin Crim

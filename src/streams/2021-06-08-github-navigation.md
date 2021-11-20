@@ -1,6 +1,7 @@
 ---
 title: "Let's Clone GitHub's Navigation Widget with Chantastic"
 thumbnailTitle: "Let's Clone GitHub's Navigation Widget"
+timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=vCHFkKRU1Ro
 sourceCode: https://github.com/SomeAnticsDev/main-nav
 hosts:

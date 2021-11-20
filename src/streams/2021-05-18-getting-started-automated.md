@@ -1,6 +1,7 @@
 ---
 title: Getting Started with Automated Accessibility Testing, with Lucia Cerchie
 thumbnailTitle: Getting Started with Automated Accessibility Testing
+timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=4rUcwB7MuqU
 hosts:
   - Ben Myers

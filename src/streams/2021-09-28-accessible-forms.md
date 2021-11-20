@@ -1,6 +1,7 @@
 ---
 title: Accessible Forms with Rachele DiTullio
 thumbnailTitle: Accessible Forms
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Rachele DiTullio

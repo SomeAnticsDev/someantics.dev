@@ -1,6 +1,7 @@
 ---
 title: The Beginner's Guide to PostgreSQL with Sarah Beardsley
 thumbnailTitle: The Beginner's Guide to PostgreSQL
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Sarah Beardsley

@@ -1,6 +1,7 @@
 ---
 title: "Ask Me Anything About Accessibility for Global Accessibility Awareness Day"
 thumbnailTitle: "Ask Me Anything About Accessibility for #GAAD"
+timeOfDay: 12pm
 hosts:
   - Ben Myers
 upload: https://youtu.be/OeFwl1XYZsY

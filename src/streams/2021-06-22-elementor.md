@@ -1,6 +1,7 @@
 ---
 title: Building Accessible WordPress Sites with Elementor, with Anne-Mieke Bovelett
 thumbnailTitle: Accessible WordPress Sites with Elementor
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Anne-Mieke Bovelett

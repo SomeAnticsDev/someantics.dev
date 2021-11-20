@@ -1,6 +1,7 @@
 ---
 title: Generative Avatars with CSS Houdini, with George Francis
 thumbnailTitle: Generative Avatars with CSS Houdini
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - George Francis

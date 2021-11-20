@@ -1,6 +1,7 @@
 ---
 title: Building APIs with Deno and Oak, with Anthony Campolo
 thumbnailTitle: Building APIs with Deno and Oak
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Anthony Campolo

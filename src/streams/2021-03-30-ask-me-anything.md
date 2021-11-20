@@ -1,5 +1,6 @@
 ---
 title: 'Ask Me Anything — #a11y, Web Dev, and More!'
+timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=4XXGDUoL90M
 hosts:
   - Ben Myers

@@ -1,6 +1,7 @@
 ---
 title: Personalizing User Interfaces for Accessibility with Joe Lamyman
 thumbnailTitle: Personalizing UIs for Accessibility
+timeOfDay: 12pm
 upload: https://youtu.be/jq7mFctwVcA
 hosts:
   - Ben Myers

@@ -1,6 +1,7 @@
 ---
 title: Putting RedwoodJS Docs to the Test with Anthony Campolo
 thumbnailTitle: Putting RedwoodJS Docs to the Test
+timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=ois3P63Yiwc
 hosts:
   - Ben Myers

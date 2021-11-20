@@ -1,6 +1,7 @@
 ---
 title: Auditing Websites for Accessibility with Anna E. Cook
 thumbnailTitle: Auditing Websites for Accessibility
+timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=CjX91QlgW-g
 demo: https://docs.google.com/spreadsheets/d/1VsSMRVohY9gvNCaO3gr9KtWcAb1jOnDvgN9g4VGLYqU/
 hosts:

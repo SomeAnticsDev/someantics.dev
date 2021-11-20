@@ -1,6 +1,7 @@
 ---
 title: Secrets of Accessible Routing with the RedwoodJS Core Team
 thumbnailTitle: Accessible Routing in RedwoodJS
+timeOfDay: 12pm
 sourceCode: https://github.com/SomeAnticsDev/redwood-route-annoucer-demo
 upload: https://www.youtube.com/watch?v=LSuDHfAsBCE
 hosts:

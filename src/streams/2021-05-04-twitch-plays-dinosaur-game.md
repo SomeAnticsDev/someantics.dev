@@ -1,5 +1,6 @@
 ---
 title: Let's Build the Jumping Dinosaur Game… Powered By Twitch!
+timeOfDay: 12pm
 hosts:
   - Ben Myers
 ---

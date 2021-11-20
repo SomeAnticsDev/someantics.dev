@@ -1,5 +1,6 @@
 ---
 title: Can We Build a Progressively Enhanced Rating Widget?
+timeOfDay: 12pm
 sourceCode: https://codepen.io/bendmyers-the-typescripter/pen/qBqQqZO
 upload: https://www.youtube.com/watch?v=g0MVX3nWlJs
 hosts:

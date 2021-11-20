@@ -1,6 +1,7 @@
 ---
 title: Disabling Buttons Inclusively with Sandrina Pereira
 thumbnailTitle: Disabling Buttons Inclusively
+timeOfDay: 12pm
 addNbsp: false
 hosts:
   - Ben Myers

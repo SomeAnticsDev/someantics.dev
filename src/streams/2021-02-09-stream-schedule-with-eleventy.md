@@ -1,6 +1,7 @@
 ---
 title: Let's Build a Stream Schedule with Eleventy!
 thumbnailTitle: Stream Schedule with Eleventy
+timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=JQzIuDGSJJg
 hosts:
   - Ben Myers

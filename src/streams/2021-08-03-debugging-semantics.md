@@ -1,6 +1,7 @@
 ---
 title: Debugging Semantic HTML Elements for Accessibility, with Ashlee Boyer
 thumbnailTitle: Debugging Semantic HTML Elements for Accessibility
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Ashlee Boyer

@@ -1,6 +1,7 @@
 ---
 title: Building Accessible Tabs in React with Chance the Dev
 thumbnailTitle: Accessible Tabs in React
+timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=nq2LA9wDt9s
 sourceCode: https://github.com/SomeAnticsDev/accessible-tabs
 hosts:

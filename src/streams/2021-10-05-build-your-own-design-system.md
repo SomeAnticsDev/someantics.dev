@@ -1,6 +1,7 @@
 ---
 title: Build Your Own Design System with Mike Aparicio
 thumbnailTitle: Build Your Own Design System
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Mike Aparicio

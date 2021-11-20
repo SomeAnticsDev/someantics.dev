@@ -1,6 +1,7 @@
 ---
 title: Testing Mobile Accessibility with Crystal Preston-Watson
 thumbnailTitle: Testing Mobile Accessibility
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Crystal Preston-Watson

@@ -1,6 +1,7 @@
 ---
 title: Accessible Dialogs in React, with Chance Strickland
 thumbnailTitle: Accessible Dialogs in React
+timeOfDay: 12pm
 sourceCode: https://github.com/SomeAnticsDev/react-dialog
 demo: https://some-antics-react-dialog.netlify.app/
 addNbsp: false

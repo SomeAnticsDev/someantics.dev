@@ -1,6 +1,7 @@
 ---
 title: Processing Styles, Templates, React, and More with Eleventy Custom Extensions, with Ben Holmes
 thumbnailTitle: Processing Styles, Templates, React, and More with Eleventy Custom Extensions!
+timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=q54IkBUoeeo
 sourceCode: https://github.com/SomeAnticsDev/eleventy-custom-extensions
 hosts:

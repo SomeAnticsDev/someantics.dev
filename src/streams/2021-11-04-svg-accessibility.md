@@ -1,6 +1,7 @@
 ---
 title: SVG Accessibility with Carie Fisher
 thumbnailTitle: SVG Accessibility
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Carie Fisher

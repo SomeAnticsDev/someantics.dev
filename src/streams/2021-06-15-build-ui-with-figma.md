@@ -1,6 +1,7 @@
 ---
 title: "Let's Build a UI with Figma, with Martin Bavio"
 thumbnailTitle: "Let's Build a UI with Figma!"
+timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Martin Bavio

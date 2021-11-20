@@ -44,10 +44,12 @@ function isUpcoming(date, time) {
 	return now.isBefore(stream);
 }
 
+const microsoftStartDate = moment('2021-11-15');
+
 module.exports = {
 	layout: 'stream.html',
 	permalink: '/{{ page.fileSlug }}/',
-	timeOfDay: '12pm',
+	timeOfDay: '2pm',
 	addNbsp: true,
 	eleventyComputed: {
 		date: '{{ page.date }}',
