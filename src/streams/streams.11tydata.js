@@ -44,8 +44,6 @@ function isUpcoming(date, time) {
 	return now.isBefore(stream);
 }
 
-const microsoftStartDate = moment('2021-11-15');
-
 module.exports = {
 	layout: 'stream.html',
 	permalink: '/{{ page.fileSlug }}/',
