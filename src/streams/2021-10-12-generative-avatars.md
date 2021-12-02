@@ -5,6 +5,7 @@ timeOfDay: 12pm
 hosts:
   - Ben Myers
   - George Francis
+upload: https://www.youtube.com/watch?v=U7mR0mgWx7A
 ---
 
 Join us as we go on a journey through generative art, CSS's new [Houdini APIs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Houdini), and more with generative artist [George Francis](https://twitter.com/georgedoescode)! We'll use these techniques to build out unique generative user avatars! It's going to be one heck of a time.
