@@ -46,7 +46,10 @@ function isUpcoming(date, time) {
 
 module.exports = {
 	layout: 'stream.html',
-	permalink: '/{{ page.fileSlug }}/',
+	permalink: {
+		build: '/{{ page.fileSlug }}/',
+		calendar: '/{{ page.fileSlug }}/calendar'
+	},
 	timeOfDay: '2pm',
 	addNbsp: true,
 	eleventyComputed: {
