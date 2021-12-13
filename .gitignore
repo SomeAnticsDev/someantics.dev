@@ -7,3 +7,5 @@ pages.json
 # src/thumbnail.html
 # Local Netlify folder
 .netlify
+netlify/functions/calendar/**
+!netlify/functions/calendar/index.js
