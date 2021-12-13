@@ -13,17 +13,16 @@ async function handler(event) {
 
 	try {
 		let [page] = await elev.getOutput();
-		console.log({page})
-
+		let {googleCalendarLink} = page.data;
+ 
 		// If you want some of the data cascade available in `page.data`, use `eleventyConfig.dataFilterSelectors`.
 		// Read more: https://www.11ty.dev/docs/config/#data-filter-selectors
 
 		return {
-			statusCode: 200,
+			statusCode: 302,
 			headers: {
-				'Content-Type': 'text/html; charset=UTF-8',
-			},
-			body: page.content,
+				'Location': googleCalendarLink
+			}
 		};
 	} catch (error) {
 		// Only console log for matching serverless paths

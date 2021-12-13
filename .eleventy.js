@@ -27,6 +27,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy('./src/thumbnails/');
 
 	// Plugins
+	eleventyConfig.dataFilterSelectors.add('googleCalendarLink');
 	eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
 		name: 'calendar',
 		functionsDir: './netlify/functions',
