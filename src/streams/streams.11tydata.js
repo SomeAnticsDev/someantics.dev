@@ -21,7 +21,7 @@ function formatTimeOfDay(prettyTimeOfDay) {
 function formatIsoDate(date, time) {
 	if (!date) return;
 	
-	const truncatedDate = date.substring(0, date.indexOf(' 00:00:00'));
+	const truncatedDate = date.substring(0, date.search(/\s\d\d:\d\d:\d\d/));
 	const formattedTime = formatTimeOfDay(time);
 	const isDaylightSavings = moment(date).isDST();
 	const timezone = isDaylightSavings ? 'CDT' : 'CST';

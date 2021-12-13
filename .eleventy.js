@@ -44,6 +44,7 @@ module.exports = (eleventyConfig) => {
 
 	// Configure frontmatter parsing
 	eleventyConfig.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});
+	eleventyConfig.setLiquidOptions({dynamicPartials: false});
 
 	return {
 		dir: {
