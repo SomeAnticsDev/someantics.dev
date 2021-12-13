@@ -1,4 +1,3 @@
-const {EleventyServerlessBundlerPlugin} = require('@11ty/eleventy');
 const sass = require('eleventy-plugin-sass');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
 const socialImages = require('@11tyrocks/eleventy-plugin-social-images');
@@ -27,12 +26,6 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy('./src/thumbnails/');
 
 	// Plugins
-	eleventyConfig.dataFilterSelectors.add('googleCalendarLink');
-	eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
-		name: 'calendar',
-		functionsDir: './netlify/functions',
-		copy: ['src/utils/']
-	});
 	eleventyConfig.addPlugin(sass, {outputDir: '_site/css', remap: true});
 	eleventyConfig.addPlugin(embedYouTube);
 	eleventyConfig.addPlugin(socialImages);
@@ -51,7 +44,6 @@ module.exports = (eleventyConfig) => {
 
 	// Configure frontmatter parsing
 	eleventyConfig.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});
-	eleventyConfig.setLiquidOptions({dynamicPartials: false});
 
 	return {
 		dir: {
