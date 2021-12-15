@@ -116,17 +116,32 @@
 			z-index: 1;
 			background-image: linear-gradient(to left, #4C1074, #743c9b);
 		}
+
+		.terrible {
+			background: linear-gradient(
+				90deg,
+				tomato 0%,
+				rgb(255, 255, 0) 25%, 
+				rgb(0, 188, 212) 50%, 
+				rgb(238, 130, 238) 100%
+			);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-style: normal;
+			font-family: 'Comic Sans MS', display;
+		}
 	</style>
 </head>
 <body>
 	<div class="flex">
 		<header>
-			<h1>Audit Sites for<br />Accessibility</h1>
-			<p id="hosts">with <b>Hidde de Vries</b> and <b>Ben Myers</b></p>
-			<footer>Tuesday, December 14 at 2pm Central</footer>
+			<h1>Let&#8217;s Build <i class="terrible">Terrible</i><br />Web Components</h1>
+			<p id="hosts">with <b>Alex Riviere</b> and <b>Ben Myers</b></p>
+			<footer>Tuesday, January 18 at 2pm Central</footer>
 		</header>
 		<main>
-			<img id="avatar-1" src="https://res.cloudinary.com/bendmyers/image/upload/v1638991345/Some%20Antics%20Avatars/Hidde%20de%20Vries.jpg" alt="" />
+			<img id="avatar-1" src="https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1639093554/Some%20Antics%20Avatars/Alex%20Riviere.jpg" alt="" />
 			<div class="ring"></div>
 			<img id="avatar-2" src="{{ 'Ben Myers' | avatar}}" alt="" />
 			<div class="ring"></div>
