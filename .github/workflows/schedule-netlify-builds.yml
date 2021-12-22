@@ -2,8 +2,8 @@ name: Schedule Netlify Build
 on:
   schedule:
     # Customize schedule expression at crontab.guru
-    # This one runs at 7:15pm GMT daily (1:15pm CST, 2:15pm CDT)
-    - cron: "15 19 * * *"
+    # This one runs at 9:15pm GMT daily (3:15pm CST, 4:15pm CDT)
+    - cron: "15 21 * * *"
 jobs:
   build:
     name: Call Netlify build hook
