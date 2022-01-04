@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "ELEVENTY_ENV=production eleventy",
-    "start": "eleventy --serve",
+    "dev": "eleventy --serve",
     "thumbnails": "npm run build ; node src/bin/thumbnails.js"
   },
   "author": "",
