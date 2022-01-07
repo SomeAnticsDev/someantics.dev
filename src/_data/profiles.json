@@ -43,6 +43,13 @@
 		"twitter": "HashtagHeyAlexa",
 		"website": "https://therealalexa.com"
 	},
+	"Alistair Shepherd": {
+		"name": "Alistair Shepherd",
+		"pronouns": "he/him",
+		"twitter": "Accudio",
+		"website": "https://alistairshepherd.uk",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1641569708/Some%20Antics%20Avatars/Alistair%20Shepherd.jpg"
+	},
 	"Andy Bell": {
 		"name": "Andy Bell",
 		"pronouns": "he/him",
@@ -204,6 +211,12 @@
 		"twitter": "peruvianidol",
 		"twitch": "peruvianidol",
 		"website": "https://mikeaparicio.com"
+	},
+	"Patrick Hulce": {
+		"name": "Patrick Hulce",
+		"pronouns": "he/him",
+		"twitter": "patrickhulce",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1641569663/Some%20Antics%20Avatars/Patrick%20Hulce.jpg"
 	},
 	"Rachel Leggett": {
 		"name": "Rachel Leggett",
