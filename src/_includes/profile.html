@@ -9,39 +9,82 @@
 	<dl>
 		{% if profile.pronouns %}
 		<div>
-			<dt>{% include icons/speech-bubble.svg %}<span class="visually-hidden">Pronouns</span></dt>
+			<dt>
+				{% include icons/speech-bubble.svg %}
+				<span class="visually-hidden">{{ profile.name }}'s Pronouns</span>
+			</dt>
 			<dd>{{ profile.pronouns }}</dd>
 		</div>
 		{% endif %}
 		{% if profile.twitter %}
 		<div>
-			<dt>{% include icons/twitter.svg %}<span class="visually-hidden">Twitter</span></dt>
+			<dt>
+				{% include icons/twitter.svg %}
+				<span class="visually-hidden" id="twitter-{{ profile.name | removeSpecialCharacters | slug }}">
+					{{ profile.name }}'s Twitter
+				</span>
+			</dt>
 			<dd>
-				<a href="https://twitter.com/{{ profile.twitter }}">@{{ profile.twitter }}</a>
+				<a
+					href="https://twitter.com/{{ profile.twitter }}"
+					aria-describedby="twitter-{{ profile.name | removeSpecialCharacters | slug }}"
+				>
+					@{{ profile.twitter }}
+				</a>
 			</dd>
 		</div>
 		{% endif %}
 		{% if profile.instagram %}
 		<div>
-			<dt>{% include icons/instagram.svg %}<span class="visually-hidden">Instagram</span></dt>
+			<dt>
+				{% include icons/instagram.svg %}
+				<span class="visually-hidden" id="instagram-{{ profile.name | removeSpecialCharacters | slug }}">
+					{{ profile.name }}'s Instagram
+				</span>
+			</dt>
 			<dd>
-				<a href="https://instagram.com/{{ profile.instagram }}/">{{ profile.instagram }}</a>
+				<a
+					href="https://instagram.com/{{ profile.instagram }}/"
+					aria-describedby="instagram-{{ profile.name | removeSpecialCharacters | slug }}"
+				>
+					{{ profile.instagram }}
+				</a>
 			</dd>
 		</div>
 		{% endif %}
 		{% if profile.twitch %}
 		<div>
-			<dt>{% include icons/twitch.svg %}<span class="visually-hidden">Twitch</span></dt>
+			<dt>
+				{% include icons/twitch.svg %}
+				<span class="visually-hidden" id="twitch-{{ profile.name | removeSpecialCharacters | slug }}">
+					{{ profile.name }}'s Twitch
+				</span>
+			</dt>
 			<dd>
-				<a href="https://twitch.tv/{{ profile.twitch }}">{{ profile.twitch }}</a>
+				<a
+					href="https://twitch.tv/{{ profile.twitch }}"
+					aria-describedby="twitch-{{ profile.name | removeSpecialCharacters | slug }}"
+				>
+					{{ profile.twitch }}
+				</a>
 			</dd>
 		</div>
 		{% endif %}
 		{% if profile.website %}
 		<div>
-			<dt>{% include icons/link.svg %}<span class="visually-hidden">Website</span></dt>
+			<dt>
+				{% include icons/link.svg %}
+				<span class="visually-hidden" id="website-{{ profile.name | removeSpecialCharacters | slug }}">
+					{{ profile.name }}'s Website
+				</span>
+			</dt>
 			<dd>
-				<a href="{{ profile.website }}">{{ profile.website | normalizeUrl }}</a>
+				<a
+					href="{{ profile.website }}"
+					aria-describedby="website-{{ profile.name | removeSpecialCharacters | slug }}"
+				>
+					{{ profile.website | normalizeUrl }}
+				</a>
 			</dd>
 		</div>
 		{% endif %}
