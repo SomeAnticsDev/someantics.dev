@@ -1,6 +1,6 @@
 ---
-title: Terrible Web Components with Alex Riviere
-thumbnailTitle: Terrible Web Components
+title: "Let's Build Terrible Web Components with Alex Riviere"
+thumbnailTitle: "Let's Build Terrible Web Components"
 hosts:
   - Ben Myers
   - Alex Riviere
