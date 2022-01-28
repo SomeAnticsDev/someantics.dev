@@ -9,3 +9,6 @@
 {% endunless %}
 <meta property="twitter:site" content="@SomeAnticsDev" />
 <meta property="twitter:creator" content="@BenDMyers" />
+{% if upload %}
+<meta name="keywords" content="{{ upload }}" />
+{% endif %}
