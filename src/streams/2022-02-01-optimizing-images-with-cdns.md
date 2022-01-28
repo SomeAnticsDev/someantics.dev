@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Images with CDNs, Alistair Shepherd"
+title: "Optimizing Images with CDNs, with Alistair Shepherd"
 thumbnailTitle: Optimizing Images with CDNs
 hosts:
   - Ben Myers
