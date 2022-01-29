@@ -17,15 +17,15 @@ Join Ben and guests [Dom Saadi](https://twitter.com/desaadi307) and [Anthony Cam
 ## Mentioned Links
 
 - [RedwoodJS](https://redwoodjs.com)
-- [Accessibility conversations on Redwood forums](https://community.redwoodjs.com/t/making-redwoodjs-accessible/1680)
+- [Accessibility conversations on RedwoodJS forums](https://community.redwoodjs.com/t/making-redwoodjs-accessible/1680)
 - ["Inclusively Hidden" by Scott O'Hara](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html)
 - [Tailwind docs on screenreader support](https://tailwindcss.com/docs/screen-readers)
-- [David Luhr's Redwood issue](https://github.com/redwoodjs/redwood/issues/540)
+- [David Luhr's RedwoodJS issue](https://github.com/redwoodjs/redwood/issues/540)
 - [Marcy Sutton's user testing for accessible routing](https://www.gatsbyjs.com/blog/2019-07-11-user-testing-accessible-client-routing/)
 - [Madalyn Parker's client-side routing blogpost](https://www.gatsbyjs.com/blog/2020-02-10-accessible-client-side-routing-improvements/)
 - [Madalyn Parker's client-side routing pull request](https://github.com/gatsbyjs/gatsby/pull/26376)
 - [Kyle Boss's pull request on Next.js](https://github.com/vercel/next.js/pull/20428)
-- [Dom's Redwood pull request for accessible routing](https://github.com/redwoodjs/redwood/pull/1849)
+- [Dom's RedwoodJS pull request for accessible routing](https://github.com/redwoodjs/redwood/pull/1849)
 
 ## Transcript
 
