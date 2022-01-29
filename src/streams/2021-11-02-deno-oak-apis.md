@@ -20,8 +20,8 @@ Anthony Campolo is a developer advocate at [StepZen](https://stepzen.com) and a 
 - [Follow Anthony on Twitter](https://twitter.com/ajcwebdev)
 - [Read Anthony's posts on Dev.to](https://dev.to/ajcwebdev)
 - [Read Anthony's series on modern frontend build tools](https://dev.to/ajcwebdev/series/11575)
-- [Watch Anthony and Ben review Redwood docs!](/redwoodjs-docs/)
-- [Watch Anthony, Dom, and Ben go over accessible routing in Redwood!](/accessible-routing-in-redwoodjs/)
+- [Watch Anthony and Ben review RedwoodJS docs!](/redwoodjs-docs/)
+- [Watch Anthony, Dom, and Ben go over accessible routing in RedwoodJS!](/accessible-routing-in-redwoodjs/)
 - [Watch Anthony introduce Ben to Vite!](/vite/)
 
 ## Mentioned Links
