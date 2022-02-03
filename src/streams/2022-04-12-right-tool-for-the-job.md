@@ -14,5 +14,6 @@ Building on the Jamstack opens doors for lightweight, performant websites — an
 
 - [Follow Salma on Twitter](https://twitter.com/whitep4nth3r)
 - [Watch Salma's streams on Twitch](https://twitch.tv/whitep4nth3r)
+- [Watch Salma's videos on YouTube](https://www.youtube.com/c/whitep4nth3r)
 - [The Claw team](https://theclaw.team)
 - [Join The Claw's Discord server](https://discord.com/invite/theclaw)
