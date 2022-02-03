@@ -246,6 +246,13 @@
 		"pronouns": "he/him",
 		"twitter": "thatrandybrown"
 	},
+	"Salma Alam-Naylor": {
+		"name": "Salma Alam-Naylor",
+		"pronouns": "she/her",
+		"twitter": "whitep4nth3r",
+		"twitch": "whitep4nth3r",
+		"website": "https://whitep4nth3r.com"
+	},
 	"Sandrina Pereira": {
 		"name": "Sandrina Pereira",
 		"pronouns": "she/her",
@@ -282,6 +289,13 @@
 		"twitter": "toddlibby",
 		"twitch": "toddlibby",
 		"website": "https://toddl.dev"
+	},
+	"Travis Waith-Mair": {
+		"name": "Travis Waith-Mair",
+		"pronouns": "he/him",
+		"twitter": "travisWaithMair",
+		"twitch": "BuildingBedrockLayout",
+		"website": "https://non-traditional.dev/"
 	},
 	"Tuna": {
 		"name": "Tuna the Cat",
