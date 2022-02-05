@@ -1,6 +1,6 @@
 ---
-title: Building in SvelteKit with Brittney Postma
-thumbnailTitle: Building in SvelteKit
+title: Build Web Apps in SvelteKit with Brittney Postma
+thumbnailTitle: Build Web Apps in SvelteKit
 hosts:
   - Ben Myers
   - Brittney Postma
