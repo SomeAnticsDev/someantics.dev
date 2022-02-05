@@ -1,6 +1,6 @@
 ---
-title: Build Web Apps in SvelteKit with Brittney Postma
-thumbnailTitle: Build Web Apps in SvelteKit
+title: Build a Component Library in SvelteKit with Brittney Postma
+thumbnailTitle: Build a Component Library in SvelteKit
 hosts:
   - Ben Myers
   - Brittney Postma
