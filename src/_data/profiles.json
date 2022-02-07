@@ -5,6 +5,13 @@
 		"twitter": "SomeAnticsDev",
 		"website": "https://benmyers.dev"
 	},
+	"Adrián Bolonio": {
+		"name": "Adrián Bolonio",
+		"pronouns": "he/him",
+		"twitter": "bolonio",
+		"website": "https://www.adrianbolonio.com",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_faces,b_rgb:262c35/v1644247844/Some%20Antics%20Avatars/Adrián%20Bolonio.jpg"
+	},
 	"Adrianne Mallett": {
 		"name": "Adrianne Mallett",
 		"pronouns": "she/her",
