@@ -1,6 +1,7 @@
 const {google} = require('calendar-link');
 const moment = require('moment');
 const removeMarkdown = require('remove-markdown');
+const youtube = require('youtube-info-streams');
 
 /**
  * @param {string} prettyTimeOfDay time of day formatted like "12pm"
@@ -44,6 +45,33 @@ function isUpcoming(date, time) {
 	return now.isBefore(stream);
 }
 
+/**
+ * 
+ * @param {string} youtubeUrl fully qualified URL for YouTube upload
+ * @returns {boolean} whether the video upload is public or not
+ */
+async function getUploadIsPublic(youtubeUrl = '') {
+	if (!process.env.NETLIFY) {
+		return !!youtubeUrl;
+	} else if (!youtubeUrl) {
+		return false;
+	}
+
+	const urlFragments = youtubeUrl.split('/');
+	const videoId = urlFragments[urlFragments.length - 1]
+		.replace('watch?v=', '');
+
+	try {
+		const {videoDetails} = await youtube.info(videoId);
+		const {isPrivate, isUnlisted} = videoDetails;
+		const isPublic = !isPrivate && !isUnlisted;
+		return isPublic;
+	} catch (err) {
+		console.log('Unavailable:', videoId);
+		return false;
+	}
+}
+
 module.exports = {
 	layout: 'stream.html',
 	permalink: '/{{ page.fileSlug }}/',
@@ -61,6 +89,7 @@ module.exports = {
 			description: data.excerpt ?
 				`${removeMarkdown(data.excerpt.trim())}\n\nhttps://twitch.tv/SomeAnticsDev` :
 				'https://twitch.tv/SomeAnticsDev'
-		})
+		}),
+		uploadIsPublic: data => getUploadIsPublic(data.upload)
 	}
 };
