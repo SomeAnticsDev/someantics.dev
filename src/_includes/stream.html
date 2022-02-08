@@ -25,7 +25,7 @@
 			<main id="main-content" style="max-width: 80ch;">
 				<time datetime="{{ date | date: 'YYYY-MM-DD' }}">{{ date | date: "MMM D, YYYY" }}</time>
 
-				{% if upload %}
+				{% if upload and uploadIsPublic %}
 				<p>{{ upload }}</p>
 				<noscript><a href="{{ upload }}">Watch stream on YouTube</a></noscript>
 				{% endif %}

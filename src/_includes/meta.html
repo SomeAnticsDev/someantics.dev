@@ -1,5 +1,5 @@
 <meta property="og:site_name" content="Some Antics" />
-{% if upload %}
+{% if upload and uploadIsPublic %}
 <meta property="og:video" content="{{ upload }}" />
 {% endif %}
 <meta property="twitter:card" content="summary_large_image" />
