@@ -16,4 +16,5 @@ Join us as [Amit Sheen](https://twitter.com/amit_sheen) shows us real-life every
 
 - [Follow Amit on Twitter](https://twitter.com/amit_sheen)
 - [Watch Amit's streams on Twitch](https://twitch.tv/amit_sheen)
+- [Amit's pens on CodePen](https://codepen.io/amit_sheen)
 - [See other presentations Amit has given](https://www.amitsh.com/)
