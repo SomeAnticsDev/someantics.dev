@@ -57,6 +57,13 @@
 		"website": "https://alistairshepherd.uk",
 		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1641569708/Some%20Antics%20Avatars/Alistair%20Shepherd.jpg"
 	},
+	"Amit Sheen": {
+		"name": "Amit Sheen",
+		"pronouns": "he/him",
+		"twitter": "amit_sheen",
+		"twitch": "amit_sheen",
+		"website": "https://amitsh.com"
+	},
 	"Andy Bell": {
 		"name": "Andy Bell",
 		"pronouns": "he/him",
@@ -209,6 +216,12 @@
 		"pronouns": "he/him",
 		"twitter": "kilianvalkhof",
 		"website": "https://kilianvalkhof.com"
+	},
+	"Larry Hudson": {
+		"name": "Larry Hudson",
+		"pronouns": "he/him",
+		"twitter": "larryhudsondev",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1644385830/Some%20Antics%20Avatars/Larry%20Hudson.jpg"
 	},
 	"Lindsay Wardell": {
 		"name": "Lindsay Wardell",
