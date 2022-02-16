@@ -78,6 +78,7 @@ module.exports = {
 	timeOfDay: '2pm',
 	addNbsp: true,
 	eleventyComputed: {
+		cleansedExcerpt: data => (data.excerpt ? removeMarkdown(data.excerpt.trim()) : ''),
 		date: '{{ page.date }}',
 		dateIso: data => formatIsoDate(data.date, data.timeOfDay),
 		isUpcoming: data => isUpcoming(data.date, data.timeOfDay),

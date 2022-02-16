@@ -5,7 +5,8 @@
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content="{{ title }}" />
 {% unless description %}
-<meta property="twitter:description" content="{{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central" />
+<meta property="og:description" content="{{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central{% if cleansedExcerpt %}. {{ cleansedExcerpt }}{% endif %}" />
+<meta property="twitter:description" content="{{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central{% if cleansedExcerpt %}. {{ cleansedExcerpt }}{% endif %}" />
 {% endunless %}
 <meta property="twitter:site" content="@SomeAnticsDev" />
 <meta property="twitter:creator" content="@BenDMyers" />

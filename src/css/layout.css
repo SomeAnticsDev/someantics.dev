@@ -41,7 +41,6 @@ header {
 }
 
 header h1 {
-	/* font-size: 3rem; */
 	font-size: clamp(2rem, -0.875rem + 8.333vw, 3.5rem);
 	max-width: 20ch;
 	font-family: 'Nexa', Verdana, sans-serif;
