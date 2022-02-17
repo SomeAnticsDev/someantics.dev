@@ -20,14 +20,19 @@ function formatTimeOfDay(prettyTimeOfDay) {
  * @returns {string} UTC timestamp for stream
  */
 function formatIsoDate(date, time) {
-	if (!date) return;
-	
-	const truncatedDate = date.substring(0, date.indexOf(' 00:00:00'));
+	console.log('iso', {date, time})
+	if (!date || !time) return;
+
+	const [weekday, month, day, year] = date.split(' ');
+	const truncatedDate = [weekday, month, day, year].join(' ');
 	const formattedTime = formatTimeOfDay(time);
 	const isDaylightSavings = moment(date).isDST();
 	const timezone = isDaylightSavings ? 'CDT' : 'CST';
 
-	return new Date(`${truncatedDate} ${formattedTime} ${timezone}`).toISOString();
+	const gmtDate = new Date(`${truncatedDate} ${formattedTime} ${timezone}`);
+	const centralTimeDate = new Date();
+	centralTimeDate.setDate(gmtDate.getDate() + 1);
+	return centralTimeDate.toISOString();
 }
 
 /**
@@ -37,6 +42,7 @@ function formatIsoDate(date, time) {
  * @returns {boolean} `true` if stream is in the future; `false` otherwise
  */
 function isUpcoming(date, time) {
+	console.log({date, time})
 	if (!date || !time) return;
 
 	const utc = formatIsoDate(date, time);
