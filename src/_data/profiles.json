@@ -164,6 +164,13 @@
 		"twitter": "dcgoodwin2112",
 		"website": "https://dcgoodwin.dev"
 	},
+	"Dave Rupert": {
+		"name": "Dave Rupert",
+		"pronouns": "he/him",
+		"twitter": "davatron5000",
+		"website": "https://daverupert.com",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1645054954/Some%20Antics%20Avatars/Dave%20Rupert.jpg"
+	},
 	"Dom Saadi": {
 		"name": "Dom Saadi",
 		"pronouns": "he/him",
