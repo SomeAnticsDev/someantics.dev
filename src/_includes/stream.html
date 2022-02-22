@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/layout.css" />
-	{% include 'fonts.html' %}
+	{% include fonts.html %}
 	<title>{{ title }} | Some Antics</title>
 	<meta property="og:image" content="{{ site }}/thumbnails/{{ page.fileSlug }}.png" />
 	{% assign thumbTile = title %}
@@ -15,10 +15,10 @@
 	<meta property="og:image:alt" content="{{ thumbTitle }} with {{ hosts | formatHosts }}. {{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central." />
 	<meta name="twitter:image" content="{{ site }}/thumbnails/{{ page.fileSlug }}.png" />
 	<meta property="twitter:image:alt" content="{{ thumbTitle }} with {{ hosts | formatHosts }}. {{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central." />
-	{% include 'meta.html' %}
+	{% include meta.html %}
 </head>
 <body>
-	{% include 'header.html', title: title %}
+	{% include header.html, title: title %}
 
 	<div class="body">
 		<div class="left">
@@ -45,14 +45,14 @@
 
 				{% if isUpcoming %}
 				<div class="calendar-link">
-					<a class="cta" href="{{ googleCalendarLink }}">{% include 'icons/calendar.svg' %} Add to Calendar</a>
+					<a class="cta" href="{{ googleCalendarLink }}">{% include icons/calendar.svg %} Add to Calendar</a>
 				</div>
 				{% endif %}
 			</main>
 		</div>
 
 		<aside id="hosts" aria-label="Hosts">
-			{% for host in hosts %}{% include 'profile.html', profile: profiles[host] %}{% endfor %}
+			{% for host in hosts %}{% include profile.html, profile: profiles[host] %}{% endfor %}
 		</aside>
 	</div>
 </body>
