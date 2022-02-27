@@ -20,7 +20,7 @@ function formatTimeOfDay(prettyTimeOfDay) {
  * @returns {string} UTC timestamp for stream
  */
 function formatIsoDate(date, time) {
-	console.log('iso', {date, time})
+	// console.log('iso', {date, time})
 	if (!date || !time) return;
 
 	const [weekday, month, day, year] = date.split(' ');
@@ -42,7 +42,7 @@ function formatIsoDate(date, time) {
  * @returns {boolean} `true` if stream is in the future; `false` otherwise
  */
 function isUpcoming(date, time) {
-	console.log({date, time})
+	// console.log({date, time})
 	if (!date || !time) return;
 
 	const utc = formatIsoDate(date, time);
