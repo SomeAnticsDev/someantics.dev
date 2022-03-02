@@ -3,3 +3,9 @@
   to = "https://www.youtube.com/playlist?list=PLZluKlEc91YzYor_ItAax4d2iXTXbFAFF"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/merch"
+  to = "https://www.bonfire.com/store/some-antics/"
+  status = 301
+  force = true
