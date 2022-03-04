@@ -1,5 +1,4 @@
 {% assign avatar = profile.name | avatar: profiles %}
-{% endif %}
 <section aria-labelledby="host-{{ profile.name | removeSpecialCharacters | slug }}">
 	<div class="profile-avatar" style="background-image: url({{ avatar }});"></div>
 
