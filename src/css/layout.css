@@ -217,7 +217,11 @@ main strong {
 }
 
 .timecode {
-	color: #4C1074;
+    color: #777;
+	display: block;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .cta-list {
