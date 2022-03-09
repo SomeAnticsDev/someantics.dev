@@ -1,9 +1,11 @@
 ---
-title: Web Performance with Patrick Hulce
-thumbnailTitle: Web Performance
+title: Debugging Web Performance with Patrick Hulce
+thumbnailTitle: Debugging Web Performance
 hosts:
   - Ben Myers
   - Patrick Hulce
+tags:
+  - Web Performance
 ---
 
 Join us as [Lighthouse](https://developers.google.com/web/tools/lighthouse/) CI creator [Patrick Hulce](https://twitter.com/patrickhulce) introduces us to techniques to improve our site's performance!

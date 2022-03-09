@@ -5,6 +5,8 @@ timeOfDay: 12pm
 hosts:
   - Ben Myers
   - Sarah Beardsley
+tags:
+  - Backend Development
 ---
 
 Confession: I never really learned databases.

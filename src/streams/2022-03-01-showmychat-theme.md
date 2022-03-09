@@ -5,4 +5,7 @@ hosts:
   - Ben Myers
   - Alex Trost
 timeOfDay: 3pm
+tags:
+  - Creative Coding
+  - CSS
 ---

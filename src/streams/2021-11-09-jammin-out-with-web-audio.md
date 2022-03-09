@@ -8,6 +8,8 @@ hosts:
 upload: https://youtu.be/KYaJEvg_JMI
 sourceCode: https://github.com/SomeAnticsDev/jammin-out-with-web-audio
 demo: https://some-antics-theremin.netlify.app
+tags:
+  - Web Platform
 ---
 
 We're making music with our browsers today! Join us as Ben and [Austin Crim](https://twitter.com/crim_codes) jam out with the Web Audio API!

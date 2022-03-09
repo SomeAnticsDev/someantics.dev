@@ -7,6 +7,8 @@ sourceCode: https://github.com/SomeAnticsDev/main-nav
 hosts:
   - Ben Myers
   - Chantastic
+tags:
+  - Web Accessibility
 ---
 
 Join us on Some Antics, as Michael "Chantastic" Chan walks us through creating GitHub's navigation tabs treatment! We'll dive into the accessibility and UX that goes into making navigation flexible and usable!

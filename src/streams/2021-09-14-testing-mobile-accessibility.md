@@ -6,6 +6,8 @@ hosts:
   - Ben Myers
   - Crystal Preston-Watson
 upload: https://youtu.be/GA5VBmHvaSg
+tags:
+  - Mobile Accessibility
 ---
 
 We might be solid on testing our sites' accessibility in our desktop browsers — but how often do we test for mobile accessibility? Join us on Some Antics as [Crystal Preston-Watson](https://twitter.com/ScopicEngineer) introduces us to mobile accessibility testing!

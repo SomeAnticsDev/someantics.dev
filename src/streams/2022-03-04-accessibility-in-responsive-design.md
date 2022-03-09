@@ -5,6 +5,10 @@ hosts:
   - Ben Myers
   - Jim Drury
 upload: https://youtu.be/4lVmfyLAVwU
+tags:
+  - Web Accessibility
+  - CSS
+  - Responsive Web Design
 ---
 
 The ways we implement responsive web design can have a major impact on accessibility for anyone who needs to zoom the page or scale up their font size. Join us as [Jim Drury](https://twitch.tv/GeometricJim) shows us some practical tips to ensure that our responsive web design is accessible for all!

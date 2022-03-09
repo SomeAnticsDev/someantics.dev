@@ -7,6 +7,8 @@ sourceCode: https://github.com/SomeAnticsDev/dang-spicy-web-components
 hosts:
   - Ben Myers
   - Andy Bell
+tags:
+  - Web Components
 ---
 
 Join us on Some Antics as Andy Bell shows us how we can use web components and custom elements to reuse markup, styles, and logic — all without the need for frameworks like React or Vue!

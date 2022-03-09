@@ -8,6 +8,10 @@ hosts:
   - Ben Myers
   - Dom Saadi
   - Anthony Campolo
+tags:
+  - Web Accessibility
+  - React
+  - Frameworks
 ---
 
 Accessibile routing is a bit of a gotcha in single-page applications. You generally need to use a combination of live region screenreader announcements and focus management to simulate the same feedback users would receive from a hard page load. There's so much opportunity for our tooling to help us get things right.

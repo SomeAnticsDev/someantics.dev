@@ -5,6 +5,9 @@ timeOfDay: 12pm
 hosts:
   - Ben Myers
 upload: https://youtu.be/OeFwl1XYZsY
+tags:
+  - Web Accessibility
+  - Ask Me Anything
 ---
 
 Happy [Global Accessibility Awareness Day](https://globalaccessibilityawarenessday.org/)! To celebrate, Ben took to the streams to answer *your* accessibility questions!

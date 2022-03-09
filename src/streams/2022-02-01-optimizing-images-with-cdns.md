@@ -6,6 +6,8 @@ hosts:
   - Alistair Shepherd
 demo: https://codepen.io/BenDMyers/pen/ZEaWJzb
 upload: https://youtu.be/RJ2Su0MhIWU
+tags:
+  - Web Performance
 ---
 
 Images have a major impact on a site's performance, and can be tricky to get right. Join us as [Alistair Campbell](https://twitter.com/Accudio) shows us how content delivery network-based workflows make this easier!

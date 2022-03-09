@@ -4,6 +4,8 @@ thumbnailTitle: Picking the Right Tool for the Job on the Jamstack
 hosts:
   - Ben Myers
   - Salma Alam-Naylor
+tags:
+  - Eleventy
 ---
 
 Building on the Jamstack opens doors for lightweight, performant websites — and performance is accessibility! Join us as Salma Alam-Naylor ([whitep4nth3r](https://twitter.com/whitep4nth3r) around the web) shows us how the Jamstack empowers web developers to pick the right tool for the job.

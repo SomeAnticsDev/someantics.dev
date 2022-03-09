@@ -6,6 +6,8 @@ upload: https://youtu.be/jq7mFctwVcA
 hosts:
   - Ben Myers
   - Joe Lamyman
+tags:
+  - Web Accessibility
 ---
 
 Join us on Some Antics as our guest Joe Lamyman shows us how we can use personalization to empower accessible sites and meet each individual’s own needs! We’ll explore personalization, e-commerce, and what these things have to with toilet paper.

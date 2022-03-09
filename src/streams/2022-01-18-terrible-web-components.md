@@ -6,6 +6,8 @@ hosts:
   - Alex Riviere
 upload: https://youtu.be/fahl81_XgNk
 sourceCode: https://codepen.io/BenDMyers/pen/qBPwyma
+tags:
+  - Web Components
 ---
 
 Join Ben and [Alex Riviere](https://twitter.com/fimion) as we commit egregious sins with web components.

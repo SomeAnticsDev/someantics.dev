@@ -6,6 +6,9 @@ hosts:
   - Ben Myers
   - Mike Aparicio
 upload: https://youtu.be/wX3z42LbfbI
+tags:
+  - Design Systems
+  - CSS
 ---
 
 Design systems are a powerful tool for building cohesive, intuitive, and accessible interfaces — and there's no better time to dip your toe into design system work than Hacktoberfest! Join us on Some Antics as designer–developer [Mike Aparicio](https://twitter.com/peruvianidol) shows us how we can get started building our own design system today!

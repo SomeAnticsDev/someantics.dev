@@ -7,6 +7,8 @@ hosts:
   - Ben Myers
   - Sandrina Pereira
 sourceCode: https://codesandbox.io/s/disabling-buttons-inclusively-3chhl
+tags:
+  - Web Accessibility
 ---
 
 Disabling buttons on the web seems pretty straightforward — `<button disabled>` — but is that the best user experience? Join us on Some Antics as [Sandrina Pereira](https://twitter.com/a_sandrina_p) walks us through the UX and accessibility of disabling buttons.

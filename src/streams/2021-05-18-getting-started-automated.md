@@ -6,6 +6,9 @@ upload: https://www.youtube.com/watch?v=4rUcwB7MuqU
 hosts:
   - Ben Myers
   - Lucia Cerchie
+tags:
+  - Web Accessibility
+  - Automated Accessibility Testing
 ---
 
 How can automated tools improve our accessibility testing process? Join us on Some Antics as Lucia Cerchie shows us how tools such as [Lighthouse](https://developers.google.com/web/tools/lighthouse) and [Axe](https://www.deque.com/axe/devtools/) can make our jobs easier, and how we can start using these tools today.

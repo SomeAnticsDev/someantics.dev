@@ -6,6 +6,8 @@ hosts:
   - Brittney Postma
 sourceCode: https://github.com/SomeAnticsDev/sveltekit-component-library
 upload: https://youtu.be/eUslcJLGk9g
+tags:
+  - Frameworks
 ---
 
 [Svelte](https://svelte.dev/) and [SvelteKit](https://kit.svelte.dev/) are tools for building lightweight, compiled web applications. Join us as [Svelte Sirens](https://sveltesirens.dev) organizer [Brittney Postma](https://twitter.com/BrittneyPostma) shows us how to get started building web apps with SvelteKit!

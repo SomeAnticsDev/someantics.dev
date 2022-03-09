@@ -5,6 +5,8 @@ timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=JQzIuDGSJJg
 hosts:
   - Ben Myers
+tags:
+  - Eleventy
 ---
 
 I'm a sucker for [Eleventy](https://11ty.dev), a static site generator for Node.js developers. Come join me as we kick off building this very site with Eleventy. We'll go over templates, layouts, frontmatter, and more!

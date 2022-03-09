@@ -7,6 +7,9 @@ demo: https://docs.google.com/spreadsheets/d/1VsSMRVohY9gvNCaO3gr9KtWcAb1jOnDvgN
 hosts:
   - Ben Myers
   - Anna E. Cook
+tags:
+  - Web Accessibility
+  - Accessibility Audits
 ---
 
 Accessibility audits are a powerful tool for communicating actionable improvements developers and designers can make to their websites. Join us on Some Antics as [Anna E. Cook](https://twitter.com/annaecook) shows us how to get started with auditing a website for accessibility!

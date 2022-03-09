@@ -7,6 +7,8 @@ sourceCode: https://github.com/SomeAnticsDev/eleventy-custom-extensions
 hosts:
   - Ben Myers
   - Ben Holmes
+tags:
+  - Eleventy
 ---
 
 Join us as Ben Myers and [Ben Holmes](https://twitter.com/bholmesdev) dive into using Eleventy's experimental custom extension API for fun and profit. We'll use custom extensions to process styles, React components, and more!

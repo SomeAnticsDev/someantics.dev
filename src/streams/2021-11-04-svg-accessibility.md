@@ -7,6 +7,8 @@ hosts:
   - Carie Fisher
 sourceCode: https://codepen.io/bendmyers-the-typescripter/pen/gOxvwLB?editors=1100
 upload: https://youtu.be/1IZuZ9R9c2M
+tags:
+  - Web Accessibility
 ---
 
 From icons to larger graphics, SVG images are everywhere — and with them come their own accessibility challenges! Join us today as [Carie Fisher](https://twitter.com/cariefisher) shows us how we can make our SVGs accessible and inclusive!

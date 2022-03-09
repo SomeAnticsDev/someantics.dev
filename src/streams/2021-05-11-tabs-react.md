@@ -7,6 +7,9 @@ sourceCode: https://github.com/SomeAnticsDev/accessible-tabs
 hosts:
   - Ben Myers
   - Chance Strickland
+tags:
+  - Web Accessibility
+  - React
 ---
 
 There's a lot that goes into building accessible tabs, from 

@@ -7,6 +7,8 @@ sourceCode: https://codepen.io/5t3ph/pen/xxVpYjo
 hosts:
   - Ben Myers
   - Stephanie Eckles
+tags:
+  - CSS
 ---
 
 Modern CSS affords us some really cool, handy solutions to evergreen problems of web design, as well as nearly limitless potential and flexibility. Nowhere is this made more clear than in Stephanie Eckles's [Style Stage](https://stylestage.dev). Join Ben and Stephanie as start a Style Stage theme and go on a tour through some of the best that modern CSS has to offer.

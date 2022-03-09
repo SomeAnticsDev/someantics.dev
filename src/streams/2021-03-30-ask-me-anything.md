@@ -5,6 +5,9 @@ upload: https://www.youtube.com/watch?v=4XXGDUoL90M
 hosts:
   - Ben Myers
   - Tuna
+tags:
+  - Web Accessibility
+  - Ask Me Anything
 ---
 
 You've got accessibility questions — Ben might have answers!

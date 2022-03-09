@@ -5,6 +5,9 @@ timeOfDay: "2:30pm"
 hosts:
   - Ben Myers
   - Chantastic
+tags:
+  - Web Accessibility
+  - React
 ---
 
 The todo app is perhaps the most familiar web application tutorial project out there. However, most tutorials only get you part of the way there! Join us on Some Antics as [Michael “Chantastic” Chan](https://twitter.com/chantastic) shows us how we can take our todo apps further and build them from the ground up with accessibility in mind.

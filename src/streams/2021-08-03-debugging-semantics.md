@@ -6,6 +6,8 @@ hosts:
   - Ben Myers
   - Ashlee Boyer
 upload: https://youtu.be/-vAo0-puheM
+tags:
+  - Web Accessibility
 ---
 
 The HTML we write can have a profound impact on the accessibility of our websites. But how do we verify that our markup is right? Join us on Some Antics as [Ashlee Boyer](https://twitter.com/ashleemboyer) helps us debug semantic HTML markup for accessibility!

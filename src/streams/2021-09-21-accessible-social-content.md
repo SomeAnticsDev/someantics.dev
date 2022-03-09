@@ -6,6 +6,8 @@ hosts:
   - Ben Myers
   - Alexa Heinrich
 upload: https://youtu.be/y7g_AEeAIHw
+tags:
+  - Social Media Accessibility
 ---
 
 What goes into making social media content accessible for everyone? Join us as Ben and accessible social media expert [Alexa Heinrich](https://twitter.com/HashtagHeyAlexa) dive into adding alt text to our posts' images, writing closed captions for YouTube videos, and more!

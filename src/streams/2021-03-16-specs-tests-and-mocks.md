@@ -7,6 +7,8 @@ sourceCode: https://www.github.com/SomeAnticsDev/specs-tests-and-mocks
 hosts:
   - Ben Myers
   - Randy Brown
+tags:
+  - Test-Driven Development
 ---
 
 How can backend tooling such as API specs and mock data improve our frontend developer ergonomics? Join Ben and Randy as we explore the world of specs, tests, and mocks together.
