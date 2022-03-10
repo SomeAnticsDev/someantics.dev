@@ -20,19 +20,18 @@ function formatTimeOfDay(prettyTimeOfDay) {
  * @returns {string} UTC timestamp for stream
  */
 function formatIsoDate(date, time) {
-	// console.log('iso', {date, time})
 	if (!date || !time) return;
 
 	const [weekday, month, day, year] = date.split(' ');
 	const truncatedDate = [weekday, month, day, year].join(' ');
+
+	
 	const formattedTime = formatTimeOfDay(time);
 	const isDaylightSavings = moment(date).isDST();
 	const timezone = isDaylightSavings ? 'CDT' : 'CST';
 
 	const gmtDate = new Date(`${truncatedDate} ${formattedTime} ${timezone}`);
-	const centralTimeDate = new Date();
-	centralTimeDate.setDate(gmtDate.getDate() + 1);
-	return centralTimeDate.toISOString();
+	return gmtDate.toISOString();
 }
 
 /**
