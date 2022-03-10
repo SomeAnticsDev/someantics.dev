@@ -152,6 +152,13 @@
 		"pronouns": "he/him",
 		"twitter": "BurnedChris"
 	},
+	"Chris Ferdinandi": {
+		"name": "Chris Ferdinandi",
+		"pronouns": "he/him",
+		"twitter": "ChrisFerdinandi",
+		"website": "https://gomakethings.com",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_north/v1646926643/Some%20Antics%20Avatars/Chris%20Ferdinandi.jpg"
+	},
 	"Crystal Preston-Watson": {
 		"name": "Crystal Preston-Watson",
 		"pronouns": "she/her",
