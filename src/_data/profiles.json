@@ -232,6 +232,14 @@
 		"twitter": "JoeLamyman",
 		"website": "https://joelamyman.co.uk/"
 	},
+	"Kevin Powell": {
+		"name": "Kevin Powell",
+		"pronouns": "he/him",
+		"twitter": "KevinJPowell",
+		"twitch": "KevinPowellCSS",
+		"website": "https://www.kevinpowell.co/",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1647362035/Some%20Antics%20Avatars/Kevin%20Powell.jpg"
+	},
 	"Kilian Valkhof": {
 		"name": "Kilian Valkhof",
 		"pronouns": "he/him",
