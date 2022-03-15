@@ -1,5 +1,5 @@
 ---
-title: "Theme a Twitch Chat Overlay with CSS with Kevin Powell"
+title: "Theme a Twitch Chat Overlay with CSS, with Kevin Powell"
 thumbnailTitle: Theme a Twitch Chat Overlay with CSS
 hosts:
   - Ben Myers
