@@ -6,6 +6,7 @@ hosts:
   - Amit Sheen
 tags:
   - CSS
+upload: https://youtu.be/__Thf_Wo-oA
 ---
 
 JavaScript lets us do all sorts of incredible things, and the possibilities are endless. But with so many options, a component that seems so simple from the start can have all sorts of weird states and bizarre conditions, and we can sometimes find ourselves struggling with our own code and hacking our way to the desired result. Many of these problems have far simpler solutions: CSS.
