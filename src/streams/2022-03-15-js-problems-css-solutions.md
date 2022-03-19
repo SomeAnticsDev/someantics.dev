@@ -18,6 +18,14 @@ Join us as [Amit Sheen](https://twitter.com/amit_sheen) shows us real-life every
 ## More From Amit
 
 - [Follow Amit on Twitter](https://twitter.com/amit_sheen)
-- [Watch Amit's streams on Twitch](https://twitch.tv/amit_sheen)
 - [Amit's pens on CodePen](https://codepen.io/amit_sheen)
 - [See other presentations Amit has given](https://www.amitsh.com/)
+- [Amit's "Pushing CSS to the Limit" workshop](https://smashingconf.com/online-workshops/workshops/amit-sheen)
+
+## Mentioned Links
+
+- [Bramus's tweet](https://twitter.com/bramus/status/1469252269778649089)
+- [Style Stage](https://stylestage.dev)
+- [Some Antics: Let's Build a Style Stage Theme with Stephanie Eckles!](https://www.youtube.com/watch?v=w173MUXyBrc)
+- [Amit's Newton's cradle pen](https://codepen.io/amit_sheen/pen/XWMXwvJ)
+- [Amit's jumping checkboxes pen](https://codepen.io/amit_sheen/pen/YzQoMxR)
