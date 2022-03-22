@@ -19,4 +19,15 @@ You might be well-acquainted with creating accessible websites, but how about cr
 ## More From Larry
 
 - [Follow Larry on Twitter](https://twitter.com/larryhudsondev)
+
+## Mentioned Links
+
+- [Get the tagged PDF flyer we used!](https://www.pdfa.org/resource/pdfua-flyer/)
+- [Scott O'Hara on the `<section>` element](https://www.scottohara.me/blog/2021/07/16/section.html)
+- [Prince XML](https://www.princexml.com/)
 - [`eleventy-plugin-prince-pdf`](https://github.com/larryhudson/eleventy-plugin-prince-pdf)
+- [W3Schools on the `<style>` tag's `media` attribute](https://www.w3schools.com/tags/att_style_media.asp)
+- [Some Antics: Dive Into Bedrock Layout with Travis Waith-Mair](https://youtu.be/ZISlxQ6CX2A)
+- [`11ty-prince-pdf-example` repo](https://github.com/larryhudson/11ty-prince-pdf-example)
+- [Join the Lunch Dev Discord server](https://discord.gg/lunchdev)
+- [Join the Frontend Horse Discord server](https://frontend.horse/chat)
