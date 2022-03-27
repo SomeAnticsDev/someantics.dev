@@ -7,8 +7,6 @@ hosts:
 tags:
   - Web Accessibility
   - Automated Accessibility Testing
-eleventyExcludeFromCollections: true
-permalink: false
 ---
 
 Automated accessibility testing is a powerful way to surface a bunch of accessibility defects throughout our app which, collectively, can have a critical impact on our user experience. Join us as [Adrián Bolonio](https://twitter.com/bolonio) shows us how we can introduce automated accessibility testing into our continuous integration/continuous deployment workflow with GitHub Actions!
