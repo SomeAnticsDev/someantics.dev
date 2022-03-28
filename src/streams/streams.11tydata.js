@@ -86,7 +86,7 @@ module.exports = {
 		cleansedExcerpt: data => (data.excerpt ? removeMarkdown(data.excerpt.trim()) : ''),
 		date: '{{ page.date }}',
 		dateIso: data => formatIsoDate(data.date, data.timeOfDay),
-		hosts: data => (data.hosts ?? ['Ben Myers']),
+		hosts: data => (data.hosts || ['Ben Myers']),
 		isUpcoming: data => isUpcoming(data.date, data.timeOfDay),
 		googleCalendarLink: data => google({
 			title: `Some Antics: ${data.title}`,
