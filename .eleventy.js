@@ -20,6 +20,13 @@ module.exports = (eleventyConfig) => {
 			.filter(stream => stream.data.isUpcoming);
 	});
 
+	eleventyConfig.addCollection('pastStreams', (collectionApi) => {
+		return collectionApi
+			.getFilteredByGlob('./src/streams/*.md')
+			.filter(stream => !stream.data.isUpcoming);
+	});
+
+
 	// Passthroughs
 	eleventyConfig.addPassthroughCopy('./src/css/');
 	eleventyConfig.addWatchTarget('./src/css/');
