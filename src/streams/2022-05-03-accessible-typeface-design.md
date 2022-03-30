@@ -12,5 +12,5 @@ Typography is a key component of visual identity, and it can make our break our 
 
 ## More From Bruno
 
-- [Bruno's type design company Dalton Maag](https://daltonmaag.com)
+- [Bruno's font foundry Dalton Maag](https://daltonmaag.com)
 - [The Readability Group](https://www.thereadability.group/)
