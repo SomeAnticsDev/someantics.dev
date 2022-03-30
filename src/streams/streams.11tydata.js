@@ -60,6 +60,8 @@ async function getUploadIsPublic(youtubeUrl = '') {
 		return !!youtubeUrl;
 	} else if (!youtubeUrl) {
 		return false;
+	} else if (youtubeUrl.startsWith('https://twitch.tv')) {
+		return true;
 	}
 
 	const urlFragments = youtubeUrl.split('/');
