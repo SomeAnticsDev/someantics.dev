@@ -60,7 +60,7 @@ async function getUploadIsPublic(youtubeUrl = '') {
 		return !!youtubeUrl;
 	} else if (!youtubeUrl) {
 		return false;
-	} else if (youtubeUrl.startsWith('https://twitch.tv')) {
+	} else if (youtubeUrl.includes('twitch.tv')) {
 		return true;
 	}
 

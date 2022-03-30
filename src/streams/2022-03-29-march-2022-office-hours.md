@@ -8,6 +8,8 @@ upload: https://www.twitch.tv/videos/1440536185
 
 You brought me your personal websites, and I audited them for web accessibility!
 
+---
+
 ## Audits
 
 | **Website**                                          | **Audit**                                                              |
