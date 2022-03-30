@@ -1,4 +1,5 @@
 const sass = require('eleventy-plugin-sass');
+const embedTwitch = require('eleventy-plugin-embed-twitch');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
 const socialImages = require('@11tyrocks/eleventy-plugin-social-images');
 const moment = require('moment');
@@ -35,6 +36,7 @@ module.exports = (eleventyConfig) => {
 	// Plugins
 	eleventyConfig.addPlugin(sass, {outputDir: '_site/css', remap: true});
 	eleventyConfig.addPlugin(embedYouTube);
+	eleventyConfig.addPlugin(embedTwitch, {parent: 'someantics.dev'})
 	eleventyConfig.addPlugin(socialImages);
 
 	// Filters & shortcodes
