@@ -4,6 +4,8 @@ thumbnailTitle: Accessible Typeface Design
 hosts:
   - Ben Myers
   - Bruno Maag
+tags:
+  - Web Accessibility
 ---
 
 Typography is a key component of visual identity, and it can make our break our content's readability. Join us for Some Antics as type designer [Bruno Maag](https://twitter.com/bruno_maag) shows us how to ensure typeface design is accessible and readable for as many people as possible!
