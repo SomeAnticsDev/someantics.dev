@@ -7,6 +7,7 @@ hosts:
 timeOfDay: 1pm
 tags:
   - Jamstack
+upload: https://www.twitch.tv/videos/1450187029
 ---
 
 It's a busy week of announcements for the [Astro](https://astro.build/) static site generator, including the launch of their [v1.0 beta release](https://astro.build/blog/launch-week/)! Islands architecture advocate [Ben Holmes](https://twitter.com/bholmesdev) rejoins Some Antics to show off how v1.0 lets us launch sites quickly with new integrations, community-built templates, and more — as well as how we can use Astro to go *beyond* static site generation.
