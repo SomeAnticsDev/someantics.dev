@@ -7,6 +7,9 @@ hosts:
 tags:
   - Web Accessibility
   - Automated Accessibility Testing
+sourceCode: https://github.com/SomeAnticsDev/a11y-github-actions
+demo: https://github.com/SomeAnticsDev/a11y-github-actions/pull/1
+upload: https://www.twitch.tv/videos/1454096714
 ---
 
 Automated accessibility testing is a powerful way to surface a bunch of accessibility defects throughout our app which, collectively, can have a critical impact on our user experience. Join us as [Adrián Bolonio](https://twitter.com/bolonio) shows us how we can introduce automated accessibility testing into our continuous integration/continuous deployment workflow with GitHub Actions!
