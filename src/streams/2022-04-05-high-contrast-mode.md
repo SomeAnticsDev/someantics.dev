@@ -20,3 +20,11 @@ High contrast mode is an operating system-level setting which can replace many o
 - [Read Eric's blog](https://ericwbailey.design)
 - [The A11Y Project](https://a11yproject.com)
 - [See Eric and Ben on Dev Roulette](https://www.youtube.com/watch?v=zn_hr_ghINU)
+
+## Mentioned Links
+
+- [Some Antics: Pragmatic Accessibility + Responsiveness in Polypane with Kilian Valkhof](https://youtu.be/u6TEMgOU9Lk)
+- [Assistiv Labs](https://assistivlabs.com)
+- [Eric's Smashing article on forced colors mode](https://www.smashingmagazine.com/2022/03/windows-high-contrast-colors-mode-css-custom-properties/)
+- [Night Mind theme for VS Code](https://marketplace.visualstudio.com/items?itemName=b1m1nd.night-mind)
+- [How (Not) to Build a Button](https://benmyers.dev/blog/clickable-divs/)
