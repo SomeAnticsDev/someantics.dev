@@ -12,6 +12,12 @@
 		"website": "https://www.adrianbolonio.com",
 		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_faces,b_rgb:262c35/v1644247844/Some%20Antics%20Avatars/Adrián%20Bolonio.jpg"
 	},
+	"Adrian Roselli": {
+		"name": "Adrian Roselli",
+		"pronouns": "he/him",
+		"twitter": "aardrian",
+		"website": "https://adrianroselli.com/"
+	},
 	"Adrianne Mallett": {
 		"name": "Adrianne Mallett",
 		"pronouns": "she/her",
@@ -112,6 +118,7 @@
 		"name": "Ben Holmes",
 		"pronouns": "he/him",
 		"twitter": "bholmesdev",
+		"twitch": "bholmesdev",
 		"website": "https://bholmes.dev"
 	},
 	"Brittney Postma": {
