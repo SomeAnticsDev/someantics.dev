@@ -1,16 +1,40 @@
+---
+host: Ben Myers
+guest: Bruno Maag
+timestamp: 'Tuesday, May 3 at 2pm Central'
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Thumbnail</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+</head>
+<body>
+	<div class="flex">
+		<header>
+			<h1>Typographic<br/>Accessibility</h1>
+			<p id="hosts">with <b>{{ guest }}</b> and <b>{{ host }}</b></p>
+			<footer>{{ timestamp }}</footer>
+		</header>
+		<main>
+			<img id="avatar-1" src="{{ guest | avatar: profiles }}" alt="" />
+			<div class="ring"></div>
+			<img id="avatar-2" src="{{ host | avatar: profiles }}" alt="" />
+			<div class="ring"></div>
+		</main>
+	</div>
+
 	<style>
 		html {
 			margin: 0;
 		}
 
 		body {
+			--offset: 0px;
+			/* --offset: 50px; */
+
 			margin: 0;
 			height: 100vh !important;
 			width: 100vw !important;
@@ -41,6 +65,12 @@
 			margin: 0px 68px 0px 0px;
 			font-size: 70px;
 			font-family: "Nexa Heavy";
+		}
+
+		header h1 small {
+			font-size: 75%;
+			line-height: 1.2;
+			display: block;
 		}
 
 		header p {
@@ -85,7 +115,7 @@
 
 		main img:first-of-type {
 			top: 241.2px;
-			right: 160px;
+			right: calc(160px + var(--offset));
 			width: 310px;
 			height: 310px;
 			z-index: 4;
@@ -93,7 +123,7 @@
 
 		main img:first-of-type + .ring {
 			top: 231.2px;
-			right: 150px;
+			right: calc(150px + var(--offset));
 			width: 330px;
 			height: 330px;
 			z-index: 3;
@@ -132,20 +162,5 @@
 			font-family: 'Comic Sans MS', display;
 		}
 	</style>
-</head>
-<body>
-	<div class="flex">
-		<header>
-			<h1>Deploy a Site to the<br/>Decentralized Web<br/>with IPFS</h1>
-			<p id="hosts">with <b>Anthony Campolo</b> and <b>Ben Myers</b></p>
-			<footer>Tuesday, June 14 at 2pm Central</footer>
-		</header>
-		<main>
-			<img id="avatar-1" src="{{ 'Anthony Campolo' | avatar: profiles }}" alt="" />
-			<div class="ring"></div>
-			<img id="avatar-2" src="{{ 'Ben Myers' | avatar: profiles }}" alt="" />
-			<div class="ring"></div>
-		</main>
-	</div>
 </body>
 </html>

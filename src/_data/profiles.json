@@ -132,7 +132,8 @@
 		"name": "Bruno Maag",
 		"pronouns": "he/him",
 		"twitter": "bruno_maag",
-		"website": "https://daltonmaag.com"
+		"website": "https://daltonmaag.com",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_center/v1651166201/Some%20Antics%20Avatars/Bruno%20Maag.jpg"
 	},
 	"Carie Fisher": {
 		"name": "Carie Fisher",
