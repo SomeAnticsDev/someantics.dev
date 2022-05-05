@@ -23,7 +23,7 @@ Typography is a key component of visual identity, and it can make our break our 
 
 ## Transcript
 
-<i class="timecode">[00:00:50]</i> **Ben:** Howdy, howdy, y'all! I'm back! Been gone for a few weeks. Now I'm all married and everything. But howdy. Welcome back to Some Antics. It's great to be back and it's great to be joined by the one and only Bruno Maag! Bruno, hello! Welcome to the stream! 
+<i class="timecode">[00:00:00]</i> **Ben:** Howdy, howdy, y'all! I'm back! Been gone for a few weeks. Now I'm all married and everything. But howdy. Welcome back to Some Antics. It's great to be back and it's great to be joined by the one and only Bruno Maag! Bruno, hello! Welcome to the stream! 
 
 <i class="timecode">[00:00:17]</i> **Bruno:** Hello, hello! Thank you very much! You know, it's quite exciting to be live video streaming!
 
