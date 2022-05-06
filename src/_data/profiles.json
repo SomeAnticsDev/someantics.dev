@@ -16,7 +16,8 @@
 		"name": "Adrian Roselli",
 		"pronouns": "he/him",
 		"twitter": "aardrian",
-		"website": "https://adrianroselli.com/"
+		"website": "https://adrianroselli.com/",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1651686637/Some%20Antics%20Avatars/Adrian%20Roselli.jpg"
 	},
 	"Adrianne Mallett": {
 		"name": "Adrianne Mallett",
@@ -346,6 +347,12 @@
 		"pronouns": "he/him",
 		"twitter": "svinkle",
 		"website": "https://scottvinkle.me/"
+	},
+	"Segun Adebayo": {
+		"name": "Segun Adebayo",
+		"pronouns": "he/him",
+		"twitter": "thesegunadebayo",
+		"website": "https://www.adebayosegun.com/"
 	},
 	"Stephanie Eckles": {
 		"name": "Stephanie Eckles",
