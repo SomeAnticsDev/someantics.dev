@@ -6,6 +6,8 @@ hosts:
   - Kevin Powell
 tags:
   - CSS
+eleventyExcludeFromCollections: true
+permalink: false
 ---
 
 Twitch streamers can use webpages in their streaming software to create dynamic layouts such as chat overlays. [showmy.chat](https://showmy.chat) is a tool that lets you generate a Twitch chat overlay for your layouts on demand, themed with CSS stylesheets. CSS educator [Kevin Powell](https://twitter.com/KevinJPowell) joins us for a session of creative coding as we build out a Twitch chat overlay theme together!
