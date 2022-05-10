@@ -8,7 +8,7 @@ tags:
   - Web Accessibility
 ---
 
-Oftentimes, the most accessible, interoperable experiences are the ones that require the most minimal engineer — and few know that better than [Adrian Roselli](https://twitter.com/aardrian). In his "Under-Engineered" blogposts, Adrian goes over minimal, accessible, and interoperable solutions to common interface patterns. Join us for Some Antics as Adrian shows us how we can go about underengineering our own interfaces!
+Oftentimes, the most accessible, interoperable experiences are the ones that require the most minimal engineer — and few know that better than [Adrian Roselli](https://twitter.com/aardrian). In his “Under-Engineered” blogposts, Adrian goes over minimal, accessible, and interoperable solutions to common interface patterns. Join us for Some Antics as Adrian shows us how we can go about underengineering our own interfaces!
 
 ---
 
