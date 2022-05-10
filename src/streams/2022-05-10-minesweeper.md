@@ -7,6 +7,9 @@ hosts:
 tags:
   - Web Accessibility
   - Web Platform
+upload: https://www.twitch.tv/videos/1480436626
+sourceCode: https://github.com/SomeAnticsDev/monster-game
+demo: https://some-antics-monster-game.netlify.app
 ---
 
 The web platform is really, really strong, and we can build a lot with our core web technologies, without needing the help of frameworks. JavaScript educator [Chris Ferdinandi](https://twitter.com/ChrisFerdinandi) joins the stream to build a lightweight, accessible, [Monsters, Inc.](https://en.wikipedia.org/wiki/Monsters%2C_Inc.)-themed (naturally), [Minesweeper-inspired game](https://vanillajsacademy.com/projects/monster-game/) — using vanilla JavaScript!
