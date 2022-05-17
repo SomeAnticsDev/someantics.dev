@@ -1,5 +1,5 @@
 ---
-title: Picking the Right Tool for the Job on the Jamstack with whitep4nth3r
+title: Pick the Right Tool for the Job on the Jamstack with whitep4nth3r
 thumbnailTitle: Picking the Right Tool for the Job on the Jamstack
 hosts:
   - Ben Myers
