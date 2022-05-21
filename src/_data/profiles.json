@@ -288,6 +288,13 @@
 		"twitch": "m4dz_devrel",
 		"website": "https://m4dz.net"
 	},
+	"Manuel Matuzović": {
+		"name": "Manuel Matuzović",
+		"pronouns": "he/him",
+		"twitter": "mmatuzo",
+		"website": "https://matuzo.at",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1652909226/Some%20Antics%20Avatars/Manuel%20Matuzović.jpg"
+	},
 	"Martin Bavio": {
 		"name": "Martin Bavio",
 		"pronouns": "he/him",
@@ -391,6 +398,13 @@
 	"Tuna": {
 		"name": "Tuna the Cat",
 		"pronouns": "he/him"
+	},
+	"Varun Vachhar": {
+		"name": "Varun Vachhar",
+		"pronouns": "he/him",
+		"twitter": "winkerVSbecks",
+		"website": "https://varun.ca/",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1653153605/Some%20Antics%20Avatars/Varun%20Vachhar.jpg"
 	},
 	"Zach Leatherman": {
 		"name": "Zach Leatherman",
