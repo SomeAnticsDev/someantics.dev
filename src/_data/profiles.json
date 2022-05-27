@@ -115,6 +115,14 @@
 		"twitter": "crim_codes",
 		"website": "https://austincrim.com"
 	},
+	"Austin Gil": {
+		"name": "Austin Gil",
+		"pronouns": "he/him",
+		"twitter": "heyAustinGil",
+		"twitch": "heyAustinGil",
+		"website": "https://austingil.com",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,b_white/v1653679403/Some%20Antics%20Avatars/Austin%20Gil.png"
+	},
 	"Ben Holmes": {
 		"name": "Ben Holmes",
 		"pronouns": "he/him",
