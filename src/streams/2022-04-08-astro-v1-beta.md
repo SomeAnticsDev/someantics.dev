@@ -911,7 +911,15 @@ But this is not an external package. This is a Node thing. So I think the way yo
 
 **Ben Holmes:** We can do all sorts of things, yeah. In order to access them, I think it's data.get('quantity') and stuff like that. So if you wanted to put it on the page. 
 
-**Ben Myers:** Yeah, let's do that. So console.log(data), we'll keep that in there. And I'll use the output element, which is B.HOLMES: Oooh! B.MYERS: Yeah. B.HOLMES: Clean. For those who are unfamiliar, the output element is an element that represents the result of a calculation, typically, a form submission. So data.get('quantity'). And I think back up and do this again. There we go. OK. Nice! 
+**Ben Myers:** Yeah, let's do that. So console.log(data), we'll keep that in there. And I'll use the output element, which is…
+
+**Ben Holmes:** Oooh!
+
+**Ben Myers:** Yeah.
+
+**Ben Holmes:** Clean.
+
+**Ben Myers:** For those who are unfamiliar, the output element is an element that represents the result of a calculation, typically, a form submission. So data.get('quantity'). And I think back up and do this again. There we go. OK. Nice! 
 
 **Ben Holmes:** There it is. Alright. 
 
