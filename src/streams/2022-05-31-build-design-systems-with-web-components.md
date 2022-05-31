@@ -8,6 +8,7 @@ tags:
   - Design Systems
   - Web Components
 upload: https://www.twitch.tv/videos/1314255773
+sourceCode: https://studio.backlight.dev/invite?code=uSEjUuvxpXlSe9D3buxl
 ---
 
 Design systems are a powerful tool to ensure consistent functionality and branding across our experience, and the web platform is only getting better at letting us express our design systems in a reusable way. Join us on Some Antics as [m4dz](https://twitter.com/m4d_z) shows us how to build a design system of our own using web components!
