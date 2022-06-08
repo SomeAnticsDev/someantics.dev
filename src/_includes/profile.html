@@ -4,7 +4,7 @@
 
 	<h2 id="host-{{ profile.name | removeSpecialCharacters | slug }}">{{ profile.name }}</h2>
 	<dl>
-		{% if profile.pronouns %}
+		{% comment %} {% if profile.pronouns %}
 		<div>
 			<dt>
 				{% include icons/speech-bubble.svg %}
@@ -12,7 +12,7 @@
 			</dt>
 			<dd>{{ profile.pronouns }}</dd>
 		</div>
-		{% endif %}
+		{% endif %} {% endcomment %}
 		{% if profile.twitter %}
 		<div>
 			<dt>
