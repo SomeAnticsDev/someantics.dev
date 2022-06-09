@@ -7,7 +7,7 @@ hosts:
 tags:
   - Design Systems
   - Web Components
-upload: https://www.twitch.tv/videos/1314255773
+upload: https://youtu.be/xfnp2bA0OSE
 sourceCode: https://studio.backlight.dev/invite?code=uSEjUuvxpXlSe9D3buxl
 ---
 
