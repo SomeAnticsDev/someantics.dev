@@ -9,3 +9,9 @@
   to = "https://www.bonfire.com/store/some-antics/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/scenes"
+  to = "https://someantics-scenes.netlify.app/"
+  status = "301"
+  force = true
