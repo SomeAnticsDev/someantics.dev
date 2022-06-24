@@ -1,11 +1,11 @@
 ---
 host: Ben Myers
-guest: Austin Gil
-timestamp: 'Friday, June 3 at 1pm Central'
+guest: Segun Adebayo
+timestamp: 'Friday, June 17 at 11am Central'
 title:
-  - Build Accessible
-  - Vue Apps with
-  - Vuetensils
+  - Accessible Components
+  - with State Machines
+  - and Zag
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -18,9 +18,9 @@ title:
 <body>
 	<div class="flex">
 		<header>
-			<h1>{{ title | join: '<br />' }}</h1>
-			<p id="hosts">with <b>{{ guest }}</b> and <b>{{ host }}</b></p>
-			<footer>{{ timestamp }}</footer>
+			<h1 contenteditable>{{ title | join: '<br />' }}</h1>
+			<p contenteditable id="hosts">with <b>{{ guest }}</b> and <b>{{ host }}</b></p>
+			<footer contenteditable>{{ timestamp }}</footer>
 		</header>
 		<main>
 			<img id="avatar-1" src="{{ guest | avatar: profiles }}" alt="" />
