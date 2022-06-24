@@ -4,6 +4,8 @@ thumbnailTitle: Automate Accessibility Testing with Storybook
 hosts:
   - Ben Myers
   - Varun Vachhar
+tags:
+  - Automated Accessibility Testing
 ---
 
 Chromatic's [Storybook](https://storybook.js.org/) is a UI component playground and sandbox built to streamline UI development, testing, and documentation. Join us as [Varun Vachhar](https://twitter.com/winkerVSbecks), DX Engineer at Chromatic, shows us how we can use [Storybook's accessibility tooling](https://storybook.js.org/addons/@storybook/addon-a11y) to catch accessibility issues earlier!
