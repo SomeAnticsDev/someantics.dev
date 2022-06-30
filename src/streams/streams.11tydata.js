@@ -1,3 +1,4 @@
+const fs = require('fs');
 const {google} = require('calendar-link');
 const moment = require('moment');
 const removeMarkdown = require('remove-markdown');
@@ -52,6 +53,25 @@ function isUpcoming(date, time) {
 
 /**
  * 
+ * @param {{
+ * 	page: {
+ * 		inputPath: string
+ * 	}
+ * }} data 
+ */
+function transcriptPath(data) {
+	if (!data.page.inputPath.includes('/index.md')) {
+		return false;
+	}
+
+	const transcriptFilePath = data.page.inputPath.replace('/index.md', '/transcript.md');
+	return fs.existsSync(transcriptFilePath) ?
+		transcriptFilePath :
+		false;
+}
+
+/**
+ * 
  * @param {string} youtubeUrl fully qualified URL for YouTube upload
  * @returns {boolean} whether the video upload is public or not
  */
@@ -81,7 +101,13 @@ async function getUploadIsPublic(youtubeUrl = '') {
 
 module.exports = {
 	layout: 'stream.html',
-	permalink: '/{{ page.fileSlug }}/',
+	permalink: (data) => {
+		if (data.page.inputPath.includes('/transcript.md')) {
+			return false;
+		}
+
+		return data.page.fileSlug.replace(/^\d{4}-\d{2}-\d{2}-/, '') + '/index.html';
+	},
 	timeOfDay: '2pm',
 	addNbsp: true,
 	eleventyComputed: {
@@ -99,6 +125,7 @@ module.exports = {
 				`${removeMarkdown(data.excerpt.trim())}\n\nhttps://twitch.tv/SomeAnticsDev` :
 				'https://twitch.tv/SomeAnticsDev'
 		}),
-		uploadIsPublic: data => getUploadIsPublic(data.upload)
+		uploadIsPublic: data => getUploadIsPublic(data.upload),
+		transcriptPath
 	}
 };

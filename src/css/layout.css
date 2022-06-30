@@ -211,7 +211,7 @@ main code {
 	min-width: max-content;
 }
 
-main strong {
+main b {
 	font-family: Nexa, Inter, sans-serif;
 	font-weight: 800;
 }
