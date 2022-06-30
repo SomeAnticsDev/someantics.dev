@@ -45,7 +45,7 @@ function isUpcoming(date, time) {
 	// console.log({date, time})
 	if (!date || !time) return;
 
-	const utc = formatIsoDate(date, time);
+	const utc = formatIsoDate(new Date(date).toUTCString(), time);
 	const now = moment();
 	const stream = moment(utc);
 	return now.isBefore(stream);
