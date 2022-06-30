@@ -2,6 +2,7 @@ const {EleventyRenderPlugin} = require('@11ty/eleventy');
 const sass = require('eleventy-plugin-sass');
 const embedTwitch = require('eleventy-plugin-embed-twitch');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
+const emphasis = require('eleventy-plugin-emphasis');
 const socialImages = require('@11tyrocks/eleventy-plugin-social-images');
 const moment = require('moment');
 const normalizeUrl = require('normalize-url');
@@ -47,6 +48,7 @@ module.exports = (config) => {
 	config.addPlugin(embedYouTube);
 	config.addPlugin(embedTwitch, {parent: 'someantics.dev'})
 	config.addPlugin(socialImages);
+	config.addPlugin(emphasis, {'**': 'b'});
 
 	// Filters & shortcodes
 	config.addFilter('date', (date, format) => moment(date).utc().format(format));
