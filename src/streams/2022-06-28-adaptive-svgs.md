@@ -6,7 +6,7 @@ hosts:
   - Heather S. Neff
 tags:
   - Web Accessibility
-upload: https://www.twitch.tv/videos/1516834513
+upload: https://youtu.be/CiNdH-iVFUs
 demo: https://codepen.io/paul-equivalent-design/pen/RwZjqdB/d36439a83cf0c1dad5e2f9d6aa73d3f8?editors=1100
 ---
 
