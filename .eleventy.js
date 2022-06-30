@@ -53,7 +53,6 @@ module.exports = (config) => {
 	// Filters & shortcodes
 	config.addFilter('date', (date, format) => moment(date).utc().format(format));
 	config.addFilter('normalizeUrl', url => normalizeUrl(url, {stripProtocol: true}));
-	config.addFilter('isUpcoming', streamDate => moment().isBefore(streamDate));
 	config.addFilter('removeSpecialCharacters', string => string.replace(/[^\w\s]/g, ''));
 	config.addFilter('avatar', avatar);
 	config.addFilter('formatHosts', formatHosts);
