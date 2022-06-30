@@ -1,6 +1,6 @@
 const fs = require('fs');
 const {google} = require('calendar-link');
-const moment = require('moment');
+const {DateTime, Interval} = require('luxon');
 const removeMarkdown = require('remove-markdown');
 const youtube = require('youtube-info-streams');
 
@@ -15,40 +15,47 @@ function formatTimeOfDay(prettyTimeOfDay) {
 }
 
 /**
- * Gets UTC timestamp for a stream
- * @param {string} date datestamp formatted like "Sat Aug 28 2021 00:00:00 GMT-0500 (Central Daylight Time)"
- * @param {string} time pretty time of day
- * @returns {string} UTC timestamp for stream
+ * 
+ * @param {{
+ * 	page: {
+ * 		fileSlug: string
+ * 	},
+ * 	timeOfDay: string
+ * }} data data cascade for given stream's page
+ * @returns {string} ISO datetime string for stream time
  */
-function formatIsoDate(date, time) {
-	if (!date || !time) return;
+function dateIso(data) {
+	const [year, month, day] = data.page.fileSlug.split('-');
+	const [hour, minutes, amOrPm] = formatTimeOfDay(data.timeOfDay).split(/[\s:]/);
+	const isPm = amOrPm === 'PM';
+	const hourNum = Number(hour);
+	const hour24 = (isPm && hourNum !== 12) ?
+		hourNum + 12 :
+		hourNum;
+	const date = DateTime.local(
+		Number(year),
+		Number(month),
+		Number(day),
+		hour24,
+		Number(minutes),
+		0, // seconds
+		0, // milliseconds
+		{zone: 'America/Chicago'}
+	);
 
-	const [weekday, month, day, year] = date.split(' ');
-	const truncatedDate = [weekday, month, day, year].join(' ');
-
-	
-	const formattedTime = formatTimeOfDay(time);
-	const isDaylightSavings = moment(date).isDST();
-	const timezone = isDaylightSavings ? 'CDT' : 'CST';
-
-	const gmtDate = new Date(`${truncatedDate} ${formattedTime} ${timezone}`);
-	return gmtDate.toISOString();
+	return date.toISO();
 }
 
 /**
- * Determines whether a given stream is upcoming
- * @param {string} date datestamp formatted like "Sat Aug 28 2021 00:00:00 GMT-0500 (Central Daylight Time)"
- * @param {string} time pretty time of day
- * @returns {boolean} `true` if stream is in the future; `false` otherwise
+ * Determines whether the stream is coming up
+ * @param {{ dateIso: string }} data data cascade for provided stream
+ * @returns {boolean} true if stream is yet to come
  */
-function isUpcoming(date, time) {
-	// console.log({date, time})
-	if (!date || !time) return;
-
-	const utc = formatIsoDate(new Date(date).toUTCString(), time);
-	const now = moment();
-	const stream = moment(utc);
-	return now.isBefore(stream);
+function isUpcoming(data) {
+	const now = DateTime.now();
+	const nowAsInterval = Interval.fromDateTimes(now, now);
+	const streamTime = DateTime.fromISO(data.dateIso);
+	return nowAsInterval.isBefore(streamTime);
 }
 
 /**
@@ -113,9 +120,9 @@ module.exports = {
 	eleventyComputed: {
 		cleansedExcerpt: data => (data.excerpt ? removeMarkdown(data.excerpt.trim()) : ''),
 		date: '{{ page.date }}',
-		dateIso: data => formatIsoDate(data.date, data.timeOfDay),
+		dateIso,
 		hosts: data => (data.hosts || ['Ben Myers']),
-		isUpcoming: data => isUpcoming(data.date, data.timeOfDay),
+		isUpcoming,
 		googleCalendarLink: data => google({
 			title: `Some Antics: ${data.title}`,
 			start: data.dateIso,
