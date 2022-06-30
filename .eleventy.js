@@ -59,6 +59,7 @@ module.exports = (config) => {
 	config.addFilter('structureHostForApi', structureHostForApi);
 	config.addFilter('removeMarkdown', removeMarkdown);
 	config.addFilter('removeNewlines', str => str.replace(/\n+/g, ' '));
+	config.addFilter('removeDate', str => str.replace(/\d{4}-\d{2}-\d{2}-/, ''))
 
 	// Configure frontmatter parsing
 	config.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});

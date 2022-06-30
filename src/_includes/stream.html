@@ -7,13 +7,13 @@
 	<link rel="stylesheet" href="/css/layout.css" />
 	{% include 'fonts.html' %}
 	<title>{{ title }} | Some Antics</title>
-	<meta property="og:image" content="{{ site }}/thumbnails/{{ page.fileSlug }}.png" />
+	<meta property="og:image" content="{{ site }}/thumbnails/{{ page.fileSlug | removeDate }}.png" />
 	{% assign thumbTile = title %}
 	{% if thumbnailTitle %}
 	{% assign thumbTitle = thumbnailTitle %}
 	{% endif %}
 	<meta property="og:image:alt" content="{{ thumbTitle }} with {{ hosts | formatHosts }}. {{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central." />
-	<meta name="twitter:image" content="{{ site }}/thumbnails/{{ page.fileSlug }}.png" />
+	<meta name="twitter:image" content="{{ site }}/thumbnails/{{ page.fileSlug | removeDate }}.png" />
 	<meta property="twitter:image:alt" content="{{ thumbTitle }} with {{ hosts | formatHosts }}. {{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central." />
 	{% include 'meta.html' %}
 </head>
