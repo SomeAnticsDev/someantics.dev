@@ -31,7 +31,3 @@ Because SVGs are markup, they come with a lot of flexibility that pixel-based gr
 - [FluidForm logo on CodePen](https://codepen.io/paul-equivalent-design/pen/RwZjqdB/d36439a83cf0c1dad5e2f9d6aa73d3f8?editors=1100)
 - [Assistiv Labs](https://assistivlabs.com)
 - [Some Antics: Personalizing User Interfaces for Accessibility with Joe Lamyman](/personalizing-for-accessibility/)
-
-## Transcript
-
-{% renderFile "./src/streams/2022-06-28-adaptive-svgs/transcript.md" %}
