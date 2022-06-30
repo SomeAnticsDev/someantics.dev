@@ -4,7 +4,7 @@ thumbnailTitle: Build an Accessible App with SolidJS
 hosts:
   - Ben Myers
   - Dan Jutan
-timeOfDay: 12:30pm
+timeOfDay: 11am
 tags:
   - Frameworks
 ---
