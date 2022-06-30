@@ -9,19 +9,26 @@ const {avatar} = require('./src/utils/cloudinary');
 const {formatHosts, getAvatarsForThumbnails} = require('./src/utils/format-hosts');
 const {structureHostForApi} = require('./src/utils/structure-host-for-api');
 
-module.exports = (eleventyConfig) => {
+/**
+ * @typedef {import('@11ty/eleventy/src/UserConfig')} EleventyConfig
+ * @typedef {ReturnType<import('@11ty/eleventy/src/defaultConfig')>} EleventyReturnValue
+ * @type {(config: EleventyConfig) => EleventyReturnValue}
+ */
+module.exports = (config) => {
+	config.setQuietMode(true);
+	
 	// Collections
-	eleventyConfig.addCollection('streams', (collectionApi) => {
+	config.addCollection('streams', (collectionApi) => {
 		return collectionApi.getFilteredByGlob('./src/streams/*.md');
 	});
 
-	eleventyConfig.addCollection('upcomingStreams', (collectionApi) => {
+	config.addCollection('upcomingStreams', (collectionApi) => {
 		return collectionApi
 			.getFilteredByGlob('./src/streams/*.md')
 			.filter(stream => stream.data.isUpcoming);
 	});
 
-	eleventyConfig.addCollection('pastStreams', (collectionApi) => {
+	config.addCollection('pastStreams', (collectionApi) => {
 		return collectionApi
 			.getFilteredByGlob('./src/streams/*.md')
 			.filter(stream => !stream.data.isUpcoming);
@@ -29,30 +36,30 @@ module.exports = (eleventyConfig) => {
 
 
 	// Passthroughs
-	eleventyConfig.addPassthroughCopy('./src/css/');
-	eleventyConfig.addWatchTarget('./src/css/');
-	eleventyConfig.addPassthroughCopy('./src/thumbnails/');
+	config.addPassthroughCopy('./src/css/');
+	config.addWatchTarget('./src/css/');
+	config.addPassthroughCopy('./src/thumbnails/');
 
 	// Plugins
-	eleventyConfig.addPlugin(sass, {outputDir: '_site/css', remap: true});
-	eleventyConfig.addPlugin(embedYouTube);
-	eleventyConfig.addPlugin(embedTwitch, {parent: 'someantics.dev'})
-	eleventyConfig.addPlugin(socialImages);
+	config.addPlugin(sass, {outputDir: '_site/css', remap: true});
+	config.addPlugin(embedYouTube);
+	config.addPlugin(embedTwitch, {parent: 'someantics.dev'})
+	config.addPlugin(socialImages);
 
 	// Filters & shortcodes
-	eleventyConfig.addFilter('date', (date, format) => moment(date).utc().format(format));
-	eleventyConfig.addFilter('normalizeUrl', url => normalizeUrl(url, {stripProtocol: true}));
-	eleventyConfig.addFilter('isUpcoming', streamDate => moment().isBefore(streamDate));
-	eleventyConfig.addFilter('removeSpecialCharacters', string => string.replace(/[^\w\s]/g, ''));
-	eleventyConfig.addFilter('avatar', avatar);
-	eleventyConfig.addFilter('formatHosts', formatHosts);
-	eleventyConfig.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
-	eleventyConfig.addFilter('structureHostForApi', structureHostForApi);
-	eleventyConfig.addFilter('removeMarkdown', removeMarkdown);
-	eleventyConfig.addFilter('removeNewlines', str => str.replace(/\n+/g, ' '));
+	config.addFilter('date', (date, format) => moment(date).utc().format(format));
+	config.addFilter('normalizeUrl', url => normalizeUrl(url, {stripProtocol: true}));
+	config.addFilter('isUpcoming', streamDate => moment().isBefore(streamDate));
+	config.addFilter('removeSpecialCharacters', string => string.replace(/[^\w\s]/g, ''));
+	config.addFilter('avatar', avatar);
+	config.addFilter('formatHosts', formatHosts);
+	config.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
+	config.addFilter('structureHostForApi', structureHostForApi);
+	config.addFilter('removeMarkdown', removeMarkdown);
+	config.addFilter('removeNewlines', str => str.replace(/\n+/g, ' '));
 
 	// Configure frontmatter parsing
-	eleventyConfig.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});
+	config.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});
 
 	return {
 		dir: {
