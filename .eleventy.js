@@ -20,18 +20,18 @@ module.exports = (config) => {
 
 	// Collections
 	config.addCollection('streams', (collectionApi) => {
-		return collectionApi.getFilteredByGlob('./src/streams/*.md');
+		return collectionApi.getFilteredByGlob('./src/streams/**/index.md');
 	});
 
 	config.addCollection('upcomingStreams', (collectionApi) => {
 		return collectionApi
-			.getFilteredByGlob('./src/streams/*.md')
+			.getFilteredByGlob('./src/streams/**/index.md')
 			.filter(stream => stream.data.isUpcoming);
 	});
 
 	config.addCollection('pastStreams', (collectionApi) => {
 		return collectionApi
-			.getFilteredByGlob('./src/streams/*.md')
+			.getFilteredByGlob('./src/streams/**/index.md')
 			.filter(stream => !stream.data.isUpcoming);
 	});
 
