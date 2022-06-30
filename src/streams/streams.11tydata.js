@@ -59,13 +59,15 @@ function isUpcoming(date, time) {
  * 	}
  * }} data 
  */
-function hasTranscript(data) {
+function transcriptPath(data) {
 	if (!data.page.inputPath.includes('/index.md')) {
 		return false;
 	}
 
 	const transcriptFilePath = data.page.inputPath.replace('/index.md', '/transcript.md');
-	return fs.existsSync(transcriptFilePath);
+	return fs.existsSync(transcriptFilePath) ?
+		transcriptFilePath :
+		false;
 }
 
 /**
@@ -112,7 +114,6 @@ module.exports = {
 		cleansedExcerpt: data => (data.excerpt ? removeMarkdown(data.excerpt.trim()) : ''),
 		date: '{{ page.date }}',
 		dateIso: data => formatIsoDate(data.date, data.timeOfDay),
-		hasTranscript,
 		hosts: data => (data.hosts || ['Ben Myers']),
 		isUpcoming: data => isUpcoming(data.date, data.timeOfDay),
 		googleCalendarLink: data => google({
@@ -124,6 +125,7 @@ module.exports = {
 				`${removeMarkdown(data.excerpt.trim())}\n\nhttps://twitch.tv/SomeAnticsDev` :
 				'https://twitch.tv/SomeAnticsDev'
 		}),
-		uploadIsPublic: data => getUploadIsPublic(data.upload)
+		uploadIsPublic: data => getUploadIsPublic(data.upload),
+		transcriptPath
 	}
 };

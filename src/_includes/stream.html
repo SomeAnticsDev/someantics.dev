@@ -43,7 +43,10 @@
 
 				{{ content }}
 
-				{% if hasTranscript %}<p>HAS TRANS</p>{% endif %}
+				{% if transcriptPath %}
+				<h2>Transcript</h2>
+				{% renderFile transcriptPath %}
+				{% endif %}
 
 				{% if isUpcoming %}
 				<div class="calendar-link">
