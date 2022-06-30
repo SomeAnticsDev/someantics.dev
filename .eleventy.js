@@ -1,3 +1,4 @@
+const {EleventyRenderPlugin} = require('@11ty/eleventy');
 const sass = require('eleventy-plugin-sass');
 const embedTwitch = require('eleventy-plugin-embed-twitch');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
@@ -16,7 +17,7 @@ const {structureHostForApi} = require('./src/utils/structure-host-for-api');
  */
 module.exports = (config) => {
 	config.setQuietMode(true);
-	
+
 	// Collections
 	config.addCollection('streams', (collectionApi) => {
 		return collectionApi.getFilteredByGlob('./src/streams/*.md');
@@ -41,6 +42,7 @@ module.exports = (config) => {
 	config.addPassthroughCopy('./src/thumbnails/');
 
 	// Plugins
+	config.addPlugin(EleventyRenderPlugin);
 	config.addPlugin(sass, {outputDir: '_site/css', remap: true});
 	config.addPlugin(embedYouTube);
 	config.addPlugin(embedTwitch, {parent: 'someantics.dev'})
