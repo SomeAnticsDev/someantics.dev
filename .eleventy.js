@@ -16,7 +16,7 @@ const {structureHostForApi} = require('./src/utils/structure-host-for-api');
  * @type {(config: EleventyConfig) => EleventyReturnValue}
  */
 module.exports = (config) => {
-	config.setQuietMode(true);
+	// config.setQuietMode(true);
 
 	// Collections
 	config.addCollection('streams', (collectionApi) => {

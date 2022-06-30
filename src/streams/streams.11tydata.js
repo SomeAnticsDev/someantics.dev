@@ -1,3 +1,4 @@
+const fs = require('fs');
 const {google} = require('calendar-link');
 const moment = require('moment');
 const removeMarkdown = require('remove-markdown');
@@ -52,6 +53,23 @@ function isUpcoming(date, time) {
 
 /**
  * 
+ * @param {{
+ * 	page: {
+ * 		inputPath: string
+ * 	}
+ * }} data 
+ */
+function hasTranscript(data) {
+	if (!data.page.inputPath.includes('/index.md')) {
+		return false;
+	}
+
+	const transcriptFilePath = data.page.inputPath.replace('/index.md', '/transcript.md');
+	return fs.existsSync(transcriptFilePath);
+}
+
+/**
+ * 
  * @param {string} youtubeUrl fully qualified URL for YouTube upload
  * @returns {boolean} whether the video upload is public or not
  */
@@ -81,13 +99,20 @@ async function getUploadIsPublic(youtubeUrl = '') {
 
 module.exports = {
 	layout: 'stream.html',
-	permalink: '/{{ page.fileSlug }}/',
+	permalink: (data) => {
+		if (data.page.inputPath.includes('/transcript.md')) {
+			return false;
+		}
+
+		return data.page.fileSlug.replace(/^\d{4}-\d{2}-\d{2}-/, '') + '/index.html';
+	},
 	timeOfDay: '2pm',
 	addNbsp: true,
 	eleventyComputed: {
 		cleansedExcerpt: data => (data.excerpt ? removeMarkdown(data.excerpt.trim()) : ''),
 		date: '{{ page.date }}',
 		dateIso: data => formatIsoDate(data.date, data.timeOfDay),
+		hasTranscript,
 		hosts: data => (data.hosts || ['Ben Myers']),
 		isUpcoming: data => isUpcoming(data.date, data.timeOfDay),
 		googleCalendarLink: data => google({

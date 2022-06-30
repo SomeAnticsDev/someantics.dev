@@ -43,6 +43,8 @@
 
 				{{ content }}
 
+				{% if hasTranscript %}<p>HAS TRANS</p>{% endif %}
+
 				{% if isUpcoming %}
 				<div class="calendar-link">
 					<a class="cta" href="{{ googleCalendarLink }}">{% include 'icons/calendar.svg' %} Add to Calendar</a>
