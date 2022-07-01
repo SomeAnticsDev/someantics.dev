@@ -7,6 +7,8 @@ hosts:
 timeOfDay: 11am
 tags:
   - Frameworks
+  - SolidJS
+upload: https://www.twitch.tv/videos/1519565720
 ---
 
 [SolidJS](https://www.solidjs.com/) is a lightweight framework for reactive client-side applications. Join us as SolidJS Core Team member [Dan Jutan](https://twitter.com/jutanium) walks us through building our first SolidJS application!
