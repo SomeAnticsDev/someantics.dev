@@ -4,7 +4,7 @@ thumbnailTitle: Accessible Components with State Machines and Zag
 hosts:
   - Ben Myers
   - Segun Adebayo
-timeOfDay: 11am
+timeOfDay: 12pm
 tags:
   - Web Accessibility
   - Frameworks
