@@ -5,6 +5,7 @@ hosts:
   - Ben Myers
   - Segun Adebayo
 timeOfDay: 12pm
+upload: https://www.twitch.tv/videos/1523220874
 tags:
   - Web Accessibility
   - Frameworks
