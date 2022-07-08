@@ -5,7 +5,7 @@ hosts:
   - Ben Myers
   - Segun Adebayo
 timeOfDay: 12pm
-upload: https://www.twitch.tv/videos/1523220874
+upload: https://youtu.be/WF_PVXPL8qA
 sourceCode: https://codesandbox.io/s/delicate-shadow-cksj0z?file=/src/App.js
 tags:
   - Web Accessibility
