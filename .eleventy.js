@@ -1,6 +1,8 @@
+const {EleventyRenderPlugin} = require('@11ty/eleventy');
 const sass = require('eleventy-plugin-sass');
 const embedTwitch = require('eleventy-plugin-embed-twitch');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
+const emphasis = require('eleventy-plugin-emphasis');
 const socialImages = require('@11tyrocks/eleventy-plugin-social-images');
 const moment = require('moment');
 const normalizeUrl = require('normalize-url');
@@ -9,50 +11,59 @@ const {avatar} = require('./src/utils/cloudinary');
 const {formatHosts, getAvatarsForThumbnails} = require('./src/utils/format-hosts');
 const {structureHostForApi} = require('./src/utils/structure-host-for-api');
 
-module.exports = (eleventyConfig) => {
+/**
+ * @typedef {import('@11ty/eleventy/src/UserConfig')} EleventyConfig
+ * @typedef {ReturnType<import('@11ty/eleventy/src/defaultConfig')>} EleventyReturnValue
+ * @type {(config: EleventyConfig) => EleventyReturnValue}
+ */
+module.exports = (config) => {
+	config.setQuietMode(true);
+
 	// Collections
-	eleventyConfig.addCollection('streams', (collectionApi) => {
-		return collectionApi.getFilteredByGlob('./src/streams/*.md');
+	config.addCollection('streams', (collectionApi) => {
+		return collectionApi.getFilteredByGlob('./src/streams/**/index.md');
 	});
 
-	eleventyConfig.addCollection('upcomingStreams', (collectionApi) => {
+	config.addCollection('upcomingStreams', (collectionApi) => {
 		return collectionApi
-			.getFilteredByGlob('./src/streams/*.md')
+			.getFilteredByGlob('./src/streams/**/index.md')
 			.filter(stream => stream.data.isUpcoming);
 	});
 
-	eleventyConfig.addCollection('pastStreams', (collectionApi) => {
+	config.addCollection('pastStreams', (collectionApi) => {
 		return collectionApi
-			.getFilteredByGlob('./src/streams/*.md')
+			.getFilteredByGlob('./src/streams/**/index.md')
 			.filter(stream => !stream.data.isUpcoming);
 	});
 
 
 	// Passthroughs
-	eleventyConfig.addPassthroughCopy('./src/css/');
-	eleventyConfig.addWatchTarget('./src/css/');
-	eleventyConfig.addPassthroughCopy('./src/thumbnails/');
+	config.addPassthroughCopy('./src/css/');
+	config.addWatchTarget('./src/css/');
+	config.addPassthroughCopy('./src/thumbnails/');
 
 	// Plugins
-	eleventyConfig.addPlugin(sass, {outputDir: '_site/css', remap: true});
-	eleventyConfig.addPlugin(embedYouTube);
-	eleventyConfig.addPlugin(embedTwitch, {parent: 'someantics.dev'})
-	eleventyConfig.addPlugin(socialImages);
+	config.addPlugin(EleventyRenderPlugin);
+	config.addPlugin(sass, {outputDir: '_site/css', remap: true});
+	config.addPlugin(embedYouTube);
+	config.addPlugin(embedTwitch, {parent: 'someantics.dev'})
+	config.addPlugin(socialImages);
+	config.addPlugin(emphasis, {'**': 'b'});
 
 	// Filters & shortcodes
-	eleventyConfig.addFilter('date', (date, format) => moment(date).utc().format(format));
-	eleventyConfig.addFilter('normalizeUrl', url => normalizeUrl(url, {stripProtocol: true}));
-	eleventyConfig.addFilter('isUpcoming', streamDate => moment().isBefore(streamDate));
-	eleventyConfig.addFilter('removeSpecialCharacters', string => string.replace(/[^\w\s]/g, ''));
-	eleventyConfig.addFilter('avatar', avatar);
-	eleventyConfig.addFilter('formatHosts', formatHosts);
-	eleventyConfig.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
-	eleventyConfig.addFilter('structureHostForApi', structureHostForApi);
-	eleventyConfig.addFilter('removeMarkdown', removeMarkdown);
-	eleventyConfig.addFilter('removeNewlines', str => str.replace(/\n+/g, ' '));
+	config.addFilter('date', (date, format) => moment(date).utc().format(format));
+	config.addFilter('normalizeUrl', url => normalizeUrl(url, {stripProtocol: true}));
+	config.addFilter('removeSpecialCharacters', string => string.replace(/[^\w\s]/g, ''));
+	config.addFilter('avatar', avatar);
+	config.addFilter('formatHosts', formatHosts);
+	config.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
+	config.addFilter('structureHostForApi', structureHostForApi);
+	config.addFilter('removeMarkdown', removeMarkdown);
+	config.addFilter('removeNewlines', str => str.replace(/\n+/g, ' '));
+	config.addFilter('removeDate', str => str.replace(/\d{4}-\d{2}-\d{2}-/, ''))
 
 	// Configure frontmatter parsing
-	eleventyConfig.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});
+	config.setFrontMatterParsingOptions({excerpt: true, excerpt_alias: 'excerpt'});
 
 	return {
 		dir: {

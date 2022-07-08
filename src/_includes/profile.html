@@ -7,7 +7,7 @@
 		{% comment %} {% if profile.pronouns %}
 		<div>
 			<dt>
-				{% include icons/speech-bubble.svg %}
+				{% include 'icons/speech-bubble.svg' %}
 				<span class="visually-hidden">{{ profile.name }}'s Pronouns</span>
 			</dt>
 			<dd>{{ profile.pronouns }}</dd>
@@ -16,7 +16,7 @@
 		{% if profile.twitter %}
 		<div>
 			<dt>
-				{% include icons/twitter.svg %}
+				{% include 'icons/twitter.svg' %}
 				<span class="visually-hidden" id="twitter-{{ profile.name | removeSpecialCharacters | slug }}">
 					{{ profile.name }}'s Twitter
 				</span>
@@ -34,7 +34,7 @@
 		{% if profile.instagram %}
 		<div>
 			<dt>
-				{% include icons/instagram.svg %}
+				{% include 'icons/instagram.svg' %}
 				<span class="visually-hidden" id="instagram-{{ profile.name | removeSpecialCharacters | slug }}">
 					{{ profile.name }}'s Instagram
 				</span>
@@ -52,7 +52,7 @@
 		{% if profile.twitch %}
 		<div>
 			<dt>
-				{% include icons/twitch.svg %}
+				{% include 'icons/twitch.svg' %}
 				<span class="visually-hidden" id="twitch-{{ profile.name | removeSpecialCharacters | slug }}">
 					{{ profile.name }}'s Twitch
 				</span>
@@ -70,7 +70,7 @@
 		{% if profile.website %}
 		<div>
 			<dt>
-				{% include icons/link.svg %}
+				{% include 'icons/link.svg' %}
 				<span class="visually-hidden" id="website-{{ profile.name | removeSpecialCharacters | slug }}">
 					{{ profile.name }}'s Website
 				</span>

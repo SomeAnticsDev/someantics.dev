@@ -5,12 +5,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/home.css" />
-	{% include fonts.html %}
+	{% include 'fonts.html' %}
 	<title>Some Antics</title>
 	<meta name="Algolia crawler" content="noindex">
+	<style>
+		li + li {
+			margin-top: 1.25em;
+		}
+	</style>
 </head>
 <body>
-	<main>
+	<main style="margin: auto; max-width: 60ch;">
 		<h1>Some Antics</h1>
 		<p><a href="https://twitch.tv/SomeAnticsDev">Some Antics</a> is a weekly show about <strong>accessibility</strong> and <strong>core web technologies</strong> by <a href="https://benmyers.dev">Ben Myers</a>. Each week, I invite an expert on who can teach me something about building great online user experiences in a hands-on way.</p>
 
