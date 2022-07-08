@@ -50,7 +50,7 @@ Not to talk of browser inconsistencies — inconsistencies between Safari and Ch
 
 So with that kind of introduction, I'd love to just kind of start diving in, so I'm gonna start sharing my screen. And first of all, y'all should go follow Sage on Twitter at @thesegunadebayo. And we're gonna be diving into Zag, so we're gonna look at the… I'm gonna put a link in the Twitch chat for Zag as well.
 
-Cool. So ahead of time, kind of in the green room so to speak, we spun up a new CodeSandbox project and we installed two dependencies, which were @zag-js/core and @zag-js/react. Where should we get started? I think we had kind of talked about, like, maybe starting with some state machines first?
+Cool. So ahead of time, kind of in the green room so to speak, we spun up a new CodeSandbox project and we installed two dependencies, which were `@zag-js/core` and `@zag-js/react`. Where should we get started? I think we had kind of talked about, like, maybe starting with some state machines first?
 
 <i class="timecode">[00:09:11]</i> **Segun:** Yeah, for sure! I think like — yeah, I have so many ideas here — but like, we can start with, like, let's try to build a component from scratch. I think that would be a lot more interesting to see and to talk about so, like, people actually get to see, like, how Zag works underneath the hood, as, like, Zag is not some special library or some statechart. It's just JavaScript, but we are using… like, the way of thinking about components is using statecharts, right? But how you write the code, you see the difference between, like, both of them, right?
 
@@ -274,23 +274,23 @@ Alright, so now that we've modeled this out, I would say, like, we're kind of do
 
 <i class="timecode">[00:27:50]</i> **Ben:** Good deal!
 
-<i class="timecode">[00:27:51]</i> **Segun:** Right, so from Zag — yeah, from Zag.js, you need to import this createMachine. So you import createMachine, a named import of createMachine from @zag-js/core. 
+<i class="timecode">[00:27:51]</i> **Segun:** Right, so from Zag — yeah, from Zag.js, you need to import this createMachine. So you import `createMachine`, a named import of createMachine from `@zag-js/core`. 
 
 <i class="timecode">[00:28:07]</i> **Ben:** Okay.
 
 <i class="timecode">[00:28:09]</i> **Segun:** Right, so this function basically is what's used to model the diagram we just created. Right? So that is… so, we're going through the process now to sort of, like, figure out, like, what we wanna do here.
 
-So let's create a constant in the next line called "slider." slider equals, and we call the createMachine function.
+So let's create a constant in the next line called "`slider`." `slider` equals, and we call the `createMachine` function.
 
 <i class="timecode">[00:28:32]</i> **Ben:** Alright.
 
 <i class="timecode">[00:28:34]</i> **Segun:** Alright, so the createMachine() accepts an object in their argument, and this object contains a couple of things, but we're gonna work through that.
 
-One of the things that we looked at is, a state machine has a finite number of states. And we already mapped out a number of states already. So there's one of the keys called "states" this is going to expect in there. And this is an object of, like, each state, right? So create an object. Let's create the first one for idle.
+One of the things that we looked at is, a state machine has a finite number of states. And we already mapped out a number of states already. So there's one of the keys called "`states`" this is going to expect in there. And this is an object of, like, each state, right? So create an object. Let's create the first one for idle.
 
 <i class="timecode">[00:29:06]</i> **Ben:** Okay.
 
-<i class="timecode">[00:29:06]</i> **Segun:** So put "idle." Just put an empty object in there. You can use small letters as well, it's fine. Generally, I tend to use, like, all caps for events.
+<i class="timecode">[00:29:06]</i> **Segun:** So put "`idle`." Just put an empty object in there. You can use small letters as well, it's fine. Generally, I tend to use, like, all caps for events.
 
 <i class="timecode">[00:29:17]</i> **Ben:** Oh, okay.
 
@@ -304,7 +304,7 @@ One of the things that we looked at is, a state machine has a finite number of s
 
 <i class="timecode">[00:29:20]</i> **Segun:** We can kind of like stick to that, yeah.
 
-"idle." And then we create the other ones as well — focused and dragging.
+"`idle`." And then we create the other ones as well — focused and dragging.
 
 <i class="timecode">[00:29:33]</i> **Ben:** So we've got states object with three states. Each of those states is, like, a property in that object, and so we've got idle, focused, dragging. And currently they're all set to empty objects, 'cause there's not any configuration that's happened for each of those yet. 
 
@@ -320,7 +320,7 @@ One of the things that we looked at is, a state machine has a finite number of s
 
 <i class="timecode">[00:30:31]</i> **Ben:** Okay.
 
-<i class="timecode">[00:30:31]</i> **Segun:** Right? So, the next thing we want to do is — at least, just for the sake of this demo — we talked about data. We're gonna look at the data and now look at the events. So the data is called "context" within, like, the state machine terminology, so we're gonna add an extra property called "context." And this property will be an object that holds the value.
+<i class="timecode">[00:30:31]</i> **Segun:** Right? So, the next thing we want to do is — at least, just for the sake of this demo — we talked about data. We're gonna look at the data and now look at the events. So the data is called "`context`" within, like, the state machine terminology, so we're gonna add an extra property called "`context`." And this property will be an object that holds the value.
 
 <i class="timecode">[00:30:52]</i> **Ben:** Okay.
 
@@ -368,7 +368,7 @@ Oh, okay, gotcha. On Segun's end. Gotcha. Yeah, no worries.
 
 And also just wanna give a shoutout in this moment to folks in the chat. We've got Brent in here. I see we've got Florian as well.
 
-Yeah! So what we're doing, for anyone who's just kinda joining us at this moment, we are building a state machine that represents the logic for, like, a range slider input. And so to do that, we've imported a createMachine utility from @zag-js/core. We've given it three things so far, so an initial state, which is the name "idle." We've given it a "context" object that has just some data we need to keep track of. And then we've got a "states" object with… our three states are properties of that. So that's what we're up to so far.
+Yeah! So what we're doing, for anyone who's just kinda joining us at this moment, we are building a state machine that represents the logic for, like, a range slider input. And so to do that, we've imported a `createMachine` utility from `@zag-js/core`. We've given it three things so far, so an initial state, which is the name "idle." We've given it a "`context`" object that has just some data we need to keep track of. And then we've got a "`states`" object with… our three states are properties of that. So that's what we're up to so far.
 
 <i class="timecode">[00:33:27]</i> **Segun:** Nice.
 
@@ -376,15 +376,15 @@ Yeah! So what we're doing, for anyone who's just kinda joining us at this moment
 
 <i class="timecode">[00:33:30]</i> **Segun:** Alright! Cool, yeah, let's get to it.
 
-So right now, we start from the idle state. So to model events in the idle state, there's a nested object called "on." Let's say you add on, like, a property called "on."
+So right now, we start from the idle state. So to model events in the idle state, there's a nested object called "`on`." Let's say you add on, like, a property called "`on`."
 
 <i class="timecode">[00:33:43]</i> **Ben:** Okay.
 
-<i class="timecode">[00:33:43]</i> **Segun:** Basically, "on" is an object, right? Just like the browser event system, like onkeydown, onpointerdown. It's just that it starts with "on." Right. And inside this object, then you put events, right? So, let's put the first one. I usually like to use all caps for events just to make it, like, very obvious.
+<i class="timecode">[00:33:43]</i> **Segun:** Basically, "`on`" is an object, right? Just like the browser event system, like `onkeydown`, `onpointerdown`. It's just that it starts with "on." Right. And inside this object, then you put events, right? So, let's put the first one. I usually like to use all caps for events just to make it, like, very obvious.
 
 <i class="timecode">[00:34:01]</i> **Ben:** Okay.
 
-<i class="timecode">[00:34:01]</i> **Segun:** So let's say "FOCUS" or "TAB_FOCUS" here.
+<i class="timecode">[00:34:01]</i> **Segun:** So let's say "`FOCUS`" or "`TAB_FOCUS`" here.
 
 <i class="timecode">[00:34:05]</i> **Ben:** Yeah.
 
@@ -396,7 +396,7 @@ So right now, we start from the idle state. So to model events in the idle state
 
 Alright, and then in… yeah, I think we can definitely just take a quick sweep at, like, the other ones. But before we go into the other states, let's just, like, get into what happens inside these objects and then we can do the other two states.
 
-So let's start with the Tab Focus. So if you go back to the diagram again in Excalidraw, it kind of is more like… like, if you look at the Tab Focus arrow, it goes from idle to focused. So that is more like a "go to focused state," basically. Alright, that does have, like, the synonym of, like, I'm explaining what happens in there. So let's go back to the code and see how do you represent this "go to focused state." Right, so you put a "target" property on there.
+So let's start with the Tab Focus. So if you go back to the diagram again in Excalidraw, it kind of is more like… like, if you look at the Tab Focus arrow, it goes from idle to focused. So that is more like a "go to focused state," basically. Alright, that does have, like, the synonym of, like, I'm explaining what happens in there. So let's go back to the code and see how do you represent this "go to focused state." Right, so you put a "`target`" property on there.
 
 <i class="timecode">[00:35:25]</i> **Ben:** Okay.
 
@@ -406,7 +406,7 @@ So let's start with the Tab Focus. So if you go back to the diagram again in Exc
 
 <i class="timecode">[00:35:50]</i> **Segun:** Nice. Cool. Alright, so now that we at least understand the basic structure of this, let's sort of, like, put together the other events pretty quickly.
 
-<i class="timecode">[00:36:00]</i> **Ben:** Alright, so "focused" is an object with a nested property called "on." "on," we know we have really only one event, which is Pointer—
+<i class="timecode">[00:36:00]</i> **Ben:** Alright, so "`focused`" is an object with a nested property called "`on`." "`on`," we know we have really only one event, which is Pointer—
 
 Oh, sorry, we're on focused.
 
@@ -448,43 +448,43 @@ Alright, so let's model this out. Focus Out goes back to idle, and then Pointer 
 
 <i class="timecode">[00:37:39]</i> **Segun:** And then we have a bunch of, like, keyboard events. For now, let's just do the arrow left and the arrow right. 
 
-<i class="timecode">[00:37:45]</i> **Ben:** Okay. And… gotcha. These are still in our "on," because even though they're not really transitions, they're still events that we care about. 
+<i class="timecode">[00:37:45]</i> **Ben:** Okay. And… gotcha. These are still in our "`on`," because even though they're not really transitions, they're still events that we care about. 
 
 <i class="timecode">[00:37:54]</i> **Segun:** Yeah, they're still events we care about, exactly.
 
 <i class="timecode">[00:37:56]</i> **Ben:** Okay.
 
-<i class="timecode">[00:37:57]</i> **Segun:** So, but you want to skip this one for now. Yeah, just put "ARROW_LEFT," "ARROW_RIGHT" in there.
+<i class="timecode">[00:37:57]</i> **Segun:** So, but you want to skip this one for now. Yeah, just put "`ARROW_LEFT`," "`ARROW_RIGHT`" in there.
 
 So, the interesting thing about these events is they don't cause a state transition, so they just, like… they just do stuff. They don't really cause the component to transition from, like, any state in general. And most of the time — I mean, in this use case, what they do is they, like, increment the value. So they're actions that are actually, like, carried out in general.
 
-So, let's try to see if we can model that here. So within the ARROW_LEFT and ARROW_RIGHT keys, you can pass in something called "actions."
+So, let's try to see if we can model that here. So within the `ARROW_LEFT` and `ARROW_RIGHT` keys, you can pass in something called "`actions`."
 
 <i class="timecode">[00:38:32]</i> **Ben:** Okay, and… 
 
-<i class="timecode">[00:38:33]</i> **Segun:** Right, so "actions" is a property in there. So let's just put a string representation. Let's just call this "decrementValue." Just put a string there called "decrementValue."
+<i class="timecode">[00:38:33]</i> **Segun:** Right, so "`actions`" is a property in there. So let's just put a string representation. Let's just call this "`decrementValue`." Just put a string there called "`decrementValue`."
 
 <i class="timecode">[00:38:45]</i> **Ben:** Okay.
 
 <i class="timecode">[00:38:46]</i> **Segun:** Yep, and then arrow right would increment the value.
 
-<i class="timecode">[00:38:51]</i> **Ben:** Okay. That is "incrementValue." Okay. 
+<i class="timecode">[00:38:51]</i> **Ben:** Okay. That is "`incrementValue`." Okay. 
 
 <i class="timecode">[00:38:58]</i> **Segun:** Exactly. So, we're gonna… so, for the dragging state, we can basically just add the events for that as well.
 
 <i class="timecode">[00:39:10]</i> **Ben:** Okay. We add another "actions" into our dragging and this time…
 
-<i class="timecode">[00:39:14]</i> **Segun:** And then we have the "on" key.
+<i class="timecode">[00:39:14]</i> **Segun:** And then we have the "`on`" key.
 
 <i class="timecode">[00:39:15]</i> **Ben:** Oh, right.
 
-<i class="timecode">[00:39:16]</i> **Segun:** You know, it's a state of its own, so it starts with the "on" key.
+<i class="timecode">[00:39:16]</i> **Segun:** You know, it's a state of its own, so it starts with the "`on`" key.
 
-<i class="timecode">[00:39:19]</i> **Ben:** Yep. "on."
+<i class="timecode">[00:39:19]</i> **Ben:** Yep. "`on`."
 
-<i class="timecode">[00:39:21]</i> **Segun:** "on," yeah. Then we sort of, like, put all, like… I think it's "POINTER_UP" or something like that. 
+<i class="timecode">[00:39:21]</i> **Segun:** "`on`," yeah. Then we sort of, like, put all, like… I think it's "`POINTER_UP`" or something like that. 
 
-<i class="timecode">[00:39:28]</i> **Ben:** Okay. I see what we're doing, yeah. Starting all the way from the… POINTER_UP.
+<i class="timecode">[00:39:28]</i> **Ben:** Okay. I see what we're doing, yeah. Starting all the way from the… `POINTER_UP`.
 
 <i class="timecode">[00:39:32]</i> **Segun:** Yeah.
 
@@ -502,7 +502,7 @@ So, let's try to see if we can model that here. So within the ARROW_LEFT and ARR
 
 <i class="timecode">[00:39:52]</i> **Ben:** Yeah.
 
-<i class="timecode">[00:39:52]</i> **Segun:** So we're gonna talk about that, like, Track Pointer. What exactly does that do? So's that sort of like… I call this, like, a subscription or an activity, because it's a long-running activity, compared to a single action like incrementValue or decrementValue, right?
+<i class="timecode">[00:39:52]</i> **Segun:** So we're gonna talk about that, like, Track Pointer. What exactly does that do? So's that sort of like… I call this, like, a subscription or an activity, because it's a long-running activity, compared to a single action like `incrementValue` or `decrementValue`, right?
 
 <i class="timecode">[00:40:11]</i> **Ben:** Mm.
 
@@ -512,11 +512,11 @@ So, let's try to see if we can model that here. So within the ARROW_LEFT and ARR
 
 <i class="timecode">[00:40:17]</i> **Segun:** Which means, like, you increment the value once and that's it. But then the, the, the one for the dragging state is called Track Pointer or Track Pointer Move, largely because, like, they actually, like, run for a long time. They add an event listener to the document. They remove an event listener from the document, right? So that is what I call, like, something that you subscribe to or an activity, basically.
 
-Right, so there's a key in every state. Aside from the "on" key, the other property you can pass in is called "activities."
+Right, so there's a key in every state. Aside from the "`on`" key, the other property you can pass in is called "`activities`."
 
 <i class="timecode">[00:40:48]</i> **Ben:** Okay.
 
-<i class="timecode">[00:40:48]</i> **Segun:** Alright, so you can just, like… outside the "on" key, you can pass in "activities." So let's just put a string called "trackPointerMove." Right. So that just puts an activity. What activity would you like to do within this?
+<i class="timecode">[00:40:48]</i> **Segun:** Alright, so you can just, like… outside the "`on`" key, you can pass in "`activities`." So let's just put a string called "`trackPointerMove`." Right. So that just puts an activity. What activity would you like to do within this?
 
 <i class="timecode">[00:41:05]</i> **Ben:** Okay!
 
@@ -528,29 +528,29 @@ Right, so there's a key in every state. Aside from the "on" key, the other prope
 
 <i class="timecode">[00:41:49]</i> **Ben:** Okay!
 
-<i class="timecode">[00:41:51]</i> **Segun:** Right, so you see, we set activities, we set actions. So like, this is where you actually get to specify, like, what do they do effectively, right? So let's kind of like dive in here in this implementation. So let's go into the object and add two properties called… one is called "actions." 
+<i class="timecode">[00:41:51]</i> **Segun:** Right, so you see, we set activities, we set actions. So like, this is where you actually get to specify, like, what do they do effectively, right? So let's kind of like dive in here in this implementation. So let's go into the object and add two properties called… one is called "`actions`." 
 
-<i class="timecode">[00:42:11]</i> **Ben:** Alright. "actions."
+<i class="timecode">[00:42:11]</i> **Ben:** Alright. "`actions`."
 
-<i class="timecode">[00:42:13]</i> **Segun:** "actions" is an object. 
+<i class="timecode">[00:42:13]</i> **Segun:** "`actions`" is an object. 
 
 <i class="timecode">[00:42:16]</i> **Ben:** Alright.
 
-<i class="timecode">[00:42:17]</i> **Segun:** And then we'll put in, like, decrementValue — a function called decrementValue and an incrementValue function. These will serve as the implementations for this, for the strings above.
+<i class="timecode">[00:42:17]</i> **Segun:** And then we'll put in, like, `decrementValue` — a function called `decrementValue` and an `incrementValue` function. These will serve as the implementations for this, for the strings above.
 
-And then the other one is "activities," just like you'd guess. So the other key you can put in there is "activities."
+And then the other one is "`activities`," just like you'd guess. So the other key you can put in there is "`activities`."
 
 <i class="timecode">[00:42:42]</i> **Ben:** Alright, yep. 
 
-<i class="timecode">[00:42:44]</i> **Segun:** Yep. And that also takes the trackPointerMove.
+<i class="timecode">[00:42:44]</i> **Segun:** Yep. And that also takes the `trackPointerMove`.
 
-Cool. Nice. So let's get into… for the sake of time, let's get into, like, what the implementations here would do, right? So, I'm gonna just type it in here. So every action basically provides you the context, which is that data that you put up there when we started writing this. So, that data that included the value and the step? That is actually what is included within this decrementValue. So, I mean, all of these implementations get the context. And if you scroll all the way up, you see that the context is actually an object. If you can scroll up now, let's just take a look at that context one more time. The context includes the value and the step size, right?
+Cool. Nice. So let's get into… for the sake of time, let's get into, like, what the implementations here would do, right? So, I'm gonna just type it in here. So every action basically provides you the context, which is that data that you put up there when we started writing this. So, that data that included the value and the step? That is actually what is included within this `decrementValue`. So, I mean, all of these implementations get the context. And if you scroll all the way up, you see that the context is actually an object. If you can scroll up now, let's just take a look at that context one more time. The context includes the value and the step size, right?
 
-So let's just start with this basic implementation. And what we do here, when you see decrementValue, basically what this means is you grab the context of value, and you're basically decreasing the value.
+So let's just start with this basic implementation. And what we do here, when you see `decrementValue`, basically what this means is you grab the context of value, and you're basically decreasing the value.
 
 <i class="timecode">[00:43:56]</i> **Ben:** Mm-hmm.
 
-<i class="timecode">[00:43:58]</i> **Segun:** And that is as far as, like, implementation goes. And then the incrementValue is basically, like, incrementing the value. And that is as far as, like, incrementValue goes. It may seem like… I mean, this is, like…
+<i class="timecode">[00:43:58]</i> **Segun:** And that is as far as, like, implementation goes. And then the `incrementValue` is basically, like, incrementing the value. And that is as far as, like, `incrementValue` goes. It may seem like… I mean, this is, like…
 
 This looks, like, so simple, but, like, literally this is the core idea or core concept behind the state machine itself.
 
@@ -576,13 +576,13 @@ So let's do the slider root. I think maybe instead of calling it the slider root
 
 <i class="timecode">[00:46:16]</i> **Ben:** Right.
 
-<i class="timecode">[00:46:17]</i> **Segun:** —all of, like, the different things in here. We can set a background of "lightgray." Figure out, like, the contrast later on. And then we can set, like, a border-radius in here. Let's just say, like, 4 pixels so it looks rounded.
+<i class="timecode">[00:46:17]</i> **Segun:** —all of, like, the different things in here. We can set a `background` of "`lightgray`." Figure out, like, the contrast later on. And then we can set, like, a `border-radius` in here. Let's just say, like, 4 pixels so it looks rounded.
 
 <i class="timecode">[00:46:37]</i> **Ben:** Mm-hmm.
 
-<i class="timecode">[00:46:38]</i> **Segun:** And then we'll come over here to the slider range, right? So let's try and style the slider range. Alright, so this would be, like, a background of… let's just say "blue" for now. Alright, and this would also have the same height as the parent. The only difference is we're gonna have to control the width of this element. So just for demo purposes, I'll put the width is 40% so we can actually see that it looks like some sort of, like, range that is ready to roll in there. I'll just add the "overflow: hidden" so it clips out, like, the edges and the border-radius shines through in there.
+<i class="timecode">[00:46:38]</i> **Segun:** And then we'll come over here to the slider range, right? So let's try and style the slider range. Alright, so this would be, like, a `background` of… let's just say "`blue`" for now. Alright, and this would also have the same height as the parent. The only difference is we're gonna have to control the width of this element. So just for demo purposes, I'll put the width is 40% so we can actually see that it looks like some sort of, like, range that is ready to roll in there. I'll just add the "`overflow: hidden`" so it clips out, like, the edges and the border-radius shines through in there.
 
-So, let's switch over to the slider thumb. So how do we style this slider thumb? Alright, so I'll add in, like, a width property. So let's just say this is 24 pixels. And then let's say this is 24 pixels as well. Add in a background-color, same as blue. And then figure out why this `<div>` is not showing up on screen. So we've got this slider, and now I've got this slider thumb.
+So, let's switch over to the slider thumb. So how do we style this slider thumb? Alright, so I'll add in, like, a `width` property. So let's just say this is 24 pixels. And then let's say this is 24 pixels as well. Add in a `background-color`, same as `blue`. And then figure out why this `<div>` is not showing up on screen. So we've got this slider, and now I've got this slider thumb.
 
 <i class="timecode">[00:48:03]</i> **Ben:** Is it showing up after the overflow? Is that what's happening? 
 
@@ -590,13 +590,13 @@ So, let's switch over to the slider thumb. So how do we style this slider thumb?
 
 <i class="timecode">[00:48:11]</i> **Ben:** Yeah, there it is.
 
-<i class="timecode">[00:48:11]</i> **Segun:** So let's gonna move the border-radius over to the range. That's a good point. And then the border-radius, we can just set this to 999 to make it, like, perfectly rounded in there.
+<i class="timecode">[00:48:11]</i> **Segun:** So let's gonna move the `border-radius` over to the range. That's a good point. And then the `border-radius`, we can just set this to 999 to make it, like, perfectly rounded in there.
 
-So now we need to figure out how do we position this slider in there somehow. So the first thing I'll do is I'll just use, like, set "position: relative" on the slider itself and then set "position: absolute" on the slider there.
+So now we need to figure out how do we position this slider in there somehow. So the first thing I'll do is I'll just use, like, set "`position: relative`" on the slider itself and then set "`position: absolute`" on the slider there.
 
 <i class="timecode">[00:48:47]</i> **Ben:** Mm-hmm.
 
-<i class="timecode">[00:48:49]</i> **Segun:** Or maybe I could… I could definitely also think about, like, just leveraging, like, the flexbox model as I'll absolutely position that. But then we have "position: absolute" in there. We can set, like, the top. Let's see… let's set the top to, like, 50%. And then we check, like, again. And then I think, like… what was that technique again to sort of, like, center stuff? We do translate. Let's do translate here. Y, and give it 50%.
+<i class="timecode">[00:48:49]</i> **Segun:** Or maybe I could… I could definitely also think about, like, just leveraging, like, the flexbox model as I'll absolutely position that. But then we have "`position: absolute`" in there. We can set, like, the top. Let's see… let's set the top to, like, 50%. And then we check, like, again. And then I think, like… what was that technique again to sort of, like, center stuff? We do translate. Let's do translate here. Y, and give it 50%.
 
 <i class="timecode">[00:49:23]</i> **Ben:** I don't think it needs the quotes, right? 
 
@@ -618,7 +618,7 @@ Right, so now what all we need to do is basically, like, change this, like, left
 
 <i class="timecode">[00:50:06]</i> **Ben:** Okay.
 
-<i class="timecode">[00:50:06]</i> **Segun:** I'll just call it "--offset" for now. I'll make that value 40%. And then I use that variable to control the width here. So I just call that var and grab the offset. Then I use the same variable to control the left positioning of this thumb, right? So I created that var and make that also the offset.
+<i class="timecode">[00:50:06]</i> **Segun:** I'll just call it "`--offset`" for now. I'll make that value 40%. And then I use that variable to control the width here. So I just call that var and grab the offset. Then I use the same variable to control the left positioning of this thumb, right? So I created that var and make that also the offset.
 
 Right, so now we get, like, the slider component in there, but you notice that, like, it's, like, super, like, far away. It should be, like, I mean, at the center there. So we can definitely, like, adjust the left position based off of the width value itself. So, I'm launching the calc() there to sort of like subtract out, like, just that width right there so we have that, like, looking kind of close. So how I got the 12 pixels is, the width and height is 24 pixels so, like, just use that half of that to, like, offset that to the center.
 
@@ -632,11 +632,11 @@ Alright, so now let's get into, like, the accessibility semantics in here for th
 
 <i class="timecode">[00:52:07]</i> **Ben:** Okay.
 
-<i class="timecode">[00:52:08]</i> **Segun:** —for the slider. So it kind of depends, but I mean, what I'll do is, I'll stick to using the container in this use case. So what I'll do is I'll set the role of this element to "slider." Again, these are, like, accessibility semantics in here. And then I will set values like the aria-valuemin, which is the minimum value. And then we have the aria-valuemax, which is the maximum value. For now, let's just use 100 in there.
+<i class="timecode">[00:52:08]</i> **Segun:** —for the slider. So it kind of depends, but I mean, what I'll do is, I'll stick to using the container in this use case. So what I'll do is I'll set the role of this element to "`slider`." Again, these are, like, accessibility semantics in here. And then I will set values like the `aria-valuemin`, which is the minimum value. And then we have the `aria-valuemax`, which is the maximum value. For now, let's just use 100 in there.
 
 <i class="timecode">[00:52:40]</i> **Ben:** Mm-hmm.
 
-<i class="timecode">[00:52:41]</i> **Segun:** And then there's an extra property for accessibility called aria-valuenow, which actually maps to, like, the current value, I mean, of the slider itself. 
+<i class="timecode">[00:52:41]</i> **Segun:** And then there's an extra property for accessibility called `aria-valuenow`, which actually maps to, like, the current value, I mean, of the slider itself. 
 
 <i class="timecode">[00:52:55]</i> **Ben:** Okay. We can get this directly from our machine, right? 
 
@@ -646,9 +646,9 @@ Alright, so now let's get into, like, the accessibility semantics in here for th
 
 <i class="timecode">[00:53:05]</i> **Segun:** And then we'll figure out, like, how the machine plays that role in there.
 
-To make this component focusable, we need to— we're gonna add, like, a tabindex of 0, assuming it's not disabled, of course. If it's disabled, then we can change— dynamically change this value of this property there.
+To make this component focusable, we need to— we're gonna add, like, a `tabindex` of 0, assuming it's not disabled, of course. If it's disabled, then we can change— dynamically change this value of this property there.
 
-Another property we can use is aria-valuetext, which represents, like, the textual value of that slider. So even though the 40 is just a number, you need to see something like "The quantity you've now selected is 40." So that actually gives you more, like, human-readable context to our value.
+Another property we can use is `aria-valuetext`, which represents, like, the textual value of that slider. So even though the 40 is just a number, you need to see something like "The quantity you've now selected is 40." So that actually gives you more, like, human-readable context to our value.
 
 <i class="timecode">[00:53:41]</i> **Ben:** Mm-hmm.
 
@@ -660,35 +660,35 @@ Yeah.
 
 —with the keyboard, which is amazing. Now we need to figure out, like, how do we like increment or decrement the value using the arrow keys, 'cause nothing is happening right now. So let's connect that to the machine, right?
 
-So to connect that to the machine, there there's a hook called useMachine. So, you can import this hook at the top. Let's import the hook from @zag-js/react. Again, the main essence of this is, like, you write your logic in a framework-agnostic way, and then you integrate your logic into a framework. So we have @zag-js/react, we have @zag-js/vue, we have @zag-js/solidjs, depending on the framework that you use.
+So to connect that to the machine, there there's a hook called `useMachine`. So, you can import this hook at the top. Let's import the hook from `@zag-js/react`. Again, the main essence of this is, like, you write your logic in a framework-agnostic way, and then you integrate your logic into a framework. So we have `@zag-js/react`, we have `@zag-js/vue`, we have `@zag-js/solidjs`, depending on the framework that you use.
 
 <i class="timecode">[00:54:40]</i> **Ben:** Mm-hmm.
 
 <i class="timecode">[00:54:41]</i> **Segun:** Right? So now that we have the useMachine, I'm gonna put, like, all of that slider logic that we just built inside that. So now, it's kind of primed and ready for React — React's system of reactivity, basically.
 
-Alright, so let's look at this. If you go all the way here, what this gives us is two things. I call you the "state" and "send," but I will call it "dispatch" just to help people get more familiar with this, right? So, "state" basically represents the current state of the machine, and the current state includes the value — like, is it in idle state, dragging state… — and also the context, which is, like, the data that we looked at, the value and the step size and stuff like that.
+Alright, so let's look at this. If you go all the way here, what this gives us is two things. I call you the "`state`" and "`send`," but I will call it "`dispatch`" just to help people get more familiar with this, right? So, "`state`" basically represents the current state of the machine, and the current state includes the value — like, is it in idle state, dragging state… — and also the context, which is, like, the data that we looked at, the value and the step size and stuff like that.
 
 <i class="timecode">[00:55:24]</i> **Ben:** Okay.
 
-<i class="timecode">[00:55:24]</i> **Segun:** So, that is what it is. "dispatch" is basically the function you use to send events to the machine. We looked at all the possible events that you could send to the machine: FOCUS_OUT, POINTER_DOWN, ARROW_LEFT, ARROW_RIGHT. Those are possible events.
+<i class="timecode">[00:55:24]</i> **Segun:** So, that is what it is. "dispatch" is basically the function you use to send events to the machine. We looked at all the possible events that you could send to the machine: `FOCUS_OUT`, `POINTER_DOWN`, `ARROW_LEFT`, `ARROW_RIGHT`. Those are possible events.
 
 <i class="timecode">[00:55:38]</i> **Ben:** Mm-hmm.
 
-<i class="timecode">[00:55:38]</i> **Segun:** Now with these two properties, you can now, like, connect that to your UI. Like, I mean, just, like, hook into the browser event system and use that to send events to the machine itself. Alright. So down here we'll do, like, "onFocus." Yeah, what we wanna do here on focus basically is we just wanna dispatch the TAB_FOCUS event. We talked about that earlier. So basically when you focus on this element, you just dispatch that TAB_FOCUS event in there. And then the browser event system has, like, an onblur, basically, which means, like, when this component loses focus — let's say when you click outside or you press the Tab key outside. I think the name of that event is called FOCUS_OUT.
+<i class="timecode">[00:55:38]</i> **Segun:** Now with these two properties, you can now, like, connect that to your UI. Like, I mean, just, like, hook into the browser event system and use that to send events to the machine itself. Alright. So down here we'll do, like, "`onFocus`." Yeah, what we wanna do here on focus basically is we just wanna dispatch the `TAB_FOCUS` event. We talked about that earlier. So basically when you focus on this element, you just dispatch that `TAB_FOCUS` event in there. And then the browser event system has, like, an `onblur`, basically, which means, like, when this component loses focus — let's say when you click outside or you press the Tab key outside. I think the name of that event is called `FOCUS_OUT`.
 
-<i class="timecode">[00:56:29]</i> **Ben:** That seems riiight. Yes, it's FOCUS_OUT. 
+<i class="timecode">[00:56:29]</i> **Ben:** That seems riiight. Yes, it's `FOCUS_OUT`. 
 
-<i class="timecode">[00:56:34]</i> **Segun:** Alright, so we put, like, FOCUS_OUT there. So now we've handled, basically, the different events. So now, we see that at this point, all we are doing is basically dispatching events to the machine. We're not handling any complex logic within our UI in general.
+<i class="timecode">[00:56:34]</i> **Segun:** Alright, so we put, like, `FOCUS_OUT` there. So now we've handled, basically, the different events. So now, we see that at this point, all we are doing is basically dispatching events to the machine. We're not handling any complex logic within our UI in general.
 
-<i class="timecode">[00:56:51]</i> **Ben:** What I'm actually gonna do, just to show this off, is I'm gonna stick a `<pre>` tag at the bottom, and I'm gonna do JSON.stringify(). And we'll pass it the state we got from useMachine and then null, 2. And this way, we can actually see in our CodeSandbox, the current value of the state object. And so—
+<i class="timecode">[00:56:51]</i> **Ben:** What I'm actually gonna do, just to show this off, is I'm gonna stick a `<pre>` tag at the bottom, and I'm gonna do `JSON.stringify()`. And we'll pass it the state we got from useMachine and then `null`, `2`. And this way, we can actually see in our CodeSandbox, the current value of the state object. And so—
 
 <i class="timecode">[00:57:17]</i> **Segun:** Exactly.
 
-<i class="timecode">[00:57:18]</i> **Ben:** Now, if I focus on this, you can see that, like, we had an event which was TAB_FOCUS, and… 
+<i class="timecode">[00:57:18]</i> **Ben:** Now, if I focus on this, you can see that, like, we had an event which was `TAB_FOCUS`, and… 
 
 <i class="timecode">[00:57:25]</i> **Segun:** You can just refresh. You can just refresh the page again. Yeah, this gives you that. Exactly.
 
-So you see that you get that event, TAB_FOCUS and FOCUS_OUT, basically being called when you press the Tab key. And then you can see that there's, like, the value and the previous value. So that tells you, like, the state this was actually in before—
+So you see that you get that event, `TAB_FOCUS` and `FOCUS_OUT`, basically being called when you press the Tab key. And then you can see that there's, like, the value and the previous value. So that tells you, like, the state this was actually in before—
 
 <i class="timecode">[00:57:45]</i> **Ben:** Mm-hmm.
 
@@ -702,15 +702,15 @@ So you see that you get that event, TAB_FOCUS and FOCUS_OUT, basically being cal
 
 <i class="timecode">[00:58:06]</i> **Segun:** —within the machine.
 
-So now let's go and, like, handle, like, the keyboard events in here. So I'll invoke the, like, keydown. I'm grabbing the event and I'll just, like, check on, like, the event.key.
+So now let's go and, like, handle, like, the keyboard events in here. So I'll invoke the, like, `keydown`. I'm grabbing the event and I'll just, like, check on, like, the `event.key`.
 
 <i class="timecode">[00:58:20]</i> **Ben:** Mm-hmm.
 
-<i class="timecode">[00:58:21]</i> **Segun:** The event.key property. So let's just say, like, if the event.key is "ArrowLeft," what we do here basically is to dispatch the ARROW_LEFT event—
+<i class="timecode">[00:58:21]</i> **Segun:** The `event.key` property. So let's just say, like, if the `event.key` is "`ArrowLeft`," what we do here basically is to dispatch the `ARROW_LEFT` event—
 
 <i class="timecode">[00:58:38]</i> **Ben:** Okay.
 
-<i class="timecode">[00:58:39]</i> **Segun:** —to the machine. Alright. And then, I mean, again, we can switch on on the "ArrowRight" and then just say, like, dispatch the ARROW_RIGHT event.
+<i class="timecode">[00:58:39]</i> **Segun:** —to the machine. Alright. And then, I mean, again, we can switch on on the "`ArrowRight`" and then just say, like, dispatch the `ARROW_RIGHT` event.
 
 Now, all we've done is basically hook into the browser system — event system — and sort of, like, use that to send events to the machine itself. And now let's see, like, what happens when you do the interactions. 
 
@@ -762,7 +762,7 @@ Okay, yeah. So now… yeah. Now it actually kind of moves at a scale we could ex
 
 <i class="timecode">[01:02:10]</i> **Ben:** Mm-hmm.
 
-<i class="timecode">[01:02:10]</i> **Segun:** So I think the better thing to do is to change that expression to, like, "context.value = context.value + context.size." Exactly. So we need to sort of put… the context.stepSize. Yeah, so you have, like, context.value.stepSize. It should be context.stepSize. 
+<i class="timecode">[01:02:10]</i> **Segun:** So I think the better thing to do is to change that expression to, like, "`context.value = context.value + context.size`." Exactly. So we need to sort of put… the `context.stepSize`. Yeah, so you have, like, `context.value.stepSize`. It should be `context.stepSize`. 
 
 <i class="timecode">[01:02:31]</i> **Ben:** Oh, it's a real — oh, oh. I gotcha, yes. 
 
@@ -776,7 +776,7 @@ Okay, yeah. So now… yeah. Now it actually kind of moves at a scale we could ex
 
 <i class="timecode">[01:03:03]</i> **Segun:** Exactly. So this kind of, like, gives us, like, the general feel of actually, like, building, like, interactive components, right? For the sake of time, we could definitely go into, like, the pointer events and set up the dragging state. But I mean, I could maybe, like, just touch on that briefly if you're interested.
 
-But the main idea here as you've seen is that, like, the entire "slider" variable on line 5 is completely framework-agnostic, and the only time it actually interacts with your framework is in line 65, where you call the useMachine hook.
+But the main idea here as you've seen is that, like, the entire `slider` variable on line 5 is completely framework-agnostic, and the only time it actually interacts with your framework is in line 65, where you call the `useMachine` hook.
 
 <i class="timecode">[01:03:36]</i> **Ben:** Mm-hmm.
 
@@ -802,17 +802,17 @@ So like, I'm on the Zag homepage. I'll go put in a link to the introduction in t
 
 <i class="timecode">[01:05:04]</i> **Ben:** Just only a lot more. 
 
-<i class="timecode">[01:05:07]</i> **Segun:** Exactly. This is literally all there is. And we just basically put that within a package called @zag-js/slider. You can install that and use that automatically.
+<i class="timecode">[01:05:07]</i> **Segun:** Exactly. This is literally all there is. And we just basically put that within a package called `@zag-js/slider`. You can install that and use that automatically.
 
 I think what we do, I mean, other than what we've just seen today is all of the event handlers that we had to attach to the components, we do that automatically as well from the properties.
 
 <i class="timecode">[01:05:27]</i> **Ben:** Mm!
 
-<i class="timecode">[01:05:27]</i> **Segun:** So you don't have to think about like, "Do I attach it to onkeydown or onkeyup?" What we do basically is to share — give you access to an object, and then we just tell you to spread that object onto your element. And when you spread that object, we attach the correct attributes, the correct event handlers automatically so you don't have to think about them. So your main goal now is just build the UI, and just that's it. 
+<i class="timecode">[01:05:27]</i> **Segun:** So you don't have to think about like, "Do I attach it to `onkeydown` or `onkeyup`?" What we do basically is to share — give you access to an object, and then we just tell you to spread that object onto your element. And when you spread that object, we attach the correct attributes, the correct event handlers automatically so you don't have to think about them. So your main goal now is just build the UI, and just that's it. 
 
 <i class="timecode">[01:05:55]</i> **Ben:** That's awesome.
 
-This has been really cool. Unfortunately, we're a little over time, so I wanna start wrapping up. But before we do, I just wanted to ask, is there something… like, what are you working on that, like, you're really excited about? Or, like,what do you think folks using Zag should get excited about?
+This has been really cool. Unfortunately, we're a little over time, so I wanna start wrapping up. But before we do, I just wanted to ask, is there something… like, what are you working on that, like, you're really excited about? Or, like, what do you think folks using Zag should get excited about?
 
 <i class="timecode">[01:06:17]</i> **Segun:** Yeah, I think that, like, one of the things that, like, people using Zag should be excited about is the fact that, like, one, it works across all frameworks. Like, majorly. Like, anywhere JavaScript can work, it can work in there. So right now we have support, as you can see, for Vue and SolidJS automatically, like, out of the box. So, like, we're basically using the same set of machines and actually, like, I mean, giving you code snippets of how you can share this across frameworks.
 
@@ -820,7 +820,7 @@ And one of the things we are also doing is to help you visualize what is going o
 
 <i class="timecode">[01:07:03]</i> **Ben:** Oh! Okay!
 
-<i class="timecode">[01:07:04]</i> **Segun:** Right? So this is, like, no, we're not trying to hide some sort of implementation from you. Basically, you see, like, the logic that's going on. And you can see that some of these are pretty similar to what we built. You can see the ARROW_LEFT, the ARROW_RIGHT. You can see POINTER_MOVE and POINTER_UP in there as well. So you can see there's some sort of similarities between what you've just built and the actual production code itself. 
+<i class="timecode">[01:07:04]</i> **Segun:** Right? So this is, like, no, we're not trying to hide some sort of implementation from you. Basically, you see, like, the logic that's going on. And you can see that some of these are pretty similar to what we built. You can see the `ARROW_LEFT`, the `ARROW_RIGHT`. You can see `POINTER_MOVE` and `POINTER_UP` in there as well. So you can see there's some sort of similarities between what you've just built and the actual production code itself. 
 
 <i class="timecode">[01:07:26]</i> **Ben:** That's awesome. Oh, I really love that, and I'm willing to bet this is built with, like, web tech that's probably a little more screenreader-friendly than our humble little Excalidraw canvas drawing. 
 
