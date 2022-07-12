@@ -27,3 +27,15 @@ The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a global, versioned
 - [Some Antics: Accessible Routing in RedwoodJS](/accessible-routing-in-redwoodjs/)
 - [Some Antics: Vite and the Next Generation of Frontend Tooling](/vite/)
 - [Some Antics: Building APIs with Deno and Oak](/deno-oak-apis/)
+
+## Mentioned Links
+
+- [Installation instructions for the IPFS CLI](https://docs.ipfs.io/install/command-line/)
+- [Installation instructions for IPFS Desktop](https://docs.ipfs.io/install/ipfs-desktop/)
+- [Anthony's "First Look at IPFS" article](https://ajcwebdev.com/a-first-look-at-ipfs)
+- [IPFS's README, hosted on IPFS](https://ipfs.io/ipfs/QmQPeNsJPyVWPFDVHb77w8G42Fvo15z4bG2X8D2GhfbSXc/readme)
+- [IPFS's README, hosted on the Cloudflare gateway](https://cloudflare-ipfs.com/ipfs/QmQPeNsJPyVWPFDVHb77w8G42Fvo15z4bG2X8D2GhfbSXc/readme)
+- [Import Cost extension for VS Code](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+- [Our HTML page via the IPFS gateway](https://ipfs.io/ipfs/QmTuVQjqDTCFyyhpNcgVkfb5bMxtuU5wmLd4zy53CqWqf2?filename=Some%20Antics%20Initial%20Deploy)
+- [Fleek](https://fleek.co)
+- [IPNS documentation](https://docs.ipfs.io/concepts/ipns/)
