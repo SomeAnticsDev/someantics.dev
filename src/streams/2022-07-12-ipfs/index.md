@@ -6,6 +6,9 @@ hosts:
   - Anthony Campolo
 tags:
   - web3
+upload: https://www.twitch.tv/videos/1529960480
+sourceCode: https://github.com/SomeAnticsDev/some-antics-ipfs
+demo: https://some-antics-ipfs.on.fleek.co/
 ---
 
 The [InterPlanetary File System (IPFS)](https://ipfs.io/) is a global, versioned, peer-to-peer filesystem that incorporates ideas from Git and BitTorrent, and the web at large. Among other things, it can be used as a way to deploy a site to the decentralized web.
