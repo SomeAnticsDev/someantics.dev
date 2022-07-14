@@ -6,7 +6,7 @@ hosts:
   - Anthony Campolo
 tags:
   - web3
-upload: https://www.twitch.tv/videos/1529960480
+upload: https://youtu.be/GJQZkm2ut0E
 sourceCode: https://github.com/SomeAnticsDev/some-antics-ipfs
 demo: https://some-antics-ipfs.on.fleek.co/
 ---
