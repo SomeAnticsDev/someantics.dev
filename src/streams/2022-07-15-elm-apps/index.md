@@ -7,6 +7,9 @@ hosts:
 upload: https://www.twitch.tv/videos/1532809176
 sourceCode: https://github.com/SomeAnticsDev/elm-todo-app
 demo: https://some-antics-elm-todos.netlify.app/
+tags:
+  - Elm
+  - Programming Languages
 ---
 
 [Previously on Some Antics](/elm/), we delved into the syntax for [Elm](https://elm-lang.org/), a functional programming language that compiles down to JavaScript, with friend of the show [Lindsay Wardell](https://twitter.com/lindsaykwardell) — but we weren't able to get to application development in time.
