@@ -23,3 +23,12 @@ Join us as Lindsay returns to the stream for a sequel on building Elm apps!
 - [Lindsay's blog](https://lindsaykwardell.com)
 - [Lindsay's Vite Elm Template](https://github.com/lindsaykwardell/vite-elm-template)
 - [Some Antics: Introduction to Elm (with Lindsay Wardell)](/elm/)
+
+## Mentioned Links
+
+- [Vite Elm Template](https://github.com/lindsaykwardell/vite-elm-template)
+- [Elm Packages](https://package.elm-lang.org/)
+- [`elm-css` package](https://package.elm-lang.org/packages/rtfeldman/elm-css/latest/)
+- ["Elm in Action" by Richard Feldman](https://www.manning.com/books/elm-in-action)
+- [Elm Radio podcast](https://elm-radio.com/)
+- [Join the Elm Slack](https://elmlang.herokuapp.com/)
