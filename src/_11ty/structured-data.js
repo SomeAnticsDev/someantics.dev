@@ -109,7 +109,7 @@ function structuredData(data) {
 			description: data.cleansedExcerpt,
 			thumbnail,
 			thumbnailUrl: thumbnail,
-			uploadDate: date.dateIso,
+			uploadDate: data.date.dateIso,
 			duration: data.duration || 'PT1H',
 			requiresSubscription: false
 		};
