@@ -53,9 +53,10 @@ function formatHostAsPerformer(hostName, profiles) {
 }
 
 function structuredData(data) {
-	const thumbnail = `${data.site}/thumbnails/${removeDate(data.page.fileSlug)}`;
+	const thumbnail = `${data.site}/thumbnails/${removeDate(data.page.fileSlug)}.png`;
 
 	const jsonLd = {
+		'@context': 'https://schema.org',
 		'@type': 'BroadcastEvent',
 		broadcastOfEvent: {
 			'@type': 'Event',
