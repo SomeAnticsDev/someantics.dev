@@ -12,6 +12,9 @@
 	{% if thumbnailTitle %}
 	{% assign thumbTitle = thumbnailTitle %}
 	{% endif %}
+	{% if structuredData %}
+	<script type="application/ld+json">{{ structuredData }}</script>
+	{% endif %}
 	<meta property="og:image:alt" content="{{ thumbTitle }} with {{ hosts | formatHosts }}. {{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central." />
 	<meta name="twitter:image" content="{{ site }}/thumbnails/{{ page.fileSlug | removeDate }}.png" />
 	<meta property="twitter:image:alt" content="{{ thumbTitle }} with {{ hosts | formatHosts }}. {{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central." />

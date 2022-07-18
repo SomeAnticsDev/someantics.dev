@@ -5,6 +5,7 @@ hosts:
   - Ben Myers
   - Ben Holmes
 timeOfDay: 1pm
+duration: PT1H45M
 tags:
   - Jamstack
 upload: https://youtu.be/tKiZ_VTE0w4

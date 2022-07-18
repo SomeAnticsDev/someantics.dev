@@ -1,8 +1,9 @@
 const fs = require('fs');
-const {google} = require('calendar-link');
-const {DateTime, Interval} = require('luxon');
+const { google } = require('calendar-link');
+const { DateTime, Interval } = require('luxon');
 const removeMarkdown = require('remove-markdown');
 const youtube = require('youtube-info-streams');
+const { structuredData } = require('../_11ty/structured-data');
 
 /**
  * @param {string} prettyTimeOfDay time of day formatted like "12pm"
@@ -40,7 +41,7 @@ function dateIso(data) {
 		Number(minutes),
 		0, // seconds
 		0, // milliseconds
-		{zone: 'America/Chicago'}
+		{ zone: 'America/Chicago' }
 	);
 
 	return date.toISO();
@@ -96,8 +97,8 @@ async function getUploadIsPublic(youtubeUrl = '') {
 		.replace('watch?v=', '');
 
 	try {
-		const {videoDetails} = await youtube.info(videoId);
-		const {isPrivate, isUnlisted} = videoDetails;
+		const { videoDetails } = await youtube.info(videoId);
+		const { isPrivate, isUnlisted } = videoDetails;
 		const isPublic = !isPrivate && !isUnlisted;
 		return isPublic;
 	} catch (err) {
@@ -116,6 +117,7 @@ module.exports = {
 		return data.page.fileSlug.replace(/^\d{4}-\d{2}-\d{2}-/, '') + '/index.html';
 	},
 	timeOfDay: '2pm',
+	duration: 'PT1H',
 	addNbsp: true,
 	eleventyComputed: {
 		cleansedExcerpt: data => (data.excerpt ? removeMarkdown(data.excerpt.trim()) : ''),
@@ -133,6 +135,11 @@ module.exports = {
 				'https://twitch.tv/SomeAnticsDev'
 		}),
 		uploadIsPublic: data => getUploadIsPublic(data.upload),
-		transcriptPath
+		transcriptPath,
+		structuredData: (data) => {
+			return data.page.inputPath.includes('/transcript.md') ?
+				undefined :
+				structuredData(data);
+		}
 	}
 };
