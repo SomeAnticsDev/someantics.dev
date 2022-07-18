@@ -104,6 +104,7 @@ function structuredData(data) {
 		jsonLd.video = {
 			'@type': 'VideoObject',
 			url: data.upload,
+			embedUrl: data.upload,
 			name: `${data.title} | Some Antics`,
 			description: data.cleansedExcerpt,
 			thumbnail,
