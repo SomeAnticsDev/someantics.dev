@@ -24,7 +24,7 @@ function formatHostAsPerformer(hostName, profiles) {
 		return ben;
 	}
 
-	const hostProfile = profiles[hostName] ?? {};
+	const hostProfile = profiles[hostName] || {};
 
 	const hostJsonLd = {
 		'@type': 'Person',
@@ -70,9 +70,9 @@ function structuredData(data) {
 			startDate: data.dateIso,
 			endDate: DateTime
 				.fromISO(data.dateIso)
-				.plus(Duration.fromISO(data.duration ?? 'PT1H'))
+				.plus(Duration.fromISO(data.duration || 'PT1H'))
 				.toISO(),
-			duration: data.duration ?? 'PT1H',
+			duration: data.duration || 'PT1H',
 			audience: 'Web developers'
 		},
 		location: {
@@ -95,7 +95,7 @@ function structuredData(data) {
 			'@type': 'VideoObject',
 			url: data.upload,
 			thumbnail,
-			duration: data.duration ?? 'PT1H',
+			duration: data.duration || 'PT1H',
 			requiresSubscription: false
 		};
 	};
