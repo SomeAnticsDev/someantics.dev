@@ -74,8 +74,17 @@ function structuredData(data) {
 				.plus(Duration.fromISO(data.duration || 'PT1H'))
 				.toISO(),
 			duration: data.duration || 'PT1H',
-			audience: 'Web developers'
+			audience: 'Web developers',
+			location: {
+				'@type': 'VirtualLocation',
+				url: 'https://www.twitch.tv/SomeAnticsDev'
+			},
+			organizer: ben,
+			performers: data.hosts ?
+				data.hosts.map(hostName => formatHostAsPerformer(hostName, data.profiles)) :
+				undefined,
 		},
+		description: data.cleansedExcerpt,
 		location: {
 			'@type': 'VirtualLocation',
 			url: 'https://www.twitch.tv/SomeAnticsDev'
@@ -95,7 +104,10 @@ function structuredData(data) {
 		jsonLd.video = {
 			'@type': 'VideoObject',
 			url: data.upload,
+			name: `${data.title} | Some Antics`,
+			description: data.cleansedExcerpt,
 			thumbnail,
+			thumbnailUrl: thumbnail,
 			duration: data.duration || 'PT1H',
 			requiresSubscription: false
 		};
