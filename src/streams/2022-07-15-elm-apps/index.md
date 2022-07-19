@@ -4,7 +4,7 @@ thumbnailTitle: Build Elm Apps
 hosts:
   - Ben Myers
   - Lindsay Wardell
-upload: https://www.twitch.tv/videos/1532809176
+upload: https://youtu.be/crUrv2-Uq8s
 sourceCode: https://github.com/SomeAnticsDev/elm-todo-app
 demo: https://some-antics-elm-todos.netlify.app/
 tags:
