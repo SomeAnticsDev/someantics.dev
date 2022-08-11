@@ -10,14 +10,13 @@
 		"pronouns": "he/him",
 		"twitter": "bolonio",
 		"website": "https://www.adrianbolonio.com",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_faces,b_rgb:262c35/v1644247844/Some%20Antics%20Avatars/Adrián%20Bolonio.jpg"
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_faces/v1644247844/Some%20Antics%20Avatars/Adrián%20Bolonio.jpg"
 	},
 	"Adrian Roselli": {
 		"name": "Adrian Roselli",
 		"pronouns": "he/him",
 		"twitter": "aardrian",
-		"website": "https://adrianroselli.com/",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1651686637/Some%20Antics%20Avatars/Adrian%20Roselli.jpg"
+		"website": "https://adrianroselli.com/"
 	},
 	"Adrianne Mallett": {
 		"name": "Adrianne Mallett",
@@ -39,23 +38,22 @@
 		"name": "Alex Ayaub",
 		"pronouns": "she/her",
 		"instagram": "alexandraayyy",
-		"website": "http://www.ninesblog.com/"
+		"website": "http://www.ninesblog.com/",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/c_thumb,g_face,q_auto,f_auto,w_400,h_400/v1617494798/Some%20Antics%20Avatars/Alex%20Ayaub"
 	},
 	"Alex Riviere": {
 		"name": "Alex Riviere",
 		"pronouns": "he/him",
 		"twitter": "fimion",
 		"twitch": "Fimion",
-		"website": "https://alex.party",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1639093554/Some%20Antics%20Avatars/Alex%20Riviere.jpg"
+		"website": "https://alex.party"
 	},
 	"Alex Trost": {
 		"name": "Alex Trost",
 		"pronouns": "he/him",
 		"twitter": "trostcodes",
 		"twitch": "TrostCodes",
-		"website": "https://frontend.horse",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1620394752/Some%20Antics%20Avatars/Alex%20Trost.jpg"
+		"website": "https://frontend.horse"
 	},
 	"Alexa Heinrich": {
 		"name": "Alexa Heinrich",
@@ -67,8 +65,7 @@
 		"name": "Alistair Shepherd",
 		"pronouns": "he/him",
 		"twitter": "Accudio",
-		"website": "https://alistairshepherd.uk",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1641569708/Some%20Antics%20Avatars/Alistair%20Shepherd.jpg"
+		"website": "https://alistairshepherd.uk"
 	},
 	"Amit Sheen": {
 		"name": "Amit Sheen",
@@ -87,15 +84,13 @@
 		"name": "Anna E. Cook",
 		"pronouns": "she/they",
 		"twitter": "annaecook",
-		"website": "https://annaecook.com",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1620394752/Some%20Antics%20Avatars/Anna%20E.%20Cook.jpg"
+		"website": "https://annaecook.com"
 	},
 	"Anne-Mieke Bovelett": {
 		"name": "Anne-Mieke Bovelett",
 		"pronouns": "she/her",
 		"twitter": "Bovelett",
-		"website": "https://annebovelett.eu",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1620394752/Some%20Antics%20Avatars/Anne-Mieke%20Bovelett.jpg"
+		"website": "https://annebovelett.eu"
 	},
 	"Anthony Campolo": {
 		"name": "Anthony Campolo",
@@ -140,8 +135,7 @@
 		"name": "Brittney Postma",
 		"pronouns": "she/her",
 		"twitter": "BrittneyPostma",
-		"website": "https://brittneypostma.com",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1644026223/Some%20Antics%20Avatars/Brittney%20Postma.png"
+		"website": "https://brittneypostma.com"
 	},
 	"Bruno Maag": {
 		"name": "Bruno Maag",
@@ -154,15 +148,13 @@
 		"name": "Carie Fisher",
 		"pronouns": "she/her",
 		"twitter": "cariefisher",
-		"website": "https://cariefisher.com",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1620394752/Some%20Antics%20Avatars/Carie%20Fisher.jpg"
+		"website": "https://cariefisher.com"
 	},
 	"Chance Strickland": {
 		"name": "Chance Strickland",
 		"pronouns": "he/him",
 		"twitter": "chancethedev",
-		"website": "https://chance.dev",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1660228173/Some%20Antics%20Avatars/Chance%20Strickland.jpg"
+		"website": "https://chance.dev"
 	},
 	"Chantastic": {
 		"name": "Michael Chan",
@@ -180,8 +172,7 @@
 		"name": "Chris Ferdinandi",
 		"pronouns": "he/him",
 		"twitter": "ChrisFerdinandi",
-		"website": "https://gomakethings.com",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_north/v1646926643/Some%20Antics%20Avatars/Chris%20Ferdinandi.jpg"
+		"website": "https://gomakethings.com"
 	},
 	"Crystal Preston-Watson": {
 		"name": "Crystal Preston-Watson",
@@ -205,8 +196,7 @@
 		"name": "Dave Rupert",
 		"pronouns": "he/him",
 		"twitter": "davatron5000",
-		"website": "https://daverupert.com",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1645054954/Some%20Antics%20Avatars/Dave%20Rupert.jpg"
+		"website": "https://daverupert.com"
 	},
 	"Dom Saadi": {
 		"name": "Dom Saadi",
@@ -253,22 +243,19 @@
 		"name": "Heather S. Neff",
 		"pronouns": "she/her",
 		"twitter": "HeatherSNeff",
-		"website": "https://equivalent.design",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1653495540/Some%20Antics%20Avatars/Heather%20S.%20Neff.jpg"
+		"website": "https://equivalent.design"
 	},
 	"Hidde de Vries": {
 		"name": "Hidde de Vries",
 		"pronouns": "he/him",
 		"twitter": "hdv",
-		"website": "https://hidde.blog",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/v1638991345/Some%20Antics%20Avatars/Hidde%20de%20Vries.jpg"
+		"website": "https://hidde.blog"
 	},
 	"Jim Drury": {
 		"name": "Jim Drury",
 		"pronouns": "he/him",
 		"twitter": "jim_drury",
-		"twitch": "GeometricJim",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1659987213/Some%20Antics%20Avatars/Jim%20Drury.jpg"
+		"twitch": "GeometricJim"
 	},
 	"Joe Lamyman": {
 		"name": "Joe Lamyman",
@@ -288,8 +275,7 @@
 		"pronouns": "he/him",
 		"twitter": "KevinJPowell",
 		"twitch": "KevinPowellCSS",
-		"website": "https://www.kevinpowell.co/",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1647362035/Some%20Antics%20Avatars/Kevin%20Powell.jpg"
+		"website": "https://www.kevinpowell.co/"
 	},
 	"Kilian Valkhof": {
 		"name": "Kilian Valkhof",
@@ -300,8 +286,7 @@
 	"Larry Hudson": {
 		"name": "Larry Hudson",
 		"pronouns": "he/him",
-		"twitter": "larryhudsondev",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1644385830/Some%20Antics%20Avatars/Larry%20Hudson.jpg"
+		"twitter": "larryhudsondev"
 	},
 	"Lindsay Wardell": {
 		"name": "Lindsay Wardell",
@@ -327,8 +312,7 @@
 		"name": "Manuel Matuzović",
 		"pronouns": "he/him",
 		"twitter": "mmatuzo",
-		"website": "https://matuzo.at",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1652909226/Some%20Antics%20Avatars/Manuel%20Matuzović.jpg"
+		"website": "https://matuzo.at"
 	},
 	"Martin Bavio": {
 		"name": "Martin Bavio",
@@ -347,14 +331,12 @@
 	"Miško Hevery": {
 		"name": "Miško Hevery",
 		"pronouns": "he/him",
-		"twitter": "mhevery",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/v1657662602/Some%20Antics%20Avatars/Misko%20Hevery.jpg"
+		"twitter": "mhevery"
 	},
 	"Patrick Hulce": {
 		"name": "Patrick Hulce",
 		"pronouns": "he/him",
-		"twitter": "patrickhulce",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1641569663/Some%20Antics%20Avatars/Patrick%20Hulce.jpg"
+		"twitter": "patrickhulce"
 	},
 	"Rachel Leggett": {
 		"name": "Rachel Leggett",
@@ -384,8 +366,7 @@
 		"name": "Sandrina Pereira",
 		"pronouns": "she/her",
 		"twitter": "a_sandrina_p",
-		"website": "https://sandrina-p.net",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1620394752/Some%20Antics%20Avatars/Sandrina%20Pereira.jpg"
+		"website": "https://sandrina-p.net"
 	},
 	"Sarah Beardsley": {
 		"name": "Sarah Beardsley",
@@ -444,8 +425,7 @@
 		"name": "Varun Vachhar",
 		"pronouns": "he/him",
 		"twitter": "winkerVSbecks",
-		"website": "https://varun.ca/",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1653153605/Some%20Antics%20Avatars/Varun%20Vachhar.jpg"
+		"website": "https://varun.ca/"
 	},
 	"Zach Leatherman": {
 		"name": "Zach Leatherman",
