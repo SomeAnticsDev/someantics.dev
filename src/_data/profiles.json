@@ -321,6 +321,14 @@
 		"twitch": "marbiano",
 		"website": "https://marbiano.com"
 	},
+	"Mayank": {
+		"name": "Mayank",
+		"pronouns": "they/them",
+		"twitter": "m_yxnk",
+		"twitch": "mayank_dev",
+		"website": "https://blog.mayank.co/",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_faces,f_auto,q_auto/v1660251354/Some%20Antics%20Avatars/Mayank.jpg"
+	},
 	"Mike Aparicio": {
 		"name": "Mike Aparicio",
 		"pronouns": "he/him",
