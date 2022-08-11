@@ -161,7 +161,8 @@
 		"name": "Chance Strickland",
 		"pronouns": "he/him",
 		"twitter": "chancethedev",
-		"website": "https://chance.dev"
+		"website": "https://chance.dev",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto/v1660228173/Some%20Antics%20Avatars/Chance%20Strickland.jpg"
 	},
 	"Chantastic": {
 		"name": "Michael Chan",
