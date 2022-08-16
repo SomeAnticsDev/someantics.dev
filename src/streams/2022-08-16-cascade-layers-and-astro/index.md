@@ -4,6 +4,9 @@ thumbnailTitle: Modern Websites with CSS Cascade Layers and Astro
 hosts:
   - Ben Myers
   - Mayank
+upload: https://www.twitch.tv/videos/1563918235
+sourceCode: https://github.com/mayank99/astro-layers-demo/pull/1/commits/2be315a38d860006fe3f07cd8ef615677ce2fe01
+demo: https://some-antics-cascade-layers-and-astro.netlify.app/
 ---
 
 Mayank joins the stream to show off their take on modern websites, featuring some of the latest and greatest from CSS like [cascade layers](https://css-tricks.com/css-cascade-layers/), as well as building with [Astro](https://astro.build).
