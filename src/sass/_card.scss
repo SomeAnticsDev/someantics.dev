@@ -1,0 +1,23 @@
+@import 'mixins';
+
+[data-card] {
+	@include block-link-container;
+	background-color: var(--yellow-0);
+	border-radius: var(--radius-conditional-2);
+	box-shadow: var(--shadow-4);
+	padding: var(--size-4);
+
+	& a {
+		color: inherit;
+		strong, small {
+			display: block;
+		}
+		&:first-child {
+			@include block-link;
+		}
+	}
+
+	&[data-card="featured"] {
+		max-width: 30ch;
+	}
+}

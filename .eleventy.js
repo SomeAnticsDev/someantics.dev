@@ -1,5 +1,5 @@
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
-const sass = require('eleventy-plugin-sass');
+const sass = require('eleventy-sass');
 const embedTwitch = require('eleventy-plugin-embed-twitch');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
 const emphasis = require('eleventy-plugin-emphasis');
@@ -39,13 +39,22 @@ module.exports = (config) => {
 
 
 	// Passthroughs
-	config.addPassthroughCopy('./src/css/');
-	config.addWatchTarget('./src/css/');
+	// config.addPassthroughCopy('./src/css/');
+	// config.addWatchTarget('./src/css/');
 	config.addPassthroughCopy('./src/thumbnails/');
 
 	// Plugins
 	config.addPlugin(EleventyRenderPlugin);
-	config.addPlugin(sass, { outputDir: '_site/css', remap: true });
+	config.addPlugin(
+		sass,
+		{
+			compileOptions: {
+				permalink(contents, inputPath) {
+					return data => (data.page.filePathStem.replace(/^\/scss\//, '/css/') + '.css');
+				}
+			}
+		}
+	);
 	config.addPlugin(embedYouTube);
 	config.addPlugin(embedTwitch, { parent: 'someantics.dev' })
 	config.addPlugin(socialImages);

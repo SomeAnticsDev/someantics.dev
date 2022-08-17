@@ -1,0 +1,16 @@
+@import 'variables';
+
+main {
+	section {
+		padding: var(--size-6);
+		background-color: var(--indigo-0);
+		&:nth-child(odd) {
+			background-color: var(--indigo-1);
+		}
+	}
+
+	h2 {
+		font-size: var(--font-size-fluid-1);
+		color: whitesmoke;
+	}
+}
