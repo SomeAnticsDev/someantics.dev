@@ -1,4 +1,5 @@
 @mixin block-link-container {
+	@include focus-within-outline;
 	position: relative;
 }
 
@@ -7,5 +8,33 @@
 		content: '';
 		position: absolute;
 		inset: 0;
+	}
+}
+
+@mixin focus-outline {
+	&:focus-visible {
+		outline: 3px solid var(--yellow-4);
+		outline-offset: 5px;
+		border-radius: var(--radius-2);
+	}
+}
+
+@mixin focus-within-outline {
+	&:focus-within {
+		outline: 3px solid var(--yellow-4);
+		outline-offset: 8px;
+		border-radius: var(--radius-2);
+
+		& :focus {
+			outline: none;
+		}
+	}
+}
+
+@mixin hover-translucency($opacity: 0.8, $speed: 0.15s) {
+	transition: opacity $speed var(--ease-in-out-1);
+
+	&:hover {
+		opacity: $opacity;
 	}
 }

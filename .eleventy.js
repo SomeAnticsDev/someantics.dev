@@ -41,6 +41,7 @@ module.exports = (config) => {
 	// Passthroughs
 	// config.addPassthroughCopy('./src/css/');
 	// config.addWatchTarget('./src/css/');
+	config.addPassthroughCopy('./src/fonts/');
 	config.addPassthroughCopy('./src/thumbnails/');
 
 	// Plugins

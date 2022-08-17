@@ -1,3 +1,4 @@
+@import 'mixins';
 @import 'variables';
 
 body > header {
@@ -18,7 +19,11 @@ body > header {
 	}
 	
 	a {
+		@include focus-outline;
+		@include hover-translucency;
 		color: white;
+		font-family: 'Nexa', sans-serif;
+		font-weight: var(--font-weight-6);
 		text-decoration: none;
 	}
 }
@@ -28,4 +33,14 @@ body > footer {
 	color: var(--violet-0);
 	padding: var(--size-2);
 	text-align: center;
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+	font-weight: var(--font-weight-9);
+	margin-block: 0.5em;
+	& svg {
+		height: 2rem;
+	}
 }

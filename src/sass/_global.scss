@@ -15,6 +15,11 @@ html {
 	background-color: var(--gray-1);
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Nexa', sans-serif;
+}
+
+@import 'fonts';
 @import 'site-navigation';
 @import 'hero';
 @import 'card';

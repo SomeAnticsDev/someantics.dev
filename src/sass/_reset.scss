@@ -110,3 +110,9 @@ abbr:not([title]):hover {
 		cursor: pointer;
 	}
 }
+
+h1, h2 {
+	* {
+		font-family: inherit;
+	}
+}

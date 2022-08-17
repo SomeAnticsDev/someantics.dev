@@ -24,22 +24,51 @@ $background-backlit-tesselation: 'https://res.cloudinary.com/bendmyers/image/upl
 	}
 	
 	h1 {
-		color: white;
-		font-family: 'Nexa';
-		font-size: var(--font-size-fluid-3);
+		--font-size-fluid-3-1: calc(var(--font-size-fluid-3) - 4pt);
+		--font-size-fluid-3-2: calc(var(--font-size-fluid-3) + 32pt);
+		color: var(--violet-0);
+		font-size: var(--font-size-fluid-3-1);
+		line-height: var(--font-lineheight-0);
 
 		& strong {
-			color: var(--yellow-5);
+			color: var(--yellow-4);
+			font-size: var(--font-size-fluid-3-2);
+			font-weight: var(--font-weight-9);
+			line-height: var(--font-lineheight-0);
 		}
 	}
 
 	.tagline {
-		max-width: 50ch;
-		color: whitesmoke;
+		font-family: 'Nexa', sans-serif;
+		max-width: 30ch;
+		color: var(--violet-1);
 		font-style: italic;
-		font-size: var(--font-size-fluid-1);
+		font-size: calc(var(--font-size-fluid-1) + 2pt);
 	}
 
+	.cta {
+		@include focus-outline;
+		@include hover-translucency;
+		color: var(--violet-1);
+		font-family: 'Nexa', sans-serif;
+		font-size: calc(var(--font-size-fluid-1) - 4pt);
+		font-weight: var(--font-weight-9);
+		display: flex;
+		width: max-content;
+		text-decoration: none;
+		border-radius: var(--radius-2);
+		background-image: var(--gradient-purple-bright);
+		margin-block-start: var(--size-6);
+		padding: calc(var(--size-2) + 4pt) var(--size-4);
+		user-select: none;
+
+		& svg {
+			display: inline;
+			height: 1.5em;
+			fill: currentColor;
+			margin-inline-end: var(--size-3);
+		}
+	}
 }
 
 .block {
