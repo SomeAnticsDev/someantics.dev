@@ -77,4 +77,18 @@
 			outline: 3px solid $purple-3;
 		}
 	}
+
+
+	@media screen and (forced-colors: active) {
+		& img {
+			outline: 3px solid LinkText;
+		}
+
+		&:focus-within,
+		&:hover {
+			& img {
+				outline: 7px solid Highlight;
+			}
+		}
+	}
 }
