@@ -13,58 +13,58 @@ stylesheet: homepage.css
 		{% include 'icons/twitch.svg' %} Follow on Twitch
 	</a>
 </header>
-<section>
-	<h2>Catch the next stream live!</h2>
+<section aria-labelledby="h-upcoming">
+	<h2 id="h-upcoming">Catch the next stream live!</h2>
 	<div class="stream-grid upcoming-streams">
 		{% for stream in collections.upcomingStreams limit:4 %}
 		{% assign people = stream.data.guests | concat: stream.data.hosts %}
 		{% assign featuredPerson = people.first %}
 		{% if forloop.index == 1 %}
-		<article data-card="featured">
+		<article data-card="featured" aria-labelledby="upc-{{stream.fileSlug}}-title upc-{{stream.fileSlug}}-guests">
 			<img src="{{ profiles[featuredPerson].name | avatar: profiles }}" alt="">
 			<time datetime="{{ stream.data.dateIso }}">
 				{{ stream.data.date | date: 'ddd, MMM D, YYYY' }} at {{ stream.data.timeOfDay }}
 			</time>
-			<a href="{{ stream.url }}">
+			<a href="{{ stream.url }}" id="upc-{{stream.fileSlug}}-title">
 				{{ stream.data.thumbnailTitle }}
 			</a>
-			<small class="guests">with <b>{{stream.data.guests | join: ', '}}</b></small>
+			<small class="guests" id="upc-{{stream.fileSlug}}-guests">with <b>{{stream.data.guests | join: ', '}}</b></small>
 			<p class="excerpt">{{ stream.data.cleansedExcerpt }}</p>
 		</article>
 		{% else %}
-		<article data-card>
+		<article data-card aria-labelledby="upc-{{stream.fileSlug}}-title upc-{{stream.fileSlug}}-guests">
 			<img src="{{ profiles[featuredPerson].name | avatar: profiles }}" alt="">
 			<div>
 				<time datetime="{{ stream.data.dateIso }}">
 					{{ stream.data.date | date: 'ddd, MMM D, YYYY' }} at {{ stream.data.timeOfDay }}
 				</time>
-				<a href="{{ stream.url }}">
+				<a href="{{ stream.url }}" id="upc-{{stream.fileSlug}}-title">
 					{{ stream.data.thumbnailTitle }}
 				</a>
-				<small class="guests">with <b>{{stream.data.guests | join: ', '}}</b></small>
+				<small class="guests" id="upc-{{stream.fileSlug}}-guests">with <b>{{stream.data.guests | join: ', '}}</b></small>
 			</div>
 		</article>
 		{% endif %}
 		{% endfor %}
 	</div>
 </section>
-<section>
-	<h2>Watch recent streams</h2>
+<section aria-labelledby="h-past">
+	<h2 id="h-past">Watch recent streams</h2>
 	<div class="stream-grid past-streams">
 		{% assign pastStreams = collections.pastStreams | reverse %}
 		{% for stream in pastStreams limit:6 %}
 		{% assign people = stream.data.guests | concat: stream.data.hosts %}
 		{% assign featuredPerson = people.first %}
-		<article data-card>
+		<article data-card aria-labelledby="past-{{stream.fileSlug}}-title past-{{stream.fileSlug}}-guests">
 			<img src="{{ profiles[featuredPerson].name | avatar: profiles }}" alt="">
 			<div>
 				<time datetime="{{ stream.data.dateIso }}">
 					{{ stream.data.date | date: 'ddd, MMM D, YYYY' }} at {{ stream.data.timeOfDay }}
 				</time>
-				<a href="{{ stream.url }}">
+				<a href="{{ stream.url }}" id="past-{{stream.fileSlug}}-title">
 					{{ stream.data.thumbnailTitle }}
 				</a>
-				<small class="guests">with <b>{{stream.data.guests | join: ', '}}</b></small>
+				<small class="guests" id="past-{{stream.fileSlug}}-guests">with <b>{{stream.data.guests | join: ', '}}</b></small>
 			</div>
 		</article>
 		{% endfor %}
