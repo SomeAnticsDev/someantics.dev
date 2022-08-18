@@ -89,3 +89,7 @@ main {
 	place-items: center;
 	margin-top: var(--size-6);
 }
+
+section .cta {
+	@include focus-outline($purple-5);
+}

@@ -48,6 +48,12 @@
 			width: var(--size-12);
 			margin-block-start: calc(-1 * var(--size-10));
 			margin-inline: auto;
+			position: absolute;
+			left: calc(50% - calc(var(--size-12) / 2));
+		}
+
+		& time {
+			margin-top: calc(var(--size-12) / 1.75);
 		}
 	}
 	
@@ -63,6 +69,12 @@
 
 		.excerpt {
 			border-block-start: 1px solid var(--yellow-6);
+		}
+	}
+
+	&:focus-within {
+		& img {
+			outline: 3px solid $purple-3;
 		}
 	}
 }

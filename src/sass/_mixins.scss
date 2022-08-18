@@ -1,7 +1,7 @@
 @import 'variables';
 
 @mixin block-link-container {
-	@include focus-within-outline($purple-3);
+	@include focus-within-outline($purple-3, 3px, 0px);
 	position: relative;
 }
 
