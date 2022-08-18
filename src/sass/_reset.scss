@@ -2,7 +2,6 @@
 *::before,
 *::after {
 	box-sizing: border-box;
-	font-family: sans-serif;
 }
 
 /* Remove default padding */
@@ -34,6 +33,7 @@ body {
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+	font-family: 'Inter', sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -55,14 +55,6 @@ img {
 
 figure img {
 	display: initial;
-}
-
-/* Natural flow and rhythm in articles by default */
-// main > * + *,
-article > * + *,
-article > ul > * + *,
-article > ol > * + * {
-	margin-top: 1.5em;
 }
 
 /* Inherit fonts for inputs and buttons */

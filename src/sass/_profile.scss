@@ -1,0 +1,63 @@
+@import 'variables';
+
+.profile {
+	background-color: rgb(255 255 255 / 0.4);
+	max-width: 20ch;
+	box-shadow: var(--shadow-2);
+	border-radius: var(--radius-3);
+	display: flex;
+	flex-direction: column;
+
+	.name {
+		font-family: 'Nexa', sans-serif;
+		font-weight: var(--font-weight-9);
+		font-size: var(--font-size-4);
+		text-align: center;
+		margin-top: var(--size-4);
+	}
+
+	.pronouns {
+		display: block;
+		font-family: 'Nexa', sans-serif;
+		font-size: var(--font-size-1);
+		font-style: italic;
+		text-align: center;
+		margin-top: var(--size-00);
+	}
+
+	.profile-avatar {
+		@include border-gradient(linear-gradient(to right, #ee4433, #eed043), 3px);
+		border-radius: var(--radius-round);
+		width: 70%;
+		margin-inline: auto;
+		margin-block-start: calc(-1 * var(--size-3));
+		box-shadow: var(--shadow-3);
+	}
+
+	dl {
+		padding: var(--size-2) var(--size-3);
+		& > div {
+			display: flex;
+			align-items: center;
+			gap: var(--size-2);
+			padding-block: var(--size-1);
+		}
+	}
+
+	& svg {
+		width: 1.2rem;
+		display: inline;
+		margin-bottom: -0.3rem;
+	}
+
+	@media screen and (max-width: $stream-breakpoint) {
+		& .profile-avatar {
+			width: var(--size-10);
+		}
+
+		& .name {
+			min-width: max-content;
+			margin-inline: var(--size-5);
+		}
+	}
+}

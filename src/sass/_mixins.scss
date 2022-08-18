@@ -11,10 +11,14 @@
 	}
 }
 
-@mixin focus-outline {
+@mixin focus-outline(
+	$outline-color: var(--yellow-4),
+	$outline-width: 3px,
+	$outline-offset: 5px
+) {
 	&:focus-visible {
-		outline: 3px solid var(--yellow-4);
-		outline-offset: 5px;
+		outline: $outline-width solid $outline-color;
+		outline-offset: $outline-offset;
 		border-radius: var(--radius-2);
 	}
 }
@@ -36,5 +40,38 @@
 
 	&:hover {
 		opacity: $opacity;
+	}
+}
+
+@mixin border-gradient($gradient, $top: 0, $right: $top, $bottom: $top, $left: $right) {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-style: solid;
+		border-width: 0;
+		border-top-width: $top;
+		border-bottom-width: $bottom;
+		border-left-width: $left;
+		border-right-width: $right;
+		border-image: $gradient 1;
+		z-index: 1;
+		pointer-events: none;
+	}
+}
+
+@mixin flow($gap: var(--size-5)) {
+	& > * + * {
+		margin-top: $gap;
+	}
+
+	& > h2 + * {
+		margin-top: calc($gap / 3);
+	}
+
+	& > ol > li + li,
+	& > ul > li + li {
+		margin-top: calc($gap / 3);
 	}
 }

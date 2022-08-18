@@ -108,7 +108,7 @@ async function getUploadIsPublic(youtubeUrl = '') {
 }
 
 module.exports = {
-	layout: 'stream.html',
+	layout: 'stream-new.html',
 	permalink: (data) => {
 		if (data.page.inputPath.includes('/transcript.md')) {
 			return false;
