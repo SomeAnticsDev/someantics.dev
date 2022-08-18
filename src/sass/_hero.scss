@@ -47,7 +47,7 @@ $background-backlit-tesselation: 'https://res.cloudinary.com/bendmyers/image/upl
 
 	&[data-hero="stream"] {
 		time {
-			@include border-gradient(var(--gradient-purple-bright), 0, 0, 3px);
+			// @include border-gradient(var(--gradient-purple-bright), 0, 0, 3px);
 			display: block;
 			width: max-content;
 			padding-inline-end: 0.2em;

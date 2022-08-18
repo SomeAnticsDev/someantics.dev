@@ -45,13 +45,13 @@ stylesheet: stream.css
 	</section>
 	{% endif %}
 	<aside class="sidebar">
-		{% for host in hosts %}
-		{% include 'profile.html', profile: profiles[host] %}
-		{% endfor %}
 		{% if guests %}
 		{% for guest in guests %}
 		{% include 'profile.html', profile: profiles[guest] %}
 		{% endfor %}
 		{% endif %}
+		{% for host in hosts %}
+		{% include 'profile.html', profile: profiles[host] %}
+		{% endfor %}
 	</aside>
 </div>

@@ -2,7 +2,7 @@
 
 .profile {
 	background-color: rgb(255 255 255 / 0.4);
-	max-width: 20ch;
+	max-width: 25ch;
 	box-shadow: var(--shadow-2);
 	border-radius: var(--radius-3);
 	display: flex;
@@ -14,6 +14,7 @@
 		font-size: var(--font-size-4);
 		text-align: center;
 		margin-top: var(--size-4);
+		padding-inline: var(--size-2);
 	}
 
 	.pronouns {
@@ -51,6 +52,7 @@
 	}
 
 	@media screen and (max-width: $stream-breakpoint) {
+		max-width: fit-content;
 		& .profile-avatar {
 			width: var(--size-10);
 		}

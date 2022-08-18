@@ -4,6 +4,7 @@ thumbnailTitle: Accessibility from the Backend
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Chance Strickland
 tags:
   - Backend Development

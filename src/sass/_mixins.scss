@@ -1,5 +1,7 @@
+@import 'variables';
+
 @mixin block-link-container {
-	@include focus-within-outline;
+	@include focus-within-outline($purple-3);
 	position: relative;
 }
 
@@ -23,10 +25,14 @@
 	}
 }
 
-@mixin focus-within-outline {
+@mixin focus-within-outline(
+	$outline-color: var(--yellow-4),
+	$outline-width: 3px,
+	$outline-offset: 8px
+) {
 	&:focus-within {
-		outline: 3px solid var(--yellow-4);
-		outline-offset: 8px;
+		outline: $outline-width solid $outline-color;
+		outline-offset: $outline-offset;
 		border-radius: var(--radius-2);
 
 		& :focus {

@@ -23,7 +23,7 @@ main a {
 
 .video-embed {
 	@include border-gradient(var(--gradient-red-yellow), 5px);
-	width: 70% !important;
+	width: 75% !important;
 	margin-inline: auto;
 	margin-block-start: calc(-1 * var(--size-10));
 	z-index: 1;
@@ -88,6 +88,7 @@ main a {
 	gap: var(--size-8);
 	margin-block: var(--size-8);
 	padding-inline-start: var(--size-9);
+	padding-inline-end: var(--size-5);
 	
 	@media screen and (max-width: $stream-breakpoint) {
 		// max-width: 60ch;
