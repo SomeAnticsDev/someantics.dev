@@ -55,9 +55,14 @@
 		width: var(--size-11);
 		box-shadow: var(--shadow-3);
 		border-radius: var(--radius-round);
+		cursor: pointer;
 	}
 
 	&:hover {
 		background-color: var(--yellow-3);
+
+		.excerpt {
+			border-block-start: 1px solid var(--yellow-6);
+		}
 	}
 }
