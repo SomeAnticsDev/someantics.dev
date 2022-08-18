@@ -75,6 +75,17 @@ main {
 }
 
 .past-streams {
-	place-items: center;
+	// place-items: center;
 	grid-template-rows: masonry;
+	margin-block-start: var(--size-4);
+
+	& [data-card] {
+		width: 90%;
+	}
+}
+
+.cta-container {
+	display: grid;
+	place-items: center;
+	margin-top: var(--size-6);
 }
