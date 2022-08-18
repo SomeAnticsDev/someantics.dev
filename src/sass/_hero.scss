@@ -3,8 +3,11 @@
 $background-backlit-tesselation: 'https://res.cloudinary.com/bendmyers/image/upload/v1619896651/backlit_thumbnail_dzmjac.png';
 
 [data-hero] {
-	--font-size-fluid-3-1: calc(var(--font-size-fluid-3) - 4pt);
-	--font-size-fluid-3-2: calc(var(--font-size-fluid-3) + 32pt);
+	// --font-size-fluid-landing-heading: clamp(2rem, 4vw, calc(100vw / 14));
+	--font-size-fluid-landing-heading-strong: clamp(3rem, 7vw, 6rem);
+	--font-size-fluid-landing-heading: calc(var(--font-size-fluid-landing-heading-strong) * 0.57);
+	// --font-size-fluid-3-2: calc(var(--font-size-fluid-3) + 32pt);
+	// --font-size-fluid-3-2: 2rem;
 
 	background-color: $purple-4;
 	background-image:
@@ -24,7 +27,7 @@ $background-backlit-tesselation: 'https://res.cloudinary.com/bendmyers/image/upl
 	color: var(--violet-1);
 	font-family: 'Nexa', sans-serif;
 	filter: var(--noise-3);
-	padding: var(--size-9);
+	padding: var(--size-9) clamp(1.5rem, 4vw, 3rem);
 
 	h1 {
 		color: var(--violet-0);
@@ -34,11 +37,11 @@ $background-backlit-tesselation: 'https://res.cloudinary.com/bendmyers/image/upl
 		min-height: var(--size-header-1);
 
 		& h1 {
-			font-size: var(--font-size-fluid-3-1);
+			font-size: var(--font-size-fluid-landing-heading);
 			line-height: var(--font-lineheight-0);
 			& strong {
 				color: var(--yellow-4);
-				font-size: var(--font-size-fluid-3-2);
+				font-size: var(--font-size-fluid-landing-heading-strong);
 				font-weight: var(--font-weight-9);
 				line-height: var(--font-lineheight-0);
 			}
