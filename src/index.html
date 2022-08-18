@@ -15,7 +15,7 @@ stylesheet: homepage.css
 </header>
 <section>
 	<h2>Catch the next stream live!</h2>
-	<div class="upcoming-streams">
+	<div class="stream-grid upcoming-streams">
 		{% for stream in collections.upcomingStreams limit:4 %}
 		{% assign people = stream.data.guests | concat: stream.data.hosts %}
 		{% assign featuredPerson = people.first %}
@@ -50,6 +50,25 @@ stylesheet: homepage.css
 </section>
 <section>
 	<h2>Watch recent streams</h2>
+	<div class="stream-grid past-streams">
+		{% assign pastStreams = collections.pastStreams | reverse %}
+		{% for stream in pastStreams limit:6 %}
+		{% assign people = stream.data.guests | concat: stream.data.hosts %}
+		{% assign featuredPerson = people.first %}
+		<article data-card>
+			<img src="{{ profiles[featuredPerson].name | avatar: profiles }}" alt="">
+			<div>
+				<time datetime="{{ stream.data.dateIso }}">
+					{{ stream.data.date | date: 'ddd, MMM D, YYYY' }} at {{ stream.data.timeOfDay }}
+				</time>
+				<a href="{{ stream.url }}">
+					{{ stream.data.thumbnailTitle }}
+				</a>
+				<small class="guests">with <b>{{stream.data.guests | join: ', '}}</b></small>
+			</div>
+		</article>
+		{% endfor %}
+	</div>
 </section>
 <section>
 	<h2>Sponsors</h2>
