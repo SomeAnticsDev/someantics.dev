@@ -4,6 +4,7 @@ thumbnailTitle: The Beginner's Guide to PostgreSQL
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Sarah Beardsley
 tags:
   - Backend Development

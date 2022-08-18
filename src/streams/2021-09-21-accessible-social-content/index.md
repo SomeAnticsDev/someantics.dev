@@ -4,6 +4,7 @@ thumbnailTitle: Making Accessible Social Content
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Alexa Heinrich
 upload: https://youtu.be/y7g_AEeAIHw
 tags:

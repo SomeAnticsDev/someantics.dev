@@ -5,6 +5,8 @@ hosts:
   - Ben Myers
 guests:
   - Homer Gaines
+eleventyExcludeFromCollections: true
+permalink: false
 ---
 
 ---

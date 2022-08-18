@@ -3,6 +3,7 @@ title: Accessibility in Responsive Design with Jim Drury
 thumbnailTitle: Accessibility in Responsive Design
 hosts:
   - Ben Myers
+guests:
   - Jim Drury
 upload: https://youtu.be/4lVmfyLAVwU
 tags:

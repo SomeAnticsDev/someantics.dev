@@ -1,8 +1,9 @@
 ---
 title: Build an Accessible Minesweeper Game with Vanilla JavaScript, with Chris Ferdinandi
-thumbnailTitle: Accessible Minesweeper
+thumbnailTitle: Build an Accessible Minesweeper Game with Vanilla JavaScript
 hosts:
   - Ben Myers
+guests:
   - Chris Ferdinandi
 tags:
   - Web Accessibility

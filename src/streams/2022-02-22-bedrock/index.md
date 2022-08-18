@@ -3,6 +3,7 @@ title: Dive Into Bedrock Layout with Travis Waith-Mair
 thumbnailTitle: Dive Into Bedrock Layout
 hosts:
   - Ben Myers
+guests:
   - Travis Waith-Mair
 demo: https://codepen.io/bendmyers-the-typescripter/pen/eYeKNVY?editors=1100
 upload: https://youtu.be/ZISlxQ6CX2A

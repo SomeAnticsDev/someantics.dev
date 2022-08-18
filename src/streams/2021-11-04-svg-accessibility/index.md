@@ -4,6 +4,7 @@ thumbnailTitle: SVG Accessibility
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Carie Fisher
 sourceCode: https://codepen.io/bendmyers-the-typescripter/pen/gOxvwLB?editors=1100
 upload: https://youtu.be/1IZuZ9R9c2M

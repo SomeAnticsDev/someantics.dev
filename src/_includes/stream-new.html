@@ -9,7 +9,7 @@ stylesheet: stream.css
 	<small class="guests">
 		with
 		{% if guests %}
-		<b>{{ guests | join: ',' }}</b>
+		<b>{{ guests | join: ', ' }}</b>
 		{% elsif hosts %}
 		<b>{{ hosts | join: ', ' }}</b>
 		{% endif %}

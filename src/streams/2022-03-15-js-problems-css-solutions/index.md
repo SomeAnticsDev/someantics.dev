@@ -3,6 +3,7 @@ title: "JavaScript Problems: CSS Solutions, with Amit Sheen"
 thumbnailTitle: "JavaScript Problems: CSS Solutions"
 hosts:
   - Ben Myers
+guests:
   - Amit Sheen
 tags:
   - CSS

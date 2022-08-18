@@ -5,6 +5,7 @@ timeOfDay: 12pm
 upload: https://youtu.be/jq7mFctwVcA
 hosts:
   - Ben Myers
+guests:
   - Joe Lamyman
 tags:
   - Web Accessibility

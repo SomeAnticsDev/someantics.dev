@@ -3,6 +3,7 @@ title: Underengineer Your Websites with Adrian Roselli
 thumbnailTitle: Underengineer Your Websites
 hosts:
   - Ben Myers
+guests:
   - Adrian Roselli
 tags:
   - Web Accessibility

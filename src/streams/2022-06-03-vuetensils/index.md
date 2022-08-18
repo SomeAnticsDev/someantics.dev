@@ -3,6 +3,7 @@ title: Build Accessible Vue Apps with Vuetensils, with Austin Gil
 thumbnailTitle: Build Accessible Vue Apps with Vuetensils
 hosts:
   - Ben Myers
+guests:
   - Austin Gil
 timeOfDay: 1pm
 upload: https://www.twitch.tv/videos/1493625402

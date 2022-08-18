@@ -3,6 +3,7 @@ title: Audit Sites for Accessibility with Hidde de Vries
 thumbnailTitle: Audit Sites for Accessibility
 hosts:
   - Ben Myers
+guests:
   - Hidde de Vries
 demo: https://some-antics-wcag-em-report.netlify.app/
 upload: https://youtu.be/lXZ2o69PDho

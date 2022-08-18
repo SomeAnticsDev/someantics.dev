@@ -6,6 +6,7 @@ upload: https://www.youtube.com/watch?v=c9tzyDTB5lk
 sourceCode: https://github.com/SomeAnticsDev/style-dictionary-design-system
 hosts:
   - Ben Myers
+guests:
   - Ashlae Nelms
 tags:
   - Design Systems
