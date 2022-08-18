@@ -6,10 +6,12 @@
 	
 	@media screen and (forced-colors: active) {
 		@include focus-within-outline(LinkText, 3px, 0px);
+		outline: 3px solid LinkText;
+		outline-offset: 0px;
 
 		&:focus-within,
 		&:hover {
-			@include focus-within-outline(Highlight, 7px, 0px);
+			outline: 7px solid Highlight;
 		}
 	}
 }
