@@ -31,6 +31,12 @@ stylesheet: stream.css
 {% endif %}
 <div class="stream-main-layout">
 	<section class="content">
+		{% if demo or sourceCode %}
+		<div class="demo-links">
+			{% if demo %}<a href="{{ demo }}">Demo</a>{% endif %}
+			{% if sourceCode %}<a href="{{ sourceCode }}">Source Code</a>{% endif %}
+		</div>
+		{% endif %}
 		{{ content }}
 	</section>
 	{% if sponsors %}

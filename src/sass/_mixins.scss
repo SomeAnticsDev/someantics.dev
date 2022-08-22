@@ -93,6 +93,32 @@
 	}
 }
 
+@mixin buttonlike-link(
+	$backgroundColor: var(--gradient-purple-bright),
+	$textColor: var(--violet-1)
+) {
+	@include focus-outline;
+	@include hover-translucency;
+	color: $textColor;
+	font-family: inherit;
+	font-size: calc(clamp(1.3rem, 2vw, 1.5rem) - 4pt);
+	font-weight: var(--font-weight-9);
+	display: flex;
+	width: max-content;
+	text-decoration: none;
+	border-radius: var(--radius-2);
+	background-image: $backgroundColor;
+	padding: calc(var(--size-2) + 4pt) var(--size-4);
+	user-select: none;
+
+	& svg {
+		display: inline;
+		height: 1.5em;
+		fill: currentColor;
+		margin-inline-end: var(--size-3);
+	}
+}
+
 @mixin reset-button {
 	background: none;
     color: inherit;
