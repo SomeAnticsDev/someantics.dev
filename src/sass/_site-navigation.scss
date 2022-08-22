@@ -1,6 +1,15 @@
 @import 'mixins';
 @import 'variables';
 
+@mixin header-link {
+	@include focus-outline;
+	@include hover-translucency;
+	color: white;
+	font-family: 'Nexa', sans-serif;
+	font-weight: var(--font-weight-6);
+	text-decoration: none;
+}
+
 body > header {
 	// background: var(--gray-9);
 	background: $purple-4;
@@ -19,12 +28,7 @@ body > header {
 	}
 	
 	a {
-		@include focus-outline;
-		@include hover-translucency;
-		color: white;
-		font-family: 'Nexa', sans-serif;
-		font-weight: var(--font-weight-6);
-		text-decoration: none;
+		@include header-link;
 	}
 }
 
@@ -38,9 +42,44 @@ body > footer {
 #logo {
 	display: flex;
 	align-items: center;
+	flex-wrap: nowrap;
+	width: max-content;
 	font-weight: var(--font-weight-9);
 	margin-block: 0.5em;
 	& svg {
 		height: 2rem;
+	}
+}
+
+#hamburger {
+	@include reset-button;
+	@include header-link;
+	// @include focus-outline(var(--yellow-4), 3px, 3px)
+	margin-top: -0.11em;
+	font-size: 2em;
+	display: none;
+}
+
+@media screen and (max-width: 615px) {
+	body > header {
+		flex-direction: column;
+		position: relative;
+	}
+
+	#hamburger {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0.4em;
+	}
+
+	#hamburger + ul {
+		flex-basis: 100%;
+		flex-direction: column;
+	}
+
+	#hamburger[aria-expanded="false"] + ul {
+		display: none;
+
 	}
 }

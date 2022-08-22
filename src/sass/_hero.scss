@@ -3,11 +3,8 @@
 $background-backlit-tesselation: 'https://res.cloudinary.com/bendmyers/image/upload/v1619896651/backlit_thumbnail_dzmjac.png';
 
 [data-hero] {
-	// --font-size-fluid-landing-heading: clamp(2rem, 4vw, calc(100vw / 14));
 	--font-size-fluid-landing-heading-strong: clamp(3rem, 7vw, 6rem);
 	--font-size-fluid-landing-heading: calc(var(--font-size-fluid-landing-heading-strong) * 0.57);
-	// --font-size-fluid-3-2: calc(var(--font-size-fluid-3) + 32pt);
-	// --font-size-fluid-3-2: 2rem;
 
 	background-color: $purple-4;
 	background-image:
