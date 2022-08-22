@@ -88,7 +88,7 @@ $background-backlit-tesselation: 'https://res.cloudinary.com/bendmyers/image/upl
 	@include hover-translucency;
 	color: var(--violet-1);
 	font-family: inherit;
-	font-size: calc(var(--font-size-fluid-1) - 4pt);
+	font-size: calc(clamp(1.3rem, 2vw, 1.5rem) - 4pt);
 	font-weight: var(--font-weight-9);
 	display: flex;
 	width: max-content;

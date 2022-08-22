@@ -77,9 +77,8 @@ body > footer {
 		flex-basis: 100%;
 		flex-direction: column;
 	}
-
+	
 	#hamburger[aria-expanded="false"] + ul {
 		display: none;
-
 	}
 }
