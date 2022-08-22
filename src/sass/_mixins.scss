@@ -93,6 +93,19 @@
 	}
 }
 
+@mixin inline-text-link {
+	@include focus-outline($purple-5);
+	color: inherit;
+	font-family: 'Nexa', sans-serif;
+	font-weight: var(--font-weight-8);
+	text-decoration-color: $purple-6;
+	text-decoration-thickness: 3px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 @mixin buttonlike-link(
 	$backgroundColor: var(--gradient-purple-bright),
 	$textColor: var(--violet-1)
