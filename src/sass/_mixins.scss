@@ -1,11 +1,11 @@
 @import 'variables';
 
 @mixin block-link-container {
-	@include focus-within-outline($purple-3, 3px, 0px);
+	@include focus-within-outline($purple-3, 5px, 0px);
 	position: relative;
 	
 	@media screen and (forced-colors: active) {
-		@include focus-within-outline(LinkText, 3px, 0px);
+		@include focus-within-outline(LinkText, 5px, 0px);
 		outline: 3px solid LinkText;
 		outline-offset: 0px;
 
