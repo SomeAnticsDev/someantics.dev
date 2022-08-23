@@ -55,6 +55,27 @@ main {
 
 		[data-card]:not([data-card="featured"]) {
 			height: fit-content;
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				background-color: var(--violet-2);
+				aspect-ratio: 1 / 1;
+				border-radius: 0 0 0 100%;
+				width: var(--size-10);
+				top: 0;
+				right: 0;
+				pointer-events: none;
+			}
+
+			& img {
+				z-index: var(--layer-1);
+				width: var(--size-10);
+				right: var(--size-4);
+				box-shadow: var(--shadow-2);
+			}
+
 			& + [data-card] {
 				margin-block-start: calc(-1 * var(--size-2));
 			}
