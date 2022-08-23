@@ -45,6 +45,15 @@ $background-backlit-tesselation: 'https://res.cloudinary.com/bendmyers/image/upl
 		}
 	}
 
+	&[data-hero="stream-list"] {
+		& h1 {
+			font-weight: var(--font-weight-9);
+			font-size: var(--font-size-fluid-3);
+			line-height: var(--font-lineheight-0);
+			// margin-block: 0;
+		}
+	}
+
 	&[data-hero="stream"] {
 		time {
 			// @include border-gradient(var(--gradient-purple-bright), 0, 0, 3px);

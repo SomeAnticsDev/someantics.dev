@@ -1,0 +1,25 @@
+{% assign people = stream.data.guests | concat: stream.data.hosts %}
+{% assign featuredPerson = people.first %}
+{% assign streamTitle = stream.data.title %}
+{% if stream.data.thumbnailTitle %}
+{% assign streamTitle = stream.data.thumbnailTitle %}
+{% endif %}
+{% assign featuredPeople = stream.data.hosts %}
+{% if stream.data.guests %}
+{% assign featuredPeople = stream.data.guests %}
+{% endif %}
+<article data-card="{{cardType}}" aria-labelledby="card-{{stream.fileSlug}}-title card-{{stream.fileSlug}}-guests">
+	<img src="{{ profiles[featuredPerson].name | avatar: profiles }}" alt="">
+	<div>
+		<time datetime="{{ stream.data.dateIso }}">
+			{{ stream.data.date | date: 'ddd, MMM D, YYYY' }} at {{ stream.data.timeOfDay }} CT
+		</time>
+		<a href="{{ stream.url }}" id="card-{{stream.fileSlug}}-title">
+			{{ streamTitle }}
+		</a>
+		<small class="guests" id="card-{{stream.fileSlug}}-guests">with <b>{{featuredPeople | join: ', '}}</b></small>
+		{% if cardType == "featured" %}
+		<p class="excerpt">{{ stream.data.cleansedExcerpt }}</p>
+		{% endif %}
+	</div>
+</article>

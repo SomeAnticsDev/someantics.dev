@@ -1,0 +1,23 @@
+---
+layout: base.html
+title: Past Streams
+tagline: Catch up on past streams and develop your accessibility and web standards skills.
+stylesheet: stream-list.css
+---
+
+<header data-hero="stream-list">
+	<h1>{{ title }}</h1>
+	<p class="tagline">{{ tagline }}</p>
+</header>
+<section aria-label="Streams">
+	<div class="stream-grid upcoming-streams">
+		{% assign streams = collections.pastStreams | reverse %}
+		{% for stream in streams %}
+		{% assign cardType = "purple-corner" %}
+		{% if forloop.index == 1 %}
+		{% assign cardType = "featured" %}
+		{% endif %}
+		{% include "partials/stream-card.html", stream: stream, cardType: cardType %}
+		{% endfor %}
+	</div>
+</section>
