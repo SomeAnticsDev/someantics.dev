@@ -43,6 +43,7 @@ module.exports = (config) => {
 	// config.addWatchTarget('./src/css/');
 	config.addPassthroughCopy('./src/fonts/');
 	config.addPassthroughCopy('./src/thumbnails/');
+	config.addPassthroughCopy({'./src/assets/favicons': './'});
 
 	// Plugins
 	config.addPlugin(EleventyRenderPlugin);
