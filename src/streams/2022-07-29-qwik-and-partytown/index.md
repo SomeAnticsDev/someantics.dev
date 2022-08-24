@@ -3,6 +3,7 @@ title: Build Performant, Interactive Sites with Qwik and Partytown (with Miško 
 thumbnailTitle: Build Performant, Interactive Sites with Qwik and Partytown
 hosts:
   - Ben Myers
+guests:
   - Miško Hevery
 timeOfDay: 12pm
 tags:

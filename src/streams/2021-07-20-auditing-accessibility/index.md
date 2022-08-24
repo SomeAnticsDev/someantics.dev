@@ -6,6 +6,7 @@ upload: https://www.youtube.com/watch?v=CjX91QlgW-g
 demo: https://docs.google.com/spreadsheets/d/1VsSMRVohY9gvNCaO3gr9KtWcAb1jOnDvgN9g4VGLYqU/
 hosts:
   - Ben Myers
+guests:
   - Anna E. Cook
 tags:
   - Web Accessibility

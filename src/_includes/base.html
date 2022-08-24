@@ -1,0 +1,65 @@
+---
+description: "Some Antics: Accessibility made approachable."
+shareImage: https://res.cloudinary.com/bendmyers/image/upload/v1661320317/some%20antics%20home%20cover.png
+shareImageAlt: "Some Antics. Accessibility made approachable."
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+	{% include 'partials/meta.html' %}
+	<link rel="stylesheet" href="/sass/{{ stylesheet }}">
+	{% include 'partials/fonts.html' %}
+	{% include 'partials/prefetch.html' %}
+</head>
+<body>
+	<header>
+		<a
+			href="/"
+			id="logo"
+			{% if page.url == '/' %}aria-current="page"{% endif %}
+		>
+			{% include 'icons/logo.svg' %}
+			&nbsp;Some Antics
+		</a>
+		<nav>
+			<button
+				id="hamburger"
+				aria-label="Menu"
+				aria-expanded="false"
+				onclick="this.ariaExpanded = (this.ariaExpanded === 'true') ? 'false' : 'true';"
+			>
+				☰
+			</button>
+			<ul>
+				<li>
+					<a
+						href="/schedule/"
+						{% if page.url == '/schedule/' %}aria-current="page"{% endif %}
+					>
+						Schedule
+					</a>
+				</li>
+				<li>
+					<a
+						href="/streams/"
+						{% if page.url == '/streams/' %}aria-current="page"{% endif %}
+					>
+						Past Streams
+					</a>
+				</li>
+				<!-- <li><a href="/sponsor/">Sponsor</a></li> -->
+			</ul>
+		</nav>
+	</header>
+	<main>
+		{{ content }}
+	</main>
+	<footer>
+		&copy; 2022 Ben Myers
+	</footer>
+</body>
+</html>

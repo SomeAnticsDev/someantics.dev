@@ -4,6 +4,7 @@ thumbnailTitle: Testing Mobile Accessibility
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Crystal Preston-Watson
 upload: https://youtu.be/GA5VBmHvaSg
 tags:

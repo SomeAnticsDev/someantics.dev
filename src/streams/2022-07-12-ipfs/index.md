@@ -1,8 +1,9 @@
 ---
 title: Deploy a Site to the Decentralized Web with IPFS, with Anthony Campolo
-thumbnailTitle: Deploy a Site to the Decentralized Web with IPFS
+thumbnailTitle: Deploy to the Decentralized Web with IPFS
 hosts:
   - Ben Myers
+guests:
   - Anthony Campolo
 tags:
   - web3

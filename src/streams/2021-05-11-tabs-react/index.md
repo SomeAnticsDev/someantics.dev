@@ -6,6 +6,7 @@ upload: https://www.youtube.com/watch?v=nq2LA9wDt9s
 sourceCode: https://github.com/SomeAnticsDev/accessible-tabs
 hosts:
   - Ben Myers
+guests:
   - Chance Strickland
 tags:
   - Web Accessibility

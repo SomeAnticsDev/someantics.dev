@@ -3,6 +3,7 @@ title: Build Design Systems with Web Components, with m4dz
 thumbnailTitle: Build Design Systems with Web Components
 hosts:
   - Ben Myers
+guests:
   - m4dz
 tags:
   - Design Systems

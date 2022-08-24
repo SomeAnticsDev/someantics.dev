@@ -4,6 +4,7 @@ thumbnailTitle: A First Look at Eleventy Serverless!
 timeOfDay: 5pm
 hosts:
   - Ben Myers
+guests:
   - Zach Leatherman
 sourceCode: https://github.com/SomeAnticsDev/eleventy-serverless-color-contrast/tree/5299e276cad0de22e9b81d8a78a1a971fb4096fb
 demo: https://60d66250ae41f800074591de--eleventy-serverless-color-contrast.netlify.app/4C1074/ee4433/

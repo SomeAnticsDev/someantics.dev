@@ -3,6 +3,7 @@ title: Navigating the Web While Blind, with Florian Beijers
 thumbnailTitle: Navigating the Web While Blind
 hosts:
   - Ben Myers
+guests:
   - Florian Beijers
 upload: https://www.twitch.tv/videos/1557161179
 ---

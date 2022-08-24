@@ -6,6 +6,7 @@ upload: https://www.youtube.com/watch?v=vCHFkKRU1Ro
 sourceCode: https://github.com/SomeAnticsDev/main-nav
 hosts:
   - Ben Myers
+guests:
   - Chantastic
 tags:
   - Web Accessibility

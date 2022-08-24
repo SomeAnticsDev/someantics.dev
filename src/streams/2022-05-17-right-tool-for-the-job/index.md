@@ -4,6 +4,7 @@ thumbnailTitle: Picking the Right Tool for the Job on the Jamstack
 upload: https://www.twitch.tv/videos/1486660321
 hosts:
   - Ben Myers
+guests:
   - Salma Alam-Naylor
 tags:
   - Eleventy

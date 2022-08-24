@@ -1,0 +1,108 @@
+@import 'mixins';
+@import 'variables';
+
+@mixin header-link {
+	@include focus-outline;
+	@include hover-translucency;
+	color: white;
+	font-family: 'Nexa', sans-serif;
+	font-weight: var(--font-weight-6);
+	text-decoration: none;
+}
+
+body > header {
+	// background: var(--gray-9);
+	background: $purple-4;
+	box-shadow: var(--shadow-3);
+	display: flex;
+	padding-inline: var(--size-3);
+	justify-content: space-between;
+	z-index: 1;
+
+	nav {
+		ul {
+			display: flex;
+			gap: 2rem;
+			list-style: none;
+		}
+	}
+	
+	a {
+		@include header-link;
+	}
+}
+
+body > footer {
+	background-color: var(--gray-9);
+	color: var(--violet-0);
+	padding: var(--size-2);
+	text-align: center;
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	width: max-content;
+	font-weight: var(--font-weight-9);
+	margin-block: 0.5em;
+	& svg {
+		height: 2rem;
+	}
+}
+
+#hamburger {
+	@include reset-button;
+	@include header-link;
+	// @include focus-outline(var(--yellow-4), 3px, 3px)
+	margin-top: -0.11em;
+	font-size: 2em;
+	display: none;
+}
+
+@media screen and (max-width: 615px) {
+	body > header {
+		flex-direction: column;
+		position: relative;
+		padding: 0;
+	}
+
+	#logo {
+		padding-inline-start: calc(var(--size-3) / 2);
+	}
+
+	#hamburger {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0.4em;
+	}
+
+	#hamburger + ul {
+		flex-basis: 100%;
+		flex-direction: column;
+		margin-inline-start: 0;
+		margin-block-end: 0;
+		padding-inline-start: 0;
+		gap: 0;
+
+		li {
+			border-top: 1px solid $purple-3;
+			
+			a {
+				display: block;
+				padding-block: 1em;
+				text-align: center;
+
+				&:hover {
+					background-color: $purple-2;
+					transition: 0.2s background-color ease-in;
+				}
+			}
+		}
+	}
+	
+	#hamburger[aria-expanded="false"] + ul {
+		display: none;
+	}
+}

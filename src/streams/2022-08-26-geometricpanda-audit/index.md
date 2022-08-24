@@ -3,6 +3,7 @@ title: Auditing a Developer Blog for Accessibility (with Jim Drury)
 thumbnailTitle: Auditing a Developer Blog for Accessibility
 hosts:
   - Ben Myers
+guests:
   - Jim Drury
 timeOfDay: "1:30pm"
 ---

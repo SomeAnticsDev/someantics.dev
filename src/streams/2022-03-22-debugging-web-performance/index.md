@@ -3,6 +3,7 @@ title: Debugging Web Performance with Patrick Hulce
 thumbnailTitle: Debugging Web Performance
 hosts:
   - Ben Myers
+guests:
   - Patrick Hulce
 tags:
   - Web Performance

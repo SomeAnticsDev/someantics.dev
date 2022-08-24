@@ -3,6 +3,7 @@ title: Making the Web Spicier with Open UI, with Dave Rupert
 thumbnailTitle: Making the Web Spicier with Open UI
 hosts:
   - Ben Myers
+guests:
   - Dave Rupert
 tags:
   - Web Platform

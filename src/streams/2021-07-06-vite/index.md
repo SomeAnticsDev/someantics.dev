@@ -7,6 +7,7 @@ sourceCode: https://github.com/SomeAnticsDev/vite-react-template
 demo: https://some-antics-vite-template.netlify.app/
 hosts:
   - Ben Myers
+guests:
   - Anthony Campolo
 tags:
   - Build Tooling and Infrastructure

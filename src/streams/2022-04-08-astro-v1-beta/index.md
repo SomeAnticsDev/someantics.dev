@@ -3,6 +3,7 @@ title: "Lift Off with the Astro v1 Beta, with Ben Holmes"
 thumbnailTitle: "Lift Off with the Astro v1 Beta"
 hosts:
   - Ben Myers
+guests:
   - Ben Holmes
 timeOfDay: 1pm
 duration: PT1H45M

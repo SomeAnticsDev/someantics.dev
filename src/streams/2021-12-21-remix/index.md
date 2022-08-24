@@ -3,6 +3,7 @@ title: "Build a Project Management App with Remix, with Chance Strickland"
 thumbnailTitle: Build a Project Management App with Remix
 hosts:
   - Ben Myers
+guests:
   - Chance Strickland
 upload: https://youtu.be/QpP3daA2na4
 tags:

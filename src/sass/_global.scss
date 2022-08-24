@@ -1,0 +1,25 @@
+@use "sass:meta";
+@use "sass:list";
+
+@import "https://unpkg.com/open-props";
+
+$layers: "reset" "tokens" !default;
+
+@each $layer in $layers {
+	@layer #{$layer} {
+		@include meta.load-css($layer);
+	}
+}
+
+html {
+	background-color: var(--gray-1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Nexa', sans-serif;
+}
+
+@import 'fonts';
+@import 'site-navigation';
+@import 'hero';
+@import 'card';

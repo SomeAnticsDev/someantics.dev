@@ -1,0 +1,21 @@
+{% if page.url != '/' %}
+<link rel="prefetch" href="/">
+{% endif %}
+{% if page.url != '/schedule/' %}
+<link rel="prefetch" href="/schedule/">
+{% endif %}
+{% if page.url != '/streams/' %}
+<link rel="prefetch" href="/streams/">
+{% endif %}
+{% assign listsUpcoming = page.url == '/' or page.url == '/schedule/' %}
+{% assign listsPast = page.url == '/' or page.url == '/streams/' %}
+{% assign numUpcoming = collections.upcomingStreams | size %}
+{% assign hasUpcoming = numUpcoming > 0 %}
+{% if listsUpcoming and hasUpcoming  %}
+<link rel="prefetch" href="{{ collections.upcomingStreams[0].url }}">
+{% endif %}
+{% if listsPast %}
+{% assign pastStreams = collections.pastStreams | reverse %}
+{% assign mostRecent = pastStreams[0] %}
+<link rel="prefetch" href="{{ mostRecent.url }}">
+{% endif %}

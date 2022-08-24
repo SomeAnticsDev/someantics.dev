@@ -1,8 +1,16 @@
 {% assign avatar = profile.name | avatar: profiles %}
-<section aria-labelledby="host-{{ profile.name | removeSpecialCharacters | slug }}">
-	<div class="profile-avatar" style="background-image: url({{ avatar }});"></div>
-
-	<h2 id="host-{{ profile.name | removeSpecialCharacters | slug }}">{{ profile.name }}</h2>
+<article class="profile" aria-labelledby="host-{{ profile.name | removeSpecialCharacters | slug }}">
+	<div>
+		<img
+			class="profile-avatar"
+			src="{{ avatar }}"
+			alt=""
+		/>
+		<p class="name" id="host-{{ profile.name | removeSpecialCharacters | slug }}">{{ profile.name }}</p>
+		{% if profile.pronouns %}
+		<small class="pronouns">{{ profile.pronouns }}</small>
+		{% endif %}
+	</div>
 	<dl>
 		{% comment %} {% if profile.pronouns %}
 		<div>
@@ -86,4 +94,4 @@
 		</div>
 		{% endif %}
 	</dl>
-</section>
+</article>

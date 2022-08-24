@@ -1,0 +1,26 @@
+---
+layout: base.html
+title: Schedule
+tagline: "See which streams are coming up!"
+description: "See which streams are coming up!"
+stylesheet: stream-list.css
+shareImage: https://res.cloudinary.com/bendmyers/image/upload/v1661320357/some%20antics%20schedule%20cover.png
+shareImageAlt: "Some Antics: Schedule"
+---
+
+<header data-hero="stream-list">
+	<h1>{{ title }}</h1>
+	<p class="tagline">{{ tagline }}</p>
+</header>
+<section aria-label="Schedule">
+	<div class="stream-grid full-schedule">
+		{% for stream in collections.upcomingStreams %}
+		{% assign cardType = "purple-corner" %}
+		{% if forloop.index == 1 %}
+		{% assign cardType = "featured" %}
+		{% endif %}
+		{% assign lazy = forloop.index > 12 %}
+		{% include "partials/stream-card.html", stream: stream, cardType: cardType, lazy: lazy, featuredAvatarHeight: '180', featuredAvatarWidth: '180', cornerAvatarHeight: '90', cornerAvatarWidth: '90' %}
+		{% endfor %}
+	</div>
+</section>

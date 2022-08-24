@@ -6,6 +6,7 @@ upload: https://youtu.be/lRXxuagPwY8
 sourceCode: https://github.com/SomeAnticsDev/dang-spicy-web-components
 hosts:
   - Ben Myers
+guests:
   - Andy Bell
 tags:
   - Web Components

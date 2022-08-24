@@ -3,6 +3,7 @@ title: "Let's Build Terrible Web Components with Alex Riviere"
 thumbnailTitle: "Let's Build Terrible Web Components"
 hosts:
   - Ben Myers
+guests:
   - Alex Riviere
 upload: https://youtu.be/fahl81_XgNk
 sourceCode: https://codepen.io/BenDMyers/pen/qBPwyma

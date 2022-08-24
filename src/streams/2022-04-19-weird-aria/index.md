@@ -3,6 +3,7 @@ title: "Weird ARIA: Breaking Down Complex Interactions with Sarah Higley"
 thumbnailTitle: "Weird ARIA: Breaking Down Complex Interactions"
 hosts:
   - Stephanie Eckles
+guests:
   - Sarah Higley
 tags:
   - Web Accessibility

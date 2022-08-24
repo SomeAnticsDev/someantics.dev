@@ -3,6 +3,7 @@ title: Dive Into TypeScript with Josh Goldberg
 thumbnailTitle: Dive Into TypeScript
 hosts:
   - Ben Myers
+guests:
   - Josh Goldberg
 tags:
   - TypeScript

@@ -4,6 +4,7 @@ thumbnailTitle: Building APIs with Deno and Oak
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Anthony Campolo
 demo: https://deno-oak-apis.deno.dev
 sourceCode: https://github.com/SomeAnticsDev/deno-oak-apis

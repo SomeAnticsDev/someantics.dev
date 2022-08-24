@@ -4,6 +4,7 @@ thumbnailTitle: "Let's Build a UI with Figma!"
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Martin Bavio
 upload: https://youtu.be/Ps-zjZ-bcPQ
 tags:

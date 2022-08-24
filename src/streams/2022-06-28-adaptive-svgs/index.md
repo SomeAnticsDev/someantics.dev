@@ -3,6 +3,7 @@ title: Adaptive SVGs for Accessibility, Responsiveness and More with Heather S. 
 thumbnailTitle: Adaptive SVGs for Accessibility, Responsiveness and More
 hosts:
   - Ben Myers
+guests:
   - Heather S. Neff
 tags:
   - Web Accessibility

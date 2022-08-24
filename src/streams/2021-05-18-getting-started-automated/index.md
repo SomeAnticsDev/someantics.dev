@@ -5,6 +5,7 @@ timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=4rUcwB7MuqU
 hosts:
   - Ben Myers
+guests:
   - Lucia Cerchie
 tags:
   - Web Accessibility

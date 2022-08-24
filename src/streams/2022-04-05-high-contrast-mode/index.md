@@ -3,6 +3,7 @@ title: Build Sites for High Contrast Mode with Eric Bailey
 thumbnailTitle: Build Sites for High Contrast Mode
 hosts:
   - Ben Myers
+guests:
   - Eric Bailey
 tags:
   - Web Accessibility

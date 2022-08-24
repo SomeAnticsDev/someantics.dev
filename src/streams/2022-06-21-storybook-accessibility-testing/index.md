@@ -3,6 +3,7 @@ title: Automate Accessibility Testing with Storybook, with Varun Vachhar
 thumbnailTitle: Automate Accessibility Testing with Storybook
 hosts:
   - Ben Myers
+guests:
   - Varun Vachhar
 tags:
   - Automated Accessibility Testing

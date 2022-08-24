@@ -5,6 +5,7 @@ timeOfDay: 12pm
 addNbsp: false
 hosts:
   - Ben Myers
+guests:
   - Sandrina Pereira
 sourceCode: https://codesandbox.io/s/disabling-buttons-inclusively-3chhl
 tags:
