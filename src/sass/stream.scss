@@ -43,7 +43,7 @@ main a {
 .content {
 	@include flow;
 	grid-area: content;
-	max-width: 80ch;
+	max-width: min(80ch, 90vw);
 	padding-inline: var(--size-3);
 	font-size: var(--font-size-2);
 	margin-inline: auto;
@@ -62,7 +62,7 @@ main a {
 .transcript {
 	@include flow;
 	grid-area: transcript;
-	max-width: 80ch;
+	max-width: min(80ch, 90vw);
 	padding-inline: var(--size-3);
 	font-size: var(--font-size-2);
 	margin-block-start: var(--size-3);

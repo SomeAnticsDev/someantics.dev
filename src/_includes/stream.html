@@ -2,11 +2,15 @@
 layout: base.html
 stylesheet: stream.css
 ---
-{% block pageMetaTags %}{% include 'partials/stream-meta.html' %}{% endblock %}
+
+{% assign pageTitle = title %}
+{% if thumbnailTitle %}
+{% assign pageTitle = thumbnailTitle %}
+{% endif %}
 
 <header data-hero="stream">
 	<time datetime="{{ dateIso }}">{{ date | date: 'ddd, MMM D, YYYY' }} at {{ timeOfDay }} CT</time>
-	<h1>{{ thumbnailTitle }}</h1>
+	<h1>{{ pageTitle }}</h1>
 	<small class="guests">
 		with
 		{% if guests %}
