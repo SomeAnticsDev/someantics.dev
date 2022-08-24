@@ -16,12 +16,6 @@
 		src="{{ profiles[featuredPerson].name | avatar: profiles }}"
 		alt=""
 		{% if lazy %}loading="lazy"{% endif %}
-		{% if cardType == 'featured' %}
-		width="{{ featuredAvatarWidth }}"
-		height="{{ featuredAvatarHeight }}"
-		{% elsif cardType == 'purple-corner' %}
-		width="{{ cornerAvatarWidth }}"
-		height="{{ cornerAvatarHeight }}"
 		{% endif %}
 	/>
 	<div>
