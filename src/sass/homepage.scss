@@ -31,27 +31,6 @@ main {
 	}
 }
 
-.upcoming-streams {
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 55ch), 1fr));
-
-	& [data-card="featured"] {
-		grid-column: 1;
-		grid-row: 1 / -4;
-	}
-
-	// & [data-card="purple-corner"] {
-	// 	grid-column: 2;
-	// }
-}
-
-.past-streams {
-	margin-block-start: var(--size-10);
-
-	& [data-card="featured"] {
-		grid-row: span 2;
-	}
-}
-
 .cta-container {
 	display: grid;
 	place-items: center;
