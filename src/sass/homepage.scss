@@ -18,7 +18,7 @@ main {
 		color: var(--gray-9);
 		max-width: fit-content;
 		margin-block-start: var(--size-4);
-		margin-block-end: var(--size-6);
+		padding-block-end: var(--size-4);
 		margin-inline: auto;
 
 		&::after {
