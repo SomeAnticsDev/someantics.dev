@@ -168,7 +168,7 @@
 }
 
 .upcoming-streams {
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 55ch), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 40ch), 1fr));
 
 	& [data-card="featured"] {
 		grid-column: 1;
