@@ -4,6 +4,7 @@ thumbnailTitle: Accessible Forms
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Rachele DiTullio
 demo: https://some-antics-accessible-forms.netlify.app/
 sourceCode: https://github.com/someanticsdev/accessible-forms/

@@ -6,6 +6,7 @@ sourceCode: https://github.com/SomeAnticsDev/more-antics
 upload: https://youtu.be/cllxHtdd4-g
 hosts:
   - Ben Myers
+guests:
   - Alex Trost
 tags:
   - Frameworks

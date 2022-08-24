@@ -3,6 +3,7 @@ title: Typographic Accessibility with Bruno Maag
 thumbnailTitle: Typographic Accessibility
 hosts:
   - Ben Myers
+guests:
   - Bruno Maag
 tags:
   - Web Accessibility

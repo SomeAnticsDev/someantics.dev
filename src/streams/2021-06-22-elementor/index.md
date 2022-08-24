@@ -4,6 +4,7 @@ thumbnailTitle: Accessible WordPress Sites with Elementor
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Anne-Mieke Bovelett
 tags:
   - WordPress

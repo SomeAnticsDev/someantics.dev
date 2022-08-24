@@ -1,6 +1,6 @@
 ---
 title: Guesting on Some Antics
-layout: page.html
+permalink: false
 ---
 
 Hey, there! [Some Antics](https://twitch.tv/SomeAnticsDev) is a weekly stream, held every Tuesday from 12pm to 1pm Central Time. Each stream is a hands-on dive into frontend development, with a special focus on web accessibility and core web technologies. I'm always on the lookout for more people to bring onto Some Antics. If you're interested, please reach out at [ben@benmyers.dev](mailto:ben@benmyers.dev).

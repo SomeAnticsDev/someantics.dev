@@ -1,0 +1,151 @@
+@import 'variables';
+
+@mixin block-link-container {
+	@include focus-within-outline($purple-3, 5px, 0px);
+	position: relative;
+	
+	@media screen and (forced-colors: active) {
+		@include focus-within-outline(LinkText, 5px, 0px);
+		outline: 3px solid LinkText;
+		outline-offset: 0px;
+
+		&:focus-within,
+		&:hover {
+			outline: 7px solid Highlight;
+		}
+	}
+}
+
+@mixin block-link {
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+	}
+}
+
+@mixin focus-outline(
+	$outline-color: var(--yellow-4),
+	$outline-width: 3px,
+	$outline-offset: 5px
+) {
+	&:focus-visible {
+		outline: $outline-width solid $outline-color;
+		outline-offset: $outline-offset;
+		border-radius: var(--radius-2);
+	}
+}
+
+@mixin focus-within-outline(
+	$outline-color: var(--yellow-4),
+	$outline-width: 3px,
+	$outline-offset: 8px
+) {
+	&:focus-within {
+		outline: $outline-width solid $outline-color;
+		outline-offset: $outline-offset;
+		border-radius: var(--radius-2);
+
+		& :focus {
+			outline: none;
+		}
+	}
+}
+
+@mixin hover-translucency($opacity: 0.8, $speed: 0.15s) {
+	transition: opacity $speed var(--ease-in-out-1);
+
+	&:hover {
+		opacity: $opacity;
+	}
+}
+
+@mixin border-gradient($gradient, $top: 0, $right: $top, $bottom: $top, $left: $right) {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-style: solid;
+		border-width: 0;
+		border-top-width: $top;
+		border-bottom-width: $bottom;
+		border-left-width: $left;
+		border-right-width: $right;
+		border-image: $gradient 1;
+		z-index: 1;
+		pointer-events: none;
+	}
+}
+
+@mixin flow($gap: var(--size-5)) {
+	& > * + * {
+		margin-top: $gap;
+	}
+
+	& > h2 + * {
+		margin-top: calc($gap / 3);
+	}
+
+	& > ol > li + li,
+	& > ul > li + li {
+		margin-top: calc($gap / 3);
+	}
+}
+
+@mixin inline-text-link {
+	@include focus-outline($purple-5);
+	color: inherit;
+	font-family: 'Nexa', sans-serif;
+	font-weight: var(--font-weight-8);
+	text-decoration-color: $purple-6;
+	text-decoration-thickness: 3px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@mixin buttonlike-link(
+	$backgroundColor: var(--gradient-purple-bright),
+	$textColor: var(--violet-1)
+) {
+	@include focus-outline;
+	@include hover-translucency;
+	color: $textColor;
+	font-family: inherit;
+	font-size: calc(clamp(1.3rem, 2vw, 1.5rem) - 4pt);
+	font-weight: var(--font-weight-9);
+	display: flex;
+	width: max-content;
+	text-decoration: none;
+	border-radius: var(--radius-2);
+	background-image: $backgroundColor;
+	padding: calc(var(--size-2) + 4pt) var(--size-4);
+	user-select: none;
+
+	& svg {
+		display: inline;
+		height: 1.5em;
+		fill: currentColor;
+		margin-inline-end: var(--size-3);
+	}
+}
+
+@mixin reset-button {
+	background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+@mixin safari-only {
+	@media not all and (min-resolution:.001dpcm) {
+		@supports (-webkit-appearance:none) {
+			@content;
+		}
+	}
+}

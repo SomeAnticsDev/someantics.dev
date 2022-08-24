@@ -4,6 +4,7 @@ thumbnailTitle: "Jammin’ Out with the Web Audio API"
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Austin Crim
 upload: https://youtu.be/KYaJEvg_JMI
 sourceCode: https://github.com/SomeAnticsDev/jammin-out-with-web-audio

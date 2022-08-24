@@ -6,6 +6,7 @@ upload: https://www.youtube.com/watch?v=w173MUXyBrc
 sourceCode: https://codepen.io/5t3ph/pen/xxVpYjo
 hosts:
   - Ben Myers
+guests:
   - Stephanie Eckles
 tags:
   - CSS

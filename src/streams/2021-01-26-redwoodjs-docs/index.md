@@ -5,6 +5,7 @@ timeOfDay: 12pm
 upload: https://www.youtube.com/watch?v=ois3P63Yiwc
 hosts:
   - Ben Myers
+guests:
   - Anthony Campolo
 tags:
   - Web Accessibility

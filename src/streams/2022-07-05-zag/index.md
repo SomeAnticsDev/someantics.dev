@@ -3,6 +3,7 @@ title: Accessible Components with State Machines and Zag, with Segun Adebayo
 thumbnailTitle: Accessible Components with State Machines and Zag
 hosts:
   - Ben Myers
+guests:
   - Segun Adebayo
 timeOfDay: 12pm
 upload: https://youtu.be/WF_PVXPL8qA

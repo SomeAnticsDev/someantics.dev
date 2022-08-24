@@ -6,6 +6,7 @@ sourceCode: https://github.com/SomeAnticsDev/redwood-route-annoucer-demo
 upload: https://www.youtube.com/watch?v=LSuDHfAsBCE
 hosts:
   - Ben Myers
+guests:
   - Dom Saadi
   - Anthony Campolo
 tags:

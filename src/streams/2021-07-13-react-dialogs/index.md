@@ -7,6 +7,7 @@ demo: https://some-antics-react-dialog.netlify.app/
 addNbsp: false
 hosts:
   - Ben Myers
+guests:
   - Chance Strickland
 tags:
   - Web Accessibility

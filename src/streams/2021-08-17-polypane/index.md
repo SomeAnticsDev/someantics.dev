@@ -4,6 +4,7 @@ thumbnailTitle: Pragmatic Accessibility + Responsiveness in Polypane
 timeOfDay: 12pm
 hosts:
   - Ben Myers
+guests:
   - Kilian Valkhof
 upload: https://youtu.be/u6TEMgOU9Lk
 tags:

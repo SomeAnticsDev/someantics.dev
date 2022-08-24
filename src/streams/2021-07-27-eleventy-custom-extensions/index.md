@@ -6,6 +6,7 @@ upload: https://www.youtube.com/watch?v=q54IkBUoeeo
 sourceCode: https://github.com/SomeAnticsDev/eleventy-custom-extensions
 hosts:
   - Ben Myers
+guests:
   - Ben Holmes
 tags:
   - Eleventy

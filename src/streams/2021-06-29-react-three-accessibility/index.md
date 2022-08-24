@@ -3,8 +3,10 @@ title: Accessibility for 3D in React Three Fiber with Alex Anderson
 thumbnailTitle: Accessibility for 3D in React Three Fiber
 timeOfDay: 12pm
 sourceCode: https://www.youtube.com/watch?v=jgjPe1lM8cw
+upload: https://www.youtube.com/watch?v=jgjPe1lM8cw
 hosts:
   - Ben Myers
+guests:
   - Alex Anderson
 tags:
   - Web Accessibility

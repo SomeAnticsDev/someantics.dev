@@ -3,6 +3,7 @@ title: Automate Accessibility Testing with GitHub Actions, with Adrián Bolonio
 thumbnailTitle: Automate Accessibility Testing with GitHub Actions
 hosts:
   - Ben Myers
+guests:
   - Adrián Bolonio
 tags:
   - Web Accessibility

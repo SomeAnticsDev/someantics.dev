@@ -3,6 +3,7 @@ title: "Optimizing Images with CDNs, with Alistair Shepherd"
 thumbnailTitle: Optimizing Images with CDNs
 hosts:
   - Ben Myers
+guests:
   - Alistair Shepherd
 demo: https://codepen.io/BenDMyers/pen/ZEaWJzb
 upload: https://youtu.be/RJ2Su0MhIWU

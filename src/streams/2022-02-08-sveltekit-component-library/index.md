@@ -3,6 +3,7 @@ title: Build a Component Library in SvelteKit with Brittney Postma
 thumbnailTitle: Build a Component Library in SvelteKit
 hosts:
   - Ben Myers
+guests:
   - Brittney Postma
 sourceCode: https://github.com/SomeAnticsDev/sveltekit-component-library
 upload: https://youtu.be/eUslcJLGk9g

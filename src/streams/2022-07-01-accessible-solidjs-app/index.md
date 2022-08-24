@@ -3,6 +3,7 @@ title: Build an Accessible App with SolidJS, with Dan Jutan
 thumbnailTitle: Build an Accessible App with SolidJS
 hosts:
   - Ben Myers
+guests:
   - Dan Jutan
 timeOfDay: 11am
 tags:

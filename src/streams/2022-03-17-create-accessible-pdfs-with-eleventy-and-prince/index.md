@@ -4,6 +4,7 @@ thumbnailTitle: Create Accessible PDFs with Eleventy and Prince
 timeOfDay: 4pm
 hosts:
   - Ben Myers
+guests:
   - Larry Hudson
 tags:
   - Web Accessibility

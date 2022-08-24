@@ -3,6 +3,7 @@ title: Mutation Testing with Stryker (with Adrianne Mallett)
 thumbnailTitle: Mutation Testing with Stryker
 hosts:
   - Ben Myers
+guests:
   - Adrianne Mallett
 tags:
   - Test-Driven Development

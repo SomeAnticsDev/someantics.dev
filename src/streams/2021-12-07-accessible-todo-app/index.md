@@ -4,6 +4,7 @@ thumbnailTitle: "Beyond the Tutorials: Build an Accessible Todo App"
 timeOfDay: "2:30pm"
 hosts:
   - Ben Myers
+guests:
   - Chantastic
 tags:
   - Web Accessibility

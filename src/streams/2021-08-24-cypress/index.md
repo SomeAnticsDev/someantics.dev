@@ -4,6 +4,7 @@ thumbnailTitle: End-to-End Testing with Cypress
 timeOfDay: 12pm
 hosts:
   - Adrianne Mallett
+guests:
   - Dan Goodwin
 tags:
   - Test-Driven Development

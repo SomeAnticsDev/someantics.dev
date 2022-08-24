@@ -4,6 +4,7 @@ thumbnailTitle: Accessibility in the Fashion Industry
 timeOfDay: 11am
 hosts:
   - Adrianne Mallett
+guests:
   - Alex Ayaub
 upload: https://youtu.be/QZ5hjdY6AFA
 ---

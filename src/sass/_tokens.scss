@@ -1,0 +1,46 @@
+@import 'variables';
+
+$purple-1: #0f0316;
+$purple-2: #2c0943;
+$purple-3: #490f70;
+$purple-4: #67169d;
+$purple-5: #841cca;
+$purple-6: #9e35e3;
+$purple-7: #b362e9;
+$purple-8: #c98ff0;
+$purple-9: #dfbcf6;
+$purple-10: #f4e9fc;
+
+:root {
+	--primary: $purple-3;
+	--primary-glare: $purple-5;
+	--primary-soft: $purple-10;
+	--primary-harsh: $purple-1;
+	--primary-shade: $purple-2;
+	--secondary: #ee4433;
+	--secondary-glare: #ff6a5b;
+	--secondary-soft: #fce8e8;
+	--secondary-shade: #cd2210;
+	--ternary: #eed043;
+	--ternary-glare: #ffe56a;
+	--ternary-shade: #dab819;
+	--lightgray: #fcfcfc;
+	--middlegray: #929292;
+	--gradient-red-yellow: linear-gradient(to right, #ee4433, #eed043);
+	--gradient-purple: linear-gradient(to right, #0f0316, #67169d);
+	--gradient-purple-bright: linear-gradient(to right, #490f70, #9e35e3);
+	--gradient-yellow: linear-gradient(to right, var(--ternary-shade), var(--ternary-glare));
+	--brand-font: 'Nexa';
+	--body-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--mono-font: 'Fira Mono';
+	accent-color: var(--primary);
+	background-color: var(--primary-shade);
+	font-family: var(--body-font);
+	font-weight: 400;
+	font-weight: 425;
+}
+
+:root *::selection {
+	background-color: var(--secondary);
+	color: white;
+}

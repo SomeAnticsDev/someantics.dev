@@ -3,6 +3,7 @@ thumbnailTitle: Introduction to Elm
 title: Introduction to Elm with Lindsay Wardell
 hosts:
   - Ben Myers
+guests:
   - Lindsay Wardell
 upload: https://youtu.be/flUASpYouEw
 sourceCode: https://github.com/SomeAnticsDev/introduction-to-elm

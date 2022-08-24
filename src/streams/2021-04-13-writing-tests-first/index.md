@@ -6,6 +6,7 @@ upload: https://www.youtube.com/watch?v=XP8vY9BhkOg
 sourceCode: https://github.com/SomeAnticsDev/tdd-fizzbuzz
 hosts:
   - Ben Myers
+guests:
   - Adrianne Mallett
 tags:
   - Test-Driven Development

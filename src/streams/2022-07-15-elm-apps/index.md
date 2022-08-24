@@ -3,6 +3,7 @@ title: Build Elm Apps with Lindsay Wardell
 thumbnailTitle: Build Elm Apps
 hosts:
   - Ben Myers
+guests:
   - Lindsay Wardell
 upload: https://youtu.be/crUrv2-Uq8s
 sourceCode: https://github.com/SomeAnticsDev/elm-todo-app
