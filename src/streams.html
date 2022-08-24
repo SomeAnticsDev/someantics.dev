@@ -17,7 +17,8 @@ stylesheet: stream-list.css
 		{% if forloop.index == 1 %}
 		{% assign cardType = "featured" %}
 		{% endif %}
-		{% include "partials/stream-card.html", stream: stream, cardType: cardType %}
+		{% assign lazy = forloop.index > 12 %}
+		{% include "partials/stream-card.html", stream: stream, cardType: cardType, lazy: lazy %}
 		{% endfor %}
 	</div>
 </section>

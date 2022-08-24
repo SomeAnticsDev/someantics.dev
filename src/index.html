@@ -36,7 +36,7 @@ metaDesc: Build great user experiences for the web with experts each week.
 		{% if forloop.index == 1 %}
 		{% assign cardType = "featured" %}
 		{% endif %}
-		{% include "partials/stream-card.html", stream: stream, cardType: cardType %}
+		{% include "partials/stream-card.html", stream: stream, cardType: cardType, lazy: true %}
 		{% endfor %}
 	</div>
 	<div class="cta-container">
