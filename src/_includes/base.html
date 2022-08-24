@@ -14,7 +14,11 @@
 </head>
 <body>
 	<header>
-		<a href="/" id="logo">
+		<a
+			href="/"
+			id="logo"
+			{% if page.url == '/' %}aria-current="page"{% endif %}
+		>
 			{% include 'icons/logo.svg' %}
 			&nbsp;Some Antics
 		</a>
@@ -29,10 +33,20 @@
 			</button>
 			<ul>
 				<li>
-					<a href="/schedule/">Schedule</a>
+					<a
+						href="/schedule/"
+						{% if page.url == '/schedule/' %}aria-current="page"{% endif %}
+					>
+						Schedule
+					</a>
 				</li>
 				<li>
-					<a href="/streams/">Past Streams</a>
+					<a
+						href="/streams/"
+						{% if page.url == '/streams/' %}aria-current="page"{% endif %}
+					>
+						Past Streams
+					</a>
 				</li>
 				<!-- <li><a href="/sponsor/">Sponsor</a></li> -->
 			</ul>
