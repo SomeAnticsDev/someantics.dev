@@ -23,7 +23,7 @@ description: Build great user experiences for the web with experts each week.
 		{% if forloop.index == 1 %}
 		{% assign cardType = "featured" %}
 		{% endif %}
-		{% include "partials/stream-card.html", stream: stream, cardType: cardType %}
+		{% include "partials/stream-card.html", stream: stream, cardType: cardType, featuredAvatarHeight: '180', featuredAvatarWidth: '160', cornerAvatarHeight: '90', cornerAvatarWidth: '90' %}
 		{% endfor %}
 	</div>
 	<div class="cta-container">
@@ -39,7 +39,7 @@ description: Build great user experiences for the web with experts each week.
 		{% if forloop.index == 1 %}
 		{% assign cardType = "featured" %}
 		{% endif %}
-		{% include "partials/stream-card.html", stream: stream, cardType: cardType, lazy: true %}
+		{% include "partials/stream-card.html", stream: stream, cardType: cardType, lazy: true, featuredAvatarHeight: '180', featuredAvatarWidth: '180', cornerAvatarHeight: '90', cornerAvatarWidth: '90' %}
 		{% endfor %}
 	</div>
 	<div class="cta-container">
@@ -54,6 +54,8 @@ description: Build great user experiences for the web with experts each week.
 			src="{{ 'Ben Myers' | avatar: profiles }}"
 			alt="Ben's headshot"
 			aria-describedby="headshotDescription"
+			width="180"
+			height="180"
 		/>
 		<p hidden id="headshotDescription">
 			Depicts a white person with dark brown hair and black spectacles. Ben is wearing a suit with a pattern that resembles brightly colored test patterns from TV, and is standing against a curtain that is vibrantly lit with reds and purples.

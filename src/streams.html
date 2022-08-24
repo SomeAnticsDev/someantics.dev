@@ -19,7 +19,7 @@ stylesheet: stream-list.css
 		{% assign cardType = "featured" %}
 		{% endif %}
 		{% assign lazy = forloop.index > 12 %}
-		{% include "partials/stream-card.html", stream: stream, cardType: cardType, lazy: lazy %}
+		{% include "partials/stream-card.html", stream: stream, cardType: cardType, lazy: lazy, featuredAvatarHeight: '180', featuredAvatarWidth: '180', cornerAvatarHeight: '90', cornerAvatarWidth: '90' %}
 		{% endfor %}
 	</div>
 </section>
