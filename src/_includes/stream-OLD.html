@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/layout.css" />
+	{% include 'fonts.html' %}
+	<title>{{ title }} | Some Antics</title>
+	<meta property="og:image" content="{{ site }}/thumbnails/{{ page.fileSlug | removeDate }}.png" />
+	{% assign thumbTile = title %}
+	{% if thumbnailTitle %}
+	{% assign thumbTitle = thumbnailTitle %}
+	{% endif %}
+	{% if structuredData %}
+	<script type="application/ld+json">{{ structuredData }}</script>
+	{% endif %}
+	<meta property="og:image:alt" content="{{ thumbTitle }} with {{ hosts | formatHosts }}. {{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central." />
+	<meta name="twitter:image" content="{{ site }}/thumbnails/{{ page.fileSlug | removeDate }}.png" />
+	<meta property="twitter:image:alt" content="{{ thumbTitle }} with {{ hosts | formatHosts }}. {{ date | date: 'dddd, MMMM D, YYYY' }} at {{ timeOfDay }} Central." />
+	{% include 'meta.html' %}
+</head>
+<body>
+	{% include 'header.html', title: title %}
+
+	<div class="body">
+		<div class="left">
+			<main id="main-content" style="max-width: 80ch;">
+				<time datetime="{{ date | date: 'YYYY-MM-DD' }}">{{ date | date: "MMM D, YYYY" }}</time>
+
+				{% if upload and uploadIsPublic %}
+				<p>{{ upload }}</p>
+				<noscript><a href="{{ upload }}">Watch stream on YouTube</a></noscript>
+				{% endif %}
+
+				{% if demo or sourceCode %}
+				<div class="cta-list">
+					{% if demo %}
+					<a href="{{ demo }}" class="cta">Demo</a>
+					{% endif %}
+					{% if sourceCode %}
+					<a href="{{ sourceCode }}" class="cta">Source Code</a>
+					{% endif %}
+				</div>
+				{% endif %}
+
+				{{ content }}
+
+				{% if transcriptPath %}
+				<h2>Transcript</h2>
+				{% renderFile transcriptPath %}
+				{% endif %}
+
+				{% if isUpcoming %}
+				<div class="calendar-link">
+					<a class="cta" href="{{ googleCalendarLink }}">{% include 'icons/calendar.svg' %} Add to Calendar</a>
+				</div>
+				{% endif %}
+			</main>
+		</div>
+
+		<aside id="hosts" aria-label="Hosts">
+			{% for host in hosts %}{% include 'profile.html', profile: profiles[host] %}{% endfor %}
+		</aside>
+	</div>
+</body>
+</html>

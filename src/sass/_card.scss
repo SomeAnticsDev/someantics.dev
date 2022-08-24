@@ -3,12 +3,10 @@
 [data-card] {
 	--card-surface: rgb(249 249 251);
 	--corner-accent-color: var(--violet-2);
-	
-	
+
 	@include block-link-container;
 	position: relative;
 	transition: background-color 0.15s var(--ease-in-out-1);
-	// background-color: rgb(255 255 255 / 0.4);
 	background-color: var(--card-surface);
 	border-radius: var(--radius-conditional-2);
 	box-shadow: var(--shadow-2);
@@ -106,7 +104,6 @@
 
 		& a {
 			padding-inline-end: calc(var(--size-10) + 1rem);
-			font-size: --
 		}
 	}
 	

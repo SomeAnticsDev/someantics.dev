@@ -1,0 +1,11 @@
+<meta property="og:site_name" content="Some Antics" />
+<meta name="theme-color" content="#490f70" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="{{ title }}" />
+{% if description %}
+<meta property="og:description" content="{{ description }}" />
+<meta property="twitter:description" content="{{ description }}" />
+{% endif %}
+<meta property="twitter:site" content="@SomeAnticsDev" />
+<meta property="twitter:creator" content="@BenDMyers" />
+{% if isStream %}{% include 'partials/stream-meta.html' %}{% endif %}
