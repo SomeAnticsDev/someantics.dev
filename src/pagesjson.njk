@@ -15,6 +15,9 @@ eleventyExcludeFromCollections: true
 	  "hosts": "{{ pages.data.hosts | formatHosts(true) | safe }}",
 	  "featuredHosts": {{ pages.data.hosts | getAvatarsForThumbnails | safe }},
 	  {% endif %}
+	  {% if pages.data.guests %}
+	  "guests": "{{ pages.data.guests | formatHosts(true) | safe }}",
+	  {% endif %}
 	  {% if pages.date %}
 	  "streamDate": "{{ pages.date | date("dddd, MMMM D, YYYY") }}",
 	  {% endif %}
