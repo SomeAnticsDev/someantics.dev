@@ -6,11 +6,12 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:title" content="{{ title }}" />
-{% if description %}
-<meta property="og:description" content="{{ description }}" />
-<meta property="twitter:description" content="{{ description }}" />
-{% endif %}
+
 <meta property="twitter:site" content="@SomeAnticsDev" />
 <meta property="twitter:creator" content="@BenDMyers" />
-{% if isStream %}{% include 'partials/stream-meta.html' %}{% endif %}
+{% if isStream %}
+{% include 'partials/stream-meta.html' %}
+{% else %}
+{% include 'partials/page-meta.html' %}
+{% endif %}
 <meta name="generator" content="{{ eleventy.generator }}">
