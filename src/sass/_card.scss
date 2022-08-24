@@ -85,6 +85,7 @@
 		&::after {
 			content: '';
 			position: absolute;
+			transition: 0.15s background-color var(--ease-in-out-1);
 			background-color: var(--corner-accent-color);
 			aspect-ratio: 1 / 1;
 			border-radius: 0 0 0 100%;
