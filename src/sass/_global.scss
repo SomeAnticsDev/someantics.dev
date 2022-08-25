@@ -12,7 +12,17 @@ $layers: "reset" "tokens" !default;
 }
 
 html {
-	background-color: var(--gray-1);
+	background-color: var(--indigo-0);
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	& footer {
+		margin-block-start: auto;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {

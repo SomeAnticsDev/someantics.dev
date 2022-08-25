@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'global';
+@import 'mixins';
+
+section {
+	background-color: var(--indigo-0);
+	padding-block: calc(2 * var(--size-fluid-4));
+	padding-inline: var(--size-fluid-4);
+	display: grid;
+	place-items: center;
+
+	p {
+		text-align: center;
+
+		&:first-of-type {
+			padding-block-end: calc(var(--size-fluid-3) / 2);
+		}
+	}
+	
+	strong {
+		font-family: 'Nexa';
+		font-weight: var(--font-weight-9);
+		font-size: var(--font-size-fluid-1);
+	}
+
+	a {
+		@include inline-text-link;
+	}
+}
