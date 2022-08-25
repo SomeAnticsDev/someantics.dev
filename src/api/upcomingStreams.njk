@@ -22,6 +22,11 @@ permalink: /api/upcomingStreams.json
 				{{ profiles[host] | structureHostForApi | dump | safe }}{%if not loop.last %},{% endif %}
 				{%- endfor %}
 			],
+			"guests": [
+				{%- for guest in stream.data.guests %}
+				{{ profiles[guest] | structureHostForApi | dump | safe }}{%if not loop.last %},{% endif %}
+				{%- endfor %}
+			],
 			"slug": "{{ stream.fileSlug }}",
 			"url": "{{ site }}{{ stream.url }}",
 			"calendarLinks": {
