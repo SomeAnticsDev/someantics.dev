@@ -5,7 +5,7 @@ hosts:
   - Ben Myers
 guests:
   - Jim Drury
-timeOfDay: "1:30pm"
+timeOfDay: "1pm"
 ---
 
 Every once in a while, I host office hours and review several viewer-submitted sites. Today, however, we're diving into just one site: [Jim Drury's new developer blog](https://geometricpanda.dev/)! Jim's already accessibility-conscious, so I'm excited to dive into some juicy questions of accessibility.
