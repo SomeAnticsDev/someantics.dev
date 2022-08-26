@@ -5,7 +5,6 @@ main {
 	section {
 		--heading-accent-color: var(--indigo-2);
 		padding: var(--size-6);
-		background-color: var(--indigo-0);
 		&:nth-child(odd) {
 			--heading-accent-color: var(--indigo-3);
 			background-color: var(--indigo-1);

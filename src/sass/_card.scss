@@ -1,12 +1,14 @@
 @import 'mixins';
 
+$card-transition-speed: 0.15s;
+
 [data-card] {
 	--card-surface: rgb(249 249 251);
 	--corner-accent-color: var(--violet-2);
 
 	@include block-link-container;
 	position: relative;
-	transition: background-color 0.15s var(--ease-in-out-1);
+	transition: background-color $card-transition-speed var(--ease-in-out-1);
 	background-color: var(--card-surface);
 	border-radius: var(--radius-conditional-2);
 	box-shadow: var(--shadow-2);
@@ -85,7 +87,7 @@
 		&::after {
 			content: '';
 			position: absolute;
-			transition: 0.15s background-color var(--ease-in-out-1);
+			transition: $card-transition-speed background-color var(--ease-in-out-1);
 			background-color: var(--corner-accent-color);
 			aspect-ratio: 1 / 1;
 			border-radius: 0 0 0 100%;
@@ -115,6 +117,7 @@
 		cursor: pointer;
 		background-color: var(--violet-4);
 		pointer-events: none;
+		transition: opacity $card-transition-speed var(--ease-in-out-1);
 	}
 
 	&:hover {
