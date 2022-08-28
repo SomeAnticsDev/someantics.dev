@@ -124,6 +124,16 @@
 	padding: calc(var(--size-2) + 4pt) var(--size-4);
 	user-select: none;
 
+	@media (forced-colors: active) {
+		outline: 2px solid LinkText;
+		outline-offset: 0px;
+		text-decoration: underline;
+
+		&:focus {
+			outline-width: 7px;
+		}
+	}
+
 	& svg {
 		display: inline;
 		height: 1.5em;

@@ -57,9 +57,19 @@ $card-transition-speed: 0.15s;
 
 		height: 100%;
 
+		@media (forced-colors: active) {
+			img {
+				outline: 5px solid LinkText;
+			}
+		}
+
 		&:focus-within {
 			& img {
 				outline: 5px solid var(--focus-outline-color);
+
+				@media (forced-colors: active) {
+					outline: 7px solid Highlight;
+				}
 	
 				@include safari-only {
 					outline: 5px solid transparent;
@@ -154,15 +164,8 @@ $card-transition-speed: 0.15s;
 	}
 
 	@media screen and (forced-colors: active) {
-		img {
-			outline: 3px solid LinkText;
-		}
-
-		&:focus-within,
-		&:hover {
-			& img {
-				outline: 7px solid Highlight;
-			}
+		&:focus-within {
+			outline-width: 7px !important;
 		}
 	}
 }
