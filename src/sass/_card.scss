@@ -51,8 +51,10 @@ $card-transition-speed: 0.15s;
 	}
 
 	&[data-card="featured"] {
-		// --surface-hover: #d79804;
-		--surface-hover: hsl(42deg, 96%, 42%);
+		@include dark-theme {
+			--surface-hover: hsl(42deg, 96%, 42%);
+		}
+
 		height: 100%;
 
 		&:focus-within {
