@@ -1,10 +1,6 @@
 @import 'variables';
 @import 'global';
 
-body {
-	background-color: var(--indigo-0);
-}
-
 .stream-grid {
 	margin-block: calc(var(--size-10) + var(--size-2));
 }

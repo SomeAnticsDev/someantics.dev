@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 $purple-1: #0f0316;
 $purple-2: #2c0943;
@@ -11,7 +12,22 @@ $purple-8: #c98ff0;
 $purple-9: #dfbcf6;
 $purple-10: #f4e9fc;
 
+@mixin default-tokens {
+	--page-background: var(--indigo-0);
+	--alternate-background-color: var(--indigo-1);
+	--text-color: black;
+	--surface: rgb(249, 249, 251);
+	--surface-accent: var(--violet-2);
+	--surface-hover: var(--yellow-3);
+	--surface-hover-text: inherit;
+	--surface-hover-accent: var(--yellow-5);
+	--focus-outline-color: #490f70;
+	--header-focus-outline-color: var(--yellow-4);
+}
+
 :root {
+	@include default-tokens;
+
 	--primary: $purple-3;
 	--primary-glare: $purple-5;
 	--primary-soft: $purple-10;
@@ -34,7 +50,6 @@ $purple-10: #f4e9fc;
 	--body-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	--mono-font: 'Fira Mono';
 	accent-color: var(--primary);
-	background-color: var(--primary-shade);
 	font-family: var(--body-font);
 	font-weight: 400;
 	font-weight: 425;
@@ -43,4 +58,26 @@ $purple-10: #f4e9fc;
 :root *::selection {
 	background-color: var(--secondary);
 	color: white;
+}
+
+body {
+	@include light-theme {
+		@include default-tokens;
+	}
+
+	@include dark-theme {
+		--page-background: #1f0d30;
+		--alternate-background-color: #2b1344;
+		--text-color: var(--indigo-0);
+		// --surface: #431772;
+		--surface: #501c87;
+		--surface-text: var(--indigo-0);
+		// --surface-accent: #5c2b91;
+		--surface-accent: #6931a5;
+		--surface-hover: var(--yellow-6);
+		--surface-hover-text: black;
+		--surface-hover-accent: var(--yellow-8);
+		--focus-outline-color: var(--yellow-4);
+		--header-focus-outline-color: var(--yellow-4);
+	}
 }

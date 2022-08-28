@@ -4,10 +4,6 @@
 @import 'tokens';
 @import 'profile';
 
-body {
-	background-color: var(--indigo-0);
-}
-
 main a {
 	@include inline-text-link;
 }
@@ -94,7 +90,7 @@ main a {
 	
 	@media screen and (max-width: $stream-breakpoint) {
 		// max-width: 60ch;
-		background-color: var(--indigo-1);
+		background-color: var(--alternate-background-color);
 		padding-block: var(--size-8);
 		padding-inline: auto;
 		margin-block-end: 0;

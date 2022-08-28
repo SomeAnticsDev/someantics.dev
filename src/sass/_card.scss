@@ -3,17 +3,18 @@
 $card-transition-speed: 0.15s;
 
 [data-card] {
-	--card-surface: rgb(249 249 251);
-	--corner-accent-color: var(--violet-2);
+	--card-surface: var(--surface);
+	--corner-accent-color: var(--surface-accent);
 
 	@include block-link-container;
 	position: relative;
-	transition: background-color $card-transition-speed var(--ease-in-out-1);
+	transition: background-color $card-transition-speed var(--ease-in-out-1), color $card-transition-speed var(--ease-in-out-1);
 	background-color: var(--card-surface);
 	border-radius: var(--radius-conditional-2);
 	box-shadow: var(--shadow-2);
 	padding: var(--size-4);
 	width: 40ch;
+	color: var(--surface-text);
 
 	a {
 		color: inherit;
@@ -54,12 +55,18 @@ $card-transition-speed: 0.15s;
 
 		&:focus-within {
 			& img {
-				outline: 5px solid $purple-3;
+				outline: 5px solid var(--focus-outline-color);
 	
 				@include safari-only {
 					outline: 5px solid transparent;
-					border: 5px solid $purple-3;
+					border: 5px solid var(--focus-outline-color);
 				}
+			}
+		}
+
+		&:hover {
+			& img {
+				filter: opacity(0.95) drop-shadow(0 0 0 var(--surface-hover));
 			}
 		}
 
@@ -118,11 +125,16 @@ $card-transition-speed: 0.15s;
 		background-color: var(--violet-4);
 		pointer-events: none;
 		transition: opacity $card-transition-speed var(--ease-in-out-1);
+
+		@include dark-theme {
+			filter: brightness(0.9);
+		}
 	}
 
 	&:hover {
-		--card-surface: var(--yellow-3);
-		--corner-accent-color: var(--yellow-5);
+		--card-surface: var(--surface-hover);
+		--corner-accent-color: var(--surface-hover-accent);
+		color: var(--surface-hover-text);
 
 		.excerpt {
 			border-block-start: 1px solid var(--corner-accent-color);

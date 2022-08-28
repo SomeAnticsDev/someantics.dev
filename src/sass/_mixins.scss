@@ -1,7 +1,7 @@
 @import 'variables';
 
 @mixin block-link-container {
-	@include focus-within-outline($purple-3, 5px, 0px);
+	@include focus-within-outline(var(--focus-outline-color), 5px, 0px);
 	position: relative;
 	
 	@media screen and (forced-colors: active) {
@@ -25,7 +25,7 @@
 }
 
 @mixin focus-outline(
-	$outline-color: var(--yellow-4),
+	$outline-color: var(--header-focus-outline-color),
 	$outline-width: 3px,
 	$outline-offset: 5px
 ) {
@@ -37,7 +37,7 @@
 }
 
 @mixin focus-within-outline(
-	$outline-color: var(--yellow-4),
+	$outline-color: var(--header-focus-outline-color),
 	$outline-width: 3px,
 	$outline-offset: 8px
 ) {
@@ -94,7 +94,7 @@
 }
 
 @mixin inline-text-link {
-	@include focus-outline($purple-5);
+	@include focus-outline(var(--focus-outline-color));
 	color: inherit;
 	font-family: 'Nexa', sans-serif;
 	font-weight: var(--font-weight-8);
@@ -149,3 +149,32 @@
 		}
 	}
 }
+
+// https://gist.github.com/loilo/dd5639089d837e95c22a706260b26706
+@mixin light-theme {
+	@media (prefers-color-scheme: light) {
+		@at-root #{selector-nest(':root[data-theme="system"]', &)} {
+			@content;
+		}
+		@at-root #{selector-nest(':root:not([data-theme])', &)} {
+			@content;
+		}
+	}
+	@at-root #{selector-nest(':root[data-theme="light"]', &)} {
+		@content;
+	}
+}
+
+@mixin dark-theme {
+	@media (prefers-color-scheme: dark) {
+		@at-root #{selector-nest(':root[data-theme="system"]', &)} {
+			@content;
+		}
+		@at-root #{selector-nest(':root:not([data-theme])', &)} {
+			@content;
+		}
+	}
+	@at-root #{selector-nest(':root[data-theme="dark"]', &)} {
+		@content;
+	}
+  }
