@@ -87,6 +87,11 @@ $card-transition-speed: 0.15s;
 	}
 
 	&[data-card="purple-corner"] {
+		@include dark-theme {
+			outline-offset: 5px;
+			outline-width: 3px;
+		}
+
 		&:hover {
 			& img {
 				opacity: 0.9;
