@@ -60,10 +60,6 @@ section .cta {
 #headshot {
 	border-radius: var(--radius-round);
 	width: var(--size-12);
-
-	@include dark-theme {
-		filter: brightness(0.9);
-	}
 }
 
 #bio {

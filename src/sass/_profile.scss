@@ -1,3 +1,4 @@
+@import 'mixins';
 @import 'variables';
 
 .profile {
@@ -33,6 +34,10 @@
 		margin-inline: auto;
 		margin-block-start: calc(-1 * var(--size-3));
 		box-shadow: var(--shadow-3);
+
+		@include dark-theme {
+			filter: brightness(0.9);
+		}
 	}
 
 	dl {
