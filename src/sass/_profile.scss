@@ -60,6 +60,12 @@
 		}
 	}
 
+	@include dark-theme {
+		a {
+			text-decoration-color: $purple-8;
+		}
+	}
+
 	@media screen and (max-width: $stream-breakpoint) {
 		max-width: fit-content;
 		& .profile-avatar {
