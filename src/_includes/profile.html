@@ -5,6 +5,7 @@
 			class="profile-avatar"
 			src="{{ avatar }}"
 			alt=""
+			draggable="false"
 		/>
 		<p class="name" id="host-{{ profile.name | removeSpecialCharacters | slug }}">{{ profile.name }}</p>
 		{% if profile.pronouns %}

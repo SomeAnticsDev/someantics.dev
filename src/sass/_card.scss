@@ -52,7 +52,7 @@ $card-transition-speed: 0.15s;
 
 	&[data-card="featured"] {
 		@include dark-theme {
-			--surface-hover: hsl(42deg, 96%, 42%);
+			--surface-hover: hsl(42deg, 96%, 44%);
 		}
 
 		height: 100%;
