@@ -46,6 +46,11 @@ $purple-10: #f4e9fc;
 	--gradient-purple: linear-gradient(to right, #0f0316, #67169d);
 	--gradient-purple-bright: linear-gradient(to right, #490f70, #9e35e3);
 	--gradient-yellow: linear-gradient(to right, var(--ternary-shade), var(--ternary-glare));
+	--gradient-yellow-dim: linear-gradient(
+		to right,
+		var(--yellow-6) 0%,
+		var(--yellow-4) 100%
+	);
 	--brand-font: 'Nexa';
 	--body-font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	--mono-font: 'Fira Mono';

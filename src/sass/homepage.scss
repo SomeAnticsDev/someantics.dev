@@ -57,8 +57,7 @@ section .cta {
 	@include focus-outline(var(--focus-outline-color));
 
 	@include dark-theme {
-		@include buttonlike-link(
-			linear-gradient(to right, var(--yellow-6) 0%, var(--yellow-4) 100%), black);
+		@include buttonlike-link(var(--gradient-yellow-dim), black);
 	}
 }
 

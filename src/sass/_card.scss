@@ -79,6 +79,8 @@ $card-transition-speed: 0.15s;
 		}
 
 		&:hover {
+			background-image: var(--gradient-yellow-dim);
+			filter: brightness(0.95);
 			& img {
 				filter: opacity(0.95) drop-shadow(0 0 0 var(--surface-hover));
 			}
