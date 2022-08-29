@@ -15,4 +15,4 @@ Google Chrome's new experimental [Shared Element Transition API](https://develop
 
 - [Follow Maxi on Twitter](https://twitter.com/charca)
 - [Maxi's blog](https://www.maxiferreira.com/)
-- [Experiments with Astro and the Shared Element Transition API](https://www.maxiferreira.com/blog/astro-page-transitions/)
+- ["Experiments with Astro and the Shared Element Transition API" blogpost](https://www.maxiferreira.com/blog/astro-page-transitions/)
