@@ -1,20 +1,37 @@
 @import 'variables';
 @import 'global';
+@import 'mixins';
+
+@mixin default-homepage-tokens {
+	--heading-color: var(--gray-9);
+	--heading-default-accent-color: var(--indigo-2);
+	--heading-alternate-accent-color: var(--indigo-3);
+}
 
 main {
+	@include default-homepage-tokens;
+	@include light-theme {
+		@include default-homepage-tokens;
+	}
+	@include dark-theme {
+		--heading-color: var(--violet-1);
+		--heading-default-accent-color: #841cca;
+		--heading-alternate-accent-color: #67169d;
+	}
+
 	section {
-		--heading-accent-color: var(--indigo-2);
 		padding: var(--size-6);
+		--heading-accent-color: var(--heading-default-accent-color);
 		&:nth-child(odd) {
-			--heading-accent-color: var(--indigo-3);
-			background-color: var(--indigo-1);
+			--heading-accent-color: var(--heading-alternate-accent-color);
+			background-color: var(--alternate-background-color);
 		}
 	}
 
 	h2 {
 		font-size: var(--font-size-fluid-2);
 		font-weight: var(--font-weight-9);
-		color: var(--gray-9);
+		color: var(--heading-color);
 		max-width: fit-content;
 		margin-block-start: var(--size-4);
 		padding-block-end: var(--size-4);
@@ -37,7 +54,12 @@ main {
 }
 
 section .cta {
-	@include focus-outline($purple-5);
+	@include focus-outline(var(--focus-outline-color));
+
+	@include dark-theme {
+		@include buttonlike-link(
+			linear-gradient(to right, var(--yellow-6) 0%, var(--yellow-4) 100%), black);
+	}
 }
 
 #headshot {

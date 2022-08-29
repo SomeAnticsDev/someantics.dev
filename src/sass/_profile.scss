@@ -1,7 +1,8 @@
+@import 'mixins';
 @import 'variables';
 
 .profile {
-	background-color: rgb(255 255 255 / 0.4);
+	background-color: var(--surface);
 	max-width: 25ch;
 	box-shadow: var(--shadow-2);
 	border-radius: var(--radius-3);
@@ -33,6 +34,10 @@
 		margin-inline: auto;
 		margin-block-start: calc(-1 * var(--size-3));
 		box-shadow: var(--shadow-3);
+
+		@include dark-theme {
+			filter: brightness(0.9);
+		}
 	}
 
 	dl {
@@ -49,6 +54,16 @@
 		width: 1.2rem;
 		display: inline;
 		margin-bottom: -0.3rem;
+
+		path {
+			fill: currentColor;
+		}
+	}
+
+	@include dark-theme {
+		a {
+			text-decoration-color: $purple-8;
+		}
 	}
 
 	@media screen and (max-width: $stream-breakpoint) {
