@@ -128,7 +128,15 @@ body > footer {
 		@include focus-outline;
 		background: none;
 		border: none;
+		color: white;
 		cursor: pointer;
+		font-family: 'Nexa', sans-serif;
+		font-weight: var(--font-weight-6);
+		transition: 0.15s background-color var(--ease-in-out-1);
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
 	}
 
 	[role="menu"] {
