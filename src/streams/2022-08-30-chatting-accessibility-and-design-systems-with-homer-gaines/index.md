@@ -1,6 +1,6 @@
 ---
 title: Chatting Accessibility and Design Systems with Homer Gaines
-thumbnailTitle: Chatting Accessibility and Design Systems
+thumbnailTitle: Chatting Accessibility and Design Systems with Homer Gaines
 hosts:
   - Ben Myers
 guests:
