@@ -21,6 +21,7 @@
     "generate-comparators": "^1.0.3",
     "luxon": "^3.0.1",
     "moment": "^2.29.1",
+    "netlify-cli": "^11.5.1",
     "normalize-url": "^5.3.0",
     "remove-markdown": "^0.3.0",
     "youtube-info-streams": "^1.0.8"

@@ -7,3 +7,4 @@ pages.json
 # src/thumbnail.html
 # Local Netlify folder
 .netlify
+netlify/edge-functions/_generated

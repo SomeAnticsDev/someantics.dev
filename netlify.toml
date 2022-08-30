@@ -15,3 +15,7 @@
   to = "https://someantics-scenes.netlify.app/"
   status = "301"
   force = true
+
+[[edge_functions]]
+  function = "eleventy-edge"
+  path = "/*"
