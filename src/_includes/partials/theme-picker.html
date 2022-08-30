@@ -2,29 +2,33 @@
 	<button type="button" aria-expanded="false" aria-haspopup="menu">
 		<span aria-hidden="true">🔆 </span>Theme
 	</button>
-	{% edge 'liquid' %}
 	<ul hidden role="menu">
 		<li role="menuitem">
+			{% edge 'liquid' %}
 			<button value="system" aria-pressed="{{ 'system' | isCurrentTheme }}">
+			{% endedge %}
 				{% include 'icons/circle.svg' %}
 				{% include 'icons/circular-checkmark.svg' %}
 				<span>System</span>
 			</button>
 		</li>
 		<li role="menuitem">
+			{% edge 'liquid' %}
 			<button value="light" aria-pressed="{{ 'light' | isCurrentTheme }}">
+			{% endedge %}
 				{% include 'icons/circle.svg' %}
 				{% include 'icons/circular-checkmark.svg' %}
 				<span>Light</span>
 			</button>
 		</li>
 		<li role="menuitem">
+			{% edge 'liquid' %}
 			<button value="dark" aria-pressed="{{ 'dark' | isCurrentTheme }}">
+			{% endedge %}
 				{% include 'icons/circle.svg' %}
 				{% include 'icons/circular-checkmark.svg' %}
 				<span>Dark</span>
 			</button>
 		</li>
 	</ul>
-	{% endedge %}
 </div>
