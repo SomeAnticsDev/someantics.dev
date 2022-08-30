@@ -66,13 +66,23 @@ main a {
 	margin-inline: auto;
 
 	b {
+		--speaker-color: var(--text-color);
+		@include dark-theme {
+			--speaker-color: var(--violet-2);
+		}
+		color: var(--speaker-color);
 		font-family: Nexa, Inter, sans-serif;
 		font-weight: var(--font-weight-8);
 	}
 
 	.timecode {
+		--timecode-color: var(--gray-7);
+		@include dark-theme {
+			--timecode-color: var(--violet-3);
+		}
+
 		font-variation-settings: unset;
-		color: var(--gray-7);
+		color: var(--timecode-color);
 		display: block;
 		font-size: x-small;
 		font-style: normal;
