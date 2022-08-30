@@ -115,7 +115,10 @@ module.exports = {
 			return false;
 		}
 
-		return data.page.fileSlug.replace(/^\d{4}-\d{2}-\d{2}-/, '') + '/index.html';
+		console.log(data.page.fileSlug);
+
+		// return data.page.fileSlug.replace(/^\d{4}-\d{2}-\d{2}-/, '') + '/index.html';
+		return undefined;
 	},
 	timeOfDay: '2pm',
 	duration: 'PT1H',
