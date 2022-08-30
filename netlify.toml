@@ -1,3 +1,11 @@
+[dev]
+  framework = "#static"
+  command = "npx @11ty/eleventy --quiet --watch"
+
+[build]
+  command = "npx @11ty/eleventy"
+  publish = "_site"
+
 [[redirects]]
   from = "/youtube"
   to = "https://www.youtube.com/playlist?list=PLZluKlEc91YzYor_ItAax4d2iXTXbFAFF"
