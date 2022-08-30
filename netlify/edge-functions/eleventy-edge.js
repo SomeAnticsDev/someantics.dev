@@ -16,12 +16,10 @@ export default async (request, context) => {
 		});
 
 		edge.config((eleventyConfig) => {
-			// Add some custom Edge-specific configuration
-			// e.g. Fancier json output
-			// eleventyConfig.addFilter('json', obj => JSON.stringify(obj, null, 2));
-			eleventyConfig.addGlobalData('theme', context.cookies.get('theme') || 'system');
+			const currentTheme = context.cookies.get('theme') || 'system';
+			eleventyConfig.addGlobalData('theme', currentTheme);
 			eleventyConfig.addFilter('isCurrentTheme', (theme) => {
-				return theme === context.cookies.get('theme');
+				return theme === currentTheme;
 			})
 		});
 
