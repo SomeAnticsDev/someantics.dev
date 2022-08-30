@@ -1,0 +1,80 @@
+<div class="theme-picker menu-container">
+	<button type="button" aria-expanded="false" aria-haspopup="menu">
+		<span aria-hidden="true">🔆 </span>Theme
+	</button>
+	<ul hidden role="menu">
+		<li role="menuitem">
+			<button value="system" aria-pressed="true">
+				{% include 'icons/circle.svg' %}
+				{% include 'icons/circular-checkmark.svg' %}
+				<span>System</span>
+			</button>
+		</li>
+		<li role="menuitem">
+			<button value="light" aria-pressed="false">
+				{% include 'icons/circle.svg' %}
+				{% include 'icons/circular-checkmark.svg' %}
+				<span>Light</span>
+			</button>
+		</li>
+		<li role="menuitem">
+			<button value="dark" aria-pressed="false">
+				{% include 'icons/circle.svg' %}
+				{% include 'icons/circular-checkmark.svg' %}
+				<span>Dark</span>
+			</button>
+		</li>
+	</ul>
+</div>
+<script>
+	const themeMenuTrigger = document.querySelector('.theme-picker [aria-haspopup="menu"]');
+	const themeMenu = document.querySelector('.theme-picker [role="menu"]');
+	const themeOptions = document.querySelectorAll('.theme-picker [role="menuitem"] button');
+	let themeMenuIsOpen = false;
+	
+	function openThemeMenu() {
+		themeMenuIsOpen = true;
+		themeMenu.hidden = false;
+		themeMenuTrigger.ariaExpanded = true;
+	}
+
+	function closeThemeMenu() {
+		themeMenuIsOpen = true;
+		themeMenu.hidden = false;
+		themeMenuTrigger.ariaExpanded = true;
+	}
+
+	themeMenuTrigger.addEventListener('click', (event) => {
+		if (themeMenuIsOpen) {
+			closeThemeMenu();
+		} else {
+			openThemeMenu();
+		}
+	});
+	
+	document.addEventListener('click', (event) => {
+		const themeOption = event.target.closest('.theme-picker [role="menu"] button');
+		if (themeOption) {
+			const theme = themeOption.value;
+			document.querySelector('html').dataset.theme = theme;
+			themeOptions.forEach(option => {
+				option.ariaPressed = (option === themeOption);
+			});
+		}
+	});
+
+	document.addEventListener('focusout', (event) => {
+		if (!event.relatedTarget) {
+			console.log({event})
+			themeMenu.hidden = true;
+			return;
+		}
+
+		const targetWasThemePickerTrigger = event.relatedTarget.closest('.theme-picker [aria-haspopup="menu"]');
+		const targetWasInThemeMenu = event.relatedTarget.closest('.theme-picker [role="menu"]');
+		console.log({event, targetWasInThemeMenu, targetWasThemePickerTrigger})
+		if (!targetWasThemePickerTrigger && !targetWasInThemeMenu) {
+			themeMenu.hidden = true;
+		}
+	});
+</script>
