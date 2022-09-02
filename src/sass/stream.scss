@@ -54,6 +54,10 @@ main a {
 		width: fit-content;
 		padding: var(--size-3) var(--size-6);
 	}
+
+	em {
+		font-weight: bold;
+	}
 }
 
 .transcript {
