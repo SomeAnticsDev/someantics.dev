@@ -21,6 +21,7 @@ Over the past few years, [TypeScript](https://www.typescriptlang.org/) has reall
 - [Follow Josh on Twitter](https://twitter.com/JoshuaKGoldberg)
 - [Watch Josh on Twitch](https://twitch.tv/JoshuaKGoldberg)
 - [TypeScript ESLint](https://typescript-eslint.io/)
+- [Sponsor Josh on GitHub](https://github.com/sponsors/joshuakgoldberg)
 
 ## Mentioned Links
 
@@ -34,3 +35,4 @@ Over the past few years, [TypeScript](https://www.typescriptlang.org/) has reall
 - [Definitely Typed repo on GitHub](https://github.com/definitelytyped/definitelytyped)
 - [`@babel/preset-typescript`](https://babeljs.io/docs/en/babel-preset-typescript)
 - [Hacker News on Sim City backwards compatibility](https://news.ycombinator.com/item?id=2281932)
+- [ESLint's `no-restricted-syntax` rule](https://eslint.org/docs/latest/rules/no-restricted-syntax)
