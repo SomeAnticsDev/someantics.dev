@@ -8,7 +8,7 @@ guests:
 tags:
   - TypeScript
   - Programming Languages
-upload: https://www.twitch.tv/videos/1550436998
+upload: https://youtu.be/vg1YjE5Xbg4
 ---
 
 Over the past few years, [TypeScript](https://www.typescriptlang.org/) has really been eating the world by bringing typing to JavaScript developers' ergonomics. Join us as [Josh Goldberg](https://twitter.com/JoshuaKGoldberg) shows us how to get started with TypeScript!
