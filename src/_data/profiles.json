@@ -67,6 +67,11 @@
 		"twitter": "Accudio",
 		"website": "https://alistairshepherd.uk"
 	},
+	"Amina Aweis": {
+		"name": "Amina Aweis",
+		"pronouns": "she/her",
+		"twitter": "yeahshewrites"
+	},
 	"Amit Sheen": {
 		"name": "Amit Sheen",
 		"pronouns": "he/him",
@@ -352,6 +357,12 @@
 		"name": "Miško Hevery",
 		"pronouns": "he/him",
 		"twitter": "mhevery"
+	},
+	"Nerando Johnson": {
+		"name": "Nerando Johnson",
+		"pronouns": "he/him",
+		"twitter": "nerajno",
+		"website": "https://developingdvlpr.com/"
 	},
 	"Patrick Hulce": {
 		"name": "Patrick Hulce",
