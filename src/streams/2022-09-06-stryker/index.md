@@ -8,7 +8,7 @@ guests:
 tags:
   - Test-Driven Development
 sourceCode: https://github.com/SomeAnticsDev/mutation-testing-with-stryker
-upload: https://www.twitch.tv/videos/1583812672
+upload: https://youtu.be/w2VI8YAFMcw
 ---
 
 **So you've written a test.** But how do you know if your *tests* are any good? [Mutation testing](https://en.wikipedia.org/wiki/Mutation_testing) lets us gauge the quality of our test suites by introducing random bugs into our applications and seeing how many of our tests fail as a result. Join us on Some Antics as [Adrianne Mallett](https://twitter.com/mennairda) rejoins the stream to show us how we can use [Stryker](https://stryker-mutator.io/) to put our own web applications through mutation testing.
