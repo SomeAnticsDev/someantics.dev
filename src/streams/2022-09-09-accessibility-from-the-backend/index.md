@@ -1,7 +1,7 @@
 ---
 title: Accessibility from the Backend (with Chance Strickland)
 thumbnailTitle: Accessibility from the Backend
-timeOfDay: 12pm
+timeOfDay: 12:30pm
 hosts:
   - Ben Myers
 guests:
