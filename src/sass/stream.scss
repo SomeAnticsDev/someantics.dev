@@ -28,7 +28,7 @@ main a {
 .stream-main-layout {
 	display: grid;
 	grid-template-areas: "content sidebar" "transcript sidebar";
-	grid-template-columns: 1fr 30ch;
+	grid-template-columns: 1fr 31ch;
 	
 	@media screen and (max-width: $stream-breakpoint) {
 		grid-template-areas: "content" "transcript" "sidebar";
