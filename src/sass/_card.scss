@@ -87,17 +87,26 @@ $card-transition-speed: 0.15s;
 			}
 		}
 
+		& .headshots {
+			display: flex;
+			flex-direction: row;
+			gap: 0.4em;
+			justify-content: center;
+		}
+
 		& img {
 			z-index: var(--layer-1);
 			width: var(--size-12);
 			margin-block-start: calc(-1 * var(--size-10));
-			margin-inline: auto;
-			position: absolute;
-			left: calc(50% - calc(var(--size-12) / 2));
+			// margin-inline: auto;
+			// position: absolute;
+			margin-inline: -1em;
+			// left: calc(50% - calc(var(--size-12) / 2));
 		}
 
 		& time {
-			margin-top: calc(var(--size-12) / 1.75);
+			// margin-top: calc(var(--size-12) / 1.75);
+			margin-top: var(--size-3);
 		}
 	}
 
