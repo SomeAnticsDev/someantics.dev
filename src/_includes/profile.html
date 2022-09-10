@@ -1,4 +1,5 @@
 {% assign avatar = profile.name | avatar: profiles %}
+{% assign profileSlug = profile.name | removeSpecialCharacters | slug %}
 <article class="profile" aria-labelledby="host-{{ profile.name | removeSpecialCharacters | slug }}">
 	<div>
 		<img
@@ -7,7 +8,7 @@
 			alt=""
 			draggable="false"
 		/>
-		<p class="name" id="host-{{ profile.name | removeSpecialCharacters | slug }}">{{ profile.name }}</p>
+		<p class="name" id="host-{{ profileSlug }}">{{ profile.name }}</p>
 		{% if profile.pronouns %}
 		<small class="pronouns">{{ profile.pronouns }}</small>
 		{% endif %}
@@ -26,14 +27,14 @@
 		<div>
 			<dt>
 				{% include 'icons/twitter.svg' %}
-				<span class="visually-hidden" id="twitter-{{ profile.name | removeSpecialCharacters | slug }}">
+				<span class="visually-hidden" id="twitter-{{ profileSlug }}">
 					{{ profile.name }}'s Twitter
 				</span>
 			</dt>
 			<dd>
 				<a
 					href="https://twitter.com/{{ profile.twitter }}"
-					aria-describedby="twitter-{{ profile.name | removeSpecialCharacters | slug }}"
+					aria-describedby="twitter-{{ profileSlug }}"
 				>
 					@{{ profile.twitter }}
 				</a>
@@ -44,14 +45,14 @@
 		<div>
 			<dt>
 				{% include 'icons/instagram.svg' %}
-				<span class="visually-hidden" id="instagram-{{ profile.name | removeSpecialCharacters | slug }}">
+				<span class="visually-hidden" id="instagram-{{ profileSlug }}">
 					{{ profile.name }}'s Instagram
 				</span>
 			</dt>
 			<dd>
 				<a
 					href="https://instagram.com/{{ profile.instagram }}/"
-					aria-describedby="instagram-{{ profile.name | removeSpecialCharacters | slug }}"
+					aria-describedby="instagram-{{ profileSlug }}"
 				>
 					{{ profile.instagram }}
 				</a>
@@ -62,14 +63,14 @@
 		<div>
 			<dt>
 				{% include 'icons/twitch.svg' %}
-				<span class="visually-hidden" id="twitch-{{ profile.name | removeSpecialCharacters | slug }}">
+				<span class="visually-hidden" id="twitch-{{ profileSlug }}">
 					{{ profile.name }}'s Twitch
 				</span>
 			</dt>
 			<dd>
 				<a
 					href="https://twitch.tv/{{ profile.twitch }}"
-					aria-describedby="twitch-{{ profile.name | removeSpecialCharacters | slug }}"
+					aria-describedby="twitch-{{ profileSlug }}"
 				>
 					{{ profile.twitch }}
 				</a>
@@ -80,14 +81,14 @@
 		<div>
 			<dt>
 				{% include 'icons/github.svg' %}
-				<span class="visually-hidden" id="github-{{ profile.name | removeSpecialCharacters | slug }}">
+				<span class="visually-hidden" id="github-{{ profileSlug }}">
 					{{ profile.name }}'s GitHub
 				</span>
 			</dt>
 			<dd>
 				<a
 					href="https://github.com/{{ profile.github }}"
-					aria-describedby="github-{{ profile.name | removeSpecialCharacters | slug }}"
+					aria-describedby="github-{{ profileSlug }}"
 				>
 					{{ profile.github }}
 				</a>
@@ -98,14 +99,14 @@
 		<div>
 			<dt>
 				{% include 'icons/devto.svg' %}
-				<span class="visually-hidden" id="devto-{{ profile.name | removeSpecialCharacters | slug }}">
+				<span class="visually-hidden" id="devto-{{ profileSlug }}">
 					{{ profile.name }}'s DEV.to
 				</span>
 			</dt>
 			<dd>
 				<a
 					href="https://dev.to/{{ profile.devto }}"
-					aria-describedby="devto-{{ profile.name | removeSpecialCharacters | slug }}"
+					aria-describedby="devto-{{ profileSlug }}"
 				>
 					{{ profile.devto }}
 				</a>
@@ -116,14 +117,14 @@
 		<div>
 			<dt>
 				{% include 'icons/link.svg' %}
-				<span class="visually-hidden" id="website-{{ profile.name | removeSpecialCharacters | slug }}">
+				<span class="visually-hidden" id="website-{{ profileSlug }}">
 					{{ profile.name }}'s Website
 				</span>
 			</dt>
 			<dd>
 				<a
 					href="{{ profile.website }}"
-					aria-describedby="website-{{ profile.name | removeSpecialCharacters | slug }}"
+					aria-describedby="website-{{ profileSlug }}"
 				>
 					{{ profile.website | normalizeUrl }}
 				</a>
