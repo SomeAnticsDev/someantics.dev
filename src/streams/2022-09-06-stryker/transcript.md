@@ -108,9 +108,9 @@ Are there things you wanna caveat about mutation testing before we get into this
 
 <i class="timecode">[00:11:41]</i> **Ben:** Gotcha. So, yeah, ahead of time — I've been having some lag issues, so ahead of time, we did clone a repo and install our dependencies, but I wanted to share the link with our friends in the chat real quick. There's a repo that the Stryker team provides that we'll be working with today, and so we have that! 
 
-<i class="timecode">[00:12:03]</i> **Adrianne:** Yeah. So, the name of this Stryker example is — they have a fairly simple frontend project. It's called RoboBar, and <i class="brackets">[chuckles] the idea is, like, it's a fictitious bar where robots are serving you things to drink.
+<i class="timecode">[00:12:03]</i> **Adrianne:** Yeah. So, the name of this Stryker example is — they have a fairly simple frontend project. It's called RoboBar, and <i class="brackets">[chuckles]</i> the idea is, like, it's a fictitious bar where robots are serving you things to drink.
 
-And it is a great thing to run mutation testing over. Fun fact, they weren't even trying to write bad [chuckles]</i> unit tests or tests with gaps. They actually earnestly were trying to be thorough and have their test suites, like, be complete. It's just so easy and natural as humans to be really biased when we're testing code that we wrote ourselves and to forget about edge cases and things like that.
+And it is a great thing to run mutation testing over. Fun fact, they weren't even trying to write bad <i class="brackets">[chuckles]</i> unit tests or tests with gaps. They actually earnestly were trying to be thorough and have their test suites, like, be complete. It's just so easy and natural as humans to be really biased when we're testing code that we wrote ourselves and to forget about edge cases and things like that.
 
 So anyway, when you hit this example, there is a TL;DR at the top, a "Too Long; Didn't Read." If you don't want to pull down the codebase and run it along, it has hyperlinks for you, three key things. The first one is the UI to the RoboBar page, 'cause I think it helps you understand what the project is testing and some of the pieces of it.
 
@@ -164,9 +164,9 @@ And yeah, so that's a great callout! Like, it's not an all-or-nothing thing. Ano
 
 Software testing is an art.
 
-<i class="brackets">[Adrianne laughs]
+<i class="brackets">[Adrianne laughs]</i>
 
-There is some subjectiveness to it! And your team or you can decide, okay, these are mutators we care about and which ones are negligible. If it's testing things that don't matter for your business logic, then you can ignore it! You can say that that's fine, but you're still getting feedback on your codebase. It's finding it so you have the CHOICE to ignore it instead of it not being found, [laughs]</i> where you would never know about it, so you wouldn't even be able to choose to ignore. 
+There is some subjectiveness to it! And your team or you can decide, okay, these are mutators we care about and which ones are negligible. If it's testing things that don't matter for your business logic, then you can ignore it! You can say that that's fine, but you're still getting feedback on your codebase. It's finding it so you have the CHOICE to ignore it instead of it not being found, <i class="brackets">[laughs]</i> where you would never know about it, so you wouldn't even be able to choose to ignore. 
 
 <i class="timecode">[00:18:08]</i> **Ben:** Gotcha. That makes sense, okay. So then the next question I have is gonna be around, like, all of these, like, number killed, survived, timeout, stuff like that, this mutation score. Maybe while we're here, let's just talk about, like… what is a mutation? What's actually happening? Like, how is this score being generated? 
 
@@ -326,7 +326,7 @@ And this is gonna take a minute!
 
 <i class="timecode">[00:28:40]</i> **Ben:** It does, as we found out ahead of time, take some time because it's gonna be running a lot of tests, right? And it's gonna be running a lot of different mutants, a lot of mutations, so… yeah. 
 
-<i class="timecode">[00:28:52]</i> **Adrianne:** Yeah! So, this is cool, 'cause this is a teachable moment and we can use this time. And I actually see a question in the chat from BuildingBedrockLayout about Vitest <i class="brackets">[V-I-test]. Just checking, you don't mean pitest. You mean Vitest [V-I-test]</i>, correct? 
+<i class="timecode">[00:28:52]</i> **Adrianne:** Yeah! So, this is cool, 'cause this is a teachable moment and we can use this time. And I actually see a question in the chat from BuildingBedrockLayout about Vitest <i class="brackets">[V-I-test]</i>. Just checking, you don't mean pitest. You mean Vitest <i class="brackets">[V-I-test]</i>, correct? 
 
 <i class="timecode">[00:29:10]</i> **Ben:** Uh, this is… so, this is a test runner called Vitest <i class="brackets">[vee-test]</i>, which is—
 
@@ -334,9 +334,9 @@ And this is gonna take a minute!
 
 <i class="timecode">[00:29:14]</i> **Ben:** —meant to be plugged into the Vite build tool. 
 
-<i class="timecode">[00:29:18]</i> **Adrianne:** Okay, awesome. So, what I'm dropping in the chat is the roadmap for Stryker. I didn't see Vitest <i class="brackets">[V-I-test] on there, but yeah, that's where you can check.
+<i class="timecode">[00:29:18]</i> **Adrianne:** Okay, awesome. So, what I'm dropping in the chat is the roadmap for Stryker. I didn't see Vitest <i class="brackets">[V-I-test]</i> on there, but yeah, that's where you can check.
 
-[Adrianne chuckles]
+<i class="brackets">[Adrianne chuckles]</i>
 
 And if it's something that there's a demand for, they definitely prioritize based on what the community wants most, okay. So even now, like, this is an example.
 
