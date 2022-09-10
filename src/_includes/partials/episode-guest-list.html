@@ -1,0 +1,13 @@
+{%- if guestList.size == 1 -%}
+with <b>{{ guestList[0] }}</b>
+{%- endif -%}
+{%- if guestList.size == 2 -%}
+with <b>{{ guestList[0] }}</b> and <b>{{ guestList[1] }}</b>
+{%- endif -%}
+{%- if guestList.size > 2 -%}
+with 
+{% for guest in guestList -%}
+{%- if forloop.last -%}and {% endif -%}
+<b>{{ guest }}</b>{%- unless forloop.last -%}, {% endunless -%}
+{%- endfor -%}
+{%- endif -%}

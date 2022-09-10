@@ -12,11 +12,10 @@ stylesheet: stream.css
 	<time datetime="{{ dateIso }}">{{ date | date: 'ddd, MMM D, YYYY' }} at {{ timeOfDay }} CT</time>
 	<h1>{{ pageTitle }}</h1>
 	<small class="guests">
-		with
 		{% if guests %}
-		<b>{{ guests | join: ', ' }}</b>
+		{% include 'partials/episode-guest-list.html', guestList: guests %}
 		{% elsif hosts %}
-		<b>{{ hosts | join: ', ' }}</b>
+		{% include 'partials/episode-guest-list.html', guestList: hosts %}
 		{% endif %}
 	</small>
 	{% if isUpcoming %}

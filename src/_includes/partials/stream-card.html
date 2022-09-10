@@ -25,7 +25,7 @@
 		<a href="{{ stream.url }}" id="card-{{stream.fileSlug}}-title">
 			{{ streamTitle }}
 		</a>
-		<small class="guests" id="card-{{stream.fileSlug}}-guests">with <b>{{featuredPeople | join: ', '}}</b></small>
+		<small class="guests" id="card-{{stream.fileSlug}}-guests">{% include 'partials/episode-guest-list.html', guestList: featuredPeople %}</small>
 		{% if cardType == "featured" %}
 		<p class="excerpt">{{ stream.data.cleansedExcerpt }}</p>
 		{% endif %}

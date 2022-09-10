@@ -5,6 +5,7 @@ $card-transition-speed: 0.15s;
 [data-card] {
 	--card-surface: var(--surface);
 	--corner-accent-color: var(--surface-accent);
+	--padding-inline-end: calc(var(--size-10) + 1rem);
 
 	@include block-link-container;
 	position: relative;
@@ -43,7 +44,7 @@ $card-transition-speed: 0.15s;
 		font-weight: var(--font-weight-6);
 		font-size: var(--font-size-1);
 		margin-block-end: 0.25rem;
-		padding-inline-end: calc(var(--size-10) + 1rem);
+		padding-inline-end: var(--padding-inline-end);
 	}
 
 	.excerpt {
@@ -134,7 +135,11 @@ $card-transition-speed: 0.15s;
 		}
 
 		& a {
-			padding-inline-end: calc(var(--size-10) + 1rem);
+			padding-inline-end: var(--padding-inline-end);
+		}
+
+		& .guests {
+			padding-inline-end: var(--padding-inline-end);
 		}
 	}
 	
