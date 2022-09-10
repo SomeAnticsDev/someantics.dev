@@ -12,12 +12,15 @@
 	data-card="{{cardType}}"
 	aria-labelledby="card-{{stream.fileSlug}}-title card-{{stream.fileSlug}}-guests"
 >
+	{% for person in featuredPeople %}
 	<img
-		src="{{ profiles[featuredPerson].name | avatar: profiles }}"
+		src="{{ profiles[person].name | avatar: profiles }}"
 		alt=""
 		draggable="false"
 		{% if lazy %}loading="lazy"{% endif %}
+		style="--index: {{ forloop.index | minus: 1 }}"
 	/>
+	{% endfor %}
 	<div>
 		<time datetime="{{ stream.data.dateIso }}">
 			{{ stream.data.date | date: 'ddd, MMM D, YYYY' }} at {{ stream.data.timeOfDay }} CT

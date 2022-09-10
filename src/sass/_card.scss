@@ -132,6 +132,7 @@ $card-transition-speed: 0.15s;
 			width: var(--size-10);
 			right: var(--size-4);
 			box-shadow: var(--shadow-2);
+			top: calc(var(--size-9) * var(--index) + var(--size-4));
 		}
 
 		& a {
