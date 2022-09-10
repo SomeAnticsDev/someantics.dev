@@ -7,9 +7,11 @@ hosts:
 guests:
   - Chance Strickland
 tags:
+  - Remix
   - Backend Development
-  - Web Accessibility
   - Web Performance
+upload: https://www.twitch.tv/videos/1586416232
+sourceCode: https://github.com/someanticsdev/city-searcher
 ---
 
 How can backend development and progressive enhancement techniques improve our site's accessibility standing on the frontend? [Chance Strickland](https://twitter.com/chancethedev) rejoins the stream to introduce us to accessibility from the backend.
