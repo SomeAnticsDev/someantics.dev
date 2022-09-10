@@ -101,6 +101,7 @@
 		"name": "Anthony Campolo",
 		"pronouns": "he/him",
 		"twitter": "ajcwebdev",
+		"devto": "ajcwebdev",
 		"website": "https://ajcwebdev.com"
 	},
 	"Anuradha Kumari": {
@@ -165,6 +166,7 @@
 		"name": "Chance Strickland",
 		"pronouns": "he/him",
 		"twitter": "chancethedev",
+		"github": "chaance",
 		"website": "https://chance.dev"
 	},
 	"Chantastic": {
@@ -212,7 +214,7 @@
 	"Dom Saadi": {
 		"name": "Dom Saadi",
 		"pronouns": "he/him",
-		"website": "https://github.com/jtoar"
+		"github": "jtoar"
 	},
 	"Domitrius Clark": {
 		"name": "Domitrius Clark",
@@ -247,7 +249,8 @@
 	"Graham Ritchie": {
 		"name": "Graham Ritchie",
 		"pronouns": "he/him",
-		"twitter": "GrahamTheDev"
+		"twitter": "GrahamTheDev",
+		"devto": "grahamthedev"
 	},
 	"Harris Schneiderman": {
 		"name": "Harris Schneiderman",

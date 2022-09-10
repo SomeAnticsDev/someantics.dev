@@ -76,6 +76,42 @@
 			</dd>
 		</div>
 		{% endif %}
+		{% if profile.github %}
+		<div>
+			<dt>
+				{% include 'icons/github.svg' %}
+				<span class="visually-hidden" id="github-{{ profile.name | removeSpecialCharacters | slug }}">
+					{{ profile.name }}'s GitHub
+				</span>
+			</dt>
+			<dd>
+				<a
+					href="https://github.com/{{ profile.github }}"
+					aria-describedby="github-{{ profile.name | removeSpecialCharacters | slug }}"
+				>
+					{{ profile.github }}
+				</a>
+			</dd>
+		</div>
+		{% endif %}
+		{% if profile.devto %}
+		<div>
+			<dt>
+				{% include 'icons/devto.svg' %}
+				<span class="visually-hidden" id="devto-{{ profile.name | removeSpecialCharacters | slug }}">
+					{{ profile.name }}'s DEV.to
+				</span>
+			</dt>
+			<dd>
+				<a
+					href="https://dev.to/{{ profile.devto }}"
+					aria-describedby="devto-{{ profile.name | removeSpecialCharacters | slug }}"
+				>
+					{{ profile.devto }}
+				</a>
+			</dd>
+		</div>
+		{% endif %}
 		{% if profile.website %}
 		<div>
 			<dt>
