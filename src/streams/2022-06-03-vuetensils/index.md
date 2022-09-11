@@ -11,7 +11,7 @@ demo: https://some-antics-vuetensils.netlify.app/
 sourceCode: https://github.com/SomeAnticsDev/build-an-accessible-vue-app-with-vuetensils
 ---
 
-[Vuetensils](https://vuetensils.austingil.com/) is a customizable component library for building accessible, lightweight, and on-brand [Vue](https://vuejs.org/) applications. Join us as Vuetensils creator [Austin Gil](https://twitter.com/heyAustinGil) shows us how to dive into Vuetensils!
+[Vuetensils](https://vuetensils.com/) is a customizable component library for building accessible, lightweight, and on-brand [Vue](https://vuejs.org/) applications. Join us as Vuetensils creator [Austin Gil](https://twitter.com/heyAustinGil) shows us how to dive into Vuetensils!
 
 ---
 
@@ -24,4 +24,4 @@ sourceCode: https://github.com/SomeAnticsDev/build-an-accessible-vue-app-with-vu
 ## Mentioned Links
 
 - [Some Antics: Vite and the Next Generation of Frontend Tooling (with Anthony Campolo)](/vite/)
-- [Vuetensils](https://vuetensils.austingil.com/)
+- [Vuetensils](https://vuetensils.com/)
