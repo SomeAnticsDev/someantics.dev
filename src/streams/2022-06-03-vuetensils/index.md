@@ -6,7 +6,7 @@ hosts:
 guests:
   - Austin Gil
 timeOfDay: 1pm
-upload: https://www.twitch.tv/videos/1493625402
+upload: https://youtu.be/ko0FuDGqylA
 demo: https://some-antics-vuetensils.netlify.app/
 sourceCode: https://github.com/SomeAnticsDev/build-an-accessible-vue-app-with-vuetensils
 ---
@@ -20,3 +20,8 @@ sourceCode: https://github.com/SomeAnticsDev/build-an-accessible-vue-app-with-vu
 - [Follow Austin on Twitter](https://twitter.com/heyAustinGil)
 - [Watch Austin's Twitch streams](https://twitch.tv/heyAustinGil)
 - [Austin's blog](https://austingil.com/)
+
+## Mentioned Links
+
+- [Some Antics: Vite and the Next Generation of Frontend Tooling (with Anthony Campolo)](/vite/)
+- [Vuetensils](https://vuetensils.austingil.com/)
