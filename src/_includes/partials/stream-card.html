@@ -11,6 +11,7 @@
 <article
 	data-card="{{cardType}}"
 	aria-labelledby="card-{{stream.fileSlug}}-title card-{{stream.fileSlug}}-guests"
+	class="h-event"
 >
 	<div class="headshots">
 	{% for person in featuredPeople %}
@@ -24,15 +25,15 @@
 	{% endfor %}
 	</div>
 	<div>
-		<time datetime="{{ stream.data.dateIso }}">
+		<time datetime="{{ stream.data.dateIso }}" class="dt-start">
 			{{ stream.data.date | date: 'ddd, MMM D, YYYY' }} at {{ stream.data.timeOfDay }} CT
 		</time>
-		<a href="{{ stream.url }}" id="card-{{stream.fileSlug}}-title">
+		<a href="{{ stream.url }}" id="card-{{stream.fileSlug}}-title" class="u-url p-name">
 			{{ streamTitle }}
 		</a>
 		<small class="guests" id="card-{{stream.fileSlug}}-guests">{% include 'partials/episode-guest-list.html', guestList: featuredPeople %}</small>
 		{% if cardType == "featured" %}
-		<p class="excerpt">{{ stream.data.cleansedExcerpt }}</p>
+		<p class="excerpt p-summary">{{ stream.data.cleansedExcerpt }}</p>
 		{% endif %}
 	</div>
 </article>

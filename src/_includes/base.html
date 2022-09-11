@@ -15,7 +15,7 @@ shareImageAlt: "Some Antics. Accessibility made approachable."
 	{% include 'partials/fonts.html' %}
 	{% include 'partials/prefetch.html' %}
 </head>
-<body>
+<body {% if microformat %}class="{{ microformat }}"{% endif %}>
 	<header>
 		<a
 			href="/"

@@ -1,6 +1,7 @@
 ---
 layout: base.html
 stylesheet: stream.css
+microformat: h-event
 ---
 
 {% assign pageTitle = title %}
@@ -9,8 +10,8 @@ stylesheet: stream.css
 {% endif %}
 
 <header data-hero="stream">
-	<time datetime="{{ dateIso }}">{{ date | date: 'ddd, MMM D, YYYY' }} at {{ timeOfDay }} CT</time>
-	<h1>{{ pageTitle }}</h1>
+	<time datetime="{{ dateIso }}" class="dt-start">{{ date | date: 'ddd, MMM D, YYYY' }} at {{ timeOfDay }} CT</time>
+	<h1 class="p-name">{{ pageTitle }}</h1>
 	<small class="guests">
 		{% if guests %}
 		{% include 'partials/episode-guest-list.html', guestList: guests %}
@@ -34,7 +35,7 @@ stylesheet: stream.css
 </article>
 {% endif %}
 <div class="stream-main-layout">
-	<section class="content">
+	<section class="content p-summary">
 		{% if demo or sourceCode %}
 		<div class="demo-links">
 			{% if demo %}<a href="{{ demo }}">Demo</a>{% endif %}

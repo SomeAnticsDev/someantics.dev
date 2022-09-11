@@ -1,14 +1,14 @@
 {% assign avatar = profile.name | avatar: profiles %}
 {% assign profileSlug = profile.name | removeSpecialCharacters | slug %}
-<article class="profile" aria-labelledby="host-{{ profile.name | removeSpecialCharacters | slug }}">
+<article class="profile h-card p-organizer" aria-labelledby="host-{{ profile.name | removeSpecialCharacters | slug }}">
 	<div>
 		<img
-			class="profile-avatar"
+			class="profile-avatar u-photo"
 			src="{{ avatar }}"
 			alt=""
 			draggable="false"
 		/>
-		<p class="name" id="host-{{ profileSlug }}">{{ profile.name }}</p>
+		<p class="name p-name" id="host-{{ profileSlug }}">{{ profile.name }}</p>
 		{% if profile.pronouns %}
 		<small class="pronouns">{{ profile.pronouns }}</small>
 		{% endif %}
@@ -20,7 +20,7 @@
 				{% include 'icons/speech-bubble.svg' %}
 				<span class="visually-hidden">{{ profile.name }}'s Pronouns</span>
 			</dt>
-			<dd>{{ profile.pronouns }}</dd>
+			<dd class="p-gender-identity">{{ profile.pronouns }}</dd>
 		</div>
 		{% endif %} {% endcomment %}
 		{% if profile.twitter %}
@@ -34,6 +34,7 @@
 			<dd>
 				<a
 					href="https://twitter.com/{{ profile.twitter }}"
+					class="u-url"
 					aria-describedby="twitter-{{ profileSlug }}"
 				>
 					@{{ profile.twitter }}
@@ -52,6 +53,7 @@
 			<dd>
 				<a
 					href="https://instagram.com/{{ profile.instagram }}/"
+					class="u-url"
 					aria-describedby="instagram-{{ profileSlug }}"
 				>
 					{{ profile.instagram }}
@@ -70,6 +72,7 @@
 			<dd>
 				<a
 					href="https://twitch.tv/{{ profile.twitch }}"
+					class="u-url"
 					aria-describedby="twitch-{{ profileSlug }}"
 				>
 					{{ profile.twitch }}
@@ -88,6 +91,7 @@
 			<dd>
 				<a
 					href="https://github.com/{{ profile.github }}"
+					class="u-url"
 					aria-describedby="github-{{ profileSlug }}"
 				>
 					{{ profile.github }}
@@ -106,6 +110,7 @@
 			<dd>
 				<a
 					href="https://dev.to/{{ profile.devto }}"
+					class="u-url"
 					aria-describedby="devto-{{ profileSlug }}"
 				>
 					{{ profile.devto }}
@@ -124,6 +129,7 @@
 			<dd>
 				<a
 					href="{{ profile.website }}"
+					class="u-url"
 					aria-describedby="website-{{ profileSlug }}"
 				>
 					{{ profile.website | normalizeUrl }}
