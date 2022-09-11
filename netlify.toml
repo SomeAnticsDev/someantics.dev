@@ -15,3 +15,12 @@
   to = "https://someantics-scenes.netlify.app/"
   status = "301"
   force = true
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+[plugins.inputs]
+  buildDir = "_site"
+  exclude = [
+    '**/**/_/',
+	'**/**/404.html'
+  ]
