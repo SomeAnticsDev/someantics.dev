@@ -1,6 +1,6 @@
 ---
-title: A First Look at Enhance (with Simon MacDonald)
-thumbnailTitle: A First Look at Enhance
+title: Server Render Web Components with Enhance (with Simon MacDonald)
+thumbnailTitle: Server Render Web Components with Enhance
 host:
   - Ben Myers
 guests:
