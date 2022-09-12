@@ -12,6 +12,8 @@ tags:
 
 Join us on Some Antics as [Dan Goodwin](https://twitter.com/dcgoodwin2112) and first ever guest host [Adrianne Mallett](https://twitter.com/mennairda) dive into fast and reliable end-to-end testing with [Cypress](https://cypress.io)!
 
+---
+
 ## More From Dan
 
 - [Follow Dan on Twitter](https://twitter.com/dcgoodwin2112)

@@ -13,7 +13,9 @@ tags:
   - React
 ---
 
-You know what they say… an icon is worth a thousand words. However, scaling icons up to reusable icon libraries can pose some interesting logistical challenges. Join us on <i>Some Antics</i> as [Chantastic](https://twitter.com/chantastic) walks us through his journey towards building accessible SVG icons in React.
+You know what they say… an icon is worth a thousand words. However, scaling icons up to reusable icon libraries can pose some interesting logistical challenges. Join us on _Some Antics_ as [Chantastic](https://twitter.com/chantastic) walks us through his journey towards building accessible SVG icons in React.
+
+---
 
 Michael Chan, or Chantastic, is the host of [<i>React Podcast</i>](https://reactpodcast.com). He's working on [lunch.dev](https://lunch.dev) — a community for creative coders. He's also on the hunt for the perfect Reuben sandwich.
 

@@ -15,6 +15,8 @@ tags:
 
 [Anthony Campolo](https://twitter.com/ajcwebdev) rejoins the stream to show off how [Vite](https://vitejs.dev) and the next generation of frontend tooling will empower developers to build great apps quickly!
 
+---
+
 ## More From Anthony
 
 - [Follow Anthony on Twitter](https://twitter.com/ajcwebdev)

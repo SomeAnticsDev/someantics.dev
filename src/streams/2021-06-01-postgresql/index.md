@@ -13,3 +13,5 @@ tags:
 Confession: I never really learned databases.
 
 Which is why I'm incredibly excited to have Sarah Beardsley on next week. Come join us on Some Antics for The Beginner's Guide to PostgreSQL!
+
+---

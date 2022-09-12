@@ -14,6 +14,8 @@ tags:
 
 Join us as Ben Myers and [Ben Holmes](https://twitter.com/bholmesdev) dive into using Eleventy's experimental custom extension API for fun and profit. We'll use custom extensions to process styles, React components, and more!
 
+---
+
 ## More From Ben
 
 - [Follow Ben on Twitter](https://twitter.com/BHolmesDev)
