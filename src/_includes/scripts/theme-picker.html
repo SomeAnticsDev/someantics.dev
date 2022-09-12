@@ -38,6 +38,9 @@
 			[...themeOptions].forEach(option => {
 				option.setAttribute('aria-pressed', option === clickedThemeOption);
 			});
+
+			const prefetches = document.querySelectorAll('link[rel="prefetch"]');
+			prefetches.forEach(prefetch => prefetch.remove());
 		}
 	});
 
