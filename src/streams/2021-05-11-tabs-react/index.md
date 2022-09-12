@@ -13,8 +13,9 @@ tags:
   - React
 ---
 
-There's a lot that goes into building accessible tabs, from 
-keyboard navigation to ARIA to focus management. Join us on Some Antics as [Chance Strickland](https://twitter.com/chancethedev) walks us through building accessible tabs of our own in React!
+There's a lot that goes into building accessible tabs, from keyboard navigation to ARIA to focus management. Join us on Some Antics as [Chance Strickland](https://twitter.com/chancethedev) walks us through building accessible tabs of our own in React!
+
+---
 
 ## More From Chance
 

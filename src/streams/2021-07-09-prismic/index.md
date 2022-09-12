@@ -16,6 +16,8 @@ tags:
 
 Beware, however: horse puns abound.
 
+---
+
 ## More From Alex
 
 - [Follow Alex on Twitter!](https://twitter.com/trostcodes)

@@ -107,6 +107,18 @@ async function getUploadIsPublic(youtubeUrl = '') {
 	}
 }
 
+function cleansedExcerpt(data) {
+	if (!data.excerpt) {
+		return '';
+	}
+
+	const _trimmed = data.excerpt.trim();
+	const _escaped = _trimmed
+		.replace(/</g, '‹')
+		.replace(/>/g, '›');
+	return removeMarkdown(_escaped);
+}
+
 module.exports = {
 	layout: 'stream.html',
 	isStream: true,
@@ -121,7 +133,7 @@ module.exports = {
 	duration: 'PT1H',
 	addNbsp: true,
 	eleventyComputed: {
-		cleansedExcerpt: data => (data.excerpt ? removeMarkdown(data.excerpt.trim()) : ''),
+		cleansedExcerpt,
 		date: '{{ page.date }}',
 		dateIso,
 		hosts: data => (data.hosts || ['Ben Myers']),
