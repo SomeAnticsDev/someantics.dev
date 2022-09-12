@@ -7,6 +7,7 @@ guests:
   - Chance Strickland
 upload: https://youtu.be/QpP3daA2na4
 tags:
+  - Remix
   - Frameworks
   - React
 ---

@@ -1,15 +1,17 @@
 ---
 title: Accessibility from the Backend (with Chance Strickland)
 thumbnailTitle: Accessibility from the Backend
-timeOfDay: 12pm
+timeOfDay: 12:30pm
 hosts:
   - Ben Myers
 guests:
   - Chance Strickland
 tags:
+  - Remix
   - Backend Development
-  - Web Accessibility
   - Web Performance
+upload: https://www.twitch.tv/videos/1586416232
+sourceCode: https://github.com/someanticsdev/city-searcher
 ---
 
 How can backend development and progressive enhancement techniques improve our site's accessibility standing on the frontend? [Chance Strickland](https://twitter.com/chancethedev) rejoins the stream to introduce us to accessibility from the backend.

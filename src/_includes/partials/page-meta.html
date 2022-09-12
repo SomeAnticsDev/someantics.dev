@@ -1,6 +1,6 @@
 <meta name="description" content="{{ description }}" />
-<meta property="og:description" content="{{ description }}" />
-<meta property="twitter:description" content="{{ description }}" />
+<meta property="og:description" content="{{ description | removeNewlines }}" />
+<meta property="twitter:description" content="{{ description | removeNewlines }}" />
 <meta property="og:image" content="{{ shareImage }}" />
 <meta property="og:image:alt" content="{{ shareImageAlt }}" />
 <meta name="twitter:image" content="{{ shareImage }}" />

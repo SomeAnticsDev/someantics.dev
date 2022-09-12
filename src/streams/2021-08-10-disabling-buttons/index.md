@@ -14,6 +14,8 @@ tags:
 
 Disabling buttons on the web seems pretty straightforward — `<button disabled>` — but is that the best user experience? Join us on Some Antics as [Sandrina Pereira](https://twitter.com/a_sandrina_p) walks us through the UX and accessibility of disabling buttons.
 
+---
+
 ## More From Sandrina
 
 - [Follow Sandrina on Twitter](https://twitter.com/a_sandrina_p)

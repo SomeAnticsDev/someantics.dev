@@ -28,7 +28,7 @@ main a {
 .stream-main-layout {
 	display: grid;
 	grid-template-areas: "content sidebar" "transcript sidebar";
-	grid-template-columns: 1fr 30ch;
+	grid-template-columns: 1fr 31ch;
 	
 	@media screen and (max-width: $stream-breakpoint) {
 		grid-template-areas: "content" "transcript" "sidebar";
@@ -66,7 +66,7 @@ main a {
 	max-width: min(80ch, 90vw);
 	padding-inline: var(--size-3);
 	font-size: var(--font-size-2);
-	margin-block-start: var(--size-3);
+	margin-block: var(--size-3);
 	margin-inline: auto;
 
 	b {
@@ -91,6 +91,14 @@ main a {
 		font-size: x-small;
 		font-style: normal;
 		font-weight: bold;
+	}
+
+	.brackets {
+		font-family: 'Nexa', 'Inter', sans-serif;
+		font-style: italic;
+		@include dark-theme {
+			color: var(--violet-2);
+		}
 	}
 }
 

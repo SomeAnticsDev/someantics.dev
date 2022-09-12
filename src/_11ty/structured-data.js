@@ -45,6 +45,15 @@ function formatHostAsPerformer(hostName, profiles) {
 	if (hostProfile.instagram) {
 		otherSites.push(`https://www.instagram.com/${hostProfile.instagram}`);
 	}
+	if (hostProfile.devto) {
+		otherSites.push(`https://dev.to/${hostProfile.devto}`);
+	}
+	if (hostProfile.github) {
+		otherSites.push(`https://github.com/${hostProfile.github}`);
+	}
+	if (hostProfile.alternateSites) {
+		otherSites.push(...hostProfile.alternateSites);
+	}
 	if (otherSites.length) {
 		hostJsonLd.sameAs = otherSites;
 	}
@@ -54,6 +63,8 @@ function formatHostAsPerformer(hostName, profiles) {
 
 function structuredData(data) {
 	const thumbnail = `${data.site}/thumbnails/${removeDate(data.page.fileSlug)}.png`;
+	const featuredPeople = [...(data.guests || []), ...(data.hosts || [])];
+	const description = data.cleansedExcerpt && data.cleansedExcerpt.replace(/\n+/g, ' ');
 
 	const jsonLd = {
 		'@context': 'https://schema.org',
@@ -61,7 +72,7 @@ function structuredData(data) {
 		broadcastOfEvent: {
 			'@type': 'Event',
 			name: data.title,
-			description: data.cleansedExcerpt,
+			description,
 			image: {
 				'@type': 'ImageObject',
 				url: thumbnail
@@ -80,9 +91,7 @@ function structuredData(data) {
 				url: 'https://www.twitch.tv/SomeAnticsDev'
 			},
 			organizer: ben,
-			performers: data.hosts ?
-				data.hosts.map(hostName => formatHostAsPerformer(hostName, data.profiles)) :
-				undefined,
+			performers: featuredPeople.map(hostName => formatHostAsPerformer(hostName, data.profiles))
 		},
 		description: data.cleansedExcerpt,
 		location: {
@@ -90,9 +99,7 @@ function structuredData(data) {
 			url: 'https://www.twitch.tv/SomeAnticsDev'
 		},
 		organizer: ben,
-		performers: data.hosts ?
-			data.hosts.map(hostName => formatHostAsPerformer(hostName, data.profiles)) :
-			undefined,
+		performers: featuredPeople.map(hostName => formatHostAsPerformer(hostName, data.profiles)),
 		inLanguage: 'en-US',
 		isAvailableForFree: true,
 		isLiveBroadcast: true,
@@ -106,7 +113,7 @@ function structuredData(data) {
 			url: data.upload,
 			embedUrl: data.upload,
 			name: `${data.title} | Some Antics`,
-			description: data.cleansedExcerpt,
+			description,
 			thumbnail,
 			thumbnailUrl: thumbnail,
 			uploadDate: data.dateIso,
