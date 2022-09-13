@@ -12,6 +12,8 @@ tags:
 
 The new [Enhance](https://enhance.dev) framework from [Begin](https://begin.com/) was just launched at [CascadiaJS](https://2022.cascadiajs.com/)! It brings a Next.js or Remixlike experience to the world of web components. Join us as we take a first look at Enhance with Begin's head of Developer Experience [Simon MacDonald](https://twitter.com/macdonst)!
 
+---
+
 ## More From the Enhance Team
 
 - [Follow Enhance on Twitter](https://twitter.com/enhance_dev)
