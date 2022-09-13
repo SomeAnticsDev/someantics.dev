@@ -1,8 +1,8 @@
 <div class="theme-picker menu-container">
-	<button type="button" aria-expanded="false" aria-haspopup="menu">
+	<button id="themePickerToggle" type="button" aria-expanded="false" aria-haspopup="menu">
 		<span aria-hidden="true">🔆 </span>Theme
 	</button>
-	<ul hidden role="menu">
+	<ul hidden role="menu" aria-labelledby="themePickerToggle">
 		<li role="menuitem">
 			{% edge 'liquid' %}
 			<button value="system" aria-pressed="{{ 'system' | isCurrentTheme }}">
