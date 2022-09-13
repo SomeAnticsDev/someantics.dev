@@ -16,6 +16,8 @@ tags:
 
 Dialogs and modals are a big part of modern web app experiences… but what does it take to make them accessible? Join Ben and [Chance Strickland](https://twitter.com/chancethedev) as they go on a tour through focus management, the upcoming `inert` attribute, keyboard navigation, ARIA, and more!
 
+---
+
 ## More From Chance
 
 - [Follow Chance on Twitter](https://twitter.com/chancethedev)

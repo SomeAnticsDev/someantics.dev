@@ -17,6 +17,8 @@ tags:
 
 Join Ben and Eleventy creator [Zach Leatherman](https://twitter.com/zachleat) for a first look at the Eleventy Serverless docs and canary builds!
 
+---
+
 ## Mentioned Links
 
 - [Zach's tweets](https://twitter.com/zachleat/status/1408073561198280706)

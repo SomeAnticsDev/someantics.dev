@@ -14,6 +14,8 @@ tags:
 
 Join us on Some Antics as Andy Bell shows us how we can use web components and custom elements to reuse markup, styles, and logic — all without the need for frameworks like React or Vue!
 
+---
+
 [Andy Bell](https://twitter.com/piccalilli_) is a freelance designer, developer and educator who runs [Piccalilli](https://piccalil.li), a site full of dang spicy web development tutorials.
 
 ## More From Andy

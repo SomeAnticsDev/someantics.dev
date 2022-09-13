@@ -15,6 +15,8 @@ tags:
 
 Accessibility audits are a powerful tool for communicating actionable improvements developers and designers can make to their websites. Join us on Some Antics as [Anna E. Cook](https://twitter.com/annaecook) shows us how to get started with auditing a website for accessibility!
 
+---
+
 ## More From Anna
 
 - [Follow Anna on Twitter](https://twitter.com/annaecook)

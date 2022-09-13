@@ -11,6 +11,8 @@ tags:
 
 I'm a sucker for [Eleventy](https://11ty.dev), a static site generator for Node.js developers. Come join me as we kick off building this very site with Eleventy. We'll go over templates, layouts, frontmatter, and more!
 
+---
+
 ## Mentioned Links
 
 * [Eleventy docs](https://11ty.dev)

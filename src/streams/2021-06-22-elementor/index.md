@@ -14,6 +14,8 @@ Join us as [Anne-Mieke Bovelett](https://twitter.com/Bovelett) shows me how to g
 
 (Why, no, I haven't built a WordPress site before — why do you ask?)
 
+---
+
 ## More From Anne-Mieke
 
 - [Follow Anne-Mieke on Twitter!](https://twitter.com/Bovelett)

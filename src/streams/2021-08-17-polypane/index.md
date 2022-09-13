@@ -15,6 +15,8 @@ tags:
 
 [Polypane](https://polypane.app) is the browser designed for developing and testing web applications. Join us on Some Antics as Polypane creator [Kilian Valkhof](https://twitter.com/kilianvalkhof) shows us how Polypane can give us confidence in our sites' responsiveness and accessibility.
 
+---
+
 ## More From Kilian
 
 - [Follow Kilian on Twitter](https://twitter.com/kilianvalkhof)

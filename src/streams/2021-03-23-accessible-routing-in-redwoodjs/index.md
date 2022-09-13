@@ -19,6 +19,8 @@ Accessibile routing is a bit of a gotcha in single-page applications. You genera
 
 Join Ben and guests [Dom Saadi](https://twitter.com/desaadi307) and [Anthony Campolo](https://twitter.com/ajcwebdev) from the [RedwoodJS](https://redwoodjs.com) Core Team as they demonstrate how accessible routing works in Redwood, and the trial and error it took to get there.
 
+---
+
 ## Mentioned Links
 
 - [RedwoodJS](https://redwoodjs.com)

@@ -15,6 +15,8 @@ tags:
 
 Design systems can help us ensure that our users have consistent, accessible, and delightful user experiences across our site. Join us on Some Antics as Ashlae introduces us to the world of design systems, and shows us how we can get started building design systems of our own!
 
+---
+
 [Ashlae Nelms](https://twitter.com/AshlaeAnnNelms) is a senior designer and developer at USAA.
 
 ## More From Ashlae
