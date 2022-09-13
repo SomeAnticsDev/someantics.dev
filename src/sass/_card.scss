@@ -1,8 +1,22 @@
 @import 'mixins';
+@import 'variables';
 
 $card-transition-speed: 0.15s;
 
+@mixin default-card-tokens {
+	--timestamp-color: #6e4fc9;
+	--timestamp-hover-color: rgb(0 0 0 / 0.7);
+}
+
 [data-card] {
+	@include default-card-tokens;
+	@include light-theme {
+		@include default-card-tokens;
+	}
+	@include dark-theme {
+		--timestamp-color: var(--violet-2);
+	}
+
 	--card-surface: var(--surface);
 	--corner-accent-color: var(--surface-accent);
 	--padding-inline-end: calc(var(--size-10) + 1rem);
@@ -39,6 +53,8 @@ $card-transition-speed: 0.15s;
 	}
 
 	time {
+		transition: color $card-transition-speed var(--ease-in-out-1);
+		color: var(--timestamp-color);
 		display: block;
 		font-family: 'Nexa', sans-serif;
 		font-weight: var(--font-weight-6);
@@ -170,6 +186,7 @@ $card-transition-speed: 0.15s;
 	&:hover {
 		--card-surface: var(--surface-hover);
 		--corner-accent-color: var(--surface-hover-accent);
+		--timestamp-color: var(--timestamp-hover-color) !important;
 		color: var(--surface-hover-text);
 
 		.excerpt {
