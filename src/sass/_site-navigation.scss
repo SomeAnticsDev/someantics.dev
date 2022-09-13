@@ -40,8 +40,16 @@ body > footer {
 		background-color: #0f0316;
 	}
 	color: var(--violet-0);
-	padding: var(--size-2);
-	text-align: center;
+	padding: var(--size-4) var(--size-2);
+	display: flex;
+	flex-direction: row;
+	gap: var(--size-6);
+	justify-content: center;
+
+	& > :not(:last-child) {
+		padding-inline-end: var(--size-6);
+		border-inline-end: 1px solid rgba(255, 255, 255, 0.25);
+	}
 }
 
 #logo {
@@ -108,5 +116,89 @@ body > footer {
 	
 	#hamburger[aria-expanded="false"] + ul {
 		display: none;
+	}
+}
+
+
+.menu-container {
+	position: relative;
+	display: inline;
+
+	button {
+		@include focus-outline;
+		background: none;
+		border: none;
+		color: white;
+		cursor: pointer;
+		font-family: 'Nexa', sans-serif;
+		font-weight: var(--font-weight-6);
+		transition: 0.15s background-color var(--ease-in-out-1);
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+	}
+
+	[role="menu"] {
+		position: absolute;
+		list-style: none;
+		background-color: var(--surface);
+		width: max-content;
+		margin: 0;
+		padding: 0;
+		top: inherit;
+		left: 0;
+		bottom: 125%;
+		text-align: start;
+		font-size: var(--font-size-2);
+		box-shadow: var(--shadow-6);
+		border-radius: var(--radius-2);
+
+		[role="menuitem"] {
+			position: relative;
+			padding: 0;
+			
+			button {
+				@include focus-outline(var(--header-focus-outline-color), 3px, -3px);
+				display: flex;
+				align-items: center;
+				gap: var(--size-2);
+				padding-block: var(--size-2);
+				padding-inline: calc(var(--size-2) + 0.25rem);
+				font-weight: var(--font-weight-6);
+				font-family: 'Nexa', sans-serif;
+				text-align: start;
+				width: 100%;
+				color: var(--text-color);
+
+				&:hover {
+					background-color: var(--alternate-background-color);
+				}
+
+				svg {
+					width: 0.8em;
+					height: 0.8em;
+					path {
+						fill: currentColor;
+					}
+				}
+
+				&[aria-pressed="true"] {
+					.unselected {
+						display: none;
+					}
+				}
+
+				&[aria-pressed="false"] {
+					.selected {
+						display: none;
+					}
+				}
+			}
+
+			&:not(:last-of-type) {
+				border-block-end: 1px solid var(--surface-accent);
+			}
+		}
 	}
 }

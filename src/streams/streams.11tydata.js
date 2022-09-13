@@ -26,7 +26,8 @@ function formatTimeOfDay(prettyTimeOfDay) {
  * @returns {string} ISO datetime string for stream time
  */
 function dateIso(data) {
-	const [year, month, day] = data.page.fileSlug.split('-');
+	const [, , templateFilename] = data.page.filePathStem.split('/');
+	const [year, month, day] = templateFilename.split('-');
 	const [hour, minutes, amOrPm] = formatTimeOfDay(data.timeOfDay).split(/[\s:]/);
 	const isPm = amOrPm === 'PM';
 	const hourNum = Number(hour);
@@ -127,7 +128,7 @@ module.exports = {
 			return false;
 		}
 
-		return data.page.fileSlug.replace(/^\d{4}-\d{2}-\d{2}-/, '') + '/index.html';
+		return data.page.fileSlug + '/index.html';
 	},
 	timeOfDay: '2pm',
 	duration: 'PT1H',
