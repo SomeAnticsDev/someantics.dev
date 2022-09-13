@@ -14,9 +14,9 @@
 	}
 
 	function closeThemeMenu() {
-		themeMenuIsOpen = true;
-		themeMenu.hidden = false;
-		themeMenuTrigger.ariaExpanded = true;
+		themeMenuIsOpen = false;
+		themeMenu.hidden = true;
+		themeMenuTrigger.ariaExpanded = false;
 	}
 
 	themeMenuTrigger.addEventListener('click', (event) => {
@@ -46,14 +46,12 @@
 
 	document.addEventListener('focusout', (event) => {
 		if (!event.relatedTarget) {
-			console.log({event})
 			themeMenu.hidden = true;
 			return;
 		}
 
 		const targetWasThemePickerTrigger = event.relatedTarget.closest('.theme-picker [aria-haspopup="menu"]');
 		const targetWasInThemeMenu = event.relatedTarget.closest('.theme-picker [role="menu"]');
-		console.log({event, targetWasInThemeMenu, targetWasThemePickerTrigger})
 		if (!targetWasThemePickerTrigger && !targetWasInThemeMenu) {
 			themeMenu.hidden = true;
 		}
