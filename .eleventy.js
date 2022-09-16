@@ -1,4 +1,4 @@
-const { EleventyRenderPlugin/*, EleventyEdgePlugin */ } = require('@11ty/eleventy');
+const { EleventyRenderPlugin, EleventyEdgePlugin } = require('@11ty/eleventy');
 const sass = require('eleventy-sass');
 const embedTwitch = require('eleventy-plugin-embed-twitch');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
@@ -46,7 +46,7 @@ module.exports = (config) => {
 	config.addPassthroughCopy({'./src/assets/favicons': './'});
 
 	// Plugins
-	// config.addPlugin(EleventyEdgePlugin);
+	config.addPlugin(EleventyEdgePlugin);
 	config.addPlugin(EleventyRenderPlugin);
 	config.addPlugin(
 		sass,
