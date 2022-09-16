@@ -4,9 +4,7 @@ shareImage: https://res.cloudinary.com/bendmyers/image/upload/v1661320317/some%2
 shareImageAlt: "Some Antics. Accessibility made approachable."
 ---
 <!DOCTYPE html>
-{% edge 'liquid' %}
-<html lang="en" data-theme="{{ theme }}">
-{% endedge %}
+<html lang="en" data-theme="system">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -66,7 +64,6 @@ shareImageAlt: "Some Antics. Accessibility made approachable."
 	</main>
 	<footer>
 		<span>&copy; 2022 Ben Myers</span>
-		{% include 'partials/theme-picker.html' %}
 	</footer>
 	{% include 'scripts/theme-picker.html' %}
 </body>
