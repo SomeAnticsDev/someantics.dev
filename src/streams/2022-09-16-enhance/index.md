@@ -8,6 +8,7 @@ guests:
 tags:
   - Frameworks
   - Web Components
+upload: https://www.twitch.tv/videos/1592926333?collection=R3rk6Zl29hZwAw
 ---
 
 The new [Enhance](https://enhance.dev) framework from [Begin](https://begin.com/) was just launched at [CascadiaJS](https://2022.cascadiajs.com/)! It brings a Next.js or Remixlike experience to the world of web components. Join us as we take a first look at Enhance with Begin's head of Developer Experience [Simon MacDonald](https://twitter.com/macdonst)!
