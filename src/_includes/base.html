@@ -29,7 +29,7 @@ shareImageAlt: "Some Antics. Accessibility made approachable."
 				id="hamburger"
 				aria-label="Menu"
 				aria-expanded="false"
-				onclick="this.ariaExpanded = (this.ariaExpanded === 'true') ? 'false' : 'true';"
+				onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');"
 			>
 				☰
 			</button>
