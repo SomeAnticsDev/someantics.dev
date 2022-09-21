@@ -28,6 +28,7 @@
 package = "@netlify/plugin-sitemap"
 [plugins.inputs]
   buildDir = "_site"
+  trailingSlash = true
   exclude = [
     '**/**/_/',
 	'**/**/404.html'
