@@ -28,5 +28,5 @@ Google Chrome's new experimental [Shared Element Transition API](https://develop
 - [Some Antics: Modern Websites with CSS Cascade Layers and Astro (with Mayank)](/cascade-layers-and-astro/)
 - [Chrome Developers blog on the Shared Element Transition API](https://developer.chrome.com/blog/shared-element-transitions-for-spas/)
 - [Ping](https://ping.gg)
-- [Some Antics: Lift Off with the Astro v1 Beta (with Ben Holmes)](https://someantics.dev/astro-v1-beta/)
+- [Some Antics: Lift Off with the Astro v1 Beta (with Ben Holmes)](/astro-v1-beta/)
 - [Chrome Developers blog on the Navigation API](https://developer.chrome.com/docs/web-platform/navigation-api/)
