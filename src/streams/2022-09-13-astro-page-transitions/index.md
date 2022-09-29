@@ -8,7 +8,7 @@ guests:
 tags:
   - Astro
   - Web Platform
-upload: https://www.twitch.tv/videos/1590131302
+upload: https://youtu.be/rtum4uAYR2M
 sourceCode: https://github.com/Charca/astro-music/commit/9e16651f5a4d2a1f2a4fcca5d358d87ae217fa9e
 demo: https://some-antics-astro-page-transitions.netlify.app/
 ---
