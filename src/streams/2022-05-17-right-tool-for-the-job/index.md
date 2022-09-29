@@ -22,3 +22,10 @@ Building on the Jamstack opens doors for lightweight, performant websites — an
 - [Watch Salma's videos on YouTube](https://www.youtube.com/c/whitep4nth3r)
 - [The Claw team](https://theclaw.team)
 - [Join The Claw's Discord server](https://discord.com/invite/theclaw)
+
+## Mentioned Links
+
+- [Salma on "What is Jamstack?"](https://whitep4nth3r.com/blog/what-is-jamstack/)
+- ["HTML is all you need to make a website"](https://whitep4nth3r.com/blog/html-is-all-you-need-to-make-a-website/)
+- [Next.js version of Salma's site](https://p4nth3rblog.netlify.app)
+- [Salma on JS Party](https://changelog.com/jsparty/204)
