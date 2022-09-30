@@ -1,7 +1,7 @@
 ---
 title: Pick the Right Tool for the Job on the Jamstack with whitep4nth3r
 thumbnailTitle: Picking the Right Tool for the Job on the Jamstack
-upload: https://www.twitch.tv/videos/1486660321
+upload: https://youtu.be/RrzoyqI1p-4
 hosts:
   - Ben Myers
 guests:
