@@ -1,6 +1,6 @@
 ---
-title: Compile Web Components with WebC and Eleventy (with Evan Sheehan)
-thumbnailTitle: Compile Web Components with WebC and Eleventy
+title: Bring Single File Components to Eleventy with WebC (with Evan Sheehan)
+thumbnailTitle: Bring Single File Components to Eleventy with WebC
 hosts:
   - Ben Myers
 guests:
