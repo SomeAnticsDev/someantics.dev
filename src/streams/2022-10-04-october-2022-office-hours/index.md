@@ -5,7 +5,7 @@ hosts:
 upload: https://www.twitch.tv/videos/1609356303
 ---
 
-Office hours are open! I answered your questions about accessibility, and informally audited three audience-submitted sites for accessibility.
+Office hours are open once more! I answered accessibility questions and informally audited some sites from the community!
 
 ---
 
