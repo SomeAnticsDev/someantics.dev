@@ -265,6 +265,12 @@
 		"twitter": "ericwbailey",
 		"website": "https://ericwbailey.design"
 	},
+	"Evan Sheehan": {
+		"name": "Evan Sheehan",
+		"pronouns": "he/him",
+		"twitter": "darth_mall",
+		"website": "https://darthmall.net/"
+	},
 	"Ferit Topcu": {
 		"name": "Ferit Topcu",
 		"pronouns": "he/him",
@@ -431,7 +437,9 @@
 		"name": "Nerando Johnson",
 		"pronouns": "he/him",
 		"twitter": "nerajno",
-		"website": "https://developingdvlpr.com/"
+		"website": "https://developingdvlpr.com/",
+		"devto": "nerajno",
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/v1666127911/Some%20Antics%20Avatars/Nerando%20Johnson.jpg"
 	},
 	"Patrick Hulce": {
 		"name": "Patrick Hulce",
