@@ -151,12 +151,14 @@ table td {
 
 table tbody tr {
     border-bottom: thin solid #dddddd;
-}
-
-table tbody tr:nth-of-type(even) {
-    background-color: whitesmoke;
+	@include dark-theme {
+		border-bottom: thin solid $purple-3;
+	}
 }
 
 table tbody tr:nth-of-type(even) {
     background-color: #EBE1F3;
+	@include dark-theme {
+		background-color: $purple-2;
+	}
 }
