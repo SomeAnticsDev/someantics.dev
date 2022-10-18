@@ -270,7 +270,14 @@
 		"name": "Evan Sheehan",
 		"pronouns": "he/him",
 		"twitter": "darth_mall",
-		"website": "https://darthmall.net/"
+		"website": "https://darthmall.net/",
+		"alternateSites": [
+			"https://11ty.webc.fun/",
+			"https://github.com/darthmall",
+			"https://codepen.io/darthmall",
+			"https://vis.social/@darth_mall",
+			"https://darthmall.net/feed.xml"
+		]
 	},
 	"Ferit Topcu": {
 		"name": "Ferit Topcu",
