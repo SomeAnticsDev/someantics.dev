@@ -238,6 +238,13 @@ $card-transition-speed: 0.15s;
 		grid-column: 1;
 		grid-row: 1 / -4;
 	}
+
+	&:not(:has([data-card="purple-corner"])) {
+		place-items: center;
+		[data-card="featured"] {
+			max-width: var(--size-15);
+		}
+	}
 }
 
 .past-streams {
