@@ -261,4 +261,11 @@ $card-transition-speed: 0.15s;
 	& [data-card="featured"] {
 		grid-row: span 2;
 	}
+
+	&:not(:has([data-card="purple-corner"])) {
+		place-items: center;
+		[data-card="featured"] {
+			max-width: var(--size-15);
+		}
+	}
 }
