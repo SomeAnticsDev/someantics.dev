@@ -1,5 +1,6 @@
 const { DateTime, Duration } = require('luxon');
 const { avatar } = require('../utils/cloudinary');
+const { getMastodonProfileUrl } = require('../utils/mastodon');
 const removeDate = require('./remove-date');
 
 const ben = {
@@ -38,6 +39,9 @@ function formatHostAsPerformer(hostName, profiles) {
 	}
 	if (hostProfile.twitter) {
 		otherSites.push(`https://twitter.com/${hostProfile.twitter}`);
+	}
+	if (hostProfile.mastodon) {
+		otherSites.push(getMastodonProfileUrl(hostProfile.mastodon));
 	}
 	if (hostProfile.twitch) {
 		otherSites.push(`https://twitch.tv/${hostProfile.twitch}`);

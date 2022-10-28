@@ -42,6 +42,25 @@
 			</dd>
 		</div>
 		{% endif %}
+		{% if profile.mastodon %}
+		<div>
+			<dt>
+				{% include 'icons/mastodon.svg' %}
+				<span class="visually-hidden" id="mastodon-{{ profileSlug }}">
+					{{ profile.name }}'s Mastodon profile
+				</span>
+			</dt>
+			<dd>
+				<a
+					href="{{ profile.mastodon | mastodonUrl }}"
+					class="u-url"
+					aria-describedby="mastodon-{{ profileSlug }}"
+				>
+					{{ profile.mastodon }}
+				</a>
+			</dd>
+		</div>
+		{% endif %}
 		{% if profile.instagram %}
 		<div>
 			<dt>

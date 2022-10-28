@@ -44,9 +44,28 @@
 		padding: var(--size-2) var(--size-3);
 		& > div {
 			display: flex;
-			align-items: center;
+			// align-items: center;
 			gap: var(--size-2);
-			padding-block: var(--size-1);
+			padding-block: calc(var(--size-1) / 2);
+
+			a {
+				display: inline-block;
+				
+				@media screen and (min-width: $stream-breakpoint) {
+					overflow: hidden;
+					text-overflow: ellipsis;
+
+					// Roughly how much of the card the link can take up before it overflow
+					max-width: 80%;
+
+					// Because the above is a percent, shorter strings truncate earlier.
+					// Setting a min of 15ch enforces a lower bound before truncation can happen.
+					// That min width makes focus outlines funky, though.
+					// So the actual min width is 100%, to ensure the element is only as wide as it needs to be.
+					// This thing is a paradoxical nightmare, but it works. /shrug
+					min-width: min(15ch, 100%);
+				}
+			}
 		}
 	}
 

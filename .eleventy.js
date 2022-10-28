@@ -11,6 +11,7 @@ const { avatar } = require('./src/utils/cloudinary');
 const { formatHosts, getAvatarsForThumbnails } = require('./src/utils/format-hosts');
 const { structureHostForApi } = require('./src/utils/structure-host-for-api');
 const removeDate = require('./src/_11ty/remove-date');
+const { getMastodonProfileUrl } = require('./src/utils/mastodon');
 
 /**
  * @typedef {import('@11ty/eleventy/src/UserConfig')} EleventyConfig
@@ -71,9 +72,10 @@ module.exports = (config) => {
 	config.addFilter('formatHosts', formatHosts);
 	config.addFilter('getAvatarsForThumbnails', getAvatarsForThumbnails);
 	config.addFilter('structureHostForApi', structureHostForApi);
+	config.addFilter('mastodonUrl', getMastodonProfileUrl);
 	config.addFilter('removeMarkdown', removeMarkdown);
 	config.addFilter('removeNewlines', str => str.replace(/\n+/g, ' '));
-	config.addFilter('removeDate', removeDate)
+	config.addFilter('removeDate', removeDate);
 
 	// Configure frontmatter parsing
 	config.setFrontMatterParsingOptions({ excerpt: true, excerpt_alias: 'excerpt' });
