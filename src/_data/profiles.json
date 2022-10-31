@@ -110,13 +110,19 @@
 		"name": "Anna E. Cook",
 		"pronouns": "she/they",
 		"twitter": "annaecook",
-		"website": "https://annaecook.com"
+		"website": "https://annaecook.com",
+		"alternateSites": [
+			"https://mstdn.social/@annaecook"
+		]
 	},
 	"Anne-Mieke Bovelett": {
 		"name": "Anne-Mieke Bovelett",
 		"pronouns": "she/her",
 		"twitter": "Bovelett",
-		"website": "https://annebovelett.eu"
+		"website": "https://annebovelett.eu",
+		"alternateSites": [
+			"https://wpbuilds.social/@bovelett"
+		]
 	},
 	"Anthony Campolo": {
 		"name": "Anthony Campolo",
@@ -162,14 +168,21 @@
 		"twitter": "heyAustinGil",
 		"twitch": "heyAustinGil",
 		"website": "https://austingil.com",
-		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,b_white/v1653679403/Some%20Antics%20Avatars/Austin%20Gil.png"
+		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_auto,b_white/v1653679403/Some%20Antics%20Avatars/Austin%20Gil.png",
+		"alternateSites": [
+			"https://mastodon.social/@Austingil"
+		]
 	},
 	"Ben Holmes": {
 		"name": "Ben Holmes",
 		"pronouns": "he/him",
 		"twitter": "bholmesdev",
 		"twitch": "bholmesdev",
-		"website": "https://bholmes.dev"
+		"website": "https://bholmes.dev",
+		"alternateSites": [
+			"https://wtw.dev/",
+			"https://www.youtube.com/channel/UCfFNverFD_Md_WDQGBBC7Zw"
+		]
 	},
 	"Brittney Postma": {
 		"name": "Brittney Postma",
@@ -189,7 +202,10 @@
 		"name": "Carie Fisher",
 		"pronouns": "she/her",
 		"twitter": "cariefisher",
-		"website": "https://cariefisher.com"
+		"website": "https://cariefisher.com",
+		"alternateSites": [
+			"https://mstdn.social/@cariefisher"
+		]
 	},
 	"Chance Strickland": {
 		"name": "Chance Strickland",
@@ -220,7 +236,10 @@
 		"name": "Chris Ferdinandi",
 		"pronouns": "he/him",
 		"twitter": "ChrisFerdinandi",
-		"website": "https://gomakethings.com"
+		"website": "https://gomakethings.com",
+		"alternateSites": [
+			"https://mastodon.social/@cferdinandi"
+		]
 	},
 	"Crystal Preston-Watson": {
 		"name": "Crystal Preston-Watson",
@@ -229,7 +248,8 @@
 		"website": "https://crystalprestonwatson.com",
 		"alternateSites": [
 			"https://www.youtube.com/c/CrystalPrestonWatson",
-			"https://a11ysavvy.com/"
+			"https://a11ysavvy.com/",
+			"https://mstdn.social/@ScopicEngineer"
 		]
 	},
 	"Dan Goodwin": {
@@ -248,7 +268,10 @@
 		"name": "Dave Rupert",
 		"pronouns": "he/him",
 		"twitter": "davatron5000",
-		"website": "https://daverupert.com"
+		"website": "https://daverupert.com",
+		"alternateSites": [
+			"https://mastodon.social/@davatron5000"
+		]
 	},
 	"Dom Saadi": {
 		"name": "Dom Saadi",
@@ -292,7 +315,10 @@
 		"pronouns": "he/him",
 		"twitter": "zersiax",
 		"twitch": "Zersiax",
-		"website": "https://florianbeijers.xyz/"
+		"website": "https://florianbeijers.xyz/",
+		"alternateSites": [
+			"https://dragonscave.space/@zersiax"
+		]
 	},
 	"George Francis": {
 		"name": "George Francis",
@@ -322,12 +348,16 @@
 		"name": "Hidde de Vries",
 		"pronouns": "he/him",
 		"twitter": "hdv",
-		"website": "https://hidde.blog"
+		"website": "https://hidde.blog",
+		"alternateSites": [
+			"https://mastodon.social/@hdv"
+		]
 	},
 	"Homer Gaines": {
 		"name": "Homer Gaines",
 		"pronouns": "he/him",
 		"twitter": "xirclebox",
+		"mastodon": "@xirclebox@mstdn.social",
 		"alternateSites": [
 			"https://www.polywork.com/xirclebox",
 			"https://twitter.com/homergaines",
@@ -375,7 +405,10 @@
 		"name": "Kilian Valkhof",
 		"pronouns": "he/him",
 		"twitter": "kilianvalkhof",
-		"website": "https://kilianvalkhof.com"
+		"website": "https://kilianvalkhof.com",
+		"alternateSites": [
+			"https://mastodon.social/@Kilian"
+		]
 	},
 	"Larry Hudson": {
 		"name": "Larry Hudson",
@@ -387,6 +420,7 @@
 		"pronouns": "she/her",
 		"twitter": "lindsaykwardell",
 		"twitch": "lindsaykwardell",
+		"mastodon": "@lindsaykwardell@mastodon.social",
 		"website": "https://lindsaykwardell.com"
 	},
 	"Lucia Cerchie": {
@@ -427,8 +461,7 @@
 	"Mayank": {
 		"name": "Mayank",
 		"pronouns": "they/them",
-		"twitter": "m_yxnk",
-		"twitch": "mayank_dev",
+		"twitter": "hi__mayank",
 		"website": "https://blog.mayank.co/",
 		"customAvatarUrl": "https://res.cloudinary.com/bendmyers/image/upload/w_1000,c_fill,ar_1:1,g_faces,f_auto,q_auto/v1660251354/Some%20Antics%20Avatars/Mayank.jpg"
 	},
@@ -467,6 +500,7 @@
 		"name": "Rachele DiTullio",
 		"pronouns": "she/her",
 		"twitter": "racheleditullio",
+		"mastodon": "racheled@mastodon.social",
 		"website": "https://racheleditullio.com"
 	},
 	"Randy Brown": {
@@ -541,6 +575,7 @@
 		"pronouns": "he/him",
 		"twitter": "toddlibby",
 		"twitch": "toddlibby",
+		"mastodon": "@todd@a11y.info",
 		"website": "https://toddl.dev"
 	},
 	"Travis Waith-Mair": {
@@ -567,6 +602,9 @@
 		"name": "Zach Leatherman",
 		"pronouns": "he/him",
 		"twitter": "zachleat",
-		"website": "https://zachleat.com"
+		"website": "https://zachleat.com",
+		"alternateSites": [
+			"https://mastodon.social/@zachleat"
+		]
 	}
 }
