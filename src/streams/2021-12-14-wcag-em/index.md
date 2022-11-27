@@ -23,7 +23,7 @@ See the [generated report](https://some-antics-wcag-em-report.netlify.app/report
 - [Follow Hidde on Twitter](https://twitter.com/hdv)
 - [Read Hidde's blog](https://hidde.blog)
 - [Semantics and How to Get Them Right at Beyond Tellerrand 2021](https://www.youtube.com/watch?v=YG9WQUfH7ZU)
-- [Hidde on YouTube](https://www.youtube.com/channel/UC6YfRUNWCmXe8uNWb74uIQA/)
+- [Hidde on YouTube](https://www.youtube.com/@_hdv)
 
 ## Mentioned Links
 

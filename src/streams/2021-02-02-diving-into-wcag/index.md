@@ -22,7 +22,7 @@ Join Ben and guest [Todd Libby](https://twitter.com/toddlibby) as we go through 
 * [Follow Todd on Twitter](https://twitter.com/toddlibby)
 * [Read Todd's articles](https://toddl.dev)
 * [Front End Nerdery podcast](https://anchor.fm/frontendnerdery)
-* [Front End Nerdery on YouTube](https://www.youtube.com/channel/UCng3HUrp-Dzu92iA_Zbhh3Q)
+* [Front End Nerdery on YouTube](https://www.youtube.com/@FrontEndNerdery)
 * [Shirts!](https://cottonbureau.com/people/todd-libby)
 
 ## Mentioned Links

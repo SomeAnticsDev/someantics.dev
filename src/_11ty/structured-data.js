@@ -12,7 +12,7 @@ const ben = {
 	sameAs: [
 		'https://benmyers.dev/',
 		'https://twitter.com/BenDMyers',
-		'https://www.youtube.com/bendmyers',
+		'https://www.youtube.com/@BenDMyers',
 		'https://www.twitch.tv/SomeAnticsDev',
 		'https://www.linkedin.com/in/BenDMyers',
 		'https://github.com/BenDMyers/',

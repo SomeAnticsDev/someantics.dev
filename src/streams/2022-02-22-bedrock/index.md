@@ -20,7 +20,7 @@ Recently, [Travis Waith-Mair](https://twitter.com/travisWaithMair) has been conv
 - [Follow Travis on Twitter](https://twitter.com/travisWaithMair)
 - [Read Travis's blog](https://non-traditional.dev/)
 - [Watch Travis's streams on Twitch](https://twitch.tv/BuildingBedrockLayout)
-- [Watch Travis's past streams](https://www.youtube.com/channel/UC6K0b007C9sEVyzfWCHyl_A/videos)
+- [Watch Travis's past streams](https://www.youtube.com/@traviswaithmair4809)
 
 ## Mentioned Links
 

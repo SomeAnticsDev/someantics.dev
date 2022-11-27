@@ -16,6 +16,6 @@ upload: https://www.twitch.tv/videos/1600030525
 
 - [Follow Todd on Twitter](https://twitter.com/toddlibby)
 - [Subscribe to Todd's newsletter](https://buttondown.email/colabottles)
-- [Front End Nerdery podcast](https://www.youtube.com/frontendnerdery)
+- [Front End Nerdery podcast](https://www.youtube.com/@FrontEndNerdery)
 - [See Todd speak at Connect.Tech this November!](https://2022.connect.tech/session/?id=346591)
 - [See Todd speak at Modern FrontEnds Live this November!](https://www.modernfrontends.live/)
