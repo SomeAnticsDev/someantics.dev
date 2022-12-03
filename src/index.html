@@ -17,6 +17,8 @@ description: Build great user experiences for the web with experts each week.
 </header>
 <section aria-labelledby="h-upcoming">
 	<h2 id="h-upcoming">Catch the next stream live!</h2>
+	{% assign upcomingCount = collections.upcomingStreams | size %}
+	{% if upcomingCount > 0 %}
 	<div class="stream-grid upcoming-streams">
 		{% for stream in collections.upcomingStreams limit: 4 %}
 		{% assign cardType = "purple-corner" %}
@@ -29,6 +31,11 @@ description: Build great user experiences for the web with experts each week.
 	<div class="cta-container">
 		<a class="cta" href="/schedule/">See the full schedule</a>
 	</div>
+	{% else %}
+	<p class="empty-schedule-notice">
+		<strong>Some Antics is on a break!</strong> Check back later to see if new episodes have been added to the schedule.
+	</p>
+	{% endif %}
 </section>
 <section aria-labelledby="h-past">
 	<h2 id="h-past">Watch recent streams</h2>

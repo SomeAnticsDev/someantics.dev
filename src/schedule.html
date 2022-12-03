@@ -13,6 +13,8 @@ shareImageAlt: "Some Antics: Schedule"
 	<p class="tagline">{{ tagline }}</p>
 </header>
 <section aria-label="Schedule">
+	{% assign upcomingCount = collections.upcomingStreams | size %}
+	{% if upcomingCount > 0 %}
 	<div class="stream-grid full-schedule">
 		{% for stream in collections.upcomingStreams %}
 		{% assign cardType = "purple-corner" %}
@@ -23,4 +25,9 @@ shareImageAlt: "Some Antics: Schedule"
 		{% include "partials/stream-card.html", stream: stream, cardType: cardType, lazy: lazy, featuredAvatarHeight: '180', featuredAvatarWidth: '180', cornerAvatarHeight: '90', cornerAvatarWidth: '90' %}
 		{% endfor %}
 	</div>
+	{% else %}
+	<p class="empty-schedule-notice">
+		<strong>Some Antics is on a break!</strong> Check back later to see if new episodes have been added to the schedule.
+	</p>
+	{% endif %}
 </section>
