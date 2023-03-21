@@ -282,11 +282,16 @@
 		"twitter": "domitriusclark",
 		"twitch": "domitriusclark"
 	},
+	"Emma Dawson": {
+		"name": "Emma Dawson",
+		"pronouns": "she/her",
+		"twitter": "EmmaDawsonDev"
+	},
 	"Eric Bailey": {
 		"name": "Eric Bailey",
 		"pronouns": "he/him",
 		"twitter": "ericwbailey",
-		"mastodon": "@ericwbailey@front-end.social",
+		"mastodon": "@ericwbailey@social.ericwbailey.website",
 		"website": "https://ericwbailey.design"
 	},
 	"Evan Sheehan": {
@@ -507,6 +512,13 @@
 		"twitter": "racheleditullio",
 		"mastodon": "racheled@mastodon.social",
 		"website": "https://racheleditullio.com"
+	},
+	"Ramón Huidobro": {
+		"name": "Ramón Huidobro",
+		"pronouns": "he/him",
+		"twitter": "hola_soy_milk",
+		"mastodon": "@hola_soy_milk@hachyderm.io",
+		"website": "https://ramonh.dev/"
 	},
 	"Randy Brown": {
 		"name": "Randy Brown",
