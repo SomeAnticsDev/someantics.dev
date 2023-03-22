@@ -10,9 +10,11 @@ tags:
   - CSS
 ---
 
-Typography can make or break a site, rendering it unreadable in the worst cases and elevating the site's aesthetics and personality in the best cases. Join us as designer and developer [Mike Mai](https://mikemai.net/) walks us through practical tips and modern CSS techniques to master our site's type.
+Typography can make or break a site, rendering it unreadable in the worst cases and elevating the site's aesthetics and personality in the best cases. Join us as designer and developer Mike Mai walks us through practical tips and modern CSS techniques to master our site's type.
 
 ---
+
+[Mike Mai](https://mikemai.net/) is a web designer with a focus on design systems, HTML & CSS, and web accessibility. With a background in graphic design, he believes in setting great typography on the web.
 
 ## More From Mike
 
