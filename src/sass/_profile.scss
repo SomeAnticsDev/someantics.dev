@@ -51,7 +51,7 @@
 			a {
 				display: inline-block;
 				
-				@media screen and (min-width: $stream-breakpoint) {
+				// @media screen and (min-width: $stream-breakpoint) {
 					overflow: hidden;
 					text-overflow: ellipsis;
 
@@ -64,7 +64,7 @@
 					// So the actual min width is 100%, to ensure the element is only as wide as it needs to be.
 					// This thing is a paradoxical nightmare, but it works. /shrug
 					// min-width: min(15ch, 100%);
-				}
+				// }
 			}
 		}
 	}
