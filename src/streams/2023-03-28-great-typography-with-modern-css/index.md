@@ -8,7 +8,7 @@ guests:
 tags:
   - Typography
   - CSS
-upload: https://www.twitch.tv/videos/1778374666
+upload: https://youtu.be/kHgwY5mTHVU
 sourceCode: https://codepen.io/mikemai2awesome/pen/ZEMjoxb/75b1348274de8f1498a490ed245b601a?editors=1100
 ---
 
