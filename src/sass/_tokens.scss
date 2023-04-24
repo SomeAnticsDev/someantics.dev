@@ -61,7 +61,8 @@ $purple-10: #f4e9fc;
 }
 
 :root *::selection {
-	background-color: var(--secondary);
+	background-color: #ee4433;
+	// background-color: var(--secondary);
 	color: white;
 }
 
