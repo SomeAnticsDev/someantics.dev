@@ -2,6 +2,8 @@
 title: Chat and Q&A with Some Antics
 hosts:
   - Ben Myers
+permalink: false
+eleventyExcludeFromCollections: true
 ---
 
 Some Antics is back. There's a new HTML element. Safari is crushing it, and a million homepages aren't. Let's talk about it!
