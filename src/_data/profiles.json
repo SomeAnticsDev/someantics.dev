@@ -299,12 +299,12 @@
 		"pronouns": "he/him",
 		"twitter": "darth_mall",
 		"website": "https://darthmall.net/",
-		"mastodon": "@darth_mall@vis.social",
+		"mastodon": "@darth_mall@notacult.social",
 		"alternateSites": [
 			"https://11ty.webc.fun/",
 			"https://github.com/darthmall",
 			"https://codepen.io/darthmall",
-			"https://vis.social/@darth_mall",
+			"https://notacult.social/@darth_mall",
 			"https://darthmall.net/feed.xml"
 		]
 	},
@@ -408,10 +408,8 @@
 		"name": "Kilian Valkhof",
 		"pronouns": "he/him",
 		"twitter": "kilianvalkhof",
-		"website": "https://kilianvalkhof.com",
-		"alternateSites": [
-			"https://mastodon.social/@Kilian"
-		]
+		"mastodon": "@Kilian@mastodon.social",
+		"website": "https://kilianvalkhof.com"
 	},
 	"Larry Hudson": {
 		"name": "Larry Hudson",
@@ -443,6 +441,7 @@
 		"name": "Manuel Matuzović",
 		"pronouns": "he/him",
 		"twitter": "mmatuzo",
+		"mastodon": "@matuzo@front-end.social",
 		"website": "https://matuzo.at",
 		"alternateSites": [
 			"https://www.htmhell.dev/"
@@ -473,6 +472,7 @@
 		"pronouns": "he/him",
 		"twitter": "peruvianidol",
 		"twitch": "peruvianidol",
+		"mastodon": "@peruvianidol@mastodon.social",
 		"website": "https://mikeaparicio.com"
 	},
 	"Mike Mai": {
@@ -567,6 +567,7 @@
 		"name": "Simon MacDonald",
 		"pronouns": "he/him",
 		"twitter": "macdonst",
+		"mastodon": "@macdonst@mastodon.online",
 		"website": "https://www.simonmacdonald.com/"
 	},
 	"Stephanie Eckles": {
@@ -574,12 +575,12 @@
 		"pronouns": "she/her",
 		"twitter": "5t3ph",
 		"twitch": "5t3phDev",
+		"mastodon": "@5t3ph@front-end.social",
 		"website": "https://thinkdobecreate.com",
 		"alternateSites": [
 			"https://moderncss.dev/",
 			"https://smolcss.dev/",
-			"https://11ty.rocks/",
-			"https://front-end.social/@5t3ph"
+			"https://11ty.rocks/"
 		]
 	},
 	"Thuy Doan": {
