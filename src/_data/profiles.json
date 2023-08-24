@@ -29,17 +29,6 @@
 			"https://linktr.ee/adrianne.mallett"
 		]
 	},
-	"Ahmad Shadeed": {
-		"name": "Ahmad Shadeed",
-		"pronouns": "he/him",
-		"twitter": "shadeed9",
-		"website": "https://ishadeed.com",
-		"alternateSites": [
-			"https://defensivecss.dev/",
-			"https://rtlstyling.com/",
-			"https://www.a11ymatters.com/"
-		]
-	},
 	"Alex Anderson": {
 		"name": "Alex Anderson",
 		"pronouns": "he/him",
@@ -88,11 +77,6 @@
 		"mastodon": "@accudio@mastodon.scot",
 		"website": "https://alistairshepherd.uk"
 	},
-	"Amina Aweis": {
-		"name": "Amina Aweis",
-		"pronouns": "she/her",
-		"twitter": "yeahshewrites"
-	},
 	"Amit Sheen": {
 		"name": "Amit Sheen",
 		"pronouns": "he/him",
@@ -134,15 +118,6 @@
 		"website": "https://ajcwebdev.com",
 		"alternateSites": [
 			"https://www.polywork.com/ajcwebdev"
-		]
-	},
-	"Anuradha Kumari": {
-		"name": "Anuradha Kumari",
-		"pronouns": "she/her",
-		"twitter": "miracle_404",
-		"website": "https://www.anuradhakumari.com/",
-		"alternateSites": [
-			"https://www.youtube.com/@AnuradhaK"
 		]
 	},
 	"Ashlae Nelms": {
@@ -227,11 +202,6 @@
 			"https://hachyderm.io/@chantastic"
 		]
 	},
-	"Chris Burns": {
-		"name": "Chris Burns",
-		"pronouns": "he/him",
-		"twitter": "BurnedChris"
-	},
 	"Chris Ferdinandi": {
 		"name": "Chris Ferdinandi",
 		"pronouns": "he/him",
@@ -282,11 +252,6 @@
 		"twitter": "domitriusclark",
 		"twitch": "domitriusclark"
 	},
-	"Emma Dawson": {
-		"name": "Emma Dawson",
-		"pronouns": "she/her",
-		"twitter": "EmmaDawsonDev"
-	},
 	"Eric Bailey": {
 		"name": "Eric Bailey",
 		"pronouns": "he/him",
@@ -334,12 +299,6 @@
 		"pronouns": "he/him",
 		"twitter": "GrahamTheDev",
 		"devto": "grahamthedev"
-	},
-	"Harris Schneiderman": {
-		"name": "Harris Schneiderman",
-		"pronouns": "he/him",
-		"twitter": "theHarrisius",
-		"website": "https://harris.schneiderman.dev"
 	},
 	"Heather S. Neff": {
 		"name": "Heather S. Neff",
@@ -394,16 +353,6 @@
 		"mastodon": "@JoshuaKGoldberg@fosstodon.org",
 		"website": "https://www.joshuakgoldberg.com/"
 	},
-	"Kevin Powell": {
-		"name": "Kevin Powell",
-		"pronouns": "he/him",
-		"twitter": "KevinJPowell",
-		"twitch": "KevinPowellCSS",
-		"website": "https://www.kevinpowell.co/",
-		"alternateSites": [
-			"https://www.youtube.com/@KevinPowell"
-		]
-	},
 	"Kilian Valkhof": {
 		"name": "Kilian Valkhof",
 		"pronouns": "he/him",
@@ -436,16 +385,6 @@
 		"twitter": "m4d_z",
 		"twitch": "m4dz_devrel",
 		"website": "https://m4dz.net"
-	},
-	"Manuel Matuzović": {
-		"name": "Manuel Matuzović",
-		"pronouns": "he/him",
-		"twitter": "mmatuzo",
-		"mastodon": "@matuzo@front-end.social",
-		"website": "https://matuzo.at",
-		"alternateSites": [
-			"https://www.htmhell.dev/"
-		]
 	},
 	"Martin Bavio": {
 		"name": "Martin Bavio",
@@ -513,13 +452,6 @@
 		"mastodon": "racheled@mastodon.social",
 		"website": "https://racheleditullio.com"
 	},
-	"Ramón Huidobro": {
-		"name": "Ramón Huidobro",
-		"pronouns": "he/him",
-		"twitter": "hola_soy_milk",
-		"mastodon": "@hola_soy_milk@hachyderm.io",
-		"website": "https://ramonh.dev/"
-	},
 	"Randy Brown": {
 		"name": "Randy Brown",
 		"pronouns": "he/him",
@@ -551,12 +483,6 @@
 		"twitter": "codingchaos",
 		"website": "https://sarahmhigley.com"
 	},
-	"Scott Vinkle": {
-		"name": "Scott Vinkle",
-		"pronouns": "he/him",
-		"twitter": "svinkle",
-		"website": "https://scottvinkle.me/"
-	},
 	"Segun Adebayo": {
 		"name": "Segun Adebayo",
 		"pronouns": "he/him",
@@ -582,12 +508,6 @@
 			"https://smolcss.dev/",
 			"https://11ty.rocks/"
 		]
-	},
-	"Thuy Doan": {
-		"name": "Thuy Doan",
-		"pronouns": "she/her",
-		"twitter": "clearlyTHUYDOAN",
-		"website": "https://updates.clearlythuydoan.com/"
 	},
 	"Todd Libby": {
 		"name": "Todd Libby",
