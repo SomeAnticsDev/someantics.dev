@@ -16,30 +16,8 @@ home: true
 		{% include 'icons/twitch.svg' %} Follow on Twitch
 	</a>
 </header>
-<section aria-labelledby="h-upcoming">
-	<h2 id="h-upcoming">Catch the next stream live!</h2>
-	{% assign upcomingCount = collections.upcomingStreams | size %}
-	{% if upcomingCount > 0 %}
-	<div class="stream-grid upcoming-streams">
-		{% for stream in collections.upcomingStreams limit: 4 %}
-		{% assign cardType = "purple-corner" %}
-		{% if forloop.index == 1 %}
-		{% assign cardType = "featured" %}
-		{% endif %}
-		{% include "partials/stream-card.html", stream: stream, cardType: cardType, featuredAvatarHeight: '180', featuredAvatarWidth: '160', cornerAvatarHeight: '90', cornerAvatarWidth: '90' %}
-		{% endfor %}
-	</div>
-	<div class="cta-container">
-		<a class="cta" href="/schedule/">See the full schedule</a>
-	</div>
-	{% else %}
-	<p class="empty-schedule-notice">
-		<strong>Some Antics is on a break!</strong> Check back later to see if new episodes have been added to the schedule.
-	</p>
-	{% endif %}
-</section>
 <section aria-labelledby="h-past">
-	<h2 id="h-past">Watch recent streams</h2>
+	<h2 id="h-past">Watch previous streams</h2>
 	<div class="stream-grid past-streams">
 		{% assign pastStreams = collections.pastStreams | reverse %}
 		{% for stream in pastStreams limit: 5 %}
@@ -66,6 +44,6 @@ home: true
 		<p hidden id="headshotDescription">
 			Depicts a white person with dark brown hair and black spectacles. Ben is wearing a suit with a pattern that resembles brightly colored test patterns from TV, and is standing against a curtain that is vibrantly lit with reds and purples.
 		</p>
-		<p id="bio"><b>Howdy! I'm Ben Myers.</b> I'm a frontend developer working on the <a href="https://learn.microsoft.com">Microsoft Learn</a> developer documentation platform, and I'm passionate about building sites that are accessible, usable, and performant. In addition to hosting Some Antics, I blog about accessibility over at <a href="https://benmyers.dev">benmyers.dev</a>.</p>
+		<p id="bio"><b>Howdy! I'm Ben Myers.</b> I'm a frontend developer working on the <a href="https://learn.microsoft.com">Microsoft Learn</a> developer documentation platform, and I'm passionate about building sites that are accessible, usable, and performant. In addition to hosting Some Antics, I blog about accessibility over at <a href="https://benmyers.dev" rel="me">benmyers.dev</a>.</p>
 	</div>
 </section>

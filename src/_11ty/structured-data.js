@@ -11,6 +11,7 @@ const ben = {
 	image: 'https://res.cloudinary.com/bendmyers/image/upload/v1617491695/ben.jpg',
 	sameAs: [
 		'https://benmyers.dev/',
+		'https://a11y.info/@ben',
 		'https://twitter.com/BenDMyers',
 		'https://www.youtube.com/@BenDMyers',
 		'https://www.twitch.tv/SomeAnticsDev',
